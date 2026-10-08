@@ -1,0 +1,50 @@
+{
+  "repository": "mozilla/bedrock",
+  "commit": "81541a0fccb1211ce284d1ed11866e54094bc5df",
+  "license": "MPL-2.0",
+  "upstream_files": [
+    {
+      "local": "en/mozorg/fluent.ftl",
+      "upstream_path": "lib/l10n_utils/tests/test_files/l10n/en/mozorg/fluent.ftl",
+      "git_blob_sha1": "3be45fa292737aebf1b2469b411fd5d6e7cc9f01",
+      "sha256": "133c1e78c15aa4aced5d3da13d7dfd9a1debc10809f5a023919ada67723e2428"
+    },
+    {
+      "local": "de/mozorg/fluent.ftl",
+      "upstream_path": "lib/l10n_utils/tests/test_files/l10n/de/mozorg/fluent.ftl",
+      "git_blob_sha1": "469bf56f4e8fdb879e820a48581557d616f31b16",
+      "sha256": "ddefd4717aa70b741bcb3f8e57c6a61094f66d7e966f60f1510ea1b53aa9622c"
+    },
+    {
+      "local": "fr/mozorg/fluent.ftl",
+      "upstream_path": "lib/l10n_utils/tests/test_files/l10n/fr/mozorg/fluent.ftl",
+      "git_blob_sha1": "d6d65cf59201ca233f01994e32f4824d63c10c9e",
+      "sha256": "f152aaf2205f28aa440eab8ecffb276d18372bc4d075077dfbb1d6ca1d9a4f72"
+    },
+    {
+      "local": "en/brands.ftl",
+      "upstream_path": "lib/l10n_utils/tests/test_files/l10n/en/brands.ftl",
+      "git_blob_sha1": "e9b9c059455a9b5498e43bb4a69e9863e3c0c82a",
+      "sha256": "cea5caf2399f42fcf1e186eba7a290c89fb79a3b06ac18138b8e3ff30bdb3d03"
+    },
+    {
+      "local": "fr/brands.ftl",
+      "upstream_path": "lib/l10n_utils/tests/test_files/l10n/fr/brands.ftl",
+      "git_blob_sha1": "70f0705ea8037bfb48f5735050cc1382f4584f8d",
+      "sha256": "8d2d2aa06b6c0d1afc5b63bf554b5ebbb73fee59b826d2b1f0668b3af482f448"
+    }
+  ],
+  "method_source": "lib/l10n_utils/fluent.py",
+  "method_blob_sha1": "65663162d9e9ea747655759981d079f35a499db3",
+  "test_source": "lib/l10n_utils/tests/test_fluent.py",
+  "test_blob_sha1": "f4cad88a9e7646b6a3f0d811b24ffd0da47e5449",
+  "scope": "Seven expected outputs retained from test_translate and test_translate_term_fallback. Native Fluent runtime is pinned separately. This is boundary extraction, not the Bedrock/Django test suite.",
+  "changes": [
+    "Only translate, has_message and localized bundle/ID methods retained",
+    "Django cached_property replaced with functools.cached_property",
+    "Loader uses explicit fixture root rather than settings and omits caching; preserves ordered English brand injection",
+    "Five complete FTL fixtures locally match upstream Git blob hashes",
+    "Runtime imports point directly to vendored native fallback/parser modules; FluentResource uses the native one-line parser constructor."
+  ],
+  "boundary_sha256": "2a4600b7edd7b647914ead9ad1f1c7e40774b3532f6b32561e51a48250f4a363"
+}

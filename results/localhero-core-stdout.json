@@ -1,0 +1,76 @@
+{
+  "controls": {
+    "units": 25,
+    "errors": 3,
+    "hints": 2,
+    "by_category": {
+      "legitimate": {
+        "units": 16,
+        "errors": 1,
+        "hints": 2
+      },
+      "mutation": {
+        "units": 7,
+        "errors": 2,
+        "hints": 0
+      },
+      "unknown": {
+        "units": 2,
+        "errors": 0,
+        "hints": 0
+      }
+    }
+  },
+  "validation": {
+    "units": 192,
+    "errors": 0,
+    "hints": 176,
+    "by_category": {
+      "legitimate": {
+        "units": 96,
+        "errors": 0,
+        "hints": 88
+      },
+      "mutation": {
+        "units": 96,
+        "errors": 0,
+        "hints": 88
+      }
+    }
+  },
+  "confirmation": {
+    "units": 192,
+    "errors": 0,
+    "hints": 176,
+    "by_category": {
+      "legitimate": {
+        "units": 96,
+        "errors": 0,
+        "hints": 88
+      },
+      "mutation": {
+        "units": 96,
+        "errors": 0,
+        "hints": 88
+      }
+    }
+  },
+  "openhangar": {
+    "units": 4,
+    "errors": 0,
+    "hints": 0,
+    "by_category": {
+      "after": {
+        "units": 2,
+        "errors": 0,
+        "hints": 0
+      },
+      "before": {
+        "units": 2,
+        "errors": 0,
+        "hints": 0
+      }
+    }
+  },
+  "scope": "LocalHero CLI commit af81321 placeholder-mismatch source component on already-flattened PO maps; hints and errors are separated; not the complete CLI or its other checks."
+}

@@ -1,0 +1,20 @@
+{
+  "manuscript_present": true,
+  "scope": "full manuscript/BibTeX/ledger audit",
+  "bibliography_entries_total": 70,
+  "bibliographic_sources": 69,
+  "unique_cited_keys": 69,
+  "missing_bibliography_keys": [],
+  "uncited_bibliography_keys": [],
+  "duplicate_bibliography_keys": [],
+  "json_records": 69,
+  "csv_records": 69,
+  "json_missing_from_bibliography": [],
+  "bibliography_missing_from_json": [],
+  "csv_json_key_difference": [],
+  "duplicate_json_keys": [],
+  "duplicate_dois": [],
+  "duplicate_canonical_urls": [],
+  "status": "pass",
+  "error_fields": []
+}

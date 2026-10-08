@@ -1,0 +1,25 @@
+{
+  "frozen_on": "2026-10-08",
+  "analyzer_sha256": {
+    "src/msgbranch/project.py": "66f901a29f2332bb571b948b4f5edc2d3a74f2365c5785d170031ddee8c8f1b9",
+    "src/msgbranch/runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73",
+    "src/msgbranch/program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
+    "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
+  },
+  "selection": {
+    "repositories": [
+      "pwr-Solaar/Solaar",
+      "virt-manager/virt-manager"
+    ],
+    "rule": "Retain the two external-project adapted call boundaries as regression inputs at their immutable source commits. They are not a blind holdout of the current implementation.",
+    "unit": "one adapted call-site boundary plus its exact message entry; this is not a whole-project audit",
+    "counts": [
+      0,
+      1,
+      2,
+      5,
+      100
+    ]
+  },
+  "interpretation": "These known external-project cases check local applicability and false alarms; they do not establish blind generalization or population recall."
+}

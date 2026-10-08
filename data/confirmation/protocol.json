@@ -1,0 +1,34 @@
+{
+  "seed": 261001,
+  "domain": [
+    0,
+    1000
+  ],
+  "locales": [
+    "en",
+    "fr",
+    "ja",
+    "ru",
+    "ar",
+    "pl",
+    "cs",
+    "sl",
+    "lt",
+    "lv",
+    "ro",
+    "ga"
+  ],
+  "planner_sha256": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044",
+  "implementation_sha256": {
+    "partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044",
+    "program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
+    "runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73"
+  },
+  "generator_sha256": "0a2791a43316c7693f111d6b60243cace2869c389175e0ddfc26bc8c6a1b3251",
+  "environment": {
+    "python": "3.13.5",
+    "babel": "2.18.0"
+  },
+  "status": "fresh-seed generated confirmation after implementation freeze; same disclosed grammar, not a field holdout",
+  "protocol": "8 guard families x 12 locales x paired clean/mutant; every generated pair retained; 100 uniform-random seeds per equal final execution budget"
+}

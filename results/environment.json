@@ -1,0 +1,6 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.28000-SP0",
+  "processor": "12th Gen Intel Core i7-12700KF",
+  "scope": "Local CPU execution of the delivered scripts; timings are descriptive, not production latency."
+}

@@ -1,0 +1,8 @@
+{
+  "upstream_assertions": 7,
+  "native_executions": 14,
+  "disagreements": 0,
+  "format_error_alarms": 0,
+  "byte_verified_upstream_files": 5,
+  "scope": "Seven expected outputs retained from test_translate and test_translate_term_fallback. Native Fluent runtime is pinned separately. This is boundary extraction, not the Bedrock/Django test suite."
+}

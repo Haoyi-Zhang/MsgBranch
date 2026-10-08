@@ -1,0 +1,12 @@
+{
+  "projects": 2,
+  "call_catalog_findings": 3,
+  "clean": 3,
+  "errors": 0,
+  "unknown": 0,
+  "runtime_executions": 10,
+  "runtime_errors": 0,
+  "analyzer_hashes_match_freeze": true,
+  "status": "pass",
+  "scope": "Two post-freeze independent-project adapted boundaries; validates local applicability and absence of alarms on these calls, not whole-project recall or linguistic quality."
+}

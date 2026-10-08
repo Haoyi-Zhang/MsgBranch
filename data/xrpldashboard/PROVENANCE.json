@@ -1,0 +1,12 @@
+{
+  "repository": "Enkryptedx/xrpldashboard",
+  "repair_commit": "e03829d58f6c1acdf16b69e3aa168b93f3782586",
+  "repair_date_utc": "2026-09-25T01:58:11Z",
+  "path": "templates/rwa.html",
+  "license_path": "LICENSE",
+  "license_sha": "820206b0ccb472815e66de087decf9f8c6e69abb",
+  "retained": ["before.jinja", "after.jinja"],
+  "transformation": "The exact changed Jinja expression is isolated. The Flask-Babel-compatible ngettext boundary is locally reimplemented from its documented/source behavior: select singular/plural, insert num, then percent-interpolate keyword variables. No Flask route or complete application is executed.",
+  "oracle": "The historical commit and its route regression test require rendering without KeyError. Ordinary count one detects the failure; the case does not establish unique guard-product yield.",
+  "retrieved": "2026-10-03"
+}

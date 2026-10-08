@@ -1,0 +1,18 @@
+{
+  "repository": "localheroai/cli",
+  "commit": "af81321af193458f5869befec4481b8507c2d78d",
+  "upstream_paths": [
+    "src/utils/check-utils.ts",
+    "src/utils/placeholders.ts",
+    "LICENSE"
+  ],
+  "scope": "Dependency-free placeholder parser plus findPlaceholderMismatches and direct helpers; unrelated CLI/check functions omitted.",
+  "local_sha256": {
+    "check-utils.ts": "45df8dd04c99a73ca2a36ca7a87e7093a879a74f4430f0367d5dcc56264582fd",
+    "placeholders.ts": "1f92e527eb30354fec4792729a324276dcf680d28671a819bd3339833b7a5361",
+    "LICENSE": "fa4ce5bf789697ee9d3b7e9c8058fd6a4bf4cd1611e59d1347e2f62a55ec1526",
+    "run-check.mjs": "a32b39109d6d6fd222f18a360edfd5edd6c1010d14c212af4e93033c28eec062",
+    "dist/check-utils.js": "87a1839d29e71a64e7c7432ebb8b01fd6ba18d3e704b02871f3d4b1df5a8fa09",
+    "dist/placeholders.js": "d72cca450d471f1c60e54b1ff064fdee3cd3b9c3b3767d1a7cfe7e671d274dd1"
+  }
+}

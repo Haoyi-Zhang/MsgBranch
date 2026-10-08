@@ -1,0 +1,28 @@
+name: Tests and native message replay
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.12.14', '3.13.5']
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    env:
+      PYTHONUTF8: '1'
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest tests -q
+      - run: python scripts/reproduce.py --full
+      - run: python scripts/native_replay.py

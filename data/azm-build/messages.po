@@ -1,0 +1,13 @@
+# Minimal research fixture for the runtime build-artifact failure documented by
+# MarwanM404/AZM_crm commit 326d0f9d0d964eef90ebc33f5303c26a0f24064f.
+# This is not a copy of the full upstream catalog.
+msgid ""
+msgstr ""
+"Project-Id-Version: msgbranch-azm-build-reproduction\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "Ticket queue"
+msgstr "قائمة التذاكر"

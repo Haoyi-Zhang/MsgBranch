@@ -1,0 +1,136 @@
+[
+  {
+    "id": "my-first-string",
+    "output": "Fluent can be easy",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [
+        {
+          "locales": [
+            "en-US"
+          ],
+          "output": "Fluent can be easy",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en-US"
+          ],
+          "id": "my-first-string",
+          "present": false
+        },
+        {
+          "locales": [
+            "en-US"
+          ],
+          "id": "my-first-string",
+          "present": true
+        }
+      ],
+      "needed_external": []
+    }
+  },
+  {
+    "id": "second-string",
+    "output": "Eine Übersetzung",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [
+        {
+          "locales": [
+            "de",
+            "en-US"
+          ],
+          "output": "Eine Übersetzung",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en-US"
+          ],
+          "id": "second-string",
+          "present": true
+        }
+      ],
+      "needed_external": []
+    }
+  },
+  {
+    "id": "absent",
+    "output": "absent",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en-US"
+          ],
+          "id": "absent",
+          "present": false
+        },
+        {
+          "locales": [
+            "en-US"
+          ],
+          "id": "absent",
+          "present": false
+        }
+      ],
+      "needed_external": []
+    }
+  },
+  {
+    "id": "broken",
+    "output": "missing",
+    "trace": {
+      "branches": [],
+      "reads": [
+        {
+          "name": "missing",
+          "present": false,
+          "scope": "external",
+          "type": "missing"
+        }
+      ],
+      "formats": [
+        {
+          "locales": [
+            "de",
+            "en-US"
+          ],
+          "output": "missing",
+          "errors": [
+            {
+              "type": "FluentReferenceError",
+              "message": "Unknown external: missing"
+            }
+          ]
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en-US"
+          ],
+          "id": "broken",
+          "present": true
+        }
+      ],
+      "needed_external": [
+        "missing"
+      ]
+    }
+  }
+]

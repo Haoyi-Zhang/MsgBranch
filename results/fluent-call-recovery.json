@@ -1,0 +1,13 @@
+[
+  {
+    "line": 1,
+    "status": "literal",
+    "message": "my-first-string",
+    "args": {}
+  },
+  {
+    "line": 2,
+    "status": "unknown",
+    "reason": "dynamic ID or argument supplier"
+  }
+]

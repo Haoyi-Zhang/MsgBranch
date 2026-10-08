@@ -1,0 +1,167 @@
+import os
+from collections.abc import Generator
+from typing import TYPE_CHECKING, Any, Callable, Union, cast
+
+from fluent.syntax import FluentParser
+from typing import NamedTuple
+
+from .bundle import FluentBundle
+
+if TYPE_CHECKING:
+    from fluent.syntax.ast import Resource
+
+    from .types import FluentType
+
+
+class FormattedMessage(NamedTuple):
+    value: Union[str, None]
+    attributes: dict[str, str]
+
+
+class FluentLocalization:
+    """
+    Generic API for Fluent applications.
+
+    This handles language fallback, bundle creation and string localization.
+    It uses the given resource loader to load and parse Fluent data.
+    """
+
+    def __init__(
+        self,
+        locales: list[str],
+        resource_ids: list[str],
+        resource_loader: "AbstractResourceLoader",
+        use_isolating: bool = False,
+        bundle_class: type[FluentBundle] = FluentBundle,
+        functions: Union[dict[str, Callable[[Any], "FluentType"]], None] = None,
+    ):
+        self.locales = locales
+        self.resource_ids = resource_ids
+        self.resource_loader = resource_loader
+        self.use_isolating = use_isolating
+        self.bundle_class = bundle_class
+        self.functions = functions
+        self._bundle_cache: list[FluentBundle] = []
+        self._bundle_it = self._iterate_bundles()
+
+    def format_message(
+        self, msg_id: str, args: Union[dict[str, Any], None] = None
+    ) -> FormattedMessage:
+        bundle, msg = next((
+            (bundle, bundle.get_message(msg_id))
+            for bundle in self._bundles()
+            if bundle.has_message(msg_id)
+        ), (None, None))
+        if not bundle or not msg:
+            return FormattedMessage(msg_id, {})
+        formatted_attrs = {
+            attr: cast(
+                str,
+                bundle.format_pattern(msg.attributes[attr], args)[0],
+            )
+            for attr in msg.attributes
+        }
+        if not msg.value:
+            val = None
+        else:
+            val, _errors = bundle.format_pattern(msg.value, args)
+        return FormattedMessage(
+            # Never FluentNone when format_pattern called externally
+            cast(str, val),
+            formatted_attrs,
+        )
+
+    def format_value(
+        self, msg_id: str, args: Union[dict[str, Any], None] = None
+    ) -> str:
+        bundle, msg = next((
+            (bundle, bundle.get_message(msg_id))
+            for bundle in self._bundles()
+            if bundle.has_message(msg_id)
+        ), (None, None))
+        if not bundle or not msg or not msg.value:
+            return msg_id
+        val, _errors = bundle.format_pattern(msg.value, args)
+        return cast(
+            str, val
+        )  # Never FluentNone when format_pattern called externally
+
+    def _create_bundle(self, locales: list[str]) -> FluentBundle:
+        return self.bundle_class(
+            locales, functions=self.functions, use_isolating=self.use_isolating
+        )
+
+    def _bundles(self) -> Generator[FluentBundle, None, None]:
+        bundle_pointer = 0
+        while True:
+            if bundle_pointer == len(self._bundle_cache):
+                try:
+                    self._bundle_cache.append(next(self._bundle_it))
+                except StopIteration:
+                    return
+            yield self._bundle_cache[bundle_pointer]
+            bundle_pointer += 1
+
+    def _iterate_bundles(self) -> Generator[FluentBundle, None, None]:
+        for first_loc in range(0, len(self.locales)):
+            locs = self.locales[first_loc:]
+            for resources in self.resource_loader.resources(locs[0], self.resource_ids):
+                bundle = self._create_bundle(locs)
+                for resource in resources:
+                    bundle.add_resource(resource)
+                yield bundle
+
+
+class AbstractResourceLoader:
+    """
+    Interface to implement for resource loaders.
+    """
+
+    def resources(
+        self, locale: str, resource_ids: list[str]
+    ) -> Generator[list["Resource"], None, None]:
+        """
+        Yield lists of FluentResource objects, corresponding to
+        each of the resource_ids.
+        If there are multiple locations, this may yield multiple lists.
+        If a resource isn't found in any location, yield a partial list,
+        but don't yield empty lists.
+        """
+        raise NotImplementedError
+
+
+class FluentResourceLoader(AbstractResourceLoader):
+    """
+    Resource loader to read Fluent files from disk.
+
+    Different locales are in different locations based on locale code.
+    The locale code should be encoded as `{locale}` in the roots, or in
+    the resource_ids.
+    This loader does not support loading resources for one bundle from
+    different roots.
+    """
+
+    def __init__(self, roots: Union[str, list[str]]):
+        """
+        Create a resource loader. The roots may be a string for a single
+        location on disk, or a list of strings.
+        """
+        self.roots = [roots] if isinstance(roots, str) else roots
+
+    def resources(
+        self, locale: str, resource_ids: list[str]
+    ) -> Generator[list["Resource"], None, None]:
+        for root in self.roots:
+            resources: list[Any] = []
+            for resource_id in resource_ids:
+                path = self.localize_path(os.path.join(root, resource_id), locale)
+                if not os.path.isfile(path):
+                    continue
+                with open(path, "r", encoding="utf-8", newline="\n") as file:
+                    content = file.read()
+                resources.append(FluentParser().parse(content))
+            if resources:
+                yield resources
+
+    def localize_path(self, path: str, locale: str) -> str:
+        return path.format(locale=locale)

@@ -1,0 +1,12 @@
+en-0 201 3 3 {'product': 0.363698, 'exhaustive_adapter': 5.2493, 'native_all': 0.072419}
+en-0 1001 3 3 {'product': 0.430858, 'exhaustive_adapter': 26.22546, 'native_all': 0.343737}
+en-0 10001 3 3 {'product': 0.463237, 'exhaustive_adapter': 261.915682, 'native_all': 3.666789}
+ru-2 201 7 6 {'product': 1.144793, 'exhaustive_adapter': 5.689052, 'native_all': 0.077477}
+ru-2 1001 7 6 {'product': 2.583037, 'exhaustive_adapter': 28.258199, 'native_all': 0.383057}
+ru-2 10001 7 6 {'product': 2.653393, 'exhaustive_adapter': 277.561329, 'native_all': 3.881311}
+ar-3 201 6 6 {'product': 1.340047, 'exhaustive_adapter': 5.897606, 'native_all': 0.080832}
+ar-3 1001 9 9 {'product': 4.998342, 'exhaustive_adapter': 30.099881, 'native_all': 0.420142}
+ar-3 10001 9 9 {'product': 6.177407, 'exhaustive_adapter': 310.003819, 'native_all': 4.167132}
+ja-0 201 3 2 {'product': 0.335936, 'exhaustive_adapter': 5.346707, 'native_all': 0.069655}
+ja-0 1001 3 2 {'product': 0.382766, 'exhaustive_adapter': 27.177693, 'native_all': 0.35228}
+ja-0 10001 3 2 {'product': 0.413682, 'exhaustive_adapter': 267.966082, 'native_all': 3.452106}

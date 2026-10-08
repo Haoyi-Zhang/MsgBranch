@@ -1,0 +1,52 @@
+{
+  "repository": "e2jk/OpenHangar",
+  "parent": "3267c9f875db7ad5b3f16b7bcc91c3cf32de1634",
+  "fix": "930cefba3aa19ace7b440d2efdbd0f341bf35d5c",
+  "fix_date": "2026-09-07",
+  "status": "historical repair replay; not a newly discovered defect",
+  "upstream_fix_url": "https://github.com/e2jk/OpenHangar/commit/930cefba3aa19ace7b440d2efdbd0f341bf35d5c",
+  "catalog_source": "app/translations/{locale}/LC_MESSAGES/messages.po",
+  "catalog_entry_lines": [
+    2563,
+    2569
+  ],
+  "header_lines": [
+    1,
+    19
+  ],
+  "template_source": "app/templates/dashboard.html",
+  "template_lines": {
+    "med": 278,
+    "sep": 296
+  },
+  "template_parent_blob": "44601a261cb2da54331651d8f11ac4fcb43ee9cf",
+  "catalog_parent_blobs": {
+    "fr": "5f3aa36c2509a2e78b6cc36cc78e7e566ca71ada",
+    "nl": "10003a80e13c4bf06aa1622877b46221b381bb0f"
+  },
+  "catalog_fixed_blobs": {
+    "fr": "01fc20bbc37ad8294f8b7283c3512e6c9e4b6300",
+    "nl": "6d7d9770e8ae0459e929495418d05c2285c15b36"
+  },
+  "scope": "Catalog header and entry excerpts; exact Jinja call expressions; objects injected locally. No Flask app, DB, route, locale negotiation, notification delivery or patient data executed.",
+  "transformations": [
+    "Strip surrounding HTML, badges and expiry date from each retained Jinja expression.",
+    "Use native Jinja2 i18n newstyle translation installation with GNUTranslations; Flask-Babel is not installed or claimed executed.",
+    "Preserve before header across catalog pair and apply only verified repair to message id_plural and plural target.",
+    "Normalize same Jinja expression to restricted Python boundary; compare each result to native Jinja."
+  ],
+  "obligation": "The warning-path localized day phrase formats without error using the actual supplied n; reconstructed post-fix output matches catalog entry.",
+  "selection": "Purposive historical discovery after planner/control development; not held out.",
+  "local_sha256": {
+    "adapter.py": "44b0ad9ce2ac29566ff7432c3f555c00fd0f8670671ff3d0f7176179a2d61f60",
+    "sep.jinja": "d14c5d7879a3b375488d599efc6f1804663e225c3f0fcb2e6c94e88fa465608d",
+    "LICENSE": "99284fa79b0a990af49e387bc2bb428c052763d22af49a6b752182e30627c093",
+    "med.jinja": "958bb44f84af4e27cc638b2ddd443b8244850f2105e3c4bbfe16a77c08e051c2",
+    "after/supplier.py.txt": "035daf77798c2793ea5d1674db6404eddefa784dabba867e15ba8226cda08a90",
+    "after/nl.po": "a536c7f06771c15130f39f2245e4b523178beacf7ab69ebe3798969df54147e5",
+    "after/fr.po": "9595e9389d93218703403728ec0e436b12fa86e94e10468a3d107c15b19445fe",
+    "before/supplier.py.txt": "d0c530db146a98b52628764b12b3a5204f2da49be61806b41ce18d200dd7ee8e",
+    "before/nl.po": "cdcd90823aced959f230cedf8b0e994e4cab3e7b9e6a22a871a8922c5f4b0f20",
+    "before/fr.po": "55cd1b80146fe7c768c868e8d2654ebc7b50cd8727cdd7a7b2684c6d90b64253"
+  }
+}

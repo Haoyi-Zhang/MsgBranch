@@ -1,0 +1,6 @@
+        day_count_phrase = _ln(
+            "one day",
+            "%(n)s days",
+            threshold,
+            n=threshold,
+        )

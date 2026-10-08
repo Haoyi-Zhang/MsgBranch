@@ -1,0 +1,12 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: virt-manager 5.1.0\n"
+"Language: et\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, python-format
+msgid "Waiting %(minutes)d minute for the installation to complete."
+msgid_plural "Waiting %(minutes)d minutes for the installation to complete."
+msgstr[0] "Ootan paigalduse lõppemiseks %(minutes)d minuti."
+msgstr[1] "Ootan paigalduse lõppemiseks %(minutes)d minutit."

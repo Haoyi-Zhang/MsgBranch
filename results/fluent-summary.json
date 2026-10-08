@@ -1,0 +1,21 @@
+{
+  "commit": "e95b07ea07966dec064d09398a265222742bcfa2",
+  "families": 14,
+  "legitimate": 8,
+  "mutations": 4,
+  "runtime_contract_probe_families": 2,
+  "runs": 1625,
+  "profile_differential_checks": 1625,
+  "profile_disagreements": 0,
+  "documented_api_calls": 4,
+  "mutation_detection": {
+    "ordinary_detects": 0,
+    "branch_detects": 2,
+    "call_detects": 4
+  },
+  "legitimate_false_alarms": 0,
+  "runtime_contract_alarm_runs": 4,
+  "maintainer_confirmation": false,
+  "downstream_application_cases": 0,
+  "scope": "synthetic controls and documentation/runtime probes; not application defect yield"
+}

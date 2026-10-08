@@ -1,0 +1,18 @@
+{
+  "repository": "MarwanM404/AZM_crm",
+  "parent": "730e121364558e1e4c971e9f86bd4d620d783fca",
+  "repair": "326d0f9d0d964eef90ebc33f5303c26a0f24064f",
+  "repair_date": "2026-09-13",
+  "source_url": "https://github.com/MarwanM404/AZM_crm/commit/326d0f9d0d964eef90ebc33f5303c26a0f24064f",
+  "documented_failure": "CI retained PO sources but did not build MO artifacts; project Arabic messages fell back to English.",
+  "documented_reproduction": "The upstream commit reports that deleting MO files reproduced three Arabic assertion failures and compilemessages restored them.",
+  "fixture_scope": "One exact message identifier and its two-word Arabic translation are retained solely to replay missing-versus-compiled runtime delivery. No upstream application code, workflow, or full catalog is redistributed.",
+  "license_note": "No repository license file was identified at the frozen revision. Treat this minimal quotation as research evidence; consult upstream before broader reuse.",
+  "not_claimed": [
+    "full Django application execution",
+    "upstream test-suite execution",
+    "independent confirmation of every statement in the commit message",
+    "a count-sensitive defect",
+    "incremental guard-product yield"
+  ]
+}

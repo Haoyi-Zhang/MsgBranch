@@ -1,0 +1,298 @@
+{
+  "summary": {
+    "projects": 2,
+    "call_catalog_findings": 3,
+    "clean": 3,
+    "errors": 0,
+    "unknown": 0,
+    "runtime_executions": 10,
+    "runtime_errors": 0,
+    "analyzer_hashes_match_freeze": true,
+    "status": "pass",
+    "scope": "Two retained external-project adapted boundaries, not a blind holdout of this implementation; validates local applicability and absence of alarms on these calls, not whole-project recall or linguistic quality."
+  },
+  "freeze": {
+    "expected": {
+      "src/msgbranch/project.py": "66f901a29f2332bb571b948b4f5edc2d3a74f2365c5785d170031ddee8c8f1b9",
+      "src/msgbranch/runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73",
+      "src/msgbranch/program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
+      "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
+    },
+    "actual": {
+      "src/msgbranch/project.py": "66f901a29f2332bb571b948b4f5edc2d3a74f2365c5785d170031ddee8c8f1b9",
+      "src/msgbranch/runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73",
+      "src/msgbranch/program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
+      "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
+    }
+  },
+  "records": [
+    {
+      "case": "solaar",
+      "source": "data\\holdout\\solaar\\call.py",
+      "catalog": "data\\holdout\\solaar\\messages.po",
+      "flow_summary": {
+        "source_root": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\new_three\\experiments\\msgbranch-8da52042\\artifact\\data\\holdout\\solaar\\call.py",
+        "analysis_mode": "flow",
+        "python_files": 1,
+        "calls": 2,
+        "literal_calls": 2,
+        "catalogs": 1,
+        "findings": 2,
+        "clean": 2,
+        "errors": 0,
+        "unknown": 0,
+        "selected_patterns": 3,
+        "runtime_observations": 102,
+        "unique_runtime_lookup_sets": 2,
+        "runtime_lookup_cache_hits": 0,
+        "flow_models": 1,
+        "flow_recovered_calls": 1,
+        "flow_resolved_witnesses": 2,
+        "type_error_witnesses": 0,
+        "type_unknown_witnesses": 0
+      },
+      "direct_summary": {
+        "source_root": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\new_three\\experiments\\msgbranch-8da52042\\artifact\\data\\holdout\\solaar\\call.py",
+        "analysis_mode": "direct",
+        "python_files": 1,
+        "calls": 2,
+        "literal_calls": 2,
+        "catalogs": 1,
+        "findings": 2,
+        "clean": 2,
+        "errors": 0,
+        "unknown": 0,
+        "selected_patterns": 3,
+        "runtime_observations": 102,
+        "unique_runtime_lookup_sets": 2,
+        "runtime_lookup_cache_hits": 0,
+        "flow_models": 0,
+        "flow_recovered_calls": 0,
+        "flow_resolved_witnesses": 0,
+        "type_error_witnesses": 0,
+        "type_unknown_witnesses": 0
+      },
+      "runtime": [
+        {
+          "count": 0,
+          "status": "ok",
+          "output": "Ingen forbundne enheder.",
+          "lookups": [
+            {
+              "method": "gettext",
+              "singular": "No paired devices.",
+              "plural": null,
+              "count": null,
+              "branch": null,
+              "resolution": "catalog",
+              "output": "Ingen forbundne enheder.",
+              "context": null
+            }
+          ]
+        },
+        {
+          "count": 1,
+          "status": "ok",
+          "output": "1 parret enhed.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "%(count)s paired device.",
+              "plural": "%(count)s paired devices.",
+              "count": 1,
+              "branch": 0,
+              "resolution": "catalog",
+              "output": "%(count)s parret enhed.",
+              "context": null
+            }
+          ]
+        },
+        {
+          "count": 2,
+          "status": "ok",
+          "output": "2 parrede enheder.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "%(count)s paired device.",
+              "plural": "%(count)s paired devices.",
+              "count": 2,
+              "branch": 1,
+              "resolution": "catalog",
+              "output": "%(count)s parrede enheder.",
+              "context": null
+            }
+          ]
+        },
+        {
+          "count": 5,
+          "status": "ok",
+          "output": "5 parrede enheder.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "%(count)s paired device.",
+              "plural": "%(count)s paired devices.",
+              "count": 5,
+              "branch": 1,
+              "resolution": "catalog",
+              "output": "%(count)s parrede enheder.",
+              "context": null
+            }
+          ]
+        },
+        {
+          "count": 100,
+          "status": "ok",
+          "output": "100 parrede enheder.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "%(count)s paired device.",
+              "plural": "%(count)s paired devices.",
+              "count": 100,
+              "branch": 1,
+              "resolution": "catalog",
+              "output": "%(count)s parrede enheder.",
+              "context": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "virt-manager",
+      "source": "data\\holdout\\virt-manager\\call.py",
+      "catalog": "data\\holdout\\virt-manager\\messages.po",
+      "flow_summary": {
+        "source_root": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\new_three\\experiments\\msgbranch-8da52042\\artifact\\data\\holdout\\virt-manager\\call.py",
+        "analysis_mode": "flow",
+        "python_files": 1,
+        "calls": 1,
+        "literal_calls": 1,
+        "catalogs": 1,
+        "findings": 1,
+        "clean": 1,
+        "errors": 0,
+        "unknown": 0,
+        "selected_patterns": 2,
+        "runtime_observations": 101,
+        "unique_runtime_lookup_sets": 1,
+        "runtime_lookup_cache_hits": 0,
+        "flow_models": 1,
+        "flow_recovered_calls": 1,
+        "flow_resolved_witnesses": 2,
+        "type_error_witnesses": 0,
+        "type_unknown_witnesses": 0
+      },
+      "direct_summary": {
+        "source_root": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\new_three\\experiments\\msgbranch-8da52042\\artifact\\data\\holdout\\virt-manager\\call.py",
+        "analysis_mode": "direct",
+        "python_files": 1,
+        "calls": 1,
+        "literal_calls": 1,
+        "catalogs": 1,
+        "findings": 1,
+        "clean": 0,
+        "errors": 0,
+        "unknown": 1,
+        "selected_patterns": 2,
+        "runtime_observations": 101,
+        "unique_runtime_lookup_sets": 1,
+        "runtime_lookup_cache_hits": 0,
+        "flow_models": 0,
+        "flow_recovered_calls": 0,
+        "flow_resolved_witnesses": 0,
+        "type_error_witnesses": 0,
+        "type_unknown_witnesses": 2
+      },
+      "runtime": [
+        {
+          "count": 0,
+          "status": "ok",
+          "output": "Ootan paigalduse lõppemiseks 0 minutit.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "Waiting %(minutes)d minute for the installation to complete.",
+              "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+              "count": 0,
+              "branch": 1,
+              "resolution": "catalog",
+              "output": "Ootan paigalduse lõppemiseks %(minutes)d minutit.",
+              "context": null
+            }
+          ]
+        },
+        {
+          "count": 1,
+          "status": "ok",
+          "output": "Ootan paigalduse lõppemiseks 1 minuti.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "Waiting %(minutes)d minute for the installation to complete.",
+              "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+              "count": 1,
+              "branch": 0,
+              "resolution": "catalog",
+              "output": "Ootan paigalduse lõppemiseks %(minutes)d minuti.",
+              "context": null
+            }
+          ]
+        },
+        {
+          "count": 2,
+          "status": "ok",
+          "output": "Ootan paigalduse lõppemiseks 2 minutit.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "Waiting %(minutes)d minute for the installation to complete.",
+              "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+              "count": 2,
+              "branch": 1,
+              "resolution": "catalog",
+              "output": "Ootan paigalduse lõppemiseks %(minutes)d minutit.",
+              "context": null
+            }
+          ]
+        },
+        {
+          "count": 5,
+          "status": "ok",
+          "output": "Ootan paigalduse lõppemiseks 5 minutit.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "Waiting %(minutes)d minute for the installation to complete.",
+              "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+              "count": 5,
+              "branch": 1,
+              "resolution": "catalog",
+              "output": "Ootan paigalduse lõppemiseks %(minutes)d minutit.",
+              "context": null
+            }
+          ]
+        },
+        {
+          "count": 100,
+          "status": "ok",
+          "output": "Ootan paigalduse lõppemiseks 100 minutit.",
+          "lookups": [
+            {
+              "method": "ngettext",
+              "singular": "Waiting %(minutes)d minute for the installation to complete.",
+              "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+              "count": 100,
+              "branch": 1,
+              "resolution": "catalog",
+              "output": "Ootan paigalduse lõppemiseks %(minutes)d minutit.",
+              "context": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

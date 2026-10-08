@@ -1,0 +1,24 @@
+{
+  "repository": "sphinx-doc/sphinx",
+  "before": "5c0d0438c4b1f4e2277fd5d79fcd06e80bb65f20",
+  "after": "6682f89871b8df9bb4d85cab5b8f35c9396c9afb",
+  "acquisition": "Public source reads; extracted boundary, not entire original files",
+  "transformations": {
+    "before.py": "Added build_message function; status reflow; logging/color replaced by return; source decision logic retained",
+    "after.py": "Same extraction applied after historical repair",
+    "locale_boundary.py": "Registered translator path retained; isolated registry; omitted uninitialized proxy definitions and non-executable docstring",
+    "ja.po": "Relevant original header and selected entries only; not full catalog",
+    "de.po": "Relevant original header and selected entries only; not full catalog"
+  },
+  "license": "BSD-2-Clause; see LICENSE.sphinx",
+  "retained_sha256": {
+    "LICENSE.sphinx": "343cc8ecbf117ce1ee73e4539c0294ed78b4cc626d4b6d81a1572fee815fa5b9",
+    "after.py": "892dae8bb309f869b641ab4b255d12e845e980f23ef5f8f81ef816bb9b1c8d00",
+    "before.py": "16838b5b15dff0b10be271b951f2d23497af357dd1d706857ca84fe89e784492",
+    "locale_boundary.py": "20d5d992d7512c4f6a2d019d9eb74c09b85accf2471c885e4634a7a8d5d92e33",
+    "de.po": "3c3ec04d30cddc55dfbde63ec5d05c34ce1879801ad70d6bd10030916153e87c",
+    "ja.po": "8ce19a2c48f97a8f4341dafdbc696738a33120379ba47c2014d6a40be70c4b5d"
+  },
+  "full_suite_run": false,
+  "historical_environment_recreated": false
+}

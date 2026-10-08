@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "studies": {
+    "validation": {
+      "families": 192,
+      "raw_outcomes_recounted": 192192,
+      "active_mutations": 52,
+      "native_selected_outcomes_matched": 886,
+      "baseline_and_random_trial_labels_recomputed": true,
+      "status": "pass"
+    },
+    "confirmation": {
+      "families": 192,
+      "raw_outcomes_recounted": 192192,
+      "active_mutations": 54,
+      "native_selected_outcomes_matched": 894,
+      "baseline_and_random_trial_labels_recomputed": true,
+      "status": "pass"
+    }
+  },
+  "openhangar_outcomes_recounted": 248,
+  "bedrock_assertions_matched": 7,
+  "cost_medians_recomputed": 36,
+  "weblate_component_unit_records_recounted": 822,
+  "localhero_component_unit_records_recounted": 413,
+  "xrpldashboard_outcomes_recounted": 8,
+  "public_fix_candidates_recounted": 20,
+  "babel_cli_catalogs_recounted": 227,
+  "flow_validation_controls_recounted": 25,
+  "flow_validation_runtime_executions_recounted": 4623,
+  "project_audit_findings_recounted": 47,
+  "holdout_findings_recounted": 3,
+  "holdout_runtime_executions_recounted": 10,
+  "project_scaling_records_recounted": 8,
+  "azm_build_boundary_recounted": true,
+  "scope": "Independent result accounting and selected/raw consistency; not an independent implementation or proof of correctness"
+}

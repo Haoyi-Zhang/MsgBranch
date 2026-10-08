@@ -1,0 +1,16 @@
+{
+  "historical_repairs": 1,
+  "native_boundary_executions": 248,
+  "native_adapter_disagreements": 0,
+  "before_failing_contexts": 118,
+  "after_failing_contexts": 0,
+  "babel_alarms": 0,
+  "ordinary_1_2_detects": true,
+  "simple_plural_conflict_detects": true,
+  "partition_retains_failing_witness": true,
+  "incremental_real_defects_over_strong_ordinary_baseline": 0,
+  "environment": {
+    "python": "3.12.14",
+    "jinja2": "3.1.6"
+  }
+}

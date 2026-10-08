@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14",
+  "status": "pass",
+  "studies": {
+    "validation": {
+      "families": 192,
+      "native_comparisons": 192192,
+      "plan_receipts_regenerated": 192,
+      "selected_witnesses_replayed": 886,
+      "disagreements": 0,
+      "status": "pass"
+    },
+    "confirmation": {
+      "families": 192,
+      "native_comparisons": 192192,
+      "plan_receipts_regenerated": 192,
+      "selected_witnesses_replayed": 894,
+      "disagreements": 0,
+      "status": "pass"
+    }
+  },
+  "scope": "Direct native replay of all retained generated outcomes; fresh planner and selected-witness replay. Not fresh exhaustive interpreter/signature generation."
+}

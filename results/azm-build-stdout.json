@@ -1,0 +1,20 @@
+{
+  "case": "azm-build-326d0f",
+  "historical_repair": "326d0f9d0d964eef90ebc33f5303c26a0f24064f",
+  "parent": "730e121364558e1e4c971e9f86bd4d620d783fca",
+  "before": {
+    "mo_present": false,
+    "output": "Ticket queue",
+    "falls_back_to_source": true
+  },
+  "after": {
+    "mo_present": true,
+    "output": "قائمة التذاكر",
+    "translated": true,
+    "mo_bytes": 601
+  },
+  "babel_checks": [],
+  "ordinary_smoke_detects": true,
+  "guard_product_needed": false,
+  "claim": "build-artifact boundary slice; no Django route or full upstream suite executed"
+}

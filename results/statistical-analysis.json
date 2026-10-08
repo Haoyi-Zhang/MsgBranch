@@ -1,0 +1,167 @@
+{
+  "validation": {
+    "active_mutations": 52,
+    "methods": {
+      "ordinary7": {
+        "hits": 4,
+        "misses": 48,
+        "proportion": 0.07692307692307693,
+        "wilson_95": [
+          0.030319345184930124,
+          0.1817356238429534
+        ]
+      },
+      "branch_only": {
+        "hits": 2,
+        "misses": 50,
+        "proportion": 0.038461538461538464,
+        "wilson_95": [
+          0.010611711001315298,
+          0.12981189157455764
+        ]
+      },
+      "source_only": {
+        "hits": 38,
+        "misses": 14,
+        "proportion": 0.7307692307692307,
+        "wilson_95": [
+          0.5974778016637287,
+          0.8323103970483349
+        ]
+      },
+      "product": {
+        "hits": 52,
+        "misses": 0,
+        "proportion": 1.0,
+        "wilson_95": [
+          0.9312077638761376,
+          1.0
+        ]
+      },
+      "equal_budget_even": {
+        "hits": 5,
+        "misses": 47,
+        "proportion": 0.09615384615384616,
+        "wilson_95": [
+          0.04177435105257249,
+          0.20609630120131633
+        ]
+      }
+    },
+    "paired_against_product": {
+      "ordinary7": {
+        "a_only": 48,
+        "b_only": 0,
+        "discordant": 48,
+        "two_sided_exact_p": 7.105427357601002e-15
+      },
+      "branch_only": {
+        "a_only": 50,
+        "b_only": 0,
+        "discordant": 50,
+        "two_sided_exact_p": 1.7763568394002505e-15
+      },
+      "source_only": {
+        "a_only": 14,
+        "b_only": 0,
+        "discordant": 14,
+        "two_sided_exact_p": 0.0001220703125
+      },
+      "equal_budget_even": {
+        "a_only": 47,
+        "b_only": 0,
+        "discordant": 47,
+        "two_sided_exact_p": 1.4210854715202004e-14
+      }
+    },
+    "equal_budget_random": {
+      "trials": 5200,
+      "hits": 348,
+      "proportion": 0.06692307692307692,
+      "unit": "family-seed trial"
+    }
+  },
+  "confirmation": {
+    "active_mutations": 54,
+    "methods": {
+      "ordinary7": {
+        "hits": 6,
+        "misses": 48,
+        "proportion": 0.1111111111111111,
+        "wilson_95": [
+          0.051930224969995484,
+          0.2219470102118128
+        ]
+      },
+      "branch_only": {
+        "hits": 2,
+        "misses": 52,
+        "proportion": 0.037037037037037035,
+        "wilson_95": [
+          0.01021636794844559,
+          0.12535176917275476
+        ]
+      },
+      "source_only": {
+        "hits": 36,
+        "misses": 18,
+        "proportion": 0.6666666666666666,
+        "wilson_95": [
+          0.5336096360112935,
+          0.7775858346250742
+        ]
+      },
+      "product": {
+        "hits": 54,
+        "misses": 0,
+        "proportion": 1.0,
+        "wilson_95": [
+          0.9335864119091037,
+          1.0000000000000002
+        ]
+      },
+      "equal_budget_even": {
+        "hits": 5,
+        "misses": 49,
+        "proportion": 0.09259259259259259,
+        "wilson_95": [
+          0.04020113475702944,
+          0.19909882590962688
+        ]
+      }
+    },
+    "paired_against_product": {
+      "ordinary7": {
+        "a_only": 48,
+        "b_only": 0,
+        "discordant": 48,
+        "two_sided_exact_p": 7.105427357601002e-15
+      },
+      "branch_only": {
+        "a_only": 52,
+        "b_only": 0,
+        "discordant": 52,
+        "two_sided_exact_p": 4.440892098500626e-16
+      },
+      "source_only": {
+        "a_only": 18,
+        "b_only": 0,
+        "discordant": 18,
+        "two_sided_exact_p": 7.62939453125e-06
+      },
+      "equal_budget_even": {
+        "a_only": 49,
+        "b_only": 0,
+        "discordant": 49,
+        "two_sided_exact_p": 3.552713678800501e-15
+      }
+    },
+    "equal_budget_random": {
+      "trials": 5400,
+      "hits": 582,
+      "proportion": 0.10777777777777778,
+      "unit": "family-seed trial"
+    }
+  },
+  "interpretation": "Exact paired tests and Wilson intervals describe the frozen constructed active-mutation families. They do not estimate prevalence, real-project recall, or independent field performance."
+}

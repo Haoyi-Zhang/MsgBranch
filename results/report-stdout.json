@@ -1,0 +1,21 @@
+{
+  "performance": {
+    "gettext_planning_total_ms": 108.03283,
+    "gettext_selected_execution_family_median_ms": 0.029675,
+    "gettext_selected_execution_family_range_ms": [
+      0.009184,
+      0.086831
+    ],
+    "fluent_full_traced_evaluation_ms": 273.1413,
+    "note": "Different instrumentation and protocols; not a cross-format speed comparison. Planning enumerates the full finite domain. Selected execution medians use seven repeats."
+  },
+  "coverage": {
+    "gettext_known_families": 23,
+    "gettext_unknown_families": 2,
+    "gettext_legitimate_equality_supported": 11,
+    "gettext_legitimate_equality_false_alarms": 3,
+    "gettext_known_representatives": 51,
+    "fluent_recorded_selected": 37,
+    "note": "Representative counts are not defect counts. Fluent reductions are post-execution trace grouping, not predictive generation."
+  }
+}

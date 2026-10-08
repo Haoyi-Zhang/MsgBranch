@@ -1,0 +1,28 @@
+# Message/header excerpt; not the complete upstream catalog.
+# Sphinx 5c0d0438c4b1f4e2277fd5d79fcd06e80bb65f20, sphinx/locale/ja/LC_MESSAGES/sphinx.po.
+# This file is distributed under the same license as the Sphinx project.
+# Catalog translators (upstream): shirou; Akitoshi Ohta; tomo; Hisahiro Ohmura;
+# Kouhei Sutou; sutefu7; Taizo Ito; Takayuki SHIMIZUKAWA; Takeshi KOMIYA; Yasushi Masuda.
+# Copyright (C) 2019 ORGANIZATION (upstream notice retained).
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx\n"
+"POT-Creation-Date: 2019-03-29 01:05+0900\n"
+"PO-Revision-Date: 2019-11-14 15:50+0000\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "succeeded"
+msgstr "成功"
+
+msgid "finished with problems"
+msgstr "完了（問題あり）"
+
+#, python-format
+msgid "build %s, %s warning."
+msgstr "ビルド %s, %s warning."
+
+#, python-format
+msgid "build %s."
+msgstr "ビルド %s."

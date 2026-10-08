@@ -1,0 +1,33 @@
+{
+  "boundary_runs": 201,
+  "native_method_comparisons": [
+    {
+      "n": 0,
+      "status": "match",
+      "output": "LOCAL TEST DIRECTORY\n0 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)"
+    },
+    {
+      "n": 1,
+      "status": "match",
+      "output": "LOCAL TEST DIRECTORY\n1 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)"
+    },
+    {
+      "n": 2,
+      "status": "match",
+      "output": "LOCAL TEST DIRECTORY\n2 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)"
+    },
+    {
+      "n": 100,
+      "status": "match",
+      "output": "LOCAL TEST DIRECTORY\n100 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)"
+    }
+  ],
+  "validated_defects": 0,
+  "full_catalog_babel_checks": [],
+  "count_branches": [
+    0,
+    1
+  ],
+  "binding": "explicit injected compiled catalog; not application locale discovery",
+  "split": "additional discovery/transfer control; not held out"
+}

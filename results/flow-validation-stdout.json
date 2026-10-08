@@ -1,0 +1,14 @@
+{
+  "controls": 25,
+  "known_controls": 23,
+  "unknown_controls": 2,
+  "runtime_executions": 4623,
+  "flow_exact": 25,
+  "direct_exact": 7,
+  "flow_known_exact": 23,
+  "direct_known_exact": 5,
+  "flow_false_positive_controls": 0,
+  "flow_false_negative_controls": 0,
+  "status": "pass",
+  "scope": "Trusted constructed controls only; validates static qualification against direct runtime, not field recall."
+}

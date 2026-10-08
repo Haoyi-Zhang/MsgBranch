@@ -1,0 +1,5458 @@
+[
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 0,
+    "status": "ok",
+    "output": "un jour",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 0,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "un jour",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 1,
+    "status": "ok",
+    "output": "un jour",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "un jour",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 2,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 3,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 4,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 5,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 6,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 7,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 8,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 9,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 10,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 11,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 12,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 13,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 14,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 15,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 16,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 17,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 18,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 19,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 20,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 21,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 22,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 23,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 24,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 25,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 26,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 27,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 28,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 29,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "med",
+    "n": 30,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 0,
+    "status": "ok",
+    "output": "un jour",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 0,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "un jour",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 1,
+    "status": "ok",
+    "output": "un jour",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "un jour",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 2,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 3,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 4,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 5,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 6,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 7,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 8,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 9,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 10,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 11,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 12,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 13,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 14,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 15,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 16,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 17,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 18,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 19,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 20,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 21,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 22,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 23,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 24,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 25,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 26,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 27,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 28,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 29,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "fr",
+    "field": "sep",
+    "n": 30,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 0,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 0,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 1,
+    "status": "ok",
+    "output": "één dag",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "één dag",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 2,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 3,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 4,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 5,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 6,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 7,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 8,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 9,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 10,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 11,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 12,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 13,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 14,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 15,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 16,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 17,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 18,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 19,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 20,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 21,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 22,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 23,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 24,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 25,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 26,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 27,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 28,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 29,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "med",
+    "n": 30,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 0,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 0,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 1,
+    "status": "ok",
+    "output": "één dag",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "één dag",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 2,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 3,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 4,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 5,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 6,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 7,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 8,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 9,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 10,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 11,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 12,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 13,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 14,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 15,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 16,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 17,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 18,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 19,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 20,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 21,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 22,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 23,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 24,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 25,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 26,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 27,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 28,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 29,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "field": "sep",
+    "n": 30,
+    "status": "error",
+    "output": null,
+    "error": "KeyError: 'threshold'",
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(threshold)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 0,
+    "status": "ok",
+    "output": "un jour",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 0,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "un jour",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 1,
+    "status": "ok",
+    "output": "un jour",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "un jour",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 2,
+    "status": "ok",
+    "output": "2 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 3,
+    "status": "ok",
+    "output": "3 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 4,
+    "status": "ok",
+    "output": "4 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 5,
+    "status": "ok",
+    "output": "5 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 6,
+    "status": "ok",
+    "output": "6 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 7,
+    "status": "ok",
+    "output": "7 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 8,
+    "status": "ok",
+    "output": "8 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 9,
+    "status": "ok",
+    "output": "9 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 10,
+    "status": "ok",
+    "output": "10 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 11,
+    "status": "ok",
+    "output": "11 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 12,
+    "status": "ok",
+    "output": "12 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 13,
+    "status": "ok",
+    "output": "13 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 14,
+    "status": "ok",
+    "output": "14 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 15,
+    "status": "ok",
+    "output": "15 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 16,
+    "status": "ok",
+    "output": "16 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 17,
+    "status": "ok",
+    "output": "17 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 18,
+    "status": "ok",
+    "output": "18 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 19,
+    "status": "ok",
+    "output": "19 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 20,
+    "status": "ok",
+    "output": "20 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 21,
+    "status": "ok",
+    "output": "21 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 22,
+    "status": "ok",
+    "output": "22 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 23,
+    "status": "ok",
+    "output": "23 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 24,
+    "status": "ok",
+    "output": "24 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 25,
+    "status": "ok",
+    "output": "25 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 26,
+    "status": "ok",
+    "output": "26 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 27,
+    "status": "ok",
+    "output": "27 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 28,
+    "status": "ok",
+    "output": "28 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 29,
+    "status": "ok",
+    "output": "29 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "med",
+    "n": 30,
+    "status": "ok",
+    "output": "30 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 0,
+    "status": "ok",
+    "output": "un jour",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 0,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "un jour",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 1,
+    "status": "ok",
+    "output": "un jour",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "un jour",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 2,
+    "status": "ok",
+    "output": "2 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 3,
+    "status": "ok",
+    "output": "3 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 4,
+    "status": "ok",
+    "output": "4 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 5,
+    "status": "ok",
+    "output": "5 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 6,
+    "status": "ok",
+    "output": "6 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 7,
+    "status": "ok",
+    "output": "7 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 8,
+    "status": "ok",
+    "output": "8 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 9,
+    "status": "ok",
+    "output": "9 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 10,
+    "status": "ok",
+    "output": "10 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 11,
+    "status": "ok",
+    "output": "11 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 12,
+    "status": "ok",
+    "output": "12 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 13,
+    "status": "ok",
+    "output": "13 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 14,
+    "status": "ok",
+    "output": "14 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 15,
+    "status": "ok",
+    "output": "15 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 16,
+    "status": "ok",
+    "output": "16 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 17,
+    "status": "ok",
+    "output": "17 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 18,
+    "status": "ok",
+    "output": "18 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 19,
+    "status": "ok",
+    "output": "19 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 20,
+    "status": "ok",
+    "output": "20 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 21,
+    "status": "ok",
+    "output": "21 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 22,
+    "status": "ok",
+    "output": "22 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 23,
+    "status": "ok",
+    "output": "23 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 24,
+    "status": "ok",
+    "output": "24 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 25,
+    "status": "ok",
+    "output": "25 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 26,
+    "status": "ok",
+    "output": "26 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 27,
+    "status": "ok",
+    "output": "27 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 28,
+    "status": "ok",
+    "output": "28 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 29,
+    "status": "ok",
+    "output": "29 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "field": "sep",
+    "n": 30,
+    "status": "ok",
+    "output": "30 jours",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s jours",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 0,
+    "status": "ok",
+    "output": "0 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 0,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 1,
+    "status": "ok",
+    "output": "één dag",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "één dag",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 2,
+    "status": "ok",
+    "output": "2 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 3,
+    "status": "ok",
+    "output": "3 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 4,
+    "status": "ok",
+    "output": "4 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 5,
+    "status": "ok",
+    "output": "5 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 6,
+    "status": "ok",
+    "output": "6 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 7,
+    "status": "ok",
+    "output": "7 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 8,
+    "status": "ok",
+    "output": "8 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 9,
+    "status": "ok",
+    "output": "9 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 10,
+    "status": "ok",
+    "output": "10 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 11,
+    "status": "ok",
+    "output": "11 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 12,
+    "status": "ok",
+    "output": "12 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 13,
+    "status": "ok",
+    "output": "13 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 14,
+    "status": "ok",
+    "output": "14 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 15,
+    "status": "ok",
+    "output": "15 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 16,
+    "status": "ok",
+    "output": "16 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 17,
+    "status": "ok",
+    "output": "17 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 18,
+    "status": "ok",
+    "output": "18 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 19,
+    "status": "ok",
+    "output": "19 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 20,
+    "status": "ok",
+    "output": "20 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 21,
+    "status": "ok",
+    "output": "21 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 22,
+    "status": "ok",
+    "output": "22 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 23,
+    "status": "ok",
+    "output": "23 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 24,
+    "status": "ok",
+    "output": "24 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 25,
+    "status": "ok",
+    "output": "25 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 26,
+    "status": "ok",
+    "output": "26 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 27,
+    "status": "ok",
+    "output": "27 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 28,
+    "status": "ok",
+    "output": "28 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 29,
+    "status": "ok",
+    "output": "29 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "med",
+    "n": 30,
+    "status": "ok",
+    "output": "30 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 0,
+    "status": "ok",
+    "output": "0 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 0,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 1,
+    "status": "ok",
+    "output": "één dag",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "één dag",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 2,
+    "status": "ok",
+    "output": "2 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 3,
+    "status": "ok",
+    "output": "3 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 4,
+    "status": "ok",
+    "output": "4 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 5,
+    "status": "ok",
+    "output": "5 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 6,
+    "status": "ok",
+    "output": "6 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 7,
+    "status": "ok",
+    "output": "7 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 8,
+    "status": "ok",
+    "output": "8 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 9,
+    "status": "ok",
+    "output": "9 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 10,
+    "status": "ok",
+    "output": "10 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 11,
+    "status": "ok",
+    "output": "11 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 12,
+    "status": "ok",
+    "output": "12 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 13,
+    "status": "ok",
+    "output": "13 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 14,
+    "status": "ok",
+    "output": "14 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 15,
+    "status": "ok",
+    "output": "15 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 16,
+    "status": "ok",
+    "output": "16 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 17,
+    "status": "ok",
+    "output": "17 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 18,
+    "status": "ok",
+    "output": "18 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 19,
+    "status": "ok",
+    "output": "19 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 20,
+    "status": "ok",
+    "output": "20 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 21,
+    "status": "ok",
+    "output": "21 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 22,
+    "status": "ok",
+    "output": "22 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 23,
+    "status": "ok",
+    "output": "23 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 24,
+    "status": "ok",
+    "output": "24 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 25,
+    "status": "ok",
+    "output": "25 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 26,
+    "status": "ok",
+    "output": "26 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 27,
+    "status": "ok",
+    "output": "27 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 28,
+    "status": "ok",
+    "output": "28 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 29,
+    "status": "ok",
+    "output": "29 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "field": "sep",
+    "n": 30,
+    "status": "ok",
+    "output": "30 dagen",
+    "error": null,
+    "native_adapter_equal": true,
+    "lookups": [
+      {
+        "method": "ngettext",
+        "singular": "one day",
+        "plural": "%(n)s days",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%(n)s dagen",
+        "context": null
+      }
+    ]
+  }
+]

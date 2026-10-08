@@ -1,0 +1,24 @@
+{
+  "control_cases": 25,
+  "field_slices": 6,
+  "call_catalog_findings": 47,
+  "clean": 28,
+  "errors": 14,
+  "unknown": 5,
+  "selected_patterns": 86,
+  "direct_clean": 13,
+  "direct_errors": 10,
+  "direct_unknown": 24,
+  "direct_selected_patterns": 84,
+  "flow_recovered_calls": 30,
+  "type_error_witnesses": 1,
+  "type_unknown_witnesses": 0,
+  "ablation": {
+    "unknown_to_clean": 15,
+    "unknown_to_error": 4,
+    "clean_to_unknown": 0,
+    "error_to_unknown": 0,
+    "other_changes": 0
+  },
+  "interpretation": "Errors are qualified call/catalog or explicit catalog-presence obligations; unknowns are retained for dynamic IDs, unresolved suppliers, unsupported syntax, or feasibility uncertainty. The direct/flow ablation measures classification changes on the same findings. Counts are findings, not independent defects."
+}

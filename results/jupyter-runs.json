@@ -1,0 +1,5630 @@
+[
+  {
+    "n": 0,
+    "output": "LOCAL TEST DIRECTORY\n0 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "0 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 0,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 1,
+    "output": "LOCAL TEST DIRECTORY\n1 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "1 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 1,
+        "branch": 0,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 2,
+    "output": "LOCAL TEST DIRECTORY\n2 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "2 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 2,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 3,
+    "output": "LOCAL TEST DIRECTORY\n3 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "3 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 3,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 4,
+    "output": "LOCAL TEST DIRECTORY\n4 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "4 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 4,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 5,
+    "output": "LOCAL TEST DIRECTORY\n5 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "5 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 5,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 6,
+    "output": "LOCAL TEST DIRECTORY\n6 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "6 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 6,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 7,
+    "output": "LOCAL TEST DIRECTORY\n7 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "7 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 7,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 8,
+    "output": "LOCAL TEST DIRECTORY\n8 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "8 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 8,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 9,
+    "output": "LOCAL TEST DIRECTORY\n9 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "9 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 9,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 10,
+    "output": "LOCAL TEST DIRECTORY\n10 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "10 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 10,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 11,
+    "output": "LOCAL TEST DIRECTORY\n11 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "11 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 11,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 12,
+    "output": "LOCAL TEST DIRECTORY\n12 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "12 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 12,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 13,
+    "output": "LOCAL TEST DIRECTORY\n13 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "13 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 13,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 14,
+    "output": "LOCAL TEST DIRECTORY\n14 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "14 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 14,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 15,
+    "output": "LOCAL TEST DIRECTORY\n15 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "15 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 15,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 16,
+    "output": "LOCAL TEST DIRECTORY\n16 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "16 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 16,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 17,
+    "output": "LOCAL TEST DIRECTORY\n17 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "17 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 17,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 18,
+    "output": "LOCAL TEST DIRECTORY\n18 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "18 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 18,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 19,
+    "output": "LOCAL TEST DIRECTORY\n19 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "19 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 19,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 20,
+    "output": "LOCAL TEST DIRECTORY\n20 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "20 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 20,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 21,
+    "output": "LOCAL TEST DIRECTORY\n21 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "21 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 21,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 22,
+    "output": "LOCAL TEST DIRECTORY\n22 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "22 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 22,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 23,
+    "output": "LOCAL TEST DIRECTORY\n23 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "23 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 23,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 24,
+    "output": "LOCAL TEST DIRECTORY\n24 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "24 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 24,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 25,
+    "output": "LOCAL TEST DIRECTORY\n25 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "25 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 25,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 26,
+    "output": "LOCAL TEST DIRECTORY\n26 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "26 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 26,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 27,
+    "output": "LOCAL TEST DIRECTORY\n27 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "27 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 27,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 28,
+    "output": "LOCAL TEST DIRECTORY\n28 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "28 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 28,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 29,
+    "output": "LOCAL TEST DIRECTORY\n29 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "29 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 29,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 30,
+    "output": "LOCAL TEST DIRECTORY\n30 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "30 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 30,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 31,
+    "output": "LOCAL TEST DIRECTORY\n31 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "31 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 31,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 32,
+    "output": "LOCAL TEST DIRECTORY\n32 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "32 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 32,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 33,
+    "output": "LOCAL TEST DIRECTORY\n33 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "33 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 33,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 34,
+    "output": "LOCAL TEST DIRECTORY\n34 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "34 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 34,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 35,
+    "output": "LOCAL TEST DIRECTORY\n35 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "35 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 35,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 36,
+    "output": "LOCAL TEST DIRECTORY\n36 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "36 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 36,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 37,
+    "output": "LOCAL TEST DIRECTORY\n37 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "37 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 37,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 38,
+    "output": "LOCAL TEST DIRECTORY\n38 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "38 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 38,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 39,
+    "output": "LOCAL TEST DIRECTORY\n39 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "39 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 39,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 40,
+    "output": "LOCAL TEST DIRECTORY\n40 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "40 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 40,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 41,
+    "output": "LOCAL TEST DIRECTORY\n41 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "41 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 41,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 42,
+    "output": "LOCAL TEST DIRECTORY\n42 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "42 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 42,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 43,
+    "output": "LOCAL TEST DIRECTORY\n43 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "43 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 43,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 44,
+    "output": "LOCAL TEST DIRECTORY\n44 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "44 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 44,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 45,
+    "output": "LOCAL TEST DIRECTORY\n45 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "45 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 45,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 46,
+    "output": "LOCAL TEST DIRECTORY\n46 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "46 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 46,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 47,
+    "output": "LOCAL TEST DIRECTORY\n47 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "47 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 47,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 48,
+    "output": "LOCAL TEST DIRECTORY\n48 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "48 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 48,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 49,
+    "output": "LOCAL TEST DIRECTORY\n49 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "49 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 49,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 50,
+    "output": "LOCAL TEST DIRECTORY\n50 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "50 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 50,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 51,
+    "output": "LOCAL TEST DIRECTORY\n51 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "51 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 51,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 52,
+    "output": "LOCAL TEST DIRECTORY\n52 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "52 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 52,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 53,
+    "output": "LOCAL TEST DIRECTORY\n53 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "53 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 53,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 54,
+    "output": "LOCAL TEST DIRECTORY\n54 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "54 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 54,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 55,
+    "output": "LOCAL TEST DIRECTORY\n55 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "55 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 55,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 56,
+    "output": "LOCAL TEST DIRECTORY\n56 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "56 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 56,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 57,
+    "output": "LOCAL TEST DIRECTORY\n57 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "57 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 57,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 58,
+    "output": "LOCAL TEST DIRECTORY\n58 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "58 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 58,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 59,
+    "output": "LOCAL TEST DIRECTORY\n59 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "59 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 59,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 60,
+    "output": "LOCAL TEST DIRECTORY\n60 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "60 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 60,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 61,
+    "output": "LOCAL TEST DIRECTORY\n61 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "61 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 61,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 62,
+    "output": "LOCAL TEST DIRECTORY\n62 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "62 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 62,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 63,
+    "output": "LOCAL TEST DIRECTORY\n63 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "63 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 63,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 64,
+    "output": "LOCAL TEST DIRECTORY\n64 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "64 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 64,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 65,
+    "output": "LOCAL TEST DIRECTORY\n65 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "65 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 65,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 66,
+    "output": "LOCAL TEST DIRECTORY\n66 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "66 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 66,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 67,
+    "output": "LOCAL TEST DIRECTORY\n67 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "67 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 67,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 68,
+    "output": "LOCAL TEST DIRECTORY\n68 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "68 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 68,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 69,
+    "output": "LOCAL TEST DIRECTORY\n69 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "69 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 69,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 70,
+    "output": "LOCAL TEST DIRECTORY\n70 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "70 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 70,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 71,
+    "output": "LOCAL TEST DIRECTORY\n71 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "71 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 71,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 72,
+    "output": "LOCAL TEST DIRECTORY\n72 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "72 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 72,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 73,
+    "output": "LOCAL TEST DIRECTORY\n73 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "73 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 73,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 74,
+    "output": "LOCAL TEST DIRECTORY\n74 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "74 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 74,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 75,
+    "output": "LOCAL TEST DIRECTORY\n75 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "75 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 75,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 76,
+    "output": "LOCAL TEST DIRECTORY\n76 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "76 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 76,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 77,
+    "output": "LOCAL TEST DIRECTORY\n77 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "77 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 77,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 78,
+    "output": "LOCAL TEST DIRECTORY\n78 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "78 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 78,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 79,
+    "output": "LOCAL TEST DIRECTORY\n79 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "79 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 79,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 80,
+    "output": "LOCAL TEST DIRECTORY\n80 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "80 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 80,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 81,
+    "output": "LOCAL TEST DIRECTORY\n81 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "81 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 81,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 82,
+    "output": "LOCAL TEST DIRECTORY\n82 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "82 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 82,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 83,
+    "output": "LOCAL TEST DIRECTORY\n83 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "83 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 83,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 84,
+    "output": "LOCAL TEST DIRECTORY\n84 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "84 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 84,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 85,
+    "output": "LOCAL TEST DIRECTORY\n85 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "85 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 85,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 86,
+    "output": "LOCAL TEST DIRECTORY\n86 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "86 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 86,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 87,
+    "output": "LOCAL TEST DIRECTORY\n87 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "87 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 87,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 88,
+    "output": "LOCAL TEST DIRECTORY\n88 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "88 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 88,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 89,
+    "output": "LOCAL TEST DIRECTORY\n89 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "89 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 89,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 90,
+    "output": "LOCAL TEST DIRECTORY\n90 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "90 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 90,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 91,
+    "output": "LOCAL TEST DIRECTORY\n91 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "91 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 91,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 92,
+    "output": "LOCAL TEST DIRECTORY\n92 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "92 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 92,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 93,
+    "output": "LOCAL TEST DIRECTORY\n93 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "93 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 93,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 94,
+    "output": "LOCAL TEST DIRECTORY\n94 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "94 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 94,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 95,
+    "output": "LOCAL TEST DIRECTORY\n95 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "95 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 95,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 96,
+    "output": "LOCAL TEST DIRECTORY\n96 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "96 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 96,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 97,
+    "output": "LOCAL TEST DIRECTORY\n97 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "97 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 97,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 98,
+    "output": "LOCAL TEST DIRECTORY\n98 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "98 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 98,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 99,
+    "output": "LOCAL TEST DIRECTORY\n99 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "99 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 99,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 100,
+    "output": "LOCAL TEST DIRECTORY\n100 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "100 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 100,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 101,
+    "output": "LOCAL TEST DIRECTORY\n101 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "101 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 101,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 102,
+    "output": "LOCAL TEST DIRECTORY\n102 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "102 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 102,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 103,
+    "output": "LOCAL TEST DIRECTORY\n103 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "103 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 103,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 104,
+    "output": "LOCAL TEST DIRECTORY\n104 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "104 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 104,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 105,
+    "output": "LOCAL TEST DIRECTORY\n105 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "105 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 105,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 106,
+    "output": "LOCAL TEST DIRECTORY\n106 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "106 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 106,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 107,
+    "output": "LOCAL TEST DIRECTORY\n107 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "107 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 107,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 108,
+    "output": "LOCAL TEST DIRECTORY\n108 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "108 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 108,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 109,
+    "output": "LOCAL TEST DIRECTORY\n109 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "109 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 109,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 110,
+    "output": "LOCAL TEST DIRECTORY\n110 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "110 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 110,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 111,
+    "output": "LOCAL TEST DIRECTORY\n111 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "111 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 111,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 112,
+    "output": "LOCAL TEST DIRECTORY\n112 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "112 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 112,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 113,
+    "output": "LOCAL TEST DIRECTORY\n113 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "113 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 113,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 114,
+    "output": "LOCAL TEST DIRECTORY\n114 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "114 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 114,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 115,
+    "output": "LOCAL TEST DIRECTORY\n115 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "115 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 115,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 116,
+    "output": "LOCAL TEST DIRECTORY\n116 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "116 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 116,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 117,
+    "output": "LOCAL TEST DIRECTORY\n117 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "117 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 117,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 118,
+    "output": "LOCAL TEST DIRECTORY\n118 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "118 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 118,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 119,
+    "output": "LOCAL TEST DIRECTORY\n119 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "119 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 119,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 120,
+    "output": "LOCAL TEST DIRECTORY\n120 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "120 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 120,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 121,
+    "output": "LOCAL TEST DIRECTORY\n121 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "121 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 121,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 122,
+    "output": "LOCAL TEST DIRECTORY\n122 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "122 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 122,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 123,
+    "output": "LOCAL TEST DIRECTORY\n123 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "123 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 123,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 124,
+    "output": "LOCAL TEST DIRECTORY\n124 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "124 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 124,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 125,
+    "output": "LOCAL TEST DIRECTORY\n125 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "125 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 125,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 126,
+    "output": "LOCAL TEST DIRECTORY\n126 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "126 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 126,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 127,
+    "output": "LOCAL TEST DIRECTORY\n127 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "127 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 127,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 128,
+    "output": "LOCAL TEST DIRECTORY\n128 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "128 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 128,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 129,
+    "output": "LOCAL TEST DIRECTORY\n129 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "129 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 129,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 130,
+    "output": "LOCAL TEST DIRECTORY\n130 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "130 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 130,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 131,
+    "output": "LOCAL TEST DIRECTORY\n131 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "131 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 131,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 132,
+    "output": "LOCAL TEST DIRECTORY\n132 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "132 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 132,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 133,
+    "output": "LOCAL TEST DIRECTORY\n133 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "133 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 133,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 134,
+    "output": "LOCAL TEST DIRECTORY\n134 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "134 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 134,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 135,
+    "output": "LOCAL TEST DIRECTORY\n135 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "135 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 135,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 136,
+    "output": "LOCAL TEST DIRECTORY\n136 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "136 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 136,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 137,
+    "output": "LOCAL TEST DIRECTORY\n137 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "137 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 137,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 138,
+    "output": "LOCAL TEST DIRECTORY\n138 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "138 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 138,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 139,
+    "output": "LOCAL TEST DIRECTORY\n139 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "139 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 139,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 140,
+    "output": "LOCAL TEST DIRECTORY\n140 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "140 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 140,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 141,
+    "output": "LOCAL TEST DIRECTORY\n141 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "141 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 141,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 142,
+    "output": "LOCAL TEST DIRECTORY\n142 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "142 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 142,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 143,
+    "output": "LOCAL TEST DIRECTORY\n143 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "143 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 143,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 144,
+    "output": "LOCAL TEST DIRECTORY\n144 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "144 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 144,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 145,
+    "output": "LOCAL TEST DIRECTORY\n145 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "145 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 145,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 146,
+    "output": "LOCAL TEST DIRECTORY\n146 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "146 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 146,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 147,
+    "output": "LOCAL TEST DIRECTORY\n147 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "147 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 147,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 148,
+    "output": "LOCAL TEST DIRECTORY\n148 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "148 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 148,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 149,
+    "output": "LOCAL TEST DIRECTORY\n149 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "149 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 149,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 150,
+    "output": "LOCAL TEST DIRECTORY\n150 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "150 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 150,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 151,
+    "output": "LOCAL TEST DIRECTORY\n151 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "151 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 151,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 152,
+    "output": "LOCAL TEST DIRECTORY\n152 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "152 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 152,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 153,
+    "output": "LOCAL TEST DIRECTORY\n153 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "153 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 153,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 154,
+    "output": "LOCAL TEST DIRECTORY\n154 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "154 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 154,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 155,
+    "output": "LOCAL TEST DIRECTORY\n155 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "155 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 155,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 156,
+    "output": "LOCAL TEST DIRECTORY\n156 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "156 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 156,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 157,
+    "output": "LOCAL TEST DIRECTORY\n157 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "157 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 157,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 158,
+    "output": "LOCAL TEST DIRECTORY\n158 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "158 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 158,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 159,
+    "output": "LOCAL TEST DIRECTORY\n159 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "159 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 159,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 160,
+    "output": "LOCAL TEST DIRECTORY\n160 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "160 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 160,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 161,
+    "output": "LOCAL TEST DIRECTORY\n161 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "161 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 161,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 162,
+    "output": "LOCAL TEST DIRECTORY\n162 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "162 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 162,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 163,
+    "output": "LOCAL TEST DIRECTORY\n163 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "163 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 163,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 164,
+    "output": "LOCAL TEST DIRECTORY\n164 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "164 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 164,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 165,
+    "output": "LOCAL TEST DIRECTORY\n165 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "165 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 165,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 166,
+    "output": "LOCAL TEST DIRECTORY\n166 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "166 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 166,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 167,
+    "output": "LOCAL TEST DIRECTORY\n167 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "167 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 167,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 168,
+    "output": "LOCAL TEST DIRECTORY\n168 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "168 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 168,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 169,
+    "output": "LOCAL TEST DIRECTORY\n169 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "169 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 169,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 170,
+    "output": "LOCAL TEST DIRECTORY\n170 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "170 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 170,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 171,
+    "output": "LOCAL TEST DIRECTORY\n171 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "171 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 171,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 172,
+    "output": "LOCAL TEST DIRECTORY\n172 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "172 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 172,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 173,
+    "output": "LOCAL TEST DIRECTORY\n173 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "173 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 173,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 174,
+    "output": "LOCAL TEST DIRECTORY\n174 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "174 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 174,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 175,
+    "output": "LOCAL TEST DIRECTORY\n175 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "175 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 175,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 176,
+    "output": "LOCAL TEST DIRECTORY\n176 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "176 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 176,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 177,
+    "output": "LOCAL TEST DIRECTORY\n177 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "177 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 177,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 178,
+    "output": "LOCAL TEST DIRECTORY\n178 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "178 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 178,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 179,
+    "output": "LOCAL TEST DIRECTORY\n179 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "179 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 179,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 180,
+    "output": "LOCAL TEST DIRECTORY\n180 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "180 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 180,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 181,
+    "output": "LOCAL TEST DIRECTORY\n181 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "181 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 181,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 182,
+    "output": "LOCAL TEST DIRECTORY\n182 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "182 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 182,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 183,
+    "output": "LOCAL TEST DIRECTORY\n183 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "183 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 183,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 184,
+    "output": "LOCAL TEST DIRECTORY\n184 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "184 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 184,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 185,
+    "output": "LOCAL TEST DIRECTORY\n185 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "185 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 185,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 186,
+    "output": "LOCAL TEST DIRECTORY\n186 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "186 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 186,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 187,
+    "output": "LOCAL TEST DIRECTORY\n187 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "187 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 187,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 188,
+    "output": "LOCAL TEST DIRECTORY\n188 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "188 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 188,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 189,
+    "output": "LOCAL TEST DIRECTORY\n189 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "189 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 189,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 190,
+    "output": "LOCAL TEST DIRECTORY\n190 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "190 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 190,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 191,
+    "output": "LOCAL TEST DIRECTORY\n191 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "191 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 191,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 192,
+    "output": "LOCAL TEST DIRECTORY\n192 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "192 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 192,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 193,
+    "output": "LOCAL TEST DIRECTORY\n193 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "193 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 193,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 194,
+    "output": "LOCAL TEST DIRECTORY\n194 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "194 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 194,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 195,
+    "output": "LOCAL TEST DIRECTORY\n195 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "195 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 195,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 196,
+    "output": "LOCAL TEST DIRECTORY\n196 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "196 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 196,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 197,
+    "output": "LOCAL TEST DIRECTORY\n197 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "197 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 197,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 198,
+    "output": "LOCAL TEST DIRECTORY\n198 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "198 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 198,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 199,
+    "output": "LOCAL TEST DIRECTORY\n199 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "199 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 199,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  },
+  {
+    "n": 200,
+    "output": "LOCAL TEST DIRECTORY\n200 活跃的服务\nJupyter Server 2.17.0 is running at:\nLOCAL TEST ENDPOINT (NOT OPENED)",
+    "expected_count_line": "200 活跃的服务",
+    "trace": [
+      {
+        "method": "ngettext",
+        "singular": "%d active kernel",
+        "plural": "%d active kernels",
+        "count": 200,
+        "branch": 1,
+        "resolution": "catalog",
+        "output": "%d 活跃的服务",
+        "context": null
+      },
+      {
+        "method": "gettext",
+        "singular": "Jupyter Server {version} is running at:\n{url}",
+        "plural": null,
+        "count": null,
+        "branch": null,
+        "resolution": "source-fallback",
+        "output": "Jupyter Server {version} is running at:\n{url}",
+        "context": null
+      }
+    ],
+    "oracle_failure": false
+  }
+]

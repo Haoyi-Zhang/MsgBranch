@@ -1,0 +1,17 @@
+{
+  "unit": "case-local lookup identity/index/resolution for gettext; case-local selector source span plus selected variant for Fluent",
+  "denominator": "units observed in the full declared input domain; unknown gettext families and exploratory Fluent contract probes excluded; branchless cases contribute zero Fluent selector units",
+  "totals": {
+    "gettext": {
+      "reachable": 49,
+      "ordinary": 40,
+      "selected": 49
+    },
+    "Fluent": {
+      "reachable": 24,
+      "ordinary": 15,
+      "selected": 24
+    }
+  },
+  "selection": "Fluent selected coverage is derived from post-execution trace grouping; not predictive reachability or reduced planning cost"
+}

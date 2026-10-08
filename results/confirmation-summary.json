@@ -1,0 +1,32 @@
+{
+  "families": 192,
+  "paired_designs": 96,
+  "legitimate": 96,
+  "mutations": 96,
+  "active_mutations": 54,
+  "inactive_mutations": 42,
+  "domain_size": 1001,
+  "native_reference_comparisons": 192192,
+  "exhaustive_signature_checks": 192192,
+  "reference_disagreements": 0,
+  "signature_disagreements": 0,
+  "active_mutation_detection": {
+    "ordinary2_detects": 3,
+    "ordinary7_detects": 6,
+    "branch_only_detects": 2,
+    "source_only_detects": 36,
+    "product_detects": 54,
+    "equal_budget_even_detects": 5,
+    "babel_alarm": 0
+  },
+  "random_expected_detections": 5.806892411098736,
+  "random_total_hits": 582,
+  "random_trials_per_family": 100,
+  "legitimate_runtime_alarms": 0,
+  "legitimate_babel_alarms": 0,
+  "planning_calls": 990,
+  "cell_evaluations": 42548,
+  "selected_executions": 894,
+  "median_planning_calls": 5.0,
+  "max_planning_calls": 9
+}

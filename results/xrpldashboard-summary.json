@@ -1,0 +1,9 @@
+{
+  "case": "xrpldashboard-e03829d5",
+  "native_boundary_executions": 8,
+  "before_failures": 4,
+  "after_failures": 0,
+  "ordinary_count_one_detects": true,
+  "unique_over_ordinary_count_one": 0,
+  "scope": "Exact changed Jinja expression with a Flask-Babel-compatible ngettext behavioral slice; not full Flask route/application execution."
+}

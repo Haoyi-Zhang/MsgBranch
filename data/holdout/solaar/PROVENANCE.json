@@ -1,0 +1,11 @@
+{
+  "project": "Solaar",
+  "repository": "https://github.com/pwr-Solaar/Solaar",
+  "commit": "e7304c4c451cc9bb4f206a914844525e67856a28",
+  "source_url": "https://github.com/pwr-Solaar/Solaar/blob/e7304c4c451cc9bb4f206a914844525e67856a28/lib/logitech_receiver/receiver.py",
+  "catalog_url": "https://github.com/pwr-Solaar/Solaar/blob/e7304c4c451cc9bb4f206a914844525e67856a28/po/da.po",
+  "license": "GPL-2.0-or-later for the retained source slice; repository metadata reports GPL-2.0",
+  "retrieved": "2026-10-08",
+  "transformation": "The exact zero guard, gettext/ngettext literals, count and mapping supplier were moved into a standalone message(n) function. The PO file retains only the exact Danish entries needed by the slice and the original plural rule.",
+  "role": "post-freeze independent-project holdout; not a historical defect"
+}

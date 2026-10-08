@@ -1,0 +1,17 @@
+{
+  "boundary_runs": 201,
+  "native_method_comparisons": [
+    {
+      "status": "unavailable",
+      "reason": "optional native package is not installed"
+    }
+  ],
+  "validated_defects": 0,
+  "full_catalog_babel_checks": [],
+  "count_branches": [
+    0,
+    1
+  ],
+  "binding": "explicit injected compiled catalog; not application locale discovery",
+  "split": "additional discovery/transfer control; not held out"
+}

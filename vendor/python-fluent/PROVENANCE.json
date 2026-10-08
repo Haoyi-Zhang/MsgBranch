@@ -1,0 +1,84 @@
+{
+  "repository": "projectfluent/python-fluent",
+  "commit": "e95b07ea07966dec064d09398a265222742bcfa2",
+  "license": "Apache-2.0",
+  "upstream_files": [
+    {
+      "local": "fluent/runtime/bundle.py",
+      "upstream": "fluent.runtime/fluent/runtime/bundle.py",
+      "git_blob_sha1": "92db7d82111f460528a2f1119b0d52d5070628bf",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.runtime/fluent/runtime/bundle.py"
+    },
+    {
+      "local": "fluent/runtime/prepare.py",
+      "upstream": "fluent.runtime/fluent/runtime/prepare.py",
+      "git_blob_sha1": "b14aea0b513e98bcf54bb210341e7ef762397a57",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.runtime/fluent/runtime/prepare.py"
+    },
+    {
+      "local": "fluent/runtime/resolver.py",
+      "upstream": "fluent.runtime/fluent/runtime/resolver.py",
+      "git_blob_sha1": "b42b14c3b0623f2939c2a092a78826109a70ce78",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.runtime/fluent/runtime/resolver.py"
+    },
+    {
+      "local": "fluent/runtime/types.py",
+      "upstream": "fluent.runtime/fluent/runtime/types.py",
+      "git_blob_sha1": "c671719446b3ac7bbb81721b3e528b6504986576",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.runtime/fluent/runtime/types.py"
+    },
+    {
+      "local": "fluent/syntax/ast.py",
+      "upstream": "fluent.syntax/fluent/syntax/ast.py",
+      "git_blob_sha1": "c13ee1c7505ad8d6fb1a6a29648f7dc58227055a",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.syntax/fluent/syntax/ast.py"
+    },
+    {
+      "local": "fluent/syntax/parser.py",
+      "upstream": "fluent.syntax/fluent/syntax/parser.py",
+      "git_blob_sha1": "5888c44877801a76a5026ac738ee1052ce80d111",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.syntax/fluent/syntax/parser.py"
+    },
+    {
+      "local": "fluent/runtime/utils.py",
+      "upstream": "fluent.runtime/fluent/runtime/utils.py",
+      "git_blob_sha1": "b9fa7bdd91eb81ca16fed9ae3a0c3b149dcfbada",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.runtime/fluent/runtime/utils.py"
+    },
+    {
+      "local": "fluent/syntax/errors.py",
+      "upstream": "fluent.syntax/fluent/syntax/errors.py",
+      "git_blob_sha1": "baa981136b7adada1c66dfb48b961e460b30c0aa",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.syntax/fluent/syntax/errors.py"
+    },
+    {
+      "local": "fluent/syntax/stream.py",
+      "upstream": "fluent.syntax/fluent/syntax/stream.py",
+      "git_blob_sha1": "2a485e2240ac5df12434c3ab725f7c2578fd7d9f",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.syntax/fluent/syntax/stream.py"
+    },
+    {
+      "local": "fluent/runtime/builtins.py",
+      "upstream": "fluent.runtime/fluent/runtime/builtins.py",
+      "git_blob_sha1": "6833c1720ae2e4bd9c0a3b94613f776593f44ede",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.runtime/fluent/runtime/builtins.py"
+    },
+    {
+      "local": "fluent/runtime/errors.py",
+      "upstream": "fluent.runtime/fluent/runtime/errors.py",
+      "git_blob_sha1": "eebbea0efcabcff2a81697f49590c1036b8b9f50",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.runtime/fluent/runtime/errors.py"
+    },
+    {
+      "local": "fluent/runtime/fallback.py",
+      "upstream": "fluent.runtime/fluent/runtime/fallback.py",
+      "git_blob_sha1": "178450dc59991110f78e04bf6246e65ad7bc993b",
+      "url": "https://raw.githubusercontent.com/projectfluent/python-fluent/e95b07ea07966dec064d09398a265222742bcfa2/fluent.runtime/fluent/runtime/fallback.py"
+    }
+  ],
+  "modifications": [
+    "fluent/syntax/__init__.py is a MsgBranch packaging shim exposing FluentParser and ast; optional serializer/visitor exports omitted. Runtime package uses namespace import.",
+    "Core parser, resolver, formatter and fallback files are byte-identical to the above Git blobs."
+  ],
+  "acquisition": "Source read from public GitHub connector, transferred into local workspace, verified against Git blob SHA-1. No published package or release identity is asserted."
+}

@@ -1,0 +1,27 @@
+{
+  "candidates": 20,
+  "unique_repair_groups": 17,
+  "executed_historical_repairs": 4,
+  "executed_detected_by_ordinary_1_2": 3,
+  "executed_detected_by_cheap_nonproduct": 4,
+  "executed_requiring_guard_product": 0,
+  "dispositions": {
+    "context-only": 1,
+    "deduplicated": 3,
+    "discovery-lead-only": 1,
+    "excluded-non-runtime-integration": 1,
+    "excluded-test-only": 1,
+    "excluded-type-stub": 1,
+    "included-historical": 4,
+    "prior-tool-baseline": 1,
+    "prior-tool-not-defect": 1,
+    "screened-not-counted": 6
+  },
+  "replay_scope": {
+    "sphinx-7282": "replayed",
+    "openhangar-930cef": "replayed",
+    "xrpldashboard-e03829": "behavioral-slice-replay",
+    "azm-build-326d0f": "behavioral-slice-replay"
+  },
+  "interpretation": "The screen broadens public maintenance evidence but establishes no incremental real-defect yield over cheap non-product checks. Unreplayed and development-stage leads are not counted as misses or defects."
+}

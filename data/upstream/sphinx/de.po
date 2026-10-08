@@ -1,0 +1,27 @@
+# Message/header excerpt; not the complete upstream catalog.
+# Sphinx 5c0d0438c4b1f4e2277fd5d79fcd06e80bb65f20, sphinx/locale/de/LC_MESSAGES/sphinx.po.
+# This file is distributed under the same license as the Sphinx project.
+# Catalog translators (upstream): Georg Brandl; Jean-François B.; Lukas Prokop; Michael Hierweck.
+# Copyright (C) 2019 ORGANIZATION (upstream notice retained).
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx\n"
+"POT-Creation-Date: 2019-03-29 01:05+0900\n"
+"PO-Revision-Date: 2019-11-14 15:35+0000\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "succeeded"
+msgstr "abgeschlossen"
+
+msgid "finished with problems"
+msgstr "mit Problemen beendet"
+
+#, python-format
+msgid "build %s, %s warning."
+msgstr ""
+
+#, python-format
+msgid "build %s."
+msgstr ""

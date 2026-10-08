@@ -1,0 +1,7 @@
+{
+  "executions": 24,
+  "repair_oracle_failures": 1,
+  "before_n1": "build 成功, 1 warning.",
+  "after_n1": "ビルド 成功, 1 warning.",
+  "babel_errors": 0
+}

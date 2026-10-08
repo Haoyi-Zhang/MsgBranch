@@ -1,0 +1,117 @@
+{
+  "controls": {
+    "default": {
+      "units": 25,
+      "alarms": 4,
+      "by_category": {
+        "legitimate": {
+          "units": 16,
+          "alarms": 2
+        },
+        "mutation": {
+          "units": 7,
+          "alarms": 2
+        },
+        "unknown": {
+          "units": 2,
+          "alarms": 0
+        }
+      }
+    },
+    "strict": {
+      "units": 25,
+      "alarms": 6,
+      "by_category": {
+        "legitimate": {
+          "units": 16,
+          "alarms": 4
+        },
+        "mutation": {
+          "units": 7,
+          "alarms": 2
+        },
+        "unknown": {
+          "units": 2,
+          "alarms": 0
+        }
+      }
+    }
+  },
+  "validation": {
+    "default": {
+      "units": 192,
+      "alarms": 162,
+      "by_category": {
+        "legitimate": {
+          "units": 96,
+          "alarms": 81
+        },
+        "mutation": {
+          "units": 96,
+          "alarms": 81
+        }
+      }
+    },
+    "strict": {
+      "units": 192,
+      "alarms": 176,
+      "by_category": {
+        "legitimate": {
+          "units": 96,
+          "alarms": 88
+        },
+        "mutation": {
+          "units": 96,
+          "alarms": 88
+        }
+      }
+    }
+  },
+  "confirmation": {
+    "default": {
+      "units": 192,
+      "alarms": 160,
+      "by_category": {
+        "legitimate": {
+          "units": 96,
+          "alarms": 80
+        },
+        "mutation": {
+          "units": 96,
+          "alarms": 80
+        }
+      }
+    },
+    "strict": {
+      "units": 192,
+      "alarms": 176,
+      "by_category": {
+        "legitimate": {
+          "units": 96,
+          "alarms": 88
+        },
+        "mutation": {
+          "units": 96,
+          "alarms": 88
+        }
+      }
+    }
+  },
+  "openhangar": {
+    "default": {
+      "units": 4,
+      "alarms": 0,
+      "by_category": {
+        "after": {
+          "units": 2,
+          "alarms": 0
+        },
+        "before": {
+          "units": 2,
+          "alarms": 0
+        }
+      }
+    }
+  },
+  "scope": "Weblate 5.13 Python percent/brace format comparison and plural-example source excerpts, with explicit fixture wiring; not full Weblate deployment or all checks."
+}

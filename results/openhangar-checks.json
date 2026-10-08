@@ -1,0 +1,220 @@
+[
+  {
+    "version": "before",
+    "locale": "fr",
+    "babel_checks": [],
+    "plural_source_conflict": true,
+    "plan": {
+      "domain": [
+        0,
+        30
+      ],
+      "period": 1,
+      "cuts": [
+        0,
+        1,
+        2,
+        31
+      ],
+      "cells": [
+        {
+          "low": 0,
+          "high": 0,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 0
+        },
+        {
+          "low": 1,
+          "high": 1,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 1
+        },
+        {
+          "low": 2,
+          "high": 30,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 2
+        }
+      ],
+      "representatives": [
+        0,
+        2
+      ],
+      "unknown": [],
+      "planning_calls": 3,
+      "cell_evaluations": 3,
+      "coalesced_witnesses": [
+        0,
+        1,
+        2
+      ],
+      "guarantee": "admitted predicate-vector coverage; not arbitrary output equivalence"
+    }
+  },
+  {
+    "version": "before",
+    "locale": "nl",
+    "babel_checks": [],
+    "plural_source_conflict": true,
+    "plan": {
+      "domain": [
+        0,
+        30
+      ],
+      "period": 1,
+      "cuts": [
+        0,
+        1,
+        2,
+        31
+      ],
+      "cells": [
+        {
+          "low": 0,
+          "high": 0,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 0
+        },
+        {
+          "low": 1,
+          "high": 1,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 1
+        },
+        {
+          "low": 2,
+          "high": 30,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 2
+        }
+      ],
+      "representatives": [
+        0,
+        1
+      ],
+      "unknown": [],
+      "planning_calls": 2,
+      "cell_evaluations": 3,
+      "coalesced_witnesses": [
+        0,
+        1
+      ],
+      "guarantee": "admitted predicate-vector coverage; not arbitrary output equivalence"
+    }
+  },
+  {
+    "version": "after",
+    "locale": "fr",
+    "babel_checks": [],
+    "plural_source_conflict": false,
+    "plan": {
+      "domain": [
+        0,
+        30
+      ],
+      "period": 1,
+      "cuts": [
+        0,
+        1,
+        2,
+        31
+      ],
+      "cells": [
+        {
+          "low": 0,
+          "high": 0,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 0
+        },
+        {
+          "low": 1,
+          "high": 1,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 1
+        },
+        {
+          "low": 2,
+          "high": 30,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 2
+        }
+      ],
+      "representatives": [
+        0,
+        2
+      ],
+      "unknown": [],
+      "planning_calls": 3,
+      "cell_evaluations": 3,
+      "coalesced_witnesses": [
+        0,
+        1,
+        2
+      ],
+      "guarantee": "admitted predicate-vector coverage; not arbitrary output equivalence"
+    }
+  },
+  {
+    "version": "after",
+    "locale": "nl",
+    "babel_checks": [],
+    "plural_source_conflict": false,
+    "plan": {
+      "domain": [
+        0,
+        30
+      ],
+      "period": 1,
+      "cuts": [
+        0,
+        1,
+        2,
+        31
+      ],
+      "cells": [
+        {
+          "low": 0,
+          "high": 0,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 0
+        },
+        {
+          "low": 1,
+          "high": 1,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 1
+        },
+        {
+          "low": 2,
+          "high": 30,
+          "modulus": 1,
+          "residue": 0,
+          "witness": 2
+        }
+      ],
+      "representatives": [
+        0,
+        1
+      ],
+      "unknown": [],
+      "planning_calls": 2,
+      "cell_evaluations": 3,
+      "coalesced_witnesses": [
+        0,
+        1
+      ],
+      "guarantee": "admitted predicate-vector coverage; not arbitrary output equivalence"
+    }
+  }
+]

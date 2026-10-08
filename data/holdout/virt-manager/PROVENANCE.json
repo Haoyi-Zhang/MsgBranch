@@ -1,0 +1,11 @@
+{
+  "project": "virt-manager",
+  "repository": "https://github.com/virt-manager/virt-manager",
+  "commit": "bac5379d085219457a39c5e7c2a5855919d58ef8",
+  "source_url": "https://github.com/virt-manager/virt-manager/blob/bac5379d085219457a39c5e7c2a5855919d58ef8/virtinst/virtinstall.py",
+  "catalog_url": "https://github.com/virt-manager/virt-manager/blob/bac5379d085219457a39c5e7c2a5855919d58ef8/po/et.po",
+  "license": "GPL-2.0",
+  "retrieved": "2026-10-08",
+  "transformation": "The exact ngettext literals and percent mapping are moved into message(n); self._wait_mins is renamed n. The PO file retains only the exact Estonian plural entry and original plural rule.",
+  "role": "post-freeze independent-project holdout; not a historical defect"
+}

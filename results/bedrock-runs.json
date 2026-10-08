@@ -1,0 +1,271 @@
+[
+  {
+    "locales": [
+      "de",
+      "en"
+    ],
+    "message_id": "fluent-title",
+    "kwargs": {},
+    "expected": "Title in German",
+    "direct": "Title in German",
+    "observed": "Title in German",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "output": "Title in German",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "id": "fluent-title",
+          "present": true
+        }
+      ],
+      "needed_external": []
+    }
+  },
+  {
+    "locales": [
+      "de",
+      "en"
+    ],
+    "message_id": "fluent-page-desc",
+    "kwargs": {
+      "lang": "Dudeish"
+    },
+    "expected": "Description in Dudeish",
+    "direct": "Description in Dudeish",
+    "observed": "Description in Dudeish",
+    "trace": {
+      "branches": [],
+      "reads": [
+        {
+          "name": "lang",
+          "present": true,
+          "scope": "external",
+          "type": "str"
+        }
+      ],
+      "formats": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "output": "Description in Dudeish",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "id": "fluent-page-desc",
+          "present": true
+        }
+      ],
+      "needed_external": [
+        "lang"
+      ]
+    }
+  },
+  {
+    "locales": [
+      "de",
+      "en"
+    ],
+    "message_id": "brand-new-string",
+    "kwargs": {},
+    "expected": "New string not yet available in all languages",
+    "direct": "New string not yet available in all languages",
+    "observed": "New string not yet available in all languages",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [
+        {
+          "locales": [
+            "en"
+          ],
+          "output": "New string not yet available in all languages",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "id": "brand-new-string",
+          "present": false
+        },
+        {
+          "locales": [
+            "en"
+          ],
+          "id": "brand-new-string",
+          "present": true
+        }
+      ],
+      "needed_external": []
+    }
+  },
+  {
+    "locales": [
+      "de",
+      "en"
+    ],
+    "message_id": "brand-new-string",
+    "kwargs": {
+      "fallback": "fluent-title"
+    },
+    "expected": "Title in German",
+    "direct": "Title in German",
+    "observed": "Title in German",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "output": "Title in German",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "id": "fluent-title",
+          "present": true
+        }
+      ],
+      "needed_external": []
+    }
+  },
+  {
+    "locales": [
+      "en-US",
+      "en"
+    ],
+    "message_id": "fluent-brand",
+    "kwargs": {},
+    "expected": "English Fluent",
+    "direct": "English Fluent",
+    "observed": "English Fluent",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [
+        {
+          "locales": [
+            "en"
+          ],
+          "output": "English Fluent",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "en"
+          ],
+          "id": "fluent-brand",
+          "present": true
+        }
+      ],
+      "needed_external": []
+    }
+  },
+  {
+    "locales": [
+      "de",
+      "en"
+    ],
+    "message_id": "fluent-brand",
+    "kwargs": {},
+    "expected": "German Fluent",
+    "direct": "German Fluent",
+    "observed": "German Fluent",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "output": "German Fluent",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "de",
+            "en"
+          ],
+          "id": "fluent-brand",
+          "present": true
+        }
+      ],
+      "needed_external": []
+    }
+  },
+  {
+    "locales": [
+      "fr",
+      "en"
+    ],
+    "message_id": "fluent-brand",
+    "kwargs": {},
+    "expected": "French Couramment",
+    "direct": "French Couramment",
+    "observed": "French Couramment",
+    "trace": {
+      "branches": [],
+      "reads": [],
+      "formats": [
+        {
+          "locales": [
+            "fr",
+            "en"
+          ],
+          "output": "French Couramment",
+          "errors": []
+        }
+      ],
+      "lookups": [
+        {
+          "locales": [
+            "fr",
+            "en"
+          ],
+          "id": "fluent-brand",
+          "present": true
+        }
+      ],
+      "needed_external": []
+    }
+  }
+]

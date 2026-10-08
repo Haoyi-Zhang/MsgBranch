@@ -1,0 +1,35 @@
+{
+  "repository": "WeblateOrg/weblate",
+  "ref": "weblate-5.13",
+  "scope": "Manually transferred method/regex excerpts in a minimal fixture harness, not the Weblate app or whole upstream test suite.",
+  "upstream_sources": [
+    {
+      "path": "weblate/checks/format.py",
+      "blob_sha1": "898f729ca97c4e50fc62104eacdac646476aab88",
+      "ranges": [
+        "30-45 Python percent regex",
+        "111-155 Python brace regex",
+        "248-404 helpers and first part of generator",
+        "405-730 comparison/generator and Python check classes"
+      ]
+    },
+    {
+      "path": "weblate/lang/models.py",
+      "blob_sha1": "84153dd4cdb2d35937a833b4b6710c2450c0eec0",
+      "ranges": [
+        "1083-1101 Plural.examples"
+      ]
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "local_sha256": "fb040882d039d9306c942242cc7fdf8b4c434b85f296709c4bb65cc6f488c5d8",
+  "verification": "Retained comparison/generator logic and regexes inspected against connector source; upstream whole-file Git identity is not asserted for these excerpts. Regression vectors validate the harness, not full-deployment equivalence.",
+  "modifications": [
+    "Removed UI/ORM base class, descriptions, registration and unrelated checks",
+    "Specialized Python percent flag wiring; only explicitly flagged units admitted",
+    "Replaced SimpleLazyObject with immediate materialization",
+    "Plural examples use same native c2py and sampled range; cached by formula",
+    "Removed annotations/comments in some retained method bodies"
+  ],
+  "retrieved": "2026-09-30"
+}

@@ -1,0 +1,27 @@
+# French translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-07-05 20:57+0000\n"
+"PO-Revision-Date: 2026-05-09 17:09+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: app/services/notification_service.py:972 app/templates/dashboard.html:278
+#: app/templates/dashboard.html:296 app/templates/pilots/profile.html:130
+#, python-format
+msgid "one day"
+msgid_plural "%(threshold)s days"
+msgstr[0] "un jour"
+msgstr[1] "%(threshold)s jours"

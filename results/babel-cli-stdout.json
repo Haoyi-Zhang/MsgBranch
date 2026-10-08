@@ -1,0 +1,9 @@
+{
+  "catalogs": 27,
+  "cli_success": 27,
+  "cli_failures": 0,
+  "byte_equal": 27,
+  "functional_equal": 27,
+  "format_mismatch_rejected": true,
+  "invalid_encoding_rejected": true
+}

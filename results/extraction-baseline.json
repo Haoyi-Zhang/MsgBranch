@@ -1,0 +1,216 @@
+[
+  {
+    "revision": "before",
+    "configuration": "historical_keyword_configuration",
+    "extracted": [
+      [
+        5,
+        "succeeded",
+        [],
+        null
+      ],
+      [
+        5,
+        "finished with problems",
+        [],
+        null
+      ],
+      [
+        8,
+        "build %s, %s warning (with warnings treated as errors).",
+        [],
+        null
+      ],
+      [
+        12,
+        "build %s, %s warning.",
+        [],
+        null
+      ],
+      [
+        17,
+        "build %s.",
+        [],
+        null
+      ]
+    ]
+  },
+  {
+    "revision": "before",
+    "configuration": "arity_aware_current_Babel",
+    "extracted": [
+      [
+        5,
+        "succeeded",
+        [],
+        null
+      ],
+      [
+        5,
+        "finished with problems",
+        [],
+        null
+      ],
+      [
+        8,
+        [
+          "build %s, %s warning (with warnings treated as errors).",
+          "build %s, %s warnings (with warnings treated as errors)."
+        ],
+        [],
+        null
+      ],
+      [
+        12,
+        [
+          "build %s, %s warning.",
+          "build %s, %s warnings."
+        ],
+        [],
+        null
+      ],
+      [
+        17,
+        "build %s.",
+        [],
+        null
+      ]
+    ]
+  },
+  {
+    "revision": "before",
+    "locale": "ja",
+    "configuration": "lookup-kind",
+    "conflicts": [
+      {
+        "line": 12,
+        "key": "build %s, %s warning.",
+        "status": "nonplural-entry-at-plural-call",
+        "translated_value_present": true,
+        "alarm": true
+      }
+    ]
+  },
+  {
+    "revision": "before",
+    "locale": "de",
+    "configuration": "lookup-kind",
+    "conflicts": [
+      {
+        "line": 12,
+        "key": "build %s, %s warning.",
+        "status": "nonplural-entry-at-plural-call",
+        "translated_value_present": false,
+        "alarm": false
+      }
+    ]
+  },
+  {
+    "revision": "after",
+    "configuration": "historical_keyword_configuration",
+    "extracted": [
+      [
+        5,
+        "succeeded",
+        [],
+        null
+      ],
+      [
+        5,
+        "finished with problems",
+        [],
+        null
+      ],
+      [
+        9,
+        "build %s, %s warning (with warnings treated as errors).",
+        [],
+        null
+      ],
+      [
+        11,
+        "build %s, %s warnings (with warnings treated as errors).",
+        [],
+        null
+      ],
+      [
+        14,
+        "build %s, %s warning.",
+        [],
+        null
+      ],
+      [
+        16,
+        "build %s, %s warnings.",
+        [],
+        null
+      ],
+      [
+        19,
+        "build %s.",
+        [],
+        null
+      ]
+    ]
+  },
+  {
+    "revision": "after",
+    "configuration": "arity_aware_current_Babel",
+    "extracted": [
+      [
+        5,
+        "succeeded",
+        [],
+        null
+      ],
+      [
+        5,
+        "finished with problems",
+        [],
+        null
+      ],
+      [
+        9,
+        "build %s, %s warning (with warnings treated as errors).",
+        [],
+        null
+      ],
+      [
+        11,
+        "build %s, %s warnings (with warnings treated as errors).",
+        [],
+        null
+      ],
+      [
+        14,
+        "build %s, %s warning.",
+        [],
+        null
+      ],
+      [
+        16,
+        "build %s, %s warnings.",
+        [],
+        null
+      ],
+      [
+        19,
+        "build %s.",
+        [],
+        null
+      ]
+    ]
+  },
+  {
+    "revision": "after",
+    "locale": "ja",
+    "configuration": "lookup-kind",
+    "conflicts": []
+  },
+  {
+    "revision": "after",
+    "locale": "de",
+    "configuration": "lookup-kind",
+    "conflicts": []
+  }
+]
