@@ -55,11 +55,11 @@ Primitive percent tuples require exact positional arity; unused mapping keys rem
 
 The analyzer is validated in three complementary ways.
 
-The figures below describe the retained study records. They are not a regeneration for every later analyzer revision; the current unit suite reports its own count and includes separate owned semantic and CI-guard regressions.
+The project-audit and external-regression figures below are evaluated with the distributed analyzer. The generated studies and timing campaigns describe their retained records. All 204 current unit tests pass in the local suite; that suite is separate from a full study regeneration.
 
 1. **Trusted controls.** Twenty-five constructed families cover legal reordering, branch-specific omission, contexts, nested fields, percent characters, type mismatch, count-dependent suppliers, and two intentionally unsupported cases. Across 4,623 direct reference executions, flow qualification matches all 25 control classifications with zero known false positives or false negatives. The direct-syntax ablation matches 7/25.
-2. **Same-finding ablation.** On 25 controls plus six field slices, both analyzers inspect the same 47 call/catalog findings. Direct syntax yields 13 clean, 10 error, and 24 unknown findings. Bounded flow recovery yields 28 clean, 14 error, and 5 unknown findings: 15 unknown-to-clean and 4 unknown-to-error changes, with no clean/error regression to unknown.
-3. **External regressions.** A Danish Solaar receiver boundary and an Estonian virt-manager installation-wait boundary contribute three clean call/catalog findings and ten agreeing native executions. These are known regression cases for the current analyzer, not a blind holdout or whole-project recall measurement.
+2. **Same-finding ablation.** On 25 controls plus six field slices, both analyzers inspect the same 47 call/catalog findings. Direct syntax yields 7 clean, 10 error, and 30 unknown findings. Bounded flow yields 23 clean, 9 error, and 15 unknown findings: 20 unknown-to-clean and 4 unknown-to-error changes, while 4 clean and 5 error findings become unknown because Sphinx object-state reachability is unresolved. Those changes do not establish runtime failures.
+3. **External regressions.** A Danish Solaar receiver boundary and an Estonian virt-manager installation-wait boundary contribute two clean call/catalog findings, one unresolved singular-call reachability finding, and ten native executions matching the boundary oracle. These are known regressions, not a blind holdout or whole-project recall measurement. `holdout_evaluate.py --mode frozen-source` separately requires the unchanged historical analyzer identity; the default current-regression mode preserves that identity record without claiming to match it.
 
 ## Evidence inventory
 
@@ -71,8 +71,8 @@ The figures below describe the retained study records. They are not a regenerati
 | AZM CRM repair | Missing MO resolves English source; compiled MO resolves Arabic | One artifact-delivery repair; artifact presence plus a runtime smoke test detects it |
 | Public repair screen | 20 leads, 17 repair groups, four executable repairs | Frozen post-discovery ledger, not prevalence evidence |
 | Trusted analyzer controls | 25/25 flow classifications exact; 7/25 direct | 4,623 direct executions; two unsupported cases remain unknown by construction |
-| Project ablation | 47 findings: direct 13/10/24 vs flow 28/14/5 clean/error/unknown | Same findings and catalogs; 19 unknowns resolved without category regression |
-| External regressions | 2 projects, 3 clean findings, 10 error-free executions | Independent adapted boundaries; no claim of exhaustive project coverage |
+| Project ablation | 47 findings: direct 7/10/30 vs flow 23/9/15 clean/error/unknown | 24 direct unknowns resolved; 9 additional reachability unknowns retained |
+| External regressions | 2 projects, 2 clean findings, 1 unknown, 10 matching executions | Known adapted boundaries; no claim of exhaustive project coverage |
 | Babel CLI | 227/227 MO/runtime outputs match; 225 accepted and 2 diagnosed format errors | Actual `pybabel compile`, plus format and encoding negative controls |
 | Generated validation study | 52/52 active constructed mutations detected by product planning | 192 paired families; sensitivity analysis, not field-defect recall |
 | Generated confirmation study | 54/54 active constructed mutations detected by product planning | Independently seeded paired study; same scope as above |

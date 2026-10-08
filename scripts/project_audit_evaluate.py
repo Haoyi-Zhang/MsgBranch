@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import argparse
 import json
 
 if __package__:
@@ -50,6 +51,7 @@ def one(source: Path, catalogs: list[Path], **kwargs) -> dict:
         "direct_summary": direct["summary"],
         "ablation": _status_changes(direct, flow),
         "findings": flow["findings"],
+        "direct_findings": direct["findings"],
     }
 
 
@@ -128,6 +130,7 @@ def evaluate() -> dict:
     all_rows = controls + field
     ablation_keys = tuple(all_rows[0]["ablation"]) if all_rows else ()
     summary = {
+        "evaluation_mode": "current-source",
         "control_cases": len(controls),
         "field_slices": len(field),
         "call_catalog_findings": sum(row["summary"]["findings"] for row in all_rows),
@@ -150,15 +153,19 @@ def evaluate() -> dict:
         "interpretation": (
             "Errors are qualified call/catalog or explicit catalog-presence obligations; unknowns are retained for "
             "dynamic IDs, unresolved suppliers, unsupported syntax, or feasibility uncertainty. The direct/flow "
-            "ablation measures classification changes on the same findings. Counts are findings, not independent defects."
+            "ablation measures classification changes on the same findings, including conservative tightening to unknown. "
+            "A change to unknown is not an established runtime failure. Counts are findings, not independent defects."
         ),
     }
     return {"summary": summary, "controls": controls, "field_slices": field}
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--out", type=Path, default=ROOT / "results/project-audit.json")
+    args = parser.parse_args()
     result = evaluate()
-    (ROOT / "results/project-audit.json").write_text(
+    args.out.write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(json.dumps(result["summary"], ensure_ascii=False, indent=2))

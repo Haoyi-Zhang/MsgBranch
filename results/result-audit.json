@@ -31,6 +31,22 @@
   "project_audit_findings_recounted": 47,
   "holdout_findings_recounted": 3,
   "holdout_runtime_executions_recounted": 10,
+  "holdout_accounting": {
+    "evaluation_mode": "current-regression",
+    "findings": 3,
+    "runtime_executions": 10
+  },
+  "project_qualification_accounting": {
+    "findings": 47,
+    "transitions": {
+      "unknown_to_clean": 20,
+      "unknown_to_error": 4,
+      "clean_to_unknown": 4,
+      "error_to_unknown": 5,
+      "other_changes": 0
+    },
+    "current_direct_records_recounted": true
+  },
   "project_scaling_records_recounted": 8,
   "azm_build_boundary_recounted": true,
   "scope": "Independent result accounting and selected/raw consistency; not an independent implementation or proof of correctness"

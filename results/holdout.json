@@ -2,16 +2,20 @@
   "summary": {
     "projects": 2,
     "call_catalog_findings": 3,
-    "clean": 3,
+    "clean": 2,
     "errors": 0,
-    "unknown": 0,
+    "unknown": 1,
     "runtime_executions": 10,
     "runtime_errors": 0,
-    "analyzer_hashes_match_freeze": true,
+    "analyzer_hashes_match_freeze": false,
+    "evaluation_mode": "current-regression",
+    "qualification_status": "unknown",
     "status": "pass",
-    "scope": "Two retained external-project adapted boundaries, not a blind holdout of this implementation; validates local applicability and absence of alarms on these calls, not whole-project recall or linguistic quality."
+    "status_semantics": "Regression contract and native boundary-oracle checks; pass does not mean all findings are clean.",
+    "scope": "Two retained external-project adapted boundaries, not a blind holdout of this implementation; validates local applicability with explicit residual unknowns, not whole-project recall or linguistic quality."
   },
   "freeze": {
+    "frozen_on": "2026-10-08",
     "expected": {
       "src/msgbranch/project.py": "66f901a29f2332bb571b948b4f5edc2d3a74f2365c5785d170031ddee8c8f1b9",
       "src/msgbranch/runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73",
@@ -19,49 +23,77 @@
       "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
     },
     "actual": {
-      "src/msgbranch/project.py": "66f901a29f2332bb571b948b4f5edc2d3a74f2365c5785d170031ddee8c8f1b9",
+      "src/msgbranch/project.py": "ce55d9913f08bb9d88e2316b90fb03b129ab7fecd5fb92a3f9db277a6a96bb39",
       "src/msgbranch/runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73",
       "src/msgbranch/program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
       "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
     }
   },
+  "selection": {
+    "repositories": [
+      "pwr-Solaar/Solaar",
+      "virt-manager/virt-manager"
+    ],
+    "rule": "Retain the two external-project adapted call boundaries as regression inputs at their immutable source commits. They are not a blind holdout of the current implementation.",
+    "unit": "one adapted call-site boundary plus its exact message entry; this is not a whole-project audit",
+    "counts": [
+      0,
+      1,
+      2,
+      5,
+      100
+    ]
+  },
+  "interpretation": "These known external-project cases check local applicability and false alarms; they do not establish blind generalization or population recall.",
+  "checks": {
+    "declared_counts_match": true,
+    "current_boundary_contract": true,
+    "native_boundary_oracle": true
+  },
   "records": [
     {
       "case": "solaar",
-      "source": "data\\holdout\\solaar\\call.py",
-      "catalog": "data\\holdout\\solaar\\messages.po",
+      "source": "data/holdout/solaar/call.py",
+      "catalog": "data/holdout/solaar/messages.po",
+      "source_identity": {
+        "repository": "https://github.com/pwr-Solaar/Solaar",
+        "commit": "e7304c4c451cc9bb4f206a914844525e67856a28",
+        "source_sha256": "ab6dbf46e7ea53d20dd0a34b410c95d7f0a95806aeb0d7570ba4aa134335b36c",
+        "catalog_sha256": "551a18a53f183a238507b8c9e33159935ae9e5a467a26fd4326a8b3c86e56694",
+        "provenance_sha256": "261ec01b1cb481ef3b3ed3df8048975b9c68332f9c5221d54bfecd8c3bb1aa8a"
+      },
       "flow_summary": {
-        "source_root": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\new_three\\experiments\\msgbranch-8da52042\\artifact\\data\\holdout\\solaar\\call.py",
+        "source_root": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 2,
         "literal_calls": 2,
         "catalogs": 1,
         "findings": 2,
-        "clean": 2,
+        "clean": 1,
         "errors": 0,
-        "unknown": 0,
+        "unknown": 1,
         "selected_patterns": 3,
         "runtime_observations": 102,
         "unique_runtime_lookup_sets": 2,
         "runtime_lookup_cache_hits": 0,
-        "flow_models": 1,
-        "flow_recovered_calls": 1,
-        "flow_resolved_witnesses": 2,
+        "flow_models": 3,
+        "flow_recovered_calls": 2,
+        "flow_resolved_witnesses": 3,
         "type_error_witnesses": 0,
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\new_three\\experiments\\msgbranch-8da52042\\artifact\\data\\holdout\\solaar\\call.py",
+        "source_root": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 2,
         "literal_calls": 2,
         "catalogs": 1,
         "findings": 2,
-        "clean": 2,
+        "clean": 1,
         "errors": 0,
-        "unknown": 0,
+        "unknown": 1,
         "selected_patterns": 3,
         "runtime_observations": 102,
         "unique_runtime_lookup_sets": 2,
@@ -70,13 +102,661 @@
         "flow_recovered_calls": 0,
         "flow_resolved_witnesses": 0,
         "type_error_witnesses": 0,
-        "type_unknown_witnesses": 0
+        "type_unknown_witnesses": 2
       },
+      "findings": [
+        {
+          "call": {
+            "path": "call.py",
+            "line": 5,
+            "column": 8,
+            "callee": "gettext",
+            "kind": "singular",
+            "singular": "No paired devices.",
+            "plural": null,
+            "supplier": {
+              "status": "none",
+              "mode": "none",
+              "names": [],
+              "positional": 0,
+              "reason": null,
+              "named_types": [],
+              "positional_types": []
+            },
+            "status": "literal",
+            "reason": null,
+            "context": null
+          },
+          "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\messages.po",
+          "babel_checks": [],
+          "witnesses": [
+            {
+              "count": null,
+              "pattern": "Ingen forbundne enheder.",
+              "lookup": {
+                "method": "gettext",
+                "singular": "No paired devices.",
+                "plural": null,
+                "count": null,
+                "branch": null,
+                "resolution": "catalog",
+                "output": "Ingen forbundne enheder.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "none",
+                  "names": [],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "unknown",
+                  "mode": "none",
+                  "names": [],
+                  "positional": 0,
+                  "reason": "unresolved use reachability",
+                  "named_types": [],
+                  "positional_types": []
+                },
+                "status": "unknown",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [],
+                "reason": "unresolved use reachability"
+              },
+              "effective_supplier": {
+                "status": "unknown",
+                "mode": "none",
+                "names": [],
+                "positional": 0,
+                "reason": "unresolved use reachability",
+                "named_types": [],
+                "positional_types": []
+              },
+              "flow": {
+                "use_lines": [
+                  5
+                ],
+                "reason": "unresolved count-path condition",
+                "supplier": {
+                  "status": "unknown",
+                  "mode": "none",
+                  "names": [],
+                  "positional": 0,
+                  "reason": "unresolved use reachability",
+                  "named_types": [],
+                  "positional_types": []
+                },
+                "reachable": null
+              },
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  null,
+                  null
+                ]
+              ],
+              "covered_count_total": 1
+            }
+          ],
+          "status": "unknown",
+          "unreachable_count_ranges": [],
+          "reason": null
+        },
+        {
+          "call": {
+            "path": "call.py",
+            "line": 7,
+            "column": 13,
+            "callee": "ngettext",
+            "kind": "plural",
+            "singular": "%(count)s paired device.",
+            "plural": "%(count)s paired devices.",
+            "supplier": {
+              "status": "known",
+              "mode": "percent",
+              "names": [
+                "count"
+              ],
+              "positional": 0,
+              "reason": null,
+              "named_types": [
+                [
+                  "count",
+                  "unknown"
+                ]
+              ],
+              "positional_types": []
+            },
+            "status": "literal",
+            "reason": null,
+            "context": null
+          },
+          "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\messages.po",
+          "babel_checks": [],
+          "witnesses": [
+            {
+              "count": 1,
+              "pattern": "%(count)s parret enhed.",
+              "lookup": {
+                "method": "ngettext",
+                "singular": "%(count)s paired device.",
+                "plural": "%(count)s paired devices.",
+                "count": 1,
+                "branch": 0,
+                "resolution": "catalog",
+                "output": "%(count)s parret enhed.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "any"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "int"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "status": "clean",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [],
+                "positional_missing": 0
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [
+                  "count"
+                ],
+                "positional": 0,
+                "reason": null,
+                "named_types": [
+                  [
+                    "count",
+                    "int"
+                  ]
+                ],
+                "positional_types": []
+              },
+              "flow": {
+                "use_lines": [
+                  7
+                ],
+                "reason": null,
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "int"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "reachable": true
+              },
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  1,
+                  1
+                ]
+              ],
+              "covered_count_total": 1
+            },
+            {
+              "count": 2,
+              "pattern": "%(count)s parrede enheder.",
+              "lookup": {
+                "method": "ngettext",
+                "singular": "%(count)s paired device.",
+                "plural": "%(count)s paired devices.",
+                "count": 2,
+                "branch": 1,
+                "resolution": "catalog",
+                "output": "%(count)s parrede enheder.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "any"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "int"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "status": "clean",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [],
+                "positional_missing": 0
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [
+                  "count"
+                ],
+                "positional": 0,
+                "reason": null,
+                "named_types": [
+                  [
+                    "count",
+                    "int"
+                  ]
+                ],
+                "positional_types": []
+              },
+              "flow": {
+                "use_lines": [
+                  7
+                ],
+                "reason": null,
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "int"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "reachable": true
+              },
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  2,
+                  100
+                ]
+              ],
+              "covered_count_total": 99
+            }
+          ],
+          "status": "clean",
+          "unreachable_count_ranges": [
+            [
+              0,
+              0
+            ]
+          ],
+          "reason": null
+        }
+      ],
+      "direct_findings": [
+        {
+          "call": {
+            "path": "call.py",
+            "line": 5,
+            "column": 8,
+            "callee": "gettext",
+            "kind": "singular",
+            "singular": "No paired devices.",
+            "plural": null,
+            "supplier": {
+              "status": "none",
+              "mode": "none",
+              "names": [],
+              "positional": 0,
+              "reason": null,
+              "named_types": [],
+              "positional_types": []
+            },
+            "status": "literal",
+            "reason": null,
+            "context": null
+          },
+          "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\messages.po",
+          "babel_checks": [],
+          "witnesses": [
+            {
+              "count": null,
+              "pattern": "Ingen forbundne enheder.",
+              "lookup": {
+                "method": "gettext",
+                "singular": "No paired devices.",
+                "plural": null,
+                "count": null,
+                "branch": null,
+                "resolution": "catalog",
+                "output": "Ingen forbundne enheder.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "none",
+                  "names": [],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "none",
+                  "mode": "none",
+                  "names": [],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [],
+                  "positional_types": []
+                },
+                "status": "clean",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": []
+              },
+              "effective_supplier": {
+                "status": "none",
+                "mode": "none",
+                "names": [],
+                "positional": 0,
+                "reason": null,
+                "named_types": [],
+                "positional_types": []
+              },
+              "flow": null,
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  null,
+                  null
+                ]
+              ],
+              "covered_count_total": 1
+            }
+          ],
+          "status": "clean",
+          "unreachable_count_ranges": [],
+          "reason": null
+        },
+        {
+          "call": {
+            "path": "call.py",
+            "line": 7,
+            "column": 13,
+            "callee": "ngettext",
+            "kind": "plural",
+            "singular": "%(count)s paired device.",
+            "plural": "%(count)s paired devices.",
+            "supplier": {
+              "status": "known",
+              "mode": "percent",
+              "names": [
+                "count"
+              ],
+              "positional": 0,
+              "reason": null,
+              "named_types": [
+                [
+                  "count",
+                  "unknown"
+                ]
+              ],
+              "positional_types": []
+            },
+            "status": "literal",
+            "reason": null,
+            "context": null
+          },
+          "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\messages.po",
+          "babel_checks": [],
+          "witnesses": [
+            {
+              "count": 0,
+              "pattern": "%(count)s parrede enheder.",
+              "lookup": {
+                "method": "ngettext",
+                "singular": "%(count)s paired device.",
+                "plural": "%(count)s paired devices.",
+                "count": 0,
+                "branch": 1,
+                "resolution": "catalog",
+                "output": "%(count)s parrede enheder.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "any"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "unknown"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "status": "unknown",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [
+                  {
+                    "field": "count",
+                    "required": "any",
+                    "supplied": "unknown"
+                  }
+                ],
+                "positional_missing": 0,
+                "reason": "selected pattern type requirement cannot be proved from the local supplier"
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [
+                  "count"
+                ],
+                "positional": 0,
+                "reason": null,
+                "named_types": [
+                  [
+                    "count",
+                    "unknown"
+                  ]
+                ],
+                "positional_types": []
+              },
+              "flow": null,
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  100
+                ]
+              ],
+              "covered_count_total": 100
+            },
+            {
+              "count": 1,
+              "pattern": "%(count)s parret enhed.",
+              "lookup": {
+                "method": "ngettext",
+                "singular": "%(count)s paired device.",
+                "plural": "%(count)s paired devices.",
+                "count": 1,
+                "branch": 0,
+                "resolution": "catalog",
+                "output": "%(count)s parret enhed.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "any"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "count"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "count",
+                      "unknown"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "status": "unknown",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [
+                  {
+                    "field": "count",
+                    "required": "any",
+                    "supplied": "unknown"
+                  }
+                ],
+                "positional_missing": 0,
+                "reason": "selected pattern type requirement cannot be proved from the local supplier"
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [
+                  "count"
+                ],
+                "positional": 0,
+                "reason": null,
+                "named_types": [
+                  [
+                    "count",
+                    "unknown"
+                  ]
+                ],
+                "positional_types": []
+              },
+              "flow": null,
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  1,
+                  1
+                ]
+              ],
+              "covered_count_total": 1
+            }
+          ],
+          "status": "unknown",
+          "unreachable_count_ranges": [],
+          "reason": null
+        }
+      ],
+      "boundary_contract_matches": true,
       "runtime": [
         {
           "count": 0,
           "status": "ok",
           "output": "Ingen forbundne enheder.",
+          "expected_output": "Ingen forbundne enheder.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "gettext",
@@ -94,6 +774,8 @@
           "count": 1,
           "status": "ok",
           "output": "1 parret enhed.",
+          "expected_output": "1 parret enhed.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
@@ -111,6 +793,8 @@
           "count": 2,
           "status": "ok",
           "output": "2 parrede enheder.",
+          "expected_output": "2 parrede enheder.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
@@ -128,6 +812,8 @@
           "count": 5,
           "status": "ok",
           "output": "5 parrede enheder.",
+          "expected_output": "5 parrede enheder.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
@@ -145,6 +831,8 @@
           "count": 100,
           "status": "ok",
           "output": "100 parrede enheder.",
+          "expected_output": "100 parrede enheder.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
@@ -162,10 +850,17 @@
     },
     {
       "case": "virt-manager",
-      "source": "data\\holdout\\virt-manager\\call.py",
-      "catalog": "data\\holdout\\virt-manager\\messages.po",
+      "source": "data/holdout/virt-manager/call.py",
+      "catalog": "data/holdout/virt-manager/messages.po",
+      "source_identity": {
+        "repository": "https://github.com/virt-manager/virt-manager",
+        "commit": "bac5379d085219457a39c5e7c2a5855919d58ef8",
+        "source_sha256": "5fe935e391a3a1b99e584a87f91610d3c9fb65abf95bebe67353dbbb1c3aa5b9",
+        "catalog_sha256": "7c8bb584cc286b9670242b0311c5af8502e01ba0643609d39ab5d2743b511b08",
+        "provenance_sha256": "f4c81101fc572e666a767a855cc30f037bc4014a819985d3004e70fa02c98e90"
+      },
       "flow_summary": {
-        "source_root": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\new_three\\experiments\\msgbranch-8da52042\\artifact\\data\\holdout\\virt-manager\\call.py",
+        "source_root": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\virt-manager\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -179,14 +874,14 @@
         "runtime_observations": 101,
         "unique_runtime_lookup_sets": 1,
         "runtime_lookup_cache_hits": 0,
-        "flow_models": 1,
+        "flow_models": 2,
         "flow_recovered_calls": 1,
         "flow_resolved_witnesses": 2,
         "type_error_witnesses": 0,
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\new_three\\experiments\\msgbranch-8da52042\\artifact\\data\\holdout\\virt-manager\\call.py",
+        "source_root": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\virt-manager\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -206,11 +901,470 @@
         "type_error_witnesses": 0,
         "type_unknown_witnesses": 2
       },
+      "findings": [
+        {
+          "call": {
+            "path": "call.py",
+            "line": 4,
+            "column": 11,
+            "callee": "ngettext",
+            "kind": "plural",
+            "singular": "Waiting %(minutes)d minute for the installation to complete.",
+            "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+            "supplier": {
+              "status": "known",
+              "mode": "percent",
+              "names": [
+                "minutes"
+              ],
+              "positional": 0,
+              "reason": null,
+              "named_types": [
+                [
+                  "minutes",
+                  "unknown"
+                ]
+              ],
+              "positional_types": []
+            },
+            "status": "literal",
+            "reason": null,
+            "context": null
+          },
+          "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\virt-manager\\messages.po",
+          "babel_checks": [],
+          "witnesses": [
+            {
+              "count": 0,
+              "pattern": "Ootan paigalduse lõppemiseks %(minutes)d minutit.",
+              "lookup": {
+                "method": "ngettext",
+                "singular": "Waiting %(minutes)d minute for the installation to complete.",
+                "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+                "count": 0,
+                "branch": 1,
+                "resolution": "catalog",
+                "output": "Ootan paigalduse lõppemiseks %(minutes)d minutit.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "decimal"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "int"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "status": "clean",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [],
+                "positional_missing": 0
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [
+                  "minutes"
+                ],
+                "positional": 0,
+                "reason": null,
+                "named_types": [
+                  [
+                    "minutes",
+                    "int"
+                  ]
+                ],
+                "positional_types": []
+              },
+              "flow": {
+                "use_lines": [
+                  4
+                ],
+                "reason": null,
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "int"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "reachable": true
+              },
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  100
+                ]
+              ],
+              "covered_count_total": 100
+            },
+            {
+              "count": 1,
+              "pattern": "Ootan paigalduse lõppemiseks %(minutes)d minuti.",
+              "lookup": {
+                "method": "ngettext",
+                "singular": "Waiting %(minutes)d minute for the installation to complete.",
+                "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+                "count": 1,
+                "branch": 0,
+                "resolution": "catalog",
+                "output": "Ootan paigalduse lõppemiseks %(minutes)d minuti.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "decimal"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "int"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "status": "clean",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [],
+                "positional_missing": 0
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [
+                  "minutes"
+                ],
+                "positional": 0,
+                "reason": null,
+                "named_types": [
+                  [
+                    "minutes",
+                    "int"
+                  ]
+                ],
+                "positional_types": []
+              },
+              "flow": {
+                "use_lines": [
+                  4
+                ],
+                "reason": null,
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "int"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "reachable": true
+              },
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  1,
+                  1
+                ]
+              ],
+              "covered_count_total": 1
+            }
+          ],
+          "status": "clean",
+          "unreachable_count_ranges": [],
+          "reason": null
+        }
+      ],
+      "direct_findings": [
+        {
+          "call": {
+            "path": "call.py",
+            "line": 4,
+            "column": 11,
+            "callee": "ngettext",
+            "kind": "plural",
+            "singular": "Waiting %(minutes)d minute for the installation to complete.",
+            "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+            "supplier": {
+              "status": "known",
+              "mode": "percent",
+              "names": [
+                "minutes"
+              ],
+              "positional": 0,
+              "reason": null,
+              "named_types": [
+                [
+                  "minutes",
+                  "unknown"
+                ]
+              ],
+              "positional_types": []
+            },
+            "status": "literal",
+            "reason": null,
+            "context": null
+          },
+          "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\virt-manager\\messages.po",
+          "babel_checks": [],
+          "witnesses": [
+            {
+              "count": 0,
+              "pattern": "Ootan paigalduse lõppemiseks %(minutes)d minutit.",
+              "lookup": {
+                "method": "ngettext",
+                "singular": "Waiting %(minutes)d minute for the installation to complete.",
+                "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+                "count": 0,
+                "branch": 1,
+                "resolution": "catalog",
+                "output": "Ootan paigalduse lõppemiseks %(minutes)d minutit.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "decimal"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "unknown"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "status": "unknown",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [
+                  {
+                    "field": "minutes",
+                    "required": "decimal",
+                    "supplied": "unknown"
+                  }
+                ],
+                "positional_missing": 0,
+                "reason": "selected pattern type requirement cannot be proved from the local supplier"
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [
+                  "minutes"
+                ],
+                "positional": 0,
+                "reason": null,
+                "named_types": [
+                  [
+                    "minutes",
+                    "unknown"
+                  ]
+                ],
+                "positional_types": []
+              },
+              "flow": null,
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  100
+                ]
+              ],
+              "covered_count_total": 100
+            },
+            {
+              "count": 1,
+              "pattern": "Ootan paigalduse lõppemiseks %(minutes)d minuti.",
+              "lookup": {
+                "method": "ngettext",
+                "singular": "Waiting %(minutes)d minute for the installation to complete.",
+                "plural": "Waiting %(minutes)d minutes for the installation to complete.",
+                "count": 1,
+                "branch": 0,
+                "resolution": "catalog",
+                "output": "Ootan paigalduse lõppemiseks %(minutes)d minuti.",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "decimal"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [
+                    "minutes"
+                  ],
+                  "positional": 0,
+                  "reason": null,
+                  "named_types": [
+                    [
+                      "minutes",
+                      "unknown"
+                    ]
+                  ],
+                  "positional_types": []
+                },
+                "status": "unknown",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [
+                  {
+                    "field": "minutes",
+                    "required": "decimal",
+                    "supplied": "unknown"
+                  }
+                ],
+                "positional_missing": 0,
+                "reason": "selected pattern type requirement cannot be proved from the local supplier"
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [
+                  "minutes"
+                ],
+                "positional": 0,
+                "reason": null,
+                "named_types": [
+                  [
+                    "minutes",
+                    "unknown"
+                  ]
+                ],
+                "positional_types": []
+              },
+              "flow": null,
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  1,
+                  1
+                ]
+              ],
+              "covered_count_total": 1
+            }
+          ],
+          "status": "unknown",
+          "unreachable_count_ranges": [],
+          "reason": null
+        }
+      ],
+      "boundary_contract_matches": true,
       "runtime": [
         {
           "count": 0,
           "status": "ok",
           "output": "Ootan paigalduse lõppemiseks 0 minutit.",
+          "expected_output": "Ootan paigalduse lõppemiseks 0 minutit.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
@@ -228,6 +1382,8 @@
           "count": 1,
           "status": "ok",
           "output": "Ootan paigalduse lõppemiseks 1 minuti.",
+          "expected_output": "Ootan paigalduse lõppemiseks 1 minuti.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
@@ -245,6 +1401,8 @@
           "count": 2,
           "status": "ok",
           "output": "Ootan paigalduse lõppemiseks 2 minutit.",
+          "expected_output": "Ootan paigalduse lõppemiseks 2 minutit.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
@@ -262,6 +1420,8 @@
           "count": 5,
           "status": "ok",
           "output": "Ootan paigalduse lõppemiseks 5 minutit.",
+          "expected_output": "Ootan paigalduse lõppemiseks 5 minutit.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
@@ -279,6 +1439,8 @@
           "count": 100,
           "status": "ok",
           "output": "Ootan paigalduse lõppemiseks 100 minutit.",
+          "expected_output": "Ootan paigalduse lõppemiseks 100 minutit.",
+          "matches_expected": true,
           "lookups": [
             {
               "method": "ngettext",
