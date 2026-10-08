@@ -38,15 +38,16 @@ def compile_one(executable: str, source: Path, output: Path) -> dict:
     try:
         with source.open('rb') as stream:
             catalog = read_po(stream)
-        if catalog.fuzzy:
-            # CLI skips a fuzzy *header* even though the in-process writer does
-            # not. Clear only that template-header marker in a temporary copy;
-            # retain each message's fuzzy flag and exclude fuzzy messages alike.
-            catalog.fuzzy = False
-            cli_input = output.with_suffix('.po')
-            with cli_input.open('wb') as stream:
-                write_po(stream, catalog)
-            header_normalized = True
+        # Parse and serialize a common temporary input once. An absent creation
+        # date otherwise defaults to the wall clock separately in the two
+        # compilers, which can cross a minute boundary during a slow CI run.
+        # Retain message flags; clear only the header-fuzzy marker that makes
+        # the CLI skip the entire template catalog.
+        header_normalized = catalog.fuzzy
+        catalog.fuzzy = False
+        cli_input = output.with_suffix('.po')
+        with cli_input.open('wb') as stream:
+            write_po(stream, catalog)
     except (UnicodeError, ValueError, LookupError):
         pass  # malformed inputs are handed unchanged to the actual CLI
     completed = subprocess.run(
@@ -59,6 +60,8 @@ def compile_one(executable: str, source: Path, output: Path) -> dict:
     )
     return {
         "source": str(source.relative_to(ROOT)),
+        "compiler_input": str(cli_input),
+        "compiler_input_sha256": sha256(cli_input.read_bytes()).hexdigest(),
         "template_header_fuzzy_cleared": header_normalized,
         "returncode": completed.returncode,
         "stdout": completed.stdout,
@@ -79,8 +82,9 @@ def evaluate() -> dict:
         for index, source in enumerate(frozen_catalogs()):
             output = tmpdir / f"catalog-{index}.mo"
             row = compile_one(executable, source, output)
+            compiler_input = Path(row.pop('compiler_input'))
             try:
-                runtime = CatalogRuntime(source)
+                runtime = CatalogRuntime(compiler_input)
                 row["in_process_status"] = "ok"
                 row["in_process_checks"] = runtime.checks
                 row["in_process_sha256"] = sha256(runtime.mo).hexdigest()
@@ -99,7 +103,9 @@ def evaluate() -> dict:
         negatives = []
         for name in ("format-mismatch.po", "invalid-encoding.po"):
             source = ROOT / "data/babel-cli" / name
-            negatives.append(compile_one(executable, source, tmpdir / f"negative-{name}.mo"))
+            control = compile_one(executable, source, tmpdir / f"negative-{name}.mo")
+            control.pop('compiler_input')
+            negatives.append(control)
     successful = [row for row in rows if row["returncode"] == 0 and row["output_exists"]]
     return {
         "status": "executed",
@@ -117,7 +123,7 @@ def evaluate() -> dict:
             "format_mismatch_rejected": negatives[0]["returncode"] != 0,
             "invalid_encoding_rejected": negatives[1]["returncode"] != 0,
         },
-        "scope": "Babel CLI compilation/checking only; not GNU msgfmt, Weblate, LocalHero file discovery, or application execution",
+        "scope": "Babel CLI compilation/checking on common temporary PO inputs with a fixed metadata header and only the header-fuzzy marker cleared; message flags remain unchanged. Not GNU msgfmt, Weblate, LocalHero file discovery, or application execution.",
     }
 
 
