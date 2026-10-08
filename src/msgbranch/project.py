@@ -19,6 +19,7 @@ import argparse
 import ast
 from dataclasses import asdict, dataclass
 import json
+import math
 from pathlib import Path
 import re
 from string import Formatter
@@ -103,6 +104,7 @@ class _MappingValue:
 class _SequenceValue:
     items: tuple[Any, ...]
     unknown_items: bool = False
+    is_tuple: bool = True
 
 
 @dataclass(frozen=True)
@@ -136,6 +138,7 @@ class _FlowModel:
     mode: str
     value: Any
     count_var: str | None
+    reachable: Any = True
 
 
 @dataclass(frozen=True)
@@ -143,6 +146,7 @@ class _FlowResolution:
     supplier: Supplier
     use_lines: tuple[int, ...]
     reason: str | None = None
+    reachable: bool | None = True
 
 
 def _callee_name(node: ast.AST) -> str | None:
@@ -191,15 +195,17 @@ def _primitive_type(node: ast.AST) -> str:
         if isinstance(value, int):
             return "int"
         if isinstance(value, float):
-            return "float"
+            return "finite-float" if math.isfinite(value) else "nonfinite-float"
         if isinstance(value, str):
             return "str"
         if value is None:
             return "none"
     if isinstance(node, ast.JoinedStr):
         return "str"
-    if isinstance(node, (ast.Compare, ast.BoolOp)):
+    if isinstance(node, ast.Compare):
         return "bool"
+    if isinstance(node, ast.BoolOp):
+        return "unknown"  # and/or return operands, not necessarily bools.
     if isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
         return {"str": "str", "int": "int", "float": "float", "bool": "bool", "len": "int"}.get(
             node.func.id, "unknown"
@@ -220,7 +226,9 @@ def _mapping_supplier(node: ast.AST, mode: str) -> Supplier:
             names.append(value)
             types.append((value, _primitive_type(value_node)))
         return Supplier("known", mode, tuple(sorted(set(names))), named_types=tuple(sorted(types)))
-    if isinstance(node, (ast.Tuple, ast.List)):
+    if isinstance(node, ast.List):
+        return Supplier("unknown", mode, reason="percent list supplier is not a positional tuple")
+    if isinstance(node, ast.Tuple):
         if any(isinstance(x, ast.Starred) for x in node.elts):
             return Supplier("unknown", mode, reason="positional expansion")
         return Supplier(
@@ -446,6 +454,7 @@ class _FlowScanner:
         self.contextual_singulars = contextual_singulars
         self.contextual_plurals = contextual_plurals
         self.models: dict[tuple[int, int], list[_FlowModel]] = {}
+        self.reachable: Any = True
 
     def _shape(self, call: ast.Call) -> _TranslationShape | None:
         return _translation_shape(
@@ -461,6 +470,14 @@ class _FlowScanner:
     def scan(self, tree: ast.AST) -> dict[tuple[int, int], list[_FlowModel]]:
         if isinstance(tree, ast.Module):
             self._block(tree.body, {})
+        # The syntax scanner also sees calls after a terminating return. Keep
+        # their explicit unreachable model; never fall back to direct syntax.
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Call) and self._shape(node) is not None:
+                self.models.setdefault((node.lineno, node.col_offset), [
+                    _FlowModel(node.lineno, node.col_offset, node.lineno,
+                               node.col_offset, "lookup", None, None, False)
+                ])
         return self.models
 
     def _function_env(self, node: ast.FunctionDef | ast.AsyncFunctionDef) -> dict[str, Any]:
@@ -474,10 +491,41 @@ class _FlowScanner:
             env[node.args.kwarg.arg] = _Unknown("variadic keyword parameter")
         return env
 
-    def _block(self, statements: list[ast.stmt], env: dict[str, Any]) -> dict[str, Any]:
+    def _merge_env(self, test: ast.AST, before: dict[str, Any],
+                   true_env: dict[str, Any], false_env: dict[str, Any]) -> dict[str, Any]:
+        snapshot = tuple(sorted(before.items()))
+        merged = {}
+        for name in sorted(set(before) | set(true_env) | set(false_env)):
+            left = true_env.get(name, before.get(name, _Unknown("unbound on true branch")))
+            right = false_env.get(name, before.get(name, _Unknown("unbound on false branch")))
+            merged[name] = left if left == right else _ConditionalValue(test, snapshot, left, right)
+        return merged
+
+    def _conditional(self, test: ast.AST, env: dict[str, Any], when_true: Any, when_false: Any) -> Any:
+        """Fork abstract evaluation only; target expressions are never executed."""
+        before = dict(env)
+        snapshot = tuple(sorted(before.items()))
+        known = _condition(test, before, None, None)
+        if known is not None:
+            return (when_true if known else when_false)(env)
+        previous = self.reachable
+        true_env, false_env = dict(before), dict(before)
+        self.reachable = _ConditionalValue(test, snapshot, previous, False)
+        left = when_true(true_env)
+        self.reachable = _ConditionalValue(test, snapshot, False, previous)
+        right = when_false(false_env)
+        self.reachable = previous
+        env.clear()
+        env.update(self._merge_env(test, before, true_env, false_env))
+        return _ConditionalValue(test, snapshot, left, right)
+
+    def _block(self, statements: list[ast.stmt], env: dict[str, Any]) -> dict[str, Any] | None:
         for statement in statements:
             if isinstance(statement, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                previous = self.reachable
+                self.reachable = True
                 self._block(statement.body, self._function_env(statement))
+                self.reachable = previous
                 continue
             if isinstance(statement, ast.ClassDef):
                 self._block(statement.body, {})
@@ -494,6 +542,7 @@ class _FlowScanner:
                 self._bind(statement.target, value, env)
                 continue
             if isinstance(statement, ast.AugAssign):
+                self._expr(statement.target, env)
                 self._expr(statement.value, env)
                 self._bind(statement.target, _Unknown("augmented assignment result"), env)
                 continue
@@ -502,47 +551,65 @@ class _FlowScanner:
                     if isinstance(target, ast.Name):
                         env[target.id] = _Unknown("deleted binding")
                     else:
+                        self._expr(target, env)
                         self._invalidate_container(target, env, "unsupported container deletion")
                 continue
             if isinstance(statement, (ast.Return, ast.Expr)):
                 value_node = statement.value
                 if value_node is not None:
                     self._expr(value_node, env)
+                if isinstance(statement, ast.Return):
+                    return None
                 continue
             if isinstance(statement, ast.If):
+                self._expr(statement.test, env)
                 before = dict(env)
-                body_env = self._block(statement.body, dict(before))
-                else_env = self._block(statement.orelse, dict(before)) if statement.orelse else dict(before)
+                previous = self.reachable
                 snapshot = tuple(sorted(before.items()))
-                merged: dict[str, Any] = {}
-                for name in sorted(set(before) | set(body_env) | set(else_env)):
-                    body_value = body_env.get(name, before.get(name, _Unknown("unbound on true branch")))
-                    else_value = else_env.get(name, before.get(name, _Unknown("unbound on false branch")))
-                    merged[name] = (
-                        body_value
-                        if body_value == else_value
-                        else _ConditionalValue(statement.test, snapshot, body_value, else_value)
-                    )
+                self.reachable = _ConditionalValue(statement.test, snapshot, previous, False)
+                body_env = self._block(statement.body, dict(before))
+                body_reachable = self.reachable if body_env is not None else False
+                self.reachable = _ConditionalValue(statement.test, snapshot, False, previous)
+                else_env = self._block(statement.orelse, dict(before)) if statement.orelse else dict(before)
+                else_reachable = self.reachable if else_env is not None else False
+                self.reachable = _ConditionalValue(statement.test, snapshot, body_reachable, else_reachable)
+                if body_env is None and else_env is None:
+                    return None
+                if body_env is None:
+                    merged = else_env
+                elif else_env is None:
+                    merged = body_env
+                else:
+                    merged = self._merge_env(statement.test, before, body_env, else_env)
                 env.clear()
                 env.update(merged)
                 continue
             if isinstance(statement, (ast.For, ast.AsyncFor, ast.While)):
-                body_env = self._block(statement.body, dict(env))
+                self._expr(statement.test if isinstance(statement, ast.While) else statement.iter, env)
+                previous = self.reachable
+                self.reachable = _Unknown("unsupported loop reachability")
+                body_env = self._block(statement.body, dict(env)) or {}
+                self.reachable = _Unknown("unsupported loop reachability")
                 self._block(statement.orelse, dict(env))
+                self.reachable = previous
                 for name, value in body_env.items():
                     if env.get(name) != value:
                         env[name] = _Unknown("loop-dependent value")
                 continue
             if isinstance(statement, (ast.With, ast.AsyncWith)):
+                for item in statement.items:
+                    self._expr(item.context_expr, env)
+                self.reachable = _Unknown("unsupported context-manager reachability")
                 self._block(statement.body, env)
                 continue
             if isinstance(statement, ast.Try):
-                branches = [self._block(statement.body, dict(env))]
-                branches.extend(self._block(handler.body, dict(env)) for handler in statement.handlers)
+                self.reachable = _Unknown("unsupported exception reachability")
+                branches = [self._block(statement.body, dict(env)) or {}]
+                branches.extend(self._block(handler.body, dict(env)) or {} for handler in statement.handlers)
                 if statement.orelse:
-                    branches.append(self._block(statement.orelse, dict(env)))
+                    branches.append(self._block(statement.orelse, dict(env)) or {})
                 if statement.finalbody:
-                    branches = [self._block(statement.finalbody, branch) for branch in branches]
+                    branches = [self._block(statement.finalbody, branch) or {} for branch in branches]
                 for name in set().union(*(set(branch) for branch in branches)):
                     values = [branch.get(name, _Unknown("unbound try branch")) for branch in branches]
                     env[name] = values[0] if all(value == values[0] for value in values) else _Unknown(
@@ -550,13 +617,21 @@ class _FlowScanner:
                     )
                 continue
             if isinstance(statement, ast.Match):
-                case_envs = [self._block(case.body, dict(env)) for case in statement.cases]
+                self._expr(statement.subject, env)
+                self.reachable = _Unknown("unsupported match reachability")
+                case_envs = [self._block(case.body, dict(env)) or {} for case in statement.cases]
                 for name in set().union(*(set(branch) for branch in case_envs)):
                     values = [branch.get(name, _Unknown("unbound match case")) for branch in case_envs]
                     env[name] = values[0] if all(value == values[0] for value in values) else _Unknown(
                         "match-dependent value"
                     )
                 continue
+            if isinstance(statement, (ast.Pass, ast.Import, ast.ImportFrom)):
+                continue
+            for child in ast.iter_child_nodes(statement):
+                if isinstance(child, ast.expr):
+                    self._expr(child, env)
+            self.reachable = _Unknown(f"unsupported statement {type(statement).__name__}")
         return env
 
     def _bind(self, target: ast.AST, value: Any, env: dict[str, Any]) -> None:
@@ -570,6 +645,7 @@ class _FlowScanner:
                 for child in target.elts:
                     self._bind(child, _Unknown("unpack arity"), env)
         elif isinstance(target, (ast.Subscript, ast.Attribute)):
+            self._expr(target, env)
             self._invalidate_container(target, env, "unsupported container assignment")
 
     def _invalidate_container(self, node: ast.AST, env: dict[str, Any], reason: str) -> None:
@@ -597,7 +673,8 @@ class _FlowScanner:
     def _record(self, message: _MessageValue, mode: str, value: Any, node: ast.AST) -> None:
         key = (message.line, message.column)
         self.models.setdefault(key, []).append(
-            _FlowModel(message.line, message.column, node.lineno, node.col_offset, mode, value, message.count_var)
+            _FlowModel(message.line, message.column, node.lineno, node.col_offset,
+                       mode, value, message.count_var, self.reachable)
         )
 
     def _expr(self, node: ast.AST | None, env: dict[str, Any]) -> Any:
@@ -609,23 +686,32 @@ class _FlowScanner:
         if isinstance(node, ast.Name):
             return env.get(node.id, _Primitive("unknown", symbol=node.id))
         if isinstance(node, ast.JoinedStr):
+            for child in node.values:
+                if isinstance(child, ast.FormattedValue):
+                    self._expr(child.value, env)
+                    self._expr(child.format_spec, env)
             return _Primitive("str")
         if isinstance(node, ast.Dict):
             items: list[tuple[str, Any]] = []
+            reason = None
             for key, value in zip(node.keys, node.values, strict=True):
-                if key is None:
-                    return _MappingValue(tuple(items), True, "mapping expansion")
+                self._expr(key, env)
+                item = self._expr(value, env)
                 literal = _literal_string(key)
-                if literal is None:
-                    return _MappingValue(tuple(items), True, "dynamic mapping key")
-                items.append((literal, self._expr(value, env)))
-            return _MappingValue(tuple(items))
+                if key is None or literal is None:
+                    reason = "mapping expansion or dynamic mapping key"
+                else:
+                    items.append((literal, item))
+            return _MappingValue(tuple(items), reason is not None, reason)
         if isinstance(node, (ast.Tuple, ast.List)):
-            if any(isinstance(item, ast.Starred) for item in node.elts):
-                return _SequenceValue((), True)
-            return _SequenceValue(tuple(self._expr(item, env) for item in node.elts))
+            items = tuple(self._expr(item.value if isinstance(item, ast.Starred) else item, env)
+                          for item in node.elts)
+            return _SequenceValue(items, any(isinstance(item, ast.Starred) for item in node.elts),
+                                  isinstance(node, ast.Tuple))
         if isinstance(node, ast.IfExp):
-            return _ConditionalValue(node.test, tuple(sorted(env.items())), self._expr(node.body, env), self._expr(node.orelse, env))
+            self._expr(node.test, env)
+            return self._conditional(node.test, env, lambda e: self._expr(node.body, e),
+                                     lambda e: self._expr(node.orelse, e))
         if isinstance(node, ast.UnaryOp):
             operand = self._expr(node.operand, env)
             if isinstance(node.op, ast.Not):
@@ -633,7 +719,18 @@ class _FlowScanner:
             if isinstance(operand, _Primitive) and operand.type_name in {"int", "float", "number"}:
                 return _Primitive(operand.type_name)
             return _Primitive("unknown")
-        if isinstance(node, ast.BoolOp) or isinstance(node, ast.Compare):
+        if isinstance(node, ast.BoolOp):
+            first = self._expr(node.values[0], env)
+            rest = node.values[1] if len(node.values) == 2 else ast.BoolOp(op=node.op, values=node.values[1:])
+            later = lambda e: self._expr(rest, e)
+            retained = lambda e: first
+            return self._conditional(node.values[0], env,
+                                     later if isinstance(node.op, ast.And) else retained,
+                                     retained if isinstance(node.op, ast.And) else later)
+        if isinstance(node, ast.Compare):
+            self._expr(node.left, env)
+            for child in node.comparators:
+                self._expr(child, env)
             return _Primitive("bool")
         if isinstance(node, ast.BinOp):
             left = self._expr(node.left, env)
@@ -666,6 +763,12 @@ class _FlowScanner:
             return _Primitive("unknown")
         if isinstance(node, ast.Call):
             shape = self._shape(node)
+            base = self._expr(node.func.value, env) if isinstance(node.func, ast.Attribute) else None
+            if not isinstance(node.func, (ast.Name, ast.Attribute)):
+                self._expr(node.func, env)
+            arguments = tuple(self._expr(arg.value if isinstance(arg, ast.Starred) else arg, env)
+                              for arg in node.args)
+            keywords = tuple((keyword.arg or "", self._expr(keyword.value, env)) for keyword in node.keywords)
             if shape is not None:
                 if len(node.args) < shape.base_arity:
                     return _Unknown("translation call arity")
@@ -682,11 +785,12 @@ class _FlowScanner:
                         count_var = count_node.id
                         env[count_var] = _Primitive("int", symbol=count_var)
                 message = _MessageValue(node.lineno, node.col_offset, count_var)
+                self._record(message, "lookup", None, node)
                 if any(keyword.arg is None for keyword in node.keywords):
                     self._record(message, "call-keywords", _Unknown("keyword expansion"), node)
                     return _Primitive("str")
                 if node.keywords:
-                    mapping = _MappingValue(tuple((keyword.arg or "", self._expr(keyword.value, env)) for keyword in node.keywords))
+                    mapping = _MappingValue(keywords)
                     self._record(message, "call-keywords", mapping, node)
                     return _Primitive("str")
                 return message
@@ -697,19 +801,18 @@ class _FlowScanner:
                 if node.func.id == "len" and len(node.args) == 1 and not node.keywords:
                     return _Primitive("int")
                 if node.func.id == "dict" and not node.args and all(keyword.arg is not None for keyword in node.keywords):
-                    return _MappingValue(tuple((keyword.arg or "", self._expr(keyword.value, env)) for keyword in node.keywords))
+                    return _MappingValue(keywords)
             if isinstance(node.func, ast.Attribute):
-                base = self._expr(node.func.value, env)
                 if isinstance(base, _MessageValue) and node.func.attr == "format":
                     value = _FormatArgsValue(
-                        tuple(self._expr(arg, env) for arg in node.args if not isinstance(arg, ast.Starred)),
-                        tuple((keyword.arg or "", self._expr(keyword.value, env)) for keyword in node.keywords if keyword.arg is not None),
+                        arguments,
+                        keywords,
                         any(isinstance(arg, ast.Starred) for arg in node.args) or any(keyword.arg is None for keyword in node.keywords),
                     )
                     self._record(base, "str.format", value, node)
                     return _Primitive("str")
                 if isinstance(base, _MessageValue) and node.func.attr == "format_map":
-                    value = self._expr(node.args[0], env) if len(node.args) == 1 and not node.keywords else _Unknown(
+                    value = arguments[0] if len(node.args) == 1 and not node.keywords else _Unknown(
                         "format_map arity"
                     )
                     self._record(base, "format_map", value, node)
@@ -722,11 +825,34 @@ class _FlowScanner:
             value = self._expr(node.value, env)
             self._bind(node.target, value, env)
             return value
+        # Unsupported evaluated expressions may still mutate or escape a local
+        # supplier through their children. Recover effects, not a guessed type.
+        for child in ast.iter_child_nodes(node):
+            if isinstance(child, ast.expr):
+                self._expr(child, env)
         return _Primitive("unknown")
 
 
 def _env_dict(items: tuple[tuple[str, Any], ...]) -> dict[str, Any]:
     return dict(items)
+
+
+def _value_scalar(value: Any, count_var: str | None, count: int | None) -> Any:
+    if type(value) is bool:
+        return value
+    if isinstance(value, _Primitive):
+        if value.has_literal:
+            return value.literal
+        if count_var is not None and value.symbol == count_var and count is not None:
+            return count
+    if isinstance(value, _ConditionalValue):
+        branch = _condition(value.test, _env_dict(value.env), count_var, count)
+        if branch is not None:
+            return _value_scalar(value.when_true if branch else value.when_false, count_var, count)
+        left = _value_scalar(value.when_true, count_var, count)
+        right = _value_scalar(value.when_false, count_var, count)
+        return left if type(left) is type(right) and left == right else None
+    return None
 
 
 def _scalar(node: ast.AST, env: Mapping[str, Any], count_var: str | None, count: int | None) -> Any:
@@ -735,13 +861,19 @@ def _scalar(node: ast.AST, env: Mapping[str, Any], count_var: str | None, count:
     if isinstance(node, ast.Name):
         if count_var is not None and node.id == count_var and count is not None:
             return count
-        value = env.get(node.id)
-        if isinstance(value, _Primitive):
-            if value.has_literal:
-                return value.literal
-            if value.symbol == count_var and count is not None:
-                return count
-        return None
+        return _value_scalar(env.get(node.id), count_var, count)
+    if isinstance(node, ast.Compare):
+        return _condition(node, env, count_var, count)
+    if isinstance(node, ast.BoolOp):
+        for child in node.values:
+            value = _scalar(child, env, count_var, count)
+            if value is None:
+                return None
+            if isinstance(node.op, ast.And) and not value:
+                return value
+            if isinstance(node.op, ast.Or) and value:
+                return value
+        return value
     if isinstance(node, ast.UnaryOp):
         value = _scalar(node.operand, env, count_var, count)
         if value is None:
@@ -871,6 +1003,8 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
         types = tuple(sorted((name, _abstract_type(item, count_var, count)) for name, item in value.items))
         return Supplier("known", mode, names, named_types=types)
     if isinstance(value, _SequenceValue):
+        if mode == "percent" and not value.is_tuple:
+            return Supplier("unknown", mode, reason="percent list supplier is not a positional tuple")
         if value.unknown_items:
             return Supplier("unknown", mode, reason="positional expansion")
         types = tuple(_abstract_type(item, count_var, count) for item in value.items)
@@ -926,8 +1060,25 @@ def _recover_flow_models(
 
 
 def _flow_resolution(models: list[_FlowModel], count: int | None) -> _FlowResolution:
-    suppliers = [_supplier_from_value(model.value, model.mode, model.count_var, count) for model in models]
-    use_lines = tuple(sorted({model.use_line for model in models}))
+    active = []
+    uncertain = []
+    for model in models:
+        reachable = _value_scalar(model.reachable, model.count_var, count)
+        if reachable is True:
+            active.append(model)
+        elif reachable is None:
+            uncertain.append(model)
+    if uncertain:
+        return _FlowResolution(Supplier("unknown", "none", reason="unresolved use reachability"),
+                               tuple(sorted({model.use_line for model in active + uncertain})),
+                               "unresolved count-path condition", None)
+    if not active:
+        return _FlowResolution(Supplier("none", "none"), (), "unreachable at this count", False)
+    uses = [model for model in active if model.mode != "lookup"]
+    if not uses:
+        return _FlowResolution(Supplier("none", "none"), ())
+    suppliers = [_supplier_from_value(model.value, model.mode, model.count_var, count) for model in uses]
+    use_lines = tuple(sorted({model.use_line for model in uses}))
     if not suppliers:
         return _FlowResolution(Supplier("unknown", "none", reason="no recovered formatting use"), use_lines)
     if all(supplier == suppliers[0] for supplier in suppliers):
@@ -940,7 +1091,9 @@ def _flow_resolution(models: list[_FlowModel], count: int | None) -> _FlowResolu
 
 
 def _percent_requirement(code: str) -> str:
-    if code in "diouxX":
+    if code in "diu":
+        return "decimal"
+    if code in "oxX":
         return "int"
     if code in "eEfFgG":
         return "number"
@@ -950,13 +1103,14 @@ def _percent_requirement(code: str) -> str:
 
 
 def _brace_requirement(spec: str, conversion: str | None) -> str:
-    if conversion in {"s", "r", "a"}:
-        return "any"
     cleaned = re.sub(r"\{[^{}]+\}", "", spec)
     match = re.search(r"([bcdeEfFgGnosxX%])$", cleaned)
     if not match:
         return "any"
     code = match.group(1)
+    if conversion in {"s", "r", "a"}:
+        # Native conversion produces a string *before* applying the spec.
+        return "any" if code == "s" else "invalid-converted-string-spec"
     if code in "bcdnosxX":
         return "int" if code != "s" else "str"
     if code in "eEfFgG%":
@@ -969,7 +1123,9 @@ def _merge_requirement(existing: str | None, new: str) -> str:
         return new
     if new == "any" or new == existing:
         return existing
-    if {existing, new} == {"int", "number"}:
+    if {existing, new} <= {"int", "decimal", "number"}:
+        if "int" not in {existing, new}:
+            return "decimal"
         return "int"
     if {existing, new} <= {"int", "char"}:
         return "int"
@@ -1017,6 +1173,8 @@ def pattern_requirements(pattern: str) -> PatternRequirements:
             if field is None:
                 continue
             brace_seen = True
+            if conversion not in {None, "s", "r", "a"}:
+                return PatternRequirements("unknown", "brace", reason="unsupported brace conversion")
             if "." in field or "[" in field:
                 return PatternRequirements("unknown", "brace", reason="attribute or index traversal is unsupported")
             root = field.split(".", 1)[0].split("[", 1)[0]
@@ -1079,14 +1237,20 @@ def pattern_requirements(pattern: str) -> PatternRequirements:
 
 
 def _compatible(requirement: str, supplied: str) -> bool | None:
-    if requirement == "any":
-        return True
+    if requirement == "invalid-converted-string-spec":
+        return False
     if supplied == "unknown":
         return None
+    if requirement == "any":
+        return True
     if requirement == "int":
         return supplied in {"int", "bool"}
+    if requirement == "decimal":
+        if supplied in {"float", "number"}:
+            return None  # Finiteness is value-dependent for unresolved floats.
+        return supplied in {"int", "bool", "finite-float"}
     if requirement == "number":
-        return supplied in {"int", "float", "number", "bool"}
+        return supplied in {"int", "float", "finite-float", "nonfinite-float", "number", "bool"}
     if requirement == "str":
         return supplied == "str"
     if requirement == "char":
@@ -1117,13 +1281,13 @@ def _qualification(requirements: PatternRequirements, supplier: Supplier) -> dic
         result.update(status="unknown", reason="new-style call keyword interpolation is only admitted for percent patterns")
         return result
 
+    if supplier.status == "unknown":
+        result.update(status="unknown", reason=supplier.reason)
+        return result
     needs_any = bool(requirements.names or requirements.positional)
     if not needs_any:
         if supplier.status == "known" and supplier.positional and supplier.mode == "percent":
             result.update(status="error", reason="positional percent supplier but selected pattern has no directive")
-        return result
-    if supplier.status == "unknown":
-        result.update(status="unknown", reason=supplier.reason)
         return result
     if supplier.status == "none":
         result.update(status="unknown", reason="selected pattern requires formatting but no supplier was recovered")
@@ -1141,6 +1305,11 @@ def _qualification(requirements: PatternRequirements, supplier: Supplier) -> dic
         return result
     if missing or positional_missing:
         result.update(status="error", reason="selected pattern requests unsupplied formatting fields")
+        return result
+    if (requirements.dialect == "percent" and supplier.mode == "percent"
+            and supplier.positional > requirements.positional):
+        result.update(status="error", reason="unused positional percent arguments",
+                      positional_extra=supplier.positional - requirements.positional)
         return result
 
     supplied_named = dict(supplier.named_types)
@@ -1320,17 +1489,21 @@ def audit_project(
                 witness_cache[cache_key] = base_witnesses
             selected: list[tuple[dict[str, Any], Supplier, dict[str, Any] | None, list[int | None]]] = []
             selected_products: dict[str, int] = {}
+            unreachable_counts: list[int | None] = []
             for observation in base_witnesses:
                 effective_supplier = call.supplier
                 flow_meta: dict[str, Any] | None = None
                 if models:
                     resolution = _flow_resolution(models, observation["count"])
-                    if call.supplier.status != "known" or resolution.supplier.status == "known":
-                        effective_supplier = resolution.supplier
+                    if resolution.reachable is False:
+                        unreachable_counts.append(observation["count"])
+                        continue
+                    effective_supplier = resolution.supplier
                     flow_meta = {
                         "use_lines": resolution.use_lines,
                         "reason": resolution.reason,
                         "supplier": asdict(resolution.supplier),
+                        "reachable": resolution.reachable,
                     }
                 product_key = json.dumps(
                     {
@@ -1357,7 +1530,7 @@ def audit_project(
                     "source-fallback",
                     "compiler-source-substitution",
                 )
-                if require_catalog and fallback:
+                if require_catalog and fallback and (flow_meta is None or flow_meta["reachable"] is True):
                     previous = qualification["status"]
                     qualification["format_status_before_presence_check"] = previous
                     qualification.update(status="error", reason="catalog-presence obligation violated")
@@ -1377,7 +1550,7 @@ def audit_project(
                         "covered_count_total": len(covered_counts),
                     }
                 )
-            status = "error" if "error" in statuses else ("unknown" if "unknown" in statuses else "clean")
+            status = "error" if "error" in statuses else ("unknown" if "unknown" in statuses or not statuses else "clean")
             findings.append(
                 {
                     "call": asdict(call),
@@ -1385,6 +1558,8 @@ def audit_project(
                     "babel_checks": runtime.checks,
                     "witnesses": witnesses,
                     "status": status,
+                    "unreachable_count_ranges": _compress_counts(unreachable_counts),
+                    "reason": "no reachable boundary in the declared domain" if not statuses else None,
                 }
             )
 
@@ -1433,10 +1608,48 @@ def _catalog_paths(values: list[Path]) -> list[Path]:
     return paths
 
 
-def _write_pytest_guard(path: Path, source: Path, catalogs: list[Path], args: argparse.Namespace) -> None:
-    source_literal = repr(str(source))
-    catalog_literal = repr([str(item) for item in catalogs])
-    text = f'''"""Generated MsgBranch CI guard; review paths before committing."""\nfrom pathlib import Path\n\nfrom msgbranch.project import audit_project\n\n\ndef test_localized_message_boundaries():\n    report = audit_project(\n        Path({source_literal}),\n        [Path(value) for value in {catalog_literal}],\n        max_count={args.max_count},\n        require_catalog={args.require_catalog!r},\n        analysis_mode={args.analysis_mode!r},\n    )\n    assert report["summary"]["errors"] == 0, report\n    assert report["summary"]["unknown"] == 0, report\n'''
+def _write_pytest_guard(path: Path, source: Path, catalogs: list[Path],
+                        args: argparse.Namespace, report: dict[str, Any]) -> None:
+    fields = ("path", "line", "column", "callee", "kind", "singular", "plural", "context")
+    expected = [tuple(finding["call"][field] for field in fields) + (finding["catalog"],)
+                for finding in report["findings"] if finding.get("catalog") is not None]
+    if not expected or not report["summary"]["literal_calls"]:
+        raise ValueError("cannot emit a guard without recognized call/catalog boundaries")
+    source_literal = repr(str(source.resolve()))
+    catalog_literal = repr([str(item.resolve()) for item in catalogs])
+    text = f'''"""Generated analyzer requalification guard; review paths and boundary identities.
+
+This statically re-audits configured boundaries; it does not execute target code.
+Regenerate after an intentional boundary move/removal or configuration change.
+"""
+from pathlib import Path
+
+from msgbranch.project import audit_project
+
+
+def test_localized_message_boundaries():
+    report = audit_project(
+        Path({source_literal}),
+        [Path(value) for value in {catalog_literal}],
+        max_count={args.max_count},
+        require_catalog={args.require_catalog!r},
+        analysis_mode={args.analysis_mode!r},
+        singular_callees={args.singular_callee!r},
+        plural_callees={args.plural_callee!r},
+        contextual_singular_callees={args.contextual_singular_callee!r},
+        contextual_plural_callees={args.contextual_plural_callee!r},
+        overloaded_callees={args.overloaded_callee!r},
+    )
+    fields = {fields!r}
+    expected = set({expected!r})
+    actual = {{tuple(finding["call"][field] for field in fields) + (finding["catalog"],)
+              for finding in report["findings"]}}
+    assert expected and expected <= actual, ("boundary recognition lost", expected - actual, report)
+    assert report["summary"]["literal_calls"] > 0, report
+    assert report["summary"]["selected_patterns"] > 0, report
+    assert report["summary"]["errors"] == 0, report
+    assert report["summary"]["unknown"] == 0, report
+'''
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
 
@@ -1472,7 +1685,7 @@ def main() -> None:
         )
         code = 1 if report["summary"]["errors"] else (2 if report["summary"]["unknown"] else 0)
         if args.emit_pytest:
-            _write_pytest_guard(args.emit_pytest, args.source, catalogs, args)
+            _write_pytest_guard(args.emit_pytest, args.source, catalogs, args, report)
     except (OSError, ValueError) as exc:
         report, code = {"status": "unavailable-or-unknown", "error": str(exc)}, 2
     text = json.dumps(report, ensure_ascii=False, indent=2) + "\n"

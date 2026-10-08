@@ -11,6 +11,9 @@ def main():
     env=dict(os.environ)
     env['PYTHONPATH']=os.pathsep.join([str(ROOT/'src'),str(ROOT/'vendor/python-fluent')])
     env['PYTHONDONTWRITEBYTECODE']='1'
+    subprocess.run([sys.executable, '-m', 'pytest', '-q', '-p', 'no:cacheprovider', 'tests'],
+                   cwd=ROOT, env=env, check=True)
+    print('unit tests: passed', flush=True)
     names=['verify_vendor','verify_inputs','make_controls','pilot','extraction_baseline',
            'evaluate','flow_validation','jupyter_boundary','fluent_evaluate','openhangar_boundary',
            'xrpl_boundary','azm_build_boundary','project_audit_evaluate','holdout_evaluate',

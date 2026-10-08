@@ -250,7 +250,7 @@ msgstr[1] "%(n)d things"
     ]
     assert type_witnesses[-1]["count"] == 100
     assert type_witnesses[-1]["qualification"]["type_mismatches"] == [
-        {"field": "n", "required": "int", "supplied": "str"}
+        {"field": "n", "required": "decimal", "supplied": "str"}
     ]
 
 
