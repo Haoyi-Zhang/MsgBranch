@@ -2365,7 +2365,7 @@
       "flow_exact": true,
       "direct_exact": true,
       "flow_selected_products": 1,
-      "flow_recovered_calls": 0
+      "flow_recovered_calls": 1
     },
     {
       "case": "context-plural",

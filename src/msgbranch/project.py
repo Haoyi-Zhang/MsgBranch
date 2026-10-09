@@ -17,7 +17,7 @@ from __future__ import annotations
 
 import argparse
 import ast
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 import json
 import math
 from pathlib import Path
@@ -41,6 +41,7 @@ class Supplier:
     reason: str | None = None
     named_types: tuple[tuple[str, str], ...] = ()
     positional_types: tuple[str, ...] = ()
+    is_mapping: bool = False
 
 
 @dataclass(frozen=True)
@@ -56,6 +57,8 @@ class CallSite:
     status: str
     reason: str | None = None
     context: str | None = None
+    count_binding: str = "domain"
+    count_literal: int | None = None
 
 
 @dataclass(frozen=True)
@@ -225,7 +228,7 @@ def _mapping_supplier(node: ast.AST, mode: str) -> Supplier:
                 return Supplier("unknown", mode, reason="dynamic mapping key")
             names.append(value)
             types.append((value, _primitive_type(value_node)))
-        return Supplier("known", mode, tuple(sorted(set(names))), named_types=tuple(sorted(types)))
+        return Supplier("known", mode, tuple(sorted(set(names))), named_types=tuple(sorted(types)), is_mapping=True)
     if isinstance(node, ast.List):
         return Supplier("unknown", mode, reason="percent list supplier is not a positional tuple")
     if isinstance(node, ast.Tuple):
@@ -406,6 +409,14 @@ def scan_source(
                 )
             )
             continue
+        count_binding = "domain"
+        count_literal = None
+        if shape.count_index is not None:
+            selector = node.args[shape.count_index]
+            if isinstance(selector, ast.Constant) and type(selector.value) is int:
+                count_binding, count_literal = "fixed", selector.value
+            elif not isinstance(selector, ast.Name):
+                count_binding = "unknown"
         calls.append(
             CallSite(
                 path,
@@ -418,6 +429,8 @@ def scan_source(
                 supplier,
                 "literal",
                 context=context,
+                count_binding=count_binding,
+                count_literal=count_literal,
             )
         )
     return sorted(calls, key=lambda c: (c.path, c.line, c.column))
@@ -1001,7 +1014,7 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
             return Supplier("unknown", mode, reason=value.reason or "unknown mapping keys")
         names = tuple(sorted({name for name, _ in value.items}))
         types = tuple(sorted((name, _abstract_type(item, count_var, count)) for name, item in value.items))
-        return Supplier("known", mode, names, named_types=types)
+        return Supplier("known", mode, names, named_types=types, is_mapping=True)
     if isinstance(value, _SequenceValue):
         if mode == "percent" and not value.is_tuple:
             return Supplier("unknown", mode, reason="percent list supplier is not a positional tuple")
@@ -1293,6 +1306,14 @@ def _qualification(requirements: PatternRequirements, supplier: Supplier) -> dic
         result.update(status="unknown", reason="selected pattern requires formatting but no supplier was recovered")
         return result
 
+    if requirements.dialect == "percent" and supplier.mode == "percent" and supplier.is_mapping:
+        if requirements.names and requirements.positional:
+            result.update(status="unknown", reason="mixed keyed and unkeyed percent conversions")
+            return result
+        if not requirements.names:
+            # A dict is one formatting object, not a tuple of its values.
+            supplier = replace(supplier, names=(), positional=1, positional_types=("mapping",))
+
     missing = sorted(set(requirements.names) - set(supplier.names))
     positional_missing = max(0, requirements.positional - supplier.positional)
     result["missing"] = missing
@@ -1350,7 +1371,8 @@ def _runtime_observations(call: CallSite, runtime: CatalogRuntime, max_count: in
         pattern = runtime.pgettext(call.context, call.singular or "") if call.context is not None else runtime.gettext(call.singular or "")
         return [{"count": None, "pattern": pattern, "lookup": runtime.serialize_trace()[-1]}]
     rows: list[dict[str, Any]] = []
-    for count in range(max_count + 1):
+    counts = [call.count_literal] if call.count_binding == "fixed" else range(max_count + 1)
+    for count in counts:
         runtime.reset()
         if call.context is not None:
             pattern = runtime.npgettext(call.context, call.singular or "", call.plural or "", count)
@@ -1452,7 +1474,7 @@ def audit_project(
             runtimes.append((catalog, None, str(exc)))
 
     findings: list[dict[str, Any]] = []
-    witness_cache: dict[tuple[str, str, str | None, str | None, str | None, int], list[dict[str, Any]]] = {}
+    witness_cache: dict[tuple[Any, ...], list[dict[str, Any]]] = {}
     cache_hits = 0
     flow_witnesses = 0
     flow_calls: set[tuple[str, int, int]] = set()
@@ -1461,6 +1483,13 @@ def audit_project(
     for call in calls:
         if call.status != "literal":
             findings.append({"call": asdict(call), "catalog": None, "status": "unknown", "reason": call.reason})
+            continue
+        if call.kind == "plural" and (
+            call.count_binding == "unknown"
+            or (call.count_binding == "fixed" and not 0 <= call.count_literal <= max_count)
+        ):
+            findings.append({"call": asdict(call), "catalog": None, "status": "unknown",
+                             "reason": "plural selector is outside the admitted count binding"})
             continue
         if not runtimes:
             findings.append({"call": asdict(call), "catalog": None, "status": "unknown", "reason": "no catalog supplied"})
@@ -1480,7 +1509,8 @@ def audit_project(
                 continue
             witnesses = []
             statuses: list[str] = []
-            cache_key = (str(path), call.kind, call.context, call.singular, call.plural, max_count)
+            cache_key = (str(path), call.kind, call.context, call.singular, call.plural,
+                         max_count, call.count_binding, call.count_literal)
             if cache_key in witness_cache:
                 base_witnesses = witness_cache[cache_key]
                 cache_hits += 1

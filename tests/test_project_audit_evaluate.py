@@ -36,7 +36,14 @@ def test_project_audit_evaluation_retains_errors_and_unknowns():
     assert sum(before == "error" for _, _, before in tightened) == summary["ablation"]["error_to_unknown"]
     by_case = {row["case"]: row for row in result["field_slices"]}
     assert by_case["azm-po-present"]["summary"]["errors"] == 0
-    assert by_case["sphinx-before-ja-strict"]["direct_summary"]["errors"] > 0
+    before = by_case["sphinx-before-ja-strict"]
+    assert before["direct_summary"]["errors"] == 0
+    unresolved_selectors = [f for f in before["direct_findings"] if f["call"]["kind"] == "plural"]
+    assert unresolved_selectors
+    assert all(f["status"] == "unknown" and f["call"]["count_binding"] == "unknown"
+               for f in unresolved_selectors)
+    assert all(f["reason"] == "plural selector is outside the admitted count binding"
+               for f in unresolved_selectors)
     assert by_case["sphinx-before-ja-strict"]["summary"]["unknown"] > 0
 
 

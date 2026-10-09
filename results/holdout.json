@@ -23,7 +23,7 @@
       "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
     },
     "actual": {
-      "src/msgbranch/project.py": "ce55d9913f08bb9d88e2316b90fb03b129ab7fecd5fb92a3f9db277a6a96bb39",
+      "src/msgbranch/project.py": "8c35e9c459d0f4882b134a91744f578e45a4424df931dde3db2fd35440cc554e",
       "src/msgbranch/runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73",
       "src/msgbranch/program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
       "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
@@ -121,11 +121,14 @@
               "positional": 0,
               "reason": null,
               "named_types": [],
-              "positional_types": []
+              "positional_types": [],
+              "is_mapping": false
             },
             "status": "literal",
             "reason": null,
-            "context": null
+            "context": null,
+            "count_binding": "domain",
+            "count_literal": null
           },
           "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\messages.po",
           "babel_checks": [],
@@ -160,7 +163,8 @@
                   "positional": 0,
                   "reason": "unresolved use reachability",
                   "named_types": [],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": false
                 },
                 "status": "unknown",
                 "missing": [],
@@ -175,7 +179,8 @@
                 "positional": 0,
                 "reason": "unresolved use reachability",
                 "named_types": [],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": false
               },
               "flow": {
                 "use_lines": [
@@ -189,7 +194,8 @@
                   "positional": 0,
                   "reason": "unresolved use reachability",
                   "named_types": [],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": false
                 },
                 "reachable": null
               },
@@ -230,11 +236,14 @@
                   "unknown"
                 ]
               ],
-              "positional_types": []
+              "positional_types": [],
+              "is_mapping": true
             },
             "status": "literal",
             "reason": null,
-            "context": null
+            "context": null,
+            "count_binding": "domain",
+            "count_literal": null
           },
           "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\messages.po",
           "babel_checks": [],
@@ -283,7 +292,8 @@
                       "int"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "status": "clean",
                 "missing": [],
@@ -305,7 +315,8 @@
                     "int"
                   ]
                 ],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": true
               },
               "flow": {
                 "use_lines": [
@@ -326,7 +337,8 @@
                       "int"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "reachable": true
               },
@@ -383,7 +395,8 @@
                       "int"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "status": "clean",
                 "missing": [],
@@ -405,7 +418,8 @@
                     "int"
                   ]
                 ],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": true
               },
               "flow": {
                 "use_lines": [
@@ -426,7 +440,8 @@
                       "int"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "reachable": true
               },
@@ -467,11 +482,14 @@
               "positional": 0,
               "reason": null,
               "named_types": [],
-              "positional_types": []
+              "positional_types": [],
+              "is_mapping": false
             },
             "status": "literal",
             "reason": null,
-            "context": null
+            "context": null,
+            "count_binding": "domain",
+            "count_literal": null
           },
           "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\messages.po",
           "babel_checks": [],
@@ -506,7 +524,8 @@
                   "positional": 0,
                   "reason": null,
                   "named_types": [],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": false
                 },
                 "status": "clean",
                 "missing": [],
@@ -520,7 +539,8 @@
                 "positional": 0,
                 "reason": null,
                 "named_types": [],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": false
               },
               "flow": null,
               "fallback": false,
@@ -560,11 +580,14 @@
                   "unknown"
                 ]
               ],
-              "positional_types": []
+              "positional_types": [],
+              "is_mapping": true
             },
             "status": "literal",
             "reason": null,
-            "context": null
+            "context": null,
+            "count_binding": "domain",
+            "count_literal": null
           },
           "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\solaar\\messages.po",
           "babel_checks": [],
@@ -613,7 +636,8 @@
                       "unknown"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "status": "unknown",
                 "missing": [],
@@ -642,7 +666,8 @@
                     "unknown"
                   ]
                 ],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": true
               },
               "flow": null,
               "fallback": false,
@@ -702,7 +727,8 @@
                       "unknown"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "status": "unknown",
                 "missing": [],
@@ -731,7 +757,8 @@
                     "unknown"
                   ]
                 ],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": true
               },
               "flow": null,
               "fallback": false,
@@ -925,11 +952,14 @@
                   "unknown"
                 ]
               ],
-              "positional_types": []
+              "positional_types": [],
+              "is_mapping": true
             },
             "status": "literal",
             "reason": null,
-            "context": null
+            "context": null,
+            "count_binding": "domain",
+            "count_literal": null
           },
           "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\virt-manager\\messages.po",
           "babel_checks": [],
@@ -978,7 +1008,8 @@
                       "int"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "status": "clean",
                 "missing": [],
@@ -1000,7 +1031,8 @@
                     "int"
                   ]
                 ],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": true
               },
               "flow": {
                 "use_lines": [
@@ -1021,7 +1053,8 @@
                       "int"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "reachable": true
               },
@@ -1082,7 +1115,8 @@
                       "int"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "status": "clean",
                 "missing": [],
@@ -1104,7 +1138,8 @@
                     "int"
                   ]
                 ],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": true
               },
               "flow": {
                 "use_lines": [
@@ -1125,7 +1160,8 @@
                       "int"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "reachable": true
               },
@@ -1168,11 +1204,14 @@
                   "unknown"
                 ]
               ],
-              "positional_types": []
+              "positional_types": [],
+              "is_mapping": true
             },
             "status": "literal",
             "reason": null,
-            "context": null
+            "context": null,
+            "count_binding": "domain",
+            "count_literal": null
           },
           "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\holdout\\virt-manager\\messages.po",
           "babel_checks": [],
@@ -1221,7 +1260,8 @@
                       "unknown"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "status": "unknown",
                 "missing": [],
@@ -1250,7 +1290,8 @@
                     "unknown"
                   ]
                 ],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": true
               },
               "flow": null,
               "fallback": false,
@@ -1310,7 +1351,8 @@
                       "unknown"
                     ]
                   ],
-                  "positional_types": []
+                  "positional_types": [],
+                  "is_mapping": true
                 },
                 "status": "unknown",
                 "missing": [],
@@ -1339,7 +1381,8 @@
                     "unknown"
                   ]
                 ],
-                "positional_types": []
+                "positional_types": [],
+                "is_mapping": true
               },
               "flow": null,
               "fallback": false,
