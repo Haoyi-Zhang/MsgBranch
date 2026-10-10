@@ -216,6 +216,24 @@ def _primitive_type(node: ast.AST) -> str:
     return "unknown"
 
 
+def _integer_supplier_type(value: int) -> str:
+    if 0 <= value <= 4096:
+        return "bounded-nonnegative-int"
+    if 0 <= value <= 0x10FFFF:
+        return "unicode-codepoint-int"
+    return "int"
+
+
+def _literal_supplier_type(node: ast.AST) -> str:
+    if isinstance(node, ast.Constant) and type(node.value) is int:
+        return _integer_supplier_type(node.value)
+    if (isinstance(node, ast.UnaryOp) and isinstance(node.op, (ast.UAdd, ast.USub))
+            and isinstance(node.operand, ast.Constant) and type(node.operand.value) is int):
+        value = node.operand.value
+        return _integer_supplier_type(-value if isinstance(node.op, ast.USub) else value)
+    return _primitive_type(node)
+
+
 def _mapping_supplier(node: ast.AST, mode: str) -> Supplier:
     if isinstance(node, ast.Dict):
         types: dict[str, str] = {}
@@ -225,7 +243,7 @@ def _mapping_supplier(node: ast.AST, mode: str) -> Supplier:
             value = _literal_string(key)
             if value is None:
                 return Supplier("unknown", mode, reason="dynamic mapping key")
-            types[value] = _primitive_type(value_node)
+            types[value] = _literal_supplier_type(value_node)
         return Supplier("known", mode, tuple(sorted(types)), named_types=tuple(sorted(types.items())), is_mapping=True)
     if isinstance(node, ast.List):
         return Supplier("unknown", mode, reason="percent list supplier is not a positional tuple")
@@ -236,11 +254,11 @@ def _mapping_supplier(node: ast.AST, mode: str) -> Supplier:
             "known",
             mode,
             positional=len(node.elts),
-            positional_types=tuple(_primitive_type(x) for x in node.elts),
+            positional_types=tuple(_literal_supplier_type(x) for x in node.elts),
         )
     if isinstance(node, (ast.Name, ast.Attribute, ast.Call, ast.Subscript, ast.IfExp)):
         return Supplier("unknown", mode, reason="dynamic formatting supplier")
-    return Supplier("known", mode, positional=1, positional_types=(_primitive_type(node),))
+    return Supplier("known", mode, positional=1, positional_types=(_literal_supplier_type(node),))
 
 
 def _format_supplier(node: ast.Call) -> Supplier:
@@ -252,8 +270,8 @@ def _format_supplier(node: ast.Call) -> Supplier:
         "str.format",
         names,
         len(node.args),
-        named_types=tuple(sorted((k.arg, _primitive_type(k.value)) for k in node.keywords if k.arg is not None)),
-        positional_types=tuple(_primitive_type(x) for x in node.args),
+        named_types=tuple(sorted((k.arg, _literal_supplier_type(k.value)) for k in node.keywords if k.arg is not None)),
+        positional_types=tuple(_literal_supplier_type(x) for x in node.args),
     )
 
 
@@ -269,7 +287,7 @@ def _direct_supplier(call: ast.Call, parents: dict[ast.AST, ast.AST], base_arity
             "known",
             "call-keywords",
             keyword_names,
-            named_types=tuple(sorted((k.arg, _primitive_type(k.value)) for k in call.keywords if k.arg is not None)),
+            named_types=tuple(sorted((k.arg, _literal_supplier_type(k.value)) for k in call.keywords if k.arg is not None)),
         )
 
     parent = parents.get(call)
@@ -554,6 +572,9 @@ class _FlowScanner:
                 continue
             if isinstance(statement, ast.AugAssign):
                 self._expr(statement.target, env)
+                # An augmented update may mutate the old object, not merely
+                # rebind the target name. Do not retain its aliases as facts.
+                self._invalidate_container(statement.target, env, "unsupported augmented container assignment")
                 self._expr(statement.value, env)
                 self._bind(statement.target, _Unknown("augmented assignment result"), env)
                 continue
@@ -675,8 +696,27 @@ class _FlowScanner:
         target = env.get(node.id)
         if not isinstance(target, (_MappingValue, _SequenceValue, _ConditionalValue)):
             return
+        # An escaped outer container can expose mutable descendants. Include
+        # those objects, then invalidate every binding containing any of them.
+        affected = {id(target)}
+        pending = [target]
+        visited: set[int] = set()
+        while pending:
+            value = pending.pop()
+            if id(value) in visited:
+                continue
+            visited.add(id(value))
+            if isinstance(value, _MappingValue):
+                affected.add(id(value))
+                pending.extend(item for _, item in value.items)
+            elif isinstance(value, _SequenceValue):
+                if not value.is_tuple:
+                    affected.add(id(value))
+                pending.extend(value.items)
+            elif isinstance(value, _ConditionalValue):
+                pending.extend((value.when_true, value.when_false))
         def contains(value: Any) -> bool:
-            if value is target:
+            if id(value) in affected:
                 return True
             if isinstance(value, _ConditionalValue):
                 return contains(value.when_true) or contains(value.when_false)
@@ -1001,7 +1041,9 @@ def _condition(node: ast.AST, env: Mapping[str, Any], count_var: str | None, cou
 def _abstract_type(value: Any, count_var: str | None, count: int | None) -> str:
     if isinstance(value, _Primitive):
         if count_var is not None and value.symbol == count_var and count is not None:
-            return "int"
+            return _integer_supplier_type(count)
+        if value.has_literal and type(value.literal) is int:
+            return _integer_supplier_type(value.literal)
         return value.type_name
     if isinstance(value, _ConditionalValue):
         branch = _condition(value.test, _env_dict(value.env), count_var, count)
@@ -1135,20 +1177,47 @@ def _percent_requirement(code: str) -> str:
     return "any"
 
 
-def _brace_requirement(spec: str, conversion: str | None) -> str:
-    cleaned = re.sub(r"\{[^{}]+\}", "", spec)
-    match = re.search(r"([bcdeEfFgGnosxX%])$", cleaned)
-    if not match:
+def _brace_requirement(spec: str, conversion: str | None) -> str | None:
+    if not spec:
         return "any"
-    code = match.group(1)
+    # Admit a bounded mini-language, not an arbitrary prefix ending in a
+    # familiar type code. Nested width/precision fields are checked separately.
+    match = re.fullmatch(
+        r"(?:(?P<fill>[^{}])?(?P<align>[<>=^]))?"
+        r"(?P<sign>[+\- ])?(?P<alternate>#)?(?P<zero>0)?"
+        r"(?P<width>[0-9]+|\{[A-Za-z_]\w*\})?(?P<grouping>[_,])?"
+        r"(?:\.(?P<precision>[0-9]+|\{[A-Za-z_]\w*\}))?"
+        r"(?P<code>[bcdeEfFgGnosxX%])?", spec,
+    )
+    if not match:
+        return None
+    code = match.group("code")
+    if code is None:
+        # Alignment/width alone works for the admitted primitive types. Other
+        # modifiers without a presentation type have type-dependent semantics.
+        if (match.group("align") == "=" or any(match.group(name) is not None
+                for name in ("sign", "alternate", "grouping", "precision"))):
+            return None
+        return "any"
+    if code in "bcdnosxX" and match.group("precision") is not None and code != "s":
+        return None
+    if code == "n" and match.group("grouping") is not None:
+        return None
+    if code in "cs" and (match.group("align") == "=" or any(match.group(name) is not None
+            for name in ("sign", "alternate", "grouping"))):
+        return None
+    if code in "boxX" and match.group("grouping") == ",":
+        return None
     if conversion in {"s", "r", "a"}:
         # Native conversion produces a string *before* applying the spec.
         return "any" if code == "s" else "invalid-converted-string-spec"
-    if code in "bcdnosxX":
+    if code == "c":
+        return "codepoint"
+    if code in "bdosxX":
         return "int" if code != "s" else "str"
-    if code in "eEfFgG%":
+    if code in "eEfFgGn%":
         return "number"
-    return "any"
+    return None
 
 
 def _merge_requirement(existing: str | None, new: str) -> str:
@@ -1161,7 +1230,15 @@ def _merge_requirement(existing: str | None, new: str) -> str:
             return "decimal"
         return "int"
     if {existing, new} <= {"int", "char"}:
-        return "int"
+        return "codepoint"
+    if "format-digits" in {existing, new} and {existing, new} <= {
+        "format-digits", "codepoint", "char", "int", "decimal", "number"
+    }:
+        return "format-digits"
+    if "codepoint" in {existing, new} and {existing, new} <= {
+        "codepoint", "char", "int", "decimal", "number"
+    }:
+        return "codepoint"
     return "mixed"
 
 
@@ -1212,6 +1289,8 @@ def pattern_requirements(pattern: str) -> PatternRequirements:
                 return PatternRequirements("unknown", "brace", reason="attribute or index traversal is unsupported")
             root = field.split(".", 1)[0].split("[", 1)[0]
             requirement = _brace_requirement(spec, conversion)
+            if requirement is None:
+                return PatternRequirements("unknown", "brace", reason="unmodeled brace format specification")
             if root == "" or root.isdigit():
                 current_numbering = "auto" if root == "" else "manual"
                 if numbering is not None and numbering != current_numbering:
@@ -1228,16 +1307,15 @@ def pattern_requirements(pattern: str) -> PatternRequirements:
                 brace_named_types[root] = _merge_requirement(brace_named_types.get(root), requirement)
             else:
                 return PatternRequirements("unknown", "brace", reason="unsupported brace field")
-            # Nested replacement fields in a format specification are names in
-            # their own right.  Their concrete accepted type depends on the
-            # surrounding mini-language, so they are retained with type ``any``.
+            # Nested fields occupy width/precision digit slots. Presence alone
+            # does not establish that their substitution yields a valid spec.
             for _, nested, nested_spec, nested_conversion in Formatter().parse(spec):
                 if nested is None:
                     continue
                 if not re.fullmatch(r"[A-Za-z_]\w*", nested) or nested_spec or nested_conversion:
                     return PatternRequirements("unknown", "brace", reason="unsupported nested format field")
                 brace_names.append(nested)
-                brace_named_types[nested] = _merge_requirement(brace_named_types.get(nested), "any")
+                brace_named_types[nested] = _merge_requirement(brace_named_types.get(nested), "format-digits")
     except ValueError as exc:
         return PatternRequirements("unknown", "brace", reason=f"invalid brace format: {exc}")
 
@@ -1274,6 +1352,16 @@ def _compatible(requirement: str, supplied: str) -> bool | None:
         return False
     if supplied == "unknown":
         return None
+    if requirement == "format-digits":
+        return True if supplied == "bounded-nonnegative-int" else None
+    if requirement in {"char", "codepoint"}:
+        if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "bool"}:
+            return True
+        if supplied == "int" or (requirement == "char" and supplied == "str"):
+            return None
+        return False
+    if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int"}:
+        supplied = "int"
     if requirement == "any":
         return True
     if requirement == "int":
@@ -1286,8 +1374,6 @@ def _compatible(requirement: str, supplied: str) -> bool | None:
         return supplied in {"int", "float", "finite-float", "nonfinite-float", "number", "bool"}
     if requirement == "str":
         return supplied == "str"
-    if requirement == "char":
-        return None if supplied == "str" else supplied in {"int", "bool"}
     return None
 
 

@@ -1,9 +1,9 @@
 {
-  "gettext_planning_total_ms": 100.9704,
-  "gettext_selected_execution_family_median_ms": 0.026,
+  "gettext_planning_total_ms": 99.1941,
+  "gettext_selected_execution_family_median_ms": 0.0258,
   "gettext_selected_execution_family_range_ms": [
-    0.0073,
-    0.0737
+    0.0074,
+    0.0721
   ],
   "fluent_full_traced_evaluation_ms": 223.0849,
   "note": "Different instrumentation and protocols; not a cross-format speed comparison. Planning enumerates the full finite domain. Selected execution medians use seven repeats."

@@ -48,7 +48,7 @@ A boundary record contains source, catalogs, locale configuration, runtime profi
 
 The project analyzer never imports the target. `direct` mode recognizes suppliers attached syntactically to a literal translation call. `flow` mode performs bounded intraprocedural def-use recovery for local aliases, later percent/brace formatting, literal mappings and sequences, keyword suppliers, primitive types, contexts, and count-conditioned assignments. Unsupported calls, arbitrary container mutation, reflection, interprocedural injection, path uncertainty, and budget exhaustion remain `unknown`.
 
-The trusted analyzer suite has 25 controls. Its classification is compared with 4,623 direct runtime executions over the declared domains. The same 47 findings from 25 controls and six field slices are then classified by both direct and flow modes. The ablation reports status changes on identical findings, not extra projects or defect counts.
+The trusted analyzer suite has 26 controls. Its expected project statuses distinguish the interpreter's two unsupported inputs from the additional static character-range uncertainty; bounded native execution of that character case is still valid. Its classification is compared with 4,623 direct runtime executions over the declared domains. The same 48 findings from 26 controls and six field slices are then classified by both direct and flow modes. The ablation reports status changes on identical findings, not extra projects or defect counts.
 
 ## Guard-product studies and costs
 
@@ -60,11 +60,11 @@ Each comparator uses the same native oracle. Equal-budget random selection uses 
 
 Jupyter Server 2.17.0 is a neutral gettext control selected after adapter design; its complete Chinese PO and exact method slice are retained, but locale loading and server execution are bypassed. Bedrock contributes seven upstream Fluent expected outputs with five byte-verified FTL fixtures; its local loader/settings shim is explicit. OpenHangar preserves two Jinja call expressions and the affected French/Dutch entry. xrpldashboard preserves the changed Jinja expression. AZM CRM preserves one exact message pair to isolate missing-MO delivery. Each provenance record identifies transformations and licenses.
 
-The complete Babel CLI is executed on 27 frozen PO catalogs and two negative controls. Its MO bytes and loaded catalogs are compared with the pinned in-process writer. Weblate and LocalHero are fixed source components under disclosed fixture harnesses; their catalog-policy diagnostics remain separate from caller-failure detection.
+The complete Babel CLI is executed on 228 retained PO catalogs and two negative controls. Its MO bytes and loaded catalogs are compared with the pinned in-process writer. Weblate and LocalHero are fixed source components under disclosed fixture harnesses; their catalog-policy diagnostics remain separate from caller-failure detection.
 
-## Post-freeze independent-project holdout
+## Retained external-project regressions
 
-Before selecting holdout projects, SHA-256 hashes were recorded for `project.py`, `runtime.py`, `program.py`, and `partition.py`. Solaar and virt-manager were then admitted at immutable commits. Each retains one bounded call boundary, exact relevant catalog entries, provenance, transformation notes, and GPL text. The holdout evaluates frozen-analyzer applicability and native agreement on these boundaries. It does not estimate whole-project recall, defect prevalence, or linguistic quality. `scripts/holdout_evaluate.py` fails if analyzer hashes differ from `data/holdout/PROTOCOL.json`.
+Before selecting holdout projects, SHA-256 hashes were recorded for `project.py`, `runtime.py`, `program.py`, and `partition.py`. Solaar and virt-manager were then admitted at immutable commits. Each retains one bounded call boundary, exact relevant catalog entries, provenance, transformation notes, and GPL text. The default check evaluates the retained regression contracts and native agreement on these boundaries. It does not estimate whole-project recall, defect prevalence, or linguistic quality. `scripts/holdout_evaluate.py --mode frozen-source` fails if analyzer hashes differ from `data/holdout/PROTOCOL.json`.
 
 ## Measures and reporting
 

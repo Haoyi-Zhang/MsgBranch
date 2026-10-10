@@ -265,6 +265,15 @@
   },
   {
     "population": "controls",
+    "case": "percent-char-literal",
+    "category": "legitimate",
+    "catalog": "data/controls/percent-char-literal/messages.po",
+    "error": false,
+    "hint": false,
+    "findings": []
+  },
+  {
+    "population": "controls",
     "case": "context-singular",
     "category": "legitimate",
     "catalog": "data/controls/context-singular/messages.po",
@@ -294,7 +303,7 @@
     "population": "validation",
     "case": "en-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\en-0\\messages.po",
+    "catalog": "data/validation/en-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -314,7 +323,7 @@
     "population": "validation",
     "case": "en-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\en-0\\messages.po",
+    "catalog": "data/validation/en-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -334,7 +343,7 @@
     "population": "validation",
     "case": "en-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\en-1\\messages.po",
+    "catalog": "data/validation/en-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -354,7 +363,7 @@
     "population": "validation",
     "case": "en-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\en-1\\messages.po",
+    "catalog": "data/validation/en-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -374,7 +383,7 @@
     "population": "validation",
     "case": "en-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\en-2\\messages.po",
+    "catalog": "data/validation/en-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -394,7 +403,7 @@
     "population": "validation",
     "case": "en-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\en-2\\messages.po",
+    "catalog": "data/validation/en-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -414,7 +423,7 @@
     "population": "validation",
     "case": "en-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\en-3\\messages.po",
+    "catalog": "data/validation/en-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -434,7 +443,7 @@
     "population": "validation",
     "case": "en-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\en-3\\messages.po",
+    "catalog": "data/validation/en-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -454,7 +463,7 @@
     "population": "validation",
     "case": "en-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\en-4\\messages.po",
+    "catalog": "data/validation/en-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -474,7 +483,7 @@
     "population": "validation",
     "case": "en-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\en-4\\messages.po",
+    "catalog": "data/validation/en-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -494,7 +503,7 @@
     "population": "validation",
     "case": "en-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\en-5\\messages.po",
+    "catalog": "data/validation/en-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -514,7 +523,7 @@
     "population": "validation",
     "case": "en-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\en-5\\messages.po",
+    "catalog": "data/validation/en-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -534,7 +543,7 @@
     "population": "validation",
     "case": "en-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\en-6\\messages.po",
+    "catalog": "data/validation/en-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -554,7 +563,7 @@
     "population": "validation",
     "case": "en-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\en-6\\messages.po",
+    "catalog": "data/validation/en-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -574,7 +583,7 @@
     "population": "validation",
     "case": "en-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\en-7\\messages.po",
+    "catalog": "data/validation/en-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -594,7 +603,7 @@
     "population": "validation",
     "case": "en-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\en-7\\messages.po",
+    "catalog": "data/validation/en-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -614,7 +623,7 @@
     "population": "validation",
     "case": "fr-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\fr-0\\messages.po",
+    "catalog": "data/validation/fr-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -634,7 +643,7 @@
     "population": "validation",
     "case": "fr-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\fr-0\\messages.po",
+    "catalog": "data/validation/fr-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -654,7 +663,7 @@
     "population": "validation",
     "case": "fr-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\fr-1\\messages.po",
+    "catalog": "data/validation/fr-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -674,7 +683,7 @@
     "population": "validation",
     "case": "fr-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\fr-1\\messages.po",
+    "catalog": "data/validation/fr-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -694,7 +703,7 @@
     "population": "validation",
     "case": "fr-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\fr-2\\messages.po",
+    "catalog": "data/validation/fr-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -714,7 +723,7 @@
     "population": "validation",
     "case": "fr-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\fr-2\\messages.po",
+    "catalog": "data/validation/fr-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -734,7 +743,7 @@
     "population": "validation",
     "case": "fr-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\fr-3\\messages.po",
+    "catalog": "data/validation/fr-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -754,7 +763,7 @@
     "population": "validation",
     "case": "fr-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\fr-3\\messages.po",
+    "catalog": "data/validation/fr-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -774,7 +783,7 @@
     "population": "validation",
     "case": "fr-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\fr-4\\messages.po",
+    "catalog": "data/validation/fr-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -794,7 +803,7 @@
     "population": "validation",
     "case": "fr-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\fr-4\\messages.po",
+    "catalog": "data/validation/fr-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -814,7 +823,7 @@
     "population": "validation",
     "case": "fr-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\fr-5\\messages.po",
+    "catalog": "data/validation/fr-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -834,7 +843,7 @@
     "population": "validation",
     "case": "fr-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\fr-5\\messages.po",
+    "catalog": "data/validation/fr-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -854,7 +863,7 @@
     "population": "validation",
     "case": "fr-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\fr-6\\messages.po",
+    "catalog": "data/validation/fr-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -874,7 +883,7 @@
     "population": "validation",
     "case": "fr-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\fr-6\\messages.po",
+    "catalog": "data/validation/fr-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -894,7 +903,7 @@
     "population": "validation",
     "case": "fr-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\fr-7\\messages.po",
+    "catalog": "data/validation/fr-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -914,7 +923,7 @@
     "population": "validation",
     "case": "fr-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\fr-7\\messages.po",
+    "catalog": "data/validation/fr-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -934,7 +943,7 @@
     "population": "validation",
     "case": "ja-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ja-0\\messages.po",
+    "catalog": "data/validation/ja-0/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -943,7 +952,7 @@
     "population": "validation",
     "case": "ja-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ja-0\\messages.po",
+    "catalog": "data/validation/ja-0/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -952,7 +961,7 @@
     "population": "validation",
     "case": "ja-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ja-1\\messages.po",
+    "catalog": "data/validation/ja-1/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -961,7 +970,7 @@
     "population": "validation",
     "case": "ja-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ja-1\\messages.po",
+    "catalog": "data/validation/ja-1/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -970,7 +979,7 @@
     "population": "validation",
     "case": "ja-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ja-2\\messages.po",
+    "catalog": "data/validation/ja-2/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -979,7 +988,7 @@
     "population": "validation",
     "case": "ja-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ja-2\\messages.po",
+    "catalog": "data/validation/ja-2/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -988,7 +997,7 @@
     "population": "validation",
     "case": "ja-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ja-3\\messages.po",
+    "catalog": "data/validation/ja-3/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -997,7 +1006,7 @@
     "population": "validation",
     "case": "ja-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ja-3\\messages.po",
+    "catalog": "data/validation/ja-3/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1006,7 +1015,7 @@
     "population": "validation",
     "case": "ja-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ja-4\\messages.po",
+    "catalog": "data/validation/ja-4/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1015,7 +1024,7 @@
     "population": "validation",
     "case": "ja-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ja-4\\messages.po",
+    "catalog": "data/validation/ja-4/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1024,7 +1033,7 @@
     "population": "validation",
     "case": "ja-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ja-5\\messages.po",
+    "catalog": "data/validation/ja-5/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1033,7 +1042,7 @@
     "population": "validation",
     "case": "ja-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ja-5\\messages.po",
+    "catalog": "data/validation/ja-5/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1042,7 +1051,7 @@
     "population": "validation",
     "case": "ja-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ja-6\\messages.po",
+    "catalog": "data/validation/ja-6/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1051,7 +1060,7 @@
     "population": "validation",
     "case": "ja-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ja-6\\messages.po",
+    "catalog": "data/validation/ja-6/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1060,7 +1069,7 @@
     "population": "validation",
     "case": "ja-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ja-7\\messages.po",
+    "catalog": "data/validation/ja-7/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1069,7 +1078,7 @@
     "population": "validation",
     "case": "ja-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ja-7\\messages.po",
+    "catalog": "data/validation/ja-7/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -1078,7 +1087,7 @@
     "population": "validation",
     "case": "ru-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ru-0\\messages.po",
+    "catalog": "data/validation/ru-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1108,7 +1117,7 @@
     "population": "validation",
     "case": "ru-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ru-0\\messages.po",
+    "catalog": "data/validation/ru-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1138,7 +1147,7 @@
     "population": "validation",
     "case": "ru-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ru-1\\messages.po",
+    "catalog": "data/validation/ru-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1168,7 +1177,7 @@
     "population": "validation",
     "case": "ru-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ru-1\\messages.po",
+    "catalog": "data/validation/ru-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1198,7 +1207,7 @@
     "population": "validation",
     "case": "ru-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ru-2\\messages.po",
+    "catalog": "data/validation/ru-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1228,7 +1237,7 @@
     "population": "validation",
     "case": "ru-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ru-2\\messages.po",
+    "catalog": "data/validation/ru-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1258,7 +1267,7 @@
     "population": "validation",
     "case": "ru-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ru-3\\messages.po",
+    "catalog": "data/validation/ru-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1288,7 +1297,7 @@
     "population": "validation",
     "case": "ru-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ru-3\\messages.po",
+    "catalog": "data/validation/ru-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1318,7 +1327,7 @@
     "population": "validation",
     "case": "ru-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ru-4\\messages.po",
+    "catalog": "data/validation/ru-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1348,7 +1357,7 @@
     "population": "validation",
     "case": "ru-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ru-4\\messages.po",
+    "catalog": "data/validation/ru-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1378,7 +1387,7 @@
     "population": "validation",
     "case": "ru-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ru-5\\messages.po",
+    "catalog": "data/validation/ru-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1408,7 +1417,7 @@
     "population": "validation",
     "case": "ru-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ru-5\\messages.po",
+    "catalog": "data/validation/ru-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1438,7 +1447,7 @@
     "population": "validation",
     "case": "ru-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ru-6\\messages.po",
+    "catalog": "data/validation/ru-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1468,7 +1477,7 @@
     "population": "validation",
     "case": "ru-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ru-6\\messages.po",
+    "catalog": "data/validation/ru-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1498,7 +1507,7 @@
     "population": "validation",
     "case": "ru-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ru-7\\messages.po",
+    "catalog": "data/validation/ru-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1528,7 +1537,7 @@
     "population": "validation",
     "case": "ru-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ru-7\\messages.po",
+    "catalog": "data/validation/ru-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1558,7 +1567,7 @@
     "population": "validation",
     "case": "ar-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ar-0\\messages.po",
+    "catalog": "data/validation/ar-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1618,7 +1627,7 @@
     "population": "validation",
     "case": "ar-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ar-0\\messages.po",
+    "catalog": "data/validation/ar-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1678,7 +1687,7 @@
     "population": "validation",
     "case": "ar-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ar-1\\messages.po",
+    "catalog": "data/validation/ar-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1738,7 +1747,7 @@
     "population": "validation",
     "case": "ar-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ar-1\\messages.po",
+    "catalog": "data/validation/ar-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1798,7 +1807,7 @@
     "population": "validation",
     "case": "ar-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ar-2\\messages.po",
+    "catalog": "data/validation/ar-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1858,7 +1867,7 @@
     "population": "validation",
     "case": "ar-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ar-2\\messages.po",
+    "catalog": "data/validation/ar-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1918,7 +1927,7 @@
     "population": "validation",
     "case": "ar-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ar-3\\messages.po",
+    "catalog": "data/validation/ar-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -1978,7 +1987,7 @@
     "population": "validation",
     "case": "ar-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ar-3\\messages.po",
+    "catalog": "data/validation/ar-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2038,7 +2047,7 @@
     "population": "validation",
     "case": "ar-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ar-4\\messages.po",
+    "catalog": "data/validation/ar-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2098,7 +2107,7 @@
     "population": "validation",
     "case": "ar-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ar-4\\messages.po",
+    "catalog": "data/validation/ar-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2158,7 +2167,7 @@
     "population": "validation",
     "case": "ar-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ar-5\\messages.po",
+    "catalog": "data/validation/ar-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2218,7 +2227,7 @@
     "population": "validation",
     "case": "ar-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ar-5\\messages.po",
+    "catalog": "data/validation/ar-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2278,7 +2287,7 @@
     "population": "validation",
     "case": "ar-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ar-6\\messages.po",
+    "catalog": "data/validation/ar-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2338,7 +2347,7 @@
     "population": "validation",
     "case": "ar-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ar-6\\messages.po",
+    "catalog": "data/validation/ar-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2398,7 +2407,7 @@
     "population": "validation",
     "case": "ar-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ar-7\\messages.po",
+    "catalog": "data/validation/ar-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2458,7 +2467,7 @@
     "population": "validation",
     "case": "ar-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ar-7\\messages.po",
+    "catalog": "data/validation/ar-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2518,7 +2527,7 @@
     "population": "validation",
     "case": "pl-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\pl-0\\messages.po",
+    "catalog": "data/validation/pl-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2548,7 +2557,7 @@
     "population": "validation",
     "case": "pl-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\pl-0\\messages.po",
+    "catalog": "data/validation/pl-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2578,7 +2587,7 @@
     "population": "validation",
     "case": "pl-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\pl-1\\messages.po",
+    "catalog": "data/validation/pl-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2608,7 +2617,7 @@
     "population": "validation",
     "case": "pl-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\pl-1\\messages.po",
+    "catalog": "data/validation/pl-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2638,7 +2647,7 @@
     "population": "validation",
     "case": "pl-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\pl-2\\messages.po",
+    "catalog": "data/validation/pl-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2668,7 +2677,7 @@
     "population": "validation",
     "case": "pl-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\pl-2\\messages.po",
+    "catalog": "data/validation/pl-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2698,7 +2707,7 @@
     "population": "validation",
     "case": "pl-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\pl-3\\messages.po",
+    "catalog": "data/validation/pl-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2728,7 +2737,7 @@
     "population": "validation",
     "case": "pl-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\pl-3\\messages.po",
+    "catalog": "data/validation/pl-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2758,7 +2767,7 @@
     "population": "validation",
     "case": "pl-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\pl-4\\messages.po",
+    "catalog": "data/validation/pl-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2788,7 +2797,7 @@
     "population": "validation",
     "case": "pl-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\pl-4\\messages.po",
+    "catalog": "data/validation/pl-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2818,7 +2827,7 @@
     "population": "validation",
     "case": "pl-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\pl-5\\messages.po",
+    "catalog": "data/validation/pl-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2848,7 +2857,7 @@
     "population": "validation",
     "case": "pl-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\pl-5\\messages.po",
+    "catalog": "data/validation/pl-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2878,7 +2887,7 @@
     "population": "validation",
     "case": "pl-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\pl-6\\messages.po",
+    "catalog": "data/validation/pl-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2908,7 +2917,7 @@
     "population": "validation",
     "case": "pl-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\pl-6\\messages.po",
+    "catalog": "data/validation/pl-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2938,7 +2947,7 @@
     "population": "validation",
     "case": "pl-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\pl-7\\messages.po",
+    "catalog": "data/validation/pl-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2968,7 +2977,7 @@
     "population": "validation",
     "case": "pl-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\pl-7\\messages.po",
+    "catalog": "data/validation/pl-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -2998,7 +3007,7 @@
     "population": "validation",
     "case": "cs-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\cs-0\\messages.po",
+    "catalog": "data/validation/cs-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3028,7 +3037,7 @@
     "population": "validation",
     "case": "cs-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\cs-0\\messages.po",
+    "catalog": "data/validation/cs-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3058,7 +3067,7 @@
     "population": "validation",
     "case": "cs-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\cs-1\\messages.po",
+    "catalog": "data/validation/cs-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3088,7 +3097,7 @@
     "population": "validation",
     "case": "cs-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\cs-1\\messages.po",
+    "catalog": "data/validation/cs-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3118,7 +3127,7 @@
     "population": "validation",
     "case": "cs-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\cs-2\\messages.po",
+    "catalog": "data/validation/cs-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3148,7 +3157,7 @@
     "population": "validation",
     "case": "cs-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\cs-2\\messages.po",
+    "catalog": "data/validation/cs-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3178,7 +3187,7 @@
     "population": "validation",
     "case": "cs-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\cs-3\\messages.po",
+    "catalog": "data/validation/cs-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3208,7 +3217,7 @@
     "population": "validation",
     "case": "cs-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\cs-3\\messages.po",
+    "catalog": "data/validation/cs-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3238,7 +3247,7 @@
     "population": "validation",
     "case": "cs-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\cs-4\\messages.po",
+    "catalog": "data/validation/cs-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3268,7 +3277,7 @@
     "population": "validation",
     "case": "cs-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\cs-4\\messages.po",
+    "catalog": "data/validation/cs-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3298,7 +3307,7 @@
     "population": "validation",
     "case": "cs-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\cs-5\\messages.po",
+    "catalog": "data/validation/cs-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3328,7 +3337,7 @@
     "population": "validation",
     "case": "cs-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\cs-5\\messages.po",
+    "catalog": "data/validation/cs-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3358,7 +3367,7 @@
     "population": "validation",
     "case": "cs-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\cs-6\\messages.po",
+    "catalog": "data/validation/cs-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3388,7 +3397,7 @@
     "population": "validation",
     "case": "cs-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\cs-6\\messages.po",
+    "catalog": "data/validation/cs-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3418,7 +3427,7 @@
     "population": "validation",
     "case": "cs-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\cs-7\\messages.po",
+    "catalog": "data/validation/cs-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3448,7 +3457,7 @@
     "population": "validation",
     "case": "cs-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\cs-7\\messages.po",
+    "catalog": "data/validation/cs-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3478,7 +3487,7 @@
     "population": "validation",
     "case": "sl-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\sl-0\\messages.po",
+    "catalog": "data/validation/sl-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3518,7 +3527,7 @@
     "population": "validation",
     "case": "sl-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\sl-0\\messages.po",
+    "catalog": "data/validation/sl-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3558,7 +3567,7 @@
     "population": "validation",
     "case": "sl-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\sl-1\\messages.po",
+    "catalog": "data/validation/sl-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3598,7 +3607,7 @@
     "population": "validation",
     "case": "sl-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\sl-1\\messages.po",
+    "catalog": "data/validation/sl-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3638,7 +3647,7 @@
     "population": "validation",
     "case": "sl-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\sl-2\\messages.po",
+    "catalog": "data/validation/sl-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3678,7 +3687,7 @@
     "population": "validation",
     "case": "sl-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\sl-2\\messages.po",
+    "catalog": "data/validation/sl-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3718,7 +3727,7 @@
     "population": "validation",
     "case": "sl-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\sl-3\\messages.po",
+    "catalog": "data/validation/sl-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3758,7 +3767,7 @@
     "population": "validation",
     "case": "sl-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\sl-3\\messages.po",
+    "catalog": "data/validation/sl-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3798,7 +3807,7 @@
     "population": "validation",
     "case": "sl-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\sl-4\\messages.po",
+    "catalog": "data/validation/sl-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3838,7 +3847,7 @@
     "population": "validation",
     "case": "sl-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\sl-4\\messages.po",
+    "catalog": "data/validation/sl-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3878,7 +3887,7 @@
     "population": "validation",
     "case": "sl-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\sl-5\\messages.po",
+    "catalog": "data/validation/sl-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3918,7 +3927,7 @@
     "population": "validation",
     "case": "sl-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\sl-5\\messages.po",
+    "catalog": "data/validation/sl-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3958,7 +3967,7 @@
     "population": "validation",
     "case": "sl-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\sl-6\\messages.po",
+    "catalog": "data/validation/sl-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -3998,7 +4007,7 @@
     "population": "validation",
     "case": "sl-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\sl-6\\messages.po",
+    "catalog": "data/validation/sl-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4038,7 +4047,7 @@
     "population": "validation",
     "case": "sl-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\sl-7\\messages.po",
+    "catalog": "data/validation/sl-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4078,7 +4087,7 @@
     "population": "validation",
     "case": "sl-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\sl-7\\messages.po",
+    "catalog": "data/validation/sl-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4118,7 +4127,7 @@
     "population": "validation",
     "case": "lt-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lt-0\\messages.po",
+    "catalog": "data/validation/lt-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4148,7 +4157,7 @@
     "population": "validation",
     "case": "lt-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lt-0\\messages.po",
+    "catalog": "data/validation/lt-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4178,7 +4187,7 @@
     "population": "validation",
     "case": "lt-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lt-1\\messages.po",
+    "catalog": "data/validation/lt-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4208,7 +4217,7 @@
     "population": "validation",
     "case": "lt-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lt-1\\messages.po",
+    "catalog": "data/validation/lt-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4238,7 +4247,7 @@
     "population": "validation",
     "case": "lt-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lt-2\\messages.po",
+    "catalog": "data/validation/lt-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4268,7 +4277,7 @@
     "population": "validation",
     "case": "lt-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lt-2\\messages.po",
+    "catalog": "data/validation/lt-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4298,7 +4307,7 @@
     "population": "validation",
     "case": "lt-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lt-3\\messages.po",
+    "catalog": "data/validation/lt-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4328,7 +4337,7 @@
     "population": "validation",
     "case": "lt-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lt-3\\messages.po",
+    "catalog": "data/validation/lt-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4358,7 +4367,7 @@
     "population": "validation",
     "case": "lt-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lt-4\\messages.po",
+    "catalog": "data/validation/lt-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4388,7 +4397,7 @@
     "population": "validation",
     "case": "lt-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lt-4\\messages.po",
+    "catalog": "data/validation/lt-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4418,7 +4427,7 @@
     "population": "validation",
     "case": "lt-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lt-5\\messages.po",
+    "catalog": "data/validation/lt-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4448,7 +4457,7 @@
     "population": "validation",
     "case": "lt-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lt-5\\messages.po",
+    "catalog": "data/validation/lt-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4478,7 +4487,7 @@
     "population": "validation",
     "case": "lt-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lt-6\\messages.po",
+    "catalog": "data/validation/lt-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4508,7 +4517,7 @@
     "population": "validation",
     "case": "lt-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lt-6\\messages.po",
+    "catalog": "data/validation/lt-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4538,7 +4547,7 @@
     "population": "validation",
     "case": "lt-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lt-7\\messages.po",
+    "catalog": "data/validation/lt-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4568,7 +4577,7 @@
     "population": "validation",
     "case": "lt-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lt-7\\messages.po",
+    "catalog": "data/validation/lt-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4598,7 +4607,7 @@
     "population": "validation",
     "case": "lv-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lv-0\\messages.po",
+    "catalog": "data/validation/lv-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4628,7 +4637,7 @@
     "population": "validation",
     "case": "lv-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lv-0\\messages.po",
+    "catalog": "data/validation/lv-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4658,7 +4667,7 @@
     "population": "validation",
     "case": "lv-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lv-1\\messages.po",
+    "catalog": "data/validation/lv-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4688,7 +4697,7 @@
     "population": "validation",
     "case": "lv-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lv-1\\messages.po",
+    "catalog": "data/validation/lv-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4718,7 +4727,7 @@
     "population": "validation",
     "case": "lv-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lv-2\\messages.po",
+    "catalog": "data/validation/lv-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4748,7 +4757,7 @@
     "population": "validation",
     "case": "lv-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lv-2\\messages.po",
+    "catalog": "data/validation/lv-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4778,7 +4787,7 @@
     "population": "validation",
     "case": "lv-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lv-3\\messages.po",
+    "catalog": "data/validation/lv-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4808,7 +4817,7 @@
     "population": "validation",
     "case": "lv-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lv-3\\messages.po",
+    "catalog": "data/validation/lv-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4838,7 +4847,7 @@
     "population": "validation",
     "case": "lv-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lv-4\\messages.po",
+    "catalog": "data/validation/lv-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4868,7 +4877,7 @@
     "population": "validation",
     "case": "lv-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lv-4\\messages.po",
+    "catalog": "data/validation/lv-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4898,7 +4907,7 @@
     "population": "validation",
     "case": "lv-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lv-5\\messages.po",
+    "catalog": "data/validation/lv-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4928,7 +4937,7 @@
     "population": "validation",
     "case": "lv-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lv-5\\messages.po",
+    "catalog": "data/validation/lv-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4958,7 +4967,7 @@
     "population": "validation",
     "case": "lv-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lv-6\\messages.po",
+    "catalog": "data/validation/lv-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -4988,7 +4997,7 @@
     "population": "validation",
     "case": "lv-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lv-6\\messages.po",
+    "catalog": "data/validation/lv-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5018,7 +5027,7 @@
     "population": "validation",
     "case": "lv-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\lv-7\\messages.po",
+    "catalog": "data/validation/lv-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5048,7 +5057,7 @@
     "population": "validation",
     "case": "lv-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\lv-7\\messages.po",
+    "catalog": "data/validation/lv-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5078,7 +5087,7 @@
     "population": "validation",
     "case": "ro-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ro-0\\messages.po",
+    "catalog": "data/validation/ro-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5108,7 +5117,7 @@
     "population": "validation",
     "case": "ro-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ro-0\\messages.po",
+    "catalog": "data/validation/ro-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5138,7 +5147,7 @@
     "population": "validation",
     "case": "ro-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ro-1\\messages.po",
+    "catalog": "data/validation/ro-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5168,7 +5177,7 @@
     "population": "validation",
     "case": "ro-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ro-1\\messages.po",
+    "catalog": "data/validation/ro-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5198,7 +5207,7 @@
     "population": "validation",
     "case": "ro-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ro-2\\messages.po",
+    "catalog": "data/validation/ro-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5228,7 +5237,7 @@
     "population": "validation",
     "case": "ro-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ro-2\\messages.po",
+    "catalog": "data/validation/ro-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5258,7 +5267,7 @@
     "population": "validation",
     "case": "ro-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ro-3\\messages.po",
+    "catalog": "data/validation/ro-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5288,7 +5297,7 @@
     "population": "validation",
     "case": "ro-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ro-3\\messages.po",
+    "catalog": "data/validation/ro-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5318,7 +5327,7 @@
     "population": "validation",
     "case": "ro-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ro-4\\messages.po",
+    "catalog": "data/validation/ro-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5348,7 +5357,7 @@
     "population": "validation",
     "case": "ro-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ro-4\\messages.po",
+    "catalog": "data/validation/ro-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5378,7 +5387,7 @@
     "population": "validation",
     "case": "ro-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ro-5\\messages.po",
+    "catalog": "data/validation/ro-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5408,7 +5417,7 @@
     "population": "validation",
     "case": "ro-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ro-5\\messages.po",
+    "catalog": "data/validation/ro-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5438,7 +5447,7 @@
     "population": "validation",
     "case": "ro-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ro-6\\messages.po",
+    "catalog": "data/validation/ro-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5468,7 +5477,7 @@
     "population": "validation",
     "case": "ro-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ro-6\\messages.po",
+    "catalog": "data/validation/ro-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5498,7 +5507,7 @@
     "population": "validation",
     "case": "ro-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ro-7\\messages.po",
+    "catalog": "data/validation/ro-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5528,7 +5537,7 @@
     "population": "validation",
     "case": "ro-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ro-7\\messages.po",
+    "catalog": "data/validation/ro-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5558,7 +5567,7 @@
     "population": "validation",
     "case": "ga-0-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ga-0\\messages.po",
+    "catalog": "data/validation/ga-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5608,7 +5617,7 @@
     "population": "validation",
     "case": "ga-0-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ga-0\\messages.po",
+    "catalog": "data/validation/ga-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5658,7 +5667,7 @@
     "population": "validation",
     "case": "ga-1-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ga-1\\messages.po",
+    "catalog": "data/validation/ga-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5708,7 +5717,7 @@
     "population": "validation",
     "case": "ga-1-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ga-1\\messages.po",
+    "catalog": "data/validation/ga-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5758,7 +5767,7 @@
     "population": "validation",
     "case": "ga-2-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ga-2\\messages.po",
+    "catalog": "data/validation/ga-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5808,7 +5817,7 @@
     "population": "validation",
     "case": "ga-2-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ga-2\\messages.po",
+    "catalog": "data/validation/ga-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5858,7 +5867,7 @@
     "population": "validation",
     "case": "ga-3-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ga-3\\messages.po",
+    "catalog": "data/validation/ga-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5908,7 +5917,7 @@
     "population": "validation",
     "case": "ga-3-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ga-3\\messages.po",
+    "catalog": "data/validation/ga-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -5958,7 +5967,7 @@
     "population": "validation",
     "case": "ga-4-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ga-4\\messages.po",
+    "catalog": "data/validation/ga-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6008,7 +6017,7 @@
     "population": "validation",
     "case": "ga-4-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ga-4\\messages.po",
+    "catalog": "data/validation/ga-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6058,7 +6067,7 @@
     "population": "validation",
     "case": "ga-5-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ga-5\\messages.po",
+    "catalog": "data/validation/ga-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6108,7 +6117,7 @@
     "population": "validation",
     "case": "ga-5-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ga-5\\messages.po",
+    "catalog": "data/validation/ga-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6158,7 +6167,7 @@
     "population": "validation",
     "case": "ga-6-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ga-6\\messages.po",
+    "catalog": "data/validation/ga-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6208,7 +6217,7 @@
     "population": "validation",
     "case": "ga-6-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ga-6\\messages.po",
+    "catalog": "data/validation/ga-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6258,7 +6267,7 @@
     "population": "validation",
     "case": "ga-7-clean",
     "category": "legitimate",
-    "catalog": "data\\validation\\ga-7\\messages.po",
+    "catalog": "data/validation/ga-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6308,7 +6317,7 @@
     "population": "validation",
     "case": "ga-7-mutant",
     "category": "mutation",
-    "catalog": "data\\validation\\ga-7\\messages.po",
+    "catalog": "data/validation/ga-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6358,7 +6367,7 @@
     "population": "confirmation",
     "case": "en-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\en-0\\messages.po",
+    "catalog": "data/confirmation/en-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6378,7 +6387,7 @@
     "population": "confirmation",
     "case": "en-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\en-0\\messages.po",
+    "catalog": "data/confirmation/en-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6398,7 +6407,7 @@
     "population": "confirmation",
     "case": "en-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\en-1\\messages.po",
+    "catalog": "data/confirmation/en-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6418,7 +6427,7 @@
     "population": "confirmation",
     "case": "en-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\en-1\\messages.po",
+    "catalog": "data/confirmation/en-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6438,7 +6447,7 @@
     "population": "confirmation",
     "case": "en-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\en-2\\messages.po",
+    "catalog": "data/confirmation/en-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6458,7 +6467,7 @@
     "population": "confirmation",
     "case": "en-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\en-2\\messages.po",
+    "catalog": "data/confirmation/en-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6478,7 +6487,7 @@
     "population": "confirmation",
     "case": "en-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\en-3\\messages.po",
+    "catalog": "data/confirmation/en-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6498,7 +6507,7 @@
     "population": "confirmation",
     "case": "en-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\en-3\\messages.po",
+    "catalog": "data/confirmation/en-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6518,7 +6527,7 @@
     "population": "confirmation",
     "case": "en-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\en-4\\messages.po",
+    "catalog": "data/confirmation/en-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6538,7 +6547,7 @@
     "population": "confirmation",
     "case": "en-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\en-4\\messages.po",
+    "catalog": "data/confirmation/en-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6558,7 +6567,7 @@
     "population": "confirmation",
     "case": "en-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\en-5\\messages.po",
+    "catalog": "data/confirmation/en-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6578,7 +6587,7 @@
     "population": "confirmation",
     "case": "en-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\en-5\\messages.po",
+    "catalog": "data/confirmation/en-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6598,7 +6607,7 @@
     "population": "confirmation",
     "case": "en-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\en-6\\messages.po",
+    "catalog": "data/confirmation/en-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6618,7 +6627,7 @@
     "population": "confirmation",
     "case": "en-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\en-6\\messages.po",
+    "catalog": "data/confirmation/en-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6638,7 +6647,7 @@
     "population": "confirmation",
     "case": "en-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\en-7\\messages.po",
+    "catalog": "data/confirmation/en-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6658,7 +6667,7 @@
     "population": "confirmation",
     "case": "en-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\en-7\\messages.po",
+    "catalog": "data/confirmation/en-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6678,7 +6687,7 @@
     "population": "confirmation",
     "case": "fr-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\fr-0\\messages.po",
+    "catalog": "data/confirmation/fr-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6698,7 +6707,7 @@
     "population": "confirmation",
     "case": "fr-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\fr-0\\messages.po",
+    "catalog": "data/confirmation/fr-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6718,7 +6727,7 @@
     "population": "confirmation",
     "case": "fr-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\fr-1\\messages.po",
+    "catalog": "data/confirmation/fr-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6738,7 +6747,7 @@
     "population": "confirmation",
     "case": "fr-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\fr-1\\messages.po",
+    "catalog": "data/confirmation/fr-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6758,7 +6767,7 @@
     "population": "confirmation",
     "case": "fr-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\fr-2\\messages.po",
+    "catalog": "data/confirmation/fr-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6778,7 +6787,7 @@
     "population": "confirmation",
     "case": "fr-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\fr-2\\messages.po",
+    "catalog": "data/confirmation/fr-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6798,7 +6807,7 @@
     "population": "confirmation",
     "case": "fr-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\fr-3\\messages.po",
+    "catalog": "data/confirmation/fr-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6818,7 +6827,7 @@
     "population": "confirmation",
     "case": "fr-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\fr-3\\messages.po",
+    "catalog": "data/confirmation/fr-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6838,7 +6847,7 @@
     "population": "confirmation",
     "case": "fr-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\fr-4\\messages.po",
+    "catalog": "data/confirmation/fr-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6858,7 +6867,7 @@
     "population": "confirmation",
     "case": "fr-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\fr-4\\messages.po",
+    "catalog": "data/confirmation/fr-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6878,7 +6887,7 @@
     "population": "confirmation",
     "case": "fr-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\fr-5\\messages.po",
+    "catalog": "data/confirmation/fr-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6898,7 +6907,7 @@
     "population": "confirmation",
     "case": "fr-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\fr-5\\messages.po",
+    "catalog": "data/confirmation/fr-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6918,7 +6927,7 @@
     "population": "confirmation",
     "case": "fr-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\fr-6\\messages.po",
+    "catalog": "data/confirmation/fr-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6938,7 +6947,7 @@
     "population": "confirmation",
     "case": "fr-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\fr-6\\messages.po",
+    "catalog": "data/confirmation/fr-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6958,7 +6967,7 @@
     "population": "confirmation",
     "case": "fr-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\fr-7\\messages.po",
+    "catalog": "data/confirmation/fr-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6978,7 +6987,7 @@
     "population": "confirmation",
     "case": "fr-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\fr-7\\messages.po",
+    "catalog": "data/confirmation/fr-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -6998,7 +7007,7 @@
     "population": "confirmation",
     "case": "ja-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ja-0\\messages.po",
+    "catalog": "data/confirmation/ja-0/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7007,7 +7016,7 @@
     "population": "confirmation",
     "case": "ja-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ja-0\\messages.po",
+    "catalog": "data/confirmation/ja-0/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7016,7 +7025,7 @@
     "population": "confirmation",
     "case": "ja-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ja-1\\messages.po",
+    "catalog": "data/confirmation/ja-1/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7025,7 +7034,7 @@
     "population": "confirmation",
     "case": "ja-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ja-1\\messages.po",
+    "catalog": "data/confirmation/ja-1/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7034,7 +7043,7 @@
     "population": "confirmation",
     "case": "ja-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ja-2\\messages.po",
+    "catalog": "data/confirmation/ja-2/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7043,7 +7052,7 @@
     "population": "confirmation",
     "case": "ja-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ja-2\\messages.po",
+    "catalog": "data/confirmation/ja-2/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7052,7 +7061,7 @@
     "population": "confirmation",
     "case": "ja-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ja-3\\messages.po",
+    "catalog": "data/confirmation/ja-3/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7061,7 +7070,7 @@
     "population": "confirmation",
     "case": "ja-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ja-3\\messages.po",
+    "catalog": "data/confirmation/ja-3/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7070,7 +7079,7 @@
     "population": "confirmation",
     "case": "ja-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ja-4\\messages.po",
+    "catalog": "data/confirmation/ja-4/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7079,7 +7088,7 @@
     "population": "confirmation",
     "case": "ja-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ja-4\\messages.po",
+    "catalog": "data/confirmation/ja-4/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7088,7 +7097,7 @@
     "population": "confirmation",
     "case": "ja-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ja-5\\messages.po",
+    "catalog": "data/confirmation/ja-5/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7097,7 +7106,7 @@
     "population": "confirmation",
     "case": "ja-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ja-5\\messages.po",
+    "catalog": "data/confirmation/ja-5/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7106,7 +7115,7 @@
     "population": "confirmation",
     "case": "ja-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ja-6\\messages.po",
+    "catalog": "data/confirmation/ja-6/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7115,7 +7124,7 @@
     "population": "confirmation",
     "case": "ja-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ja-6\\messages.po",
+    "catalog": "data/confirmation/ja-6/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7124,7 +7133,7 @@
     "population": "confirmation",
     "case": "ja-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ja-7\\messages.po",
+    "catalog": "data/confirmation/ja-7/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7133,7 +7142,7 @@
     "population": "confirmation",
     "case": "ja-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ja-7\\messages.po",
+    "catalog": "data/confirmation/ja-7/messages.po",
     "error": false,
     "hint": false,
     "findings": []
@@ -7142,7 +7151,7 @@
     "population": "confirmation",
     "case": "ru-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ru-0\\messages.po",
+    "catalog": "data/confirmation/ru-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7172,7 +7181,7 @@
     "population": "confirmation",
     "case": "ru-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ru-0\\messages.po",
+    "catalog": "data/confirmation/ru-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7202,7 +7211,7 @@
     "population": "confirmation",
     "case": "ru-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ru-1\\messages.po",
+    "catalog": "data/confirmation/ru-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7232,7 +7241,7 @@
     "population": "confirmation",
     "case": "ru-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ru-1\\messages.po",
+    "catalog": "data/confirmation/ru-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7262,7 +7271,7 @@
     "population": "confirmation",
     "case": "ru-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ru-2\\messages.po",
+    "catalog": "data/confirmation/ru-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7292,7 +7301,7 @@
     "population": "confirmation",
     "case": "ru-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ru-2\\messages.po",
+    "catalog": "data/confirmation/ru-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7322,7 +7331,7 @@
     "population": "confirmation",
     "case": "ru-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ru-3\\messages.po",
+    "catalog": "data/confirmation/ru-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7352,7 +7361,7 @@
     "population": "confirmation",
     "case": "ru-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ru-3\\messages.po",
+    "catalog": "data/confirmation/ru-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7382,7 +7391,7 @@
     "population": "confirmation",
     "case": "ru-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ru-4\\messages.po",
+    "catalog": "data/confirmation/ru-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7412,7 +7421,7 @@
     "population": "confirmation",
     "case": "ru-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ru-4\\messages.po",
+    "catalog": "data/confirmation/ru-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7442,7 +7451,7 @@
     "population": "confirmation",
     "case": "ru-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ru-5\\messages.po",
+    "catalog": "data/confirmation/ru-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7472,7 +7481,7 @@
     "population": "confirmation",
     "case": "ru-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ru-5\\messages.po",
+    "catalog": "data/confirmation/ru-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7502,7 +7511,7 @@
     "population": "confirmation",
     "case": "ru-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ru-6\\messages.po",
+    "catalog": "data/confirmation/ru-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7532,7 +7541,7 @@
     "population": "confirmation",
     "case": "ru-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ru-6\\messages.po",
+    "catalog": "data/confirmation/ru-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7562,7 +7571,7 @@
     "population": "confirmation",
     "case": "ru-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ru-7\\messages.po",
+    "catalog": "data/confirmation/ru-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7592,7 +7601,7 @@
     "population": "confirmation",
     "case": "ru-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ru-7\\messages.po",
+    "catalog": "data/confirmation/ru-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7622,7 +7631,7 @@
     "population": "confirmation",
     "case": "ar-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ar-0\\messages.po",
+    "catalog": "data/confirmation/ar-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7682,7 +7691,7 @@
     "population": "confirmation",
     "case": "ar-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ar-0\\messages.po",
+    "catalog": "data/confirmation/ar-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7742,7 +7751,7 @@
     "population": "confirmation",
     "case": "ar-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ar-1\\messages.po",
+    "catalog": "data/confirmation/ar-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7802,7 +7811,7 @@
     "population": "confirmation",
     "case": "ar-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ar-1\\messages.po",
+    "catalog": "data/confirmation/ar-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7862,7 +7871,7 @@
     "population": "confirmation",
     "case": "ar-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ar-2\\messages.po",
+    "catalog": "data/confirmation/ar-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7922,7 +7931,7 @@
     "population": "confirmation",
     "case": "ar-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ar-2\\messages.po",
+    "catalog": "data/confirmation/ar-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -7982,7 +7991,7 @@
     "population": "confirmation",
     "case": "ar-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ar-3\\messages.po",
+    "catalog": "data/confirmation/ar-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8042,7 +8051,7 @@
     "population": "confirmation",
     "case": "ar-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ar-3\\messages.po",
+    "catalog": "data/confirmation/ar-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8102,7 +8111,7 @@
     "population": "confirmation",
     "case": "ar-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ar-4\\messages.po",
+    "catalog": "data/confirmation/ar-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8162,7 +8171,7 @@
     "population": "confirmation",
     "case": "ar-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ar-4\\messages.po",
+    "catalog": "data/confirmation/ar-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8222,7 +8231,7 @@
     "population": "confirmation",
     "case": "ar-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ar-5\\messages.po",
+    "catalog": "data/confirmation/ar-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8282,7 +8291,7 @@
     "population": "confirmation",
     "case": "ar-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ar-5\\messages.po",
+    "catalog": "data/confirmation/ar-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8342,7 +8351,7 @@
     "population": "confirmation",
     "case": "ar-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ar-6\\messages.po",
+    "catalog": "data/confirmation/ar-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8402,7 +8411,7 @@
     "population": "confirmation",
     "case": "ar-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ar-6\\messages.po",
+    "catalog": "data/confirmation/ar-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8462,7 +8471,7 @@
     "population": "confirmation",
     "case": "ar-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ar-7\\messages.po",
+    "catalog": "data/confirmation/ar-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8522,7 +8531,7 @@
     "population": "confirmation",
     "case": "ar-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ar-7\\messages.po",
+    "catalog": "data/confirmation/ar-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8582,7 +8591,7 @@
     "population": "confirmation",
     "case": "pl-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\pl-0\\messages.po",
+    "catalog": "data/confirmation/pl-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8612,7 +8621,7 @@
     "population": "confirmation",
     "case": "pl-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\pl-0\\messages.po",
+    "catalog": "data/confirmation/pl-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8642,7 +8651,7 @@
     "population": "confirmation",
     "case": "pl-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\pl-1\\messages.po",
+    "catalog": "data/confirmation/pl-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8672,7 +8681,7 @@
     "population": "confirmation",
     "case": "pl-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\pl-1\\messages.po",
+    "catalog": "data/confirmation/pl-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8702,7 +8711,7 @@
     "population": "confirmation",
     "case": "pl-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\pl-2\\messages.po",
+    "catalog": "data/confirmation/pl-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8732,7 +8741,7 @@
     "population": "confirmation",
     "case": "pl-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\pl-2\\messages.po",
+    "catalog": "data/confirmation/pl-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8762,7 +8771,7 @@
     "population": "confirmation",
     "case": "pl-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\pl-3\\messages.po",
+    "catalog": "data/confirmation/pl-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8792,7 +8801,7 @@
     "population": "confirmation",
     "case": "pl-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\pl-3\\messages.po",
+    "catalog": "data/confirmation/pl-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8822,7 +8831,7 @@
     "population": "confirmation",
     "case": "pl-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\pl-4\\messages.po",
+    "catalog": "data/confirmation/pl-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8852,7 +8861,7 @@
     "population": "confirmation",
     "case": "pl-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\pl-4\\messages.po",
+    "catalog": "data/confirmation/pl-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8882,7 +8891,7 @@
     "population": "confirmation",
     "case": "pl-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\pl-5\\messages.po",
+    "catalog": "data/confirmation/pl-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8912,7 +8921,7 @@
     "population": "confirmation",
     "case": "pl-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\pl-5\\messages.po",
+    "catalog": "data/confirmation/pl-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8942,7 +8951,7 @@
     "population": "confirmation",
     "case": "pl-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\pl-6\\messages.po",
+    "catalog": "data/confirmation/pl-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -8972,7 +8981,7 @@
     "population": "confirmation",
     "case": "pl-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\pl-6\\messages.po",
+    "catalog": "data/confirmation/pl-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9002,7 +9011,7 @@
     "population": "confirmation",
     "case": "pl-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\pl-7\\messages.po",
+    "catalog": "data/confirmation/pl-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9032,7 +9041,7 @@
     "population": "confirmation",
     "case": "pl-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\pl-7\\messages.po",
+    "catalog": "data/confirmation/pl-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9062,7 +9071,7 @@
     "population": "confirmation",
     "case": "cs-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\cs-0\\messages.po",
+    "catalog": "data/confirmation/cs-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9092,7 +9101,7 @@
     "population": "confirmation",
     "case": "cs-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\cs-0\\messages.po",
+    "catalog": "data/confirmation/cs-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9122,7 +9131,7 @@
     "population": "confirmation",
     "case": "cs-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\cs-1\\messages.po",
+    "catalog": "data/confirmation/cs-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9152,7 +9161,7 @@
     "population": "confirmation",
     "case": "cs-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\cs-1\\messages.po",
+    "catalog": "data/confirmation/cs-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9182,7 +9191,7 @@
     "population": "confirmation",
     "case": "cs-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\cs-2\\messages.po",
+    "catalog": "data/confirmation/cs-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9212,7 +9221,7 @@
     "population": "confirmation",
     "case": "cs-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\cs-2\\messages.po",
+    "catalog": "data/confirmation/cs-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9242,7 +9251,7 @@
     "population": "confirmation",
     "case": "cs-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\cs-3\\messages.po",
+    "catalog": "data/confirmation/cs-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9272,7 +9281,7 @@
     "population": "confirmation",
     "case": "cs-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\cs-3\\messages.po",
+    "catalog": "data/confirmation/cs-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9302,7 +9311,7 @@
     "population": "confirmation",
     "case": "cs-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\cs-4\\messages.po",
+    "catalog": "data/confirmation/cs-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9332,7 +9341,7 @@
     "population": "confirmation",
     "case": "cs-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\cs-4\\messages.po",
+    "catalog": "data/confirmation/cs-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9362,7 +9371,7 @@
     "population": "confirmation",
     "case": "cs-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\cs-5\\messages.po",
+    "catalog": "data/confirmation/cs-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9392,7 +9401,7 @@
     "population": "confirmation",
     "case": "cs-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\cs-5\\messages.po",
+    "catalog": "data/confirmation/cs-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9422,7 +9431,7 @@
     "population": "confirmation",
     "case": "cs-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\cs-6\\messages.po",
+    "catalog": "data/confirmation/cs-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9452,7 +9461,7 @@
     "population": "confirmation",
     "case": "cs-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\cs-6\\messages.po",
+    "catalog": "data/confirmation/cs-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9482,7 +9491,7 @@
     "population": "confirmation",
     "case": "cs-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\cs-7\\messages.po",
+    "catalog": "data/confirmation/cs-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9512,7 +9521,7 @@
     "population": "confirmation",
     "case": "cs-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\cs-7\\messages.po",
+    "catalog": "data/confirmation/cs-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9542,7 +9551,7 @@
     "population": "confirmation",
     "case": "sl-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\sl-0\\messages.po",
+    "catalog": "data/confirmation/sl-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9582,7 +9591,7 @@
     "population": "confirmation",
     "case": "sl-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\sl-0\\messages.po",
+    "catalog": "data/confirmation/sl-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9622,7 +9631,7 @@
     "population": "confirmation",
     "case": "sl-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\sl-1\\messages.po",
+    "catalog": "data/confirmation/sl-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9662,7 +9671,7 @@
     "population": "confirmation",
     "case": "sl-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\sl-1\\messages.po",
+    "catalog": "data/confirmation/sl-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9702,7 +9711,7 @@
     "population": "confirmation",
     "case": "sl-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\sl-2\\messages.po",
+    "catalog": "data/confirmation/sl-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9742,7 +9751,7 @@
     "population": "confirmation",
     "case": "sl-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\sl-2\\messages.po",
+    "catalog": "data/confirmation/sl-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9782,7 +9791,7 @@
     "population": "confirmation",
     "case": "sl-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\sl-3\\messages.po",
+    "catalog": "data/confirmation/sl-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9822,7 +9831,7 @@
     "population": "confirmation",
     "case": "sl-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\sl-3\\messages.po",
+    "catalog": "data/confirmation/sl-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9862,7 +9871,7 @@
     "population": "confirmation",
     "case": "sl-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\sl-4\\messages.po",
+    "catalog": "data/confirmation/sl-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9902,7 +9911,7 @@
     "population": "confirmation",
     "case": "sl-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\sl-4\\messages.po",
+    "catalog": "data/confirmation/sl-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9942,7 +9951,7 @@
     "population": "confirmation",
     "case": "sl-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\sl-5\\messages.po",
+    "catalog": "data/confirmation/sl-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -9982,7 +9991,7 @@
     "population": "confirmation",
     "case": "sl-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\sl-5\\messages.po",
+    "catalog": "data/confirmation/sl-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10022,7 +10031,7 @@
     "population": "confirmation",
     "case": "sl-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\sl-6\\messages.po",
+    "catalog": "data/confirmation/sl-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10062,7 +10071,7 @@
     "population": "confirmation",
     "case": "sl-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\sl-6\\messages.po",
+    "catalog": "data/confirmation/sl-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10102,7 +10111,7 @@
     "population": "confirmation",
     "case": "sl-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\sl-7\\messages.po",
+    "catalog": "data/confirmation/sl-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10142,7 +10151,7 @@
     "population": "confirmation",
     "case": "sl-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\sl-7\\messages.po",
+    "catalog": "data/confirmation/sl-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10182,7 +10191,7 @@
     "population": "confirmation",
     "case": "lt-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lt-0\\messages.po",
+    "catalog": "data/confirmation/lt-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10212,7 +10221,7 @@
     "population": "confirmation",
     "case": "lt-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lt-0\\messages.po",
+    "catalog": "data/confirmation/lt-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10242,7 +10251,7 @@
     "population": "confirmation",
     "case": "lt-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lt-1\\messages.po",
+    "catalog": "data/confirmation/lt-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10272,7 +10281,7 @@
     "population": "confirmation",
     "case": "lt-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lt-1\\messages.po",
+    "catalog": "data/confirmation/lt-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10302,7 +10311,7 @@
     "population": "confirmation",
     "case": "lt-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lt-2\\messages.po",
+    "catalog": "data/confirmation/lt-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10332,7 +10341,7 @@
     "population": "confirmation",
     "case": "lt-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lt-2\\messages.po",
+    "catalog": "data/confirmation/lt-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10362,7 +10371,7 @@
     "population": "confirmation",
     "case": "lt-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lt-3\\messages.po",
+    "catalog": "data/confirmation/lt-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10392,7 +10401,7 @@
     "population": "confirmation",
     "case": "lt-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lt-3\\messages.po",
+    "catalog": "data/confirmation/lt-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10422,7 +10431,7 @@
     "population": "confirmation",
     "case": "lt-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lt-4\\messages.po",
+    "catalog": "data/confirmation/lt-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10452,7 +10461,7 @@
     "population": "confirmation",
     "case": "lt-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lt-4\\messages.po",
+    "catalog": "data/confirmation/lt-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10482,7 +10491,7 @@
     "population": "confirmation",
     "case": "lt-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lt-5\\messages.po",
+    "catalog": "data/confirmation/lt-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10512,7 +10521,7 @@
     "population": "confirmation",
     "case": "lt-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lt-5\\messages.po",
+    "catalog": "data/confirmation/lt-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10542,7 +10551,7 @@
     "population": "confirmation",
     "case": "lt-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lt-6\\messages.po",
+    "catalog": "data/confirmation/lt-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10572,7 +10581,7 @@
     "population": "confirmation",
     "case": "lt-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lt-6\\messages.po",
+    "catalog": "data/confirmation/lt-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10602,7 +10611,7 @@
     "population": "confirmation",
     "case": "lt-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lt-7\\messages.po",
+    "catalog": "data/confirmation/lt-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10632,7 +10641,7 @@
     "population": "confirmation",
     "case": "lt-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lt-7\\messages.po",
+    "catalog": "data/confirmation/lt-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10662,7 +10671,7 @@
     "population": "confirmation",
     "case": "lv-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lv-0\\messages.po",
+    "catalog": "data/confirmation/lv-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10692,7 +10701,7 @@
     "population": "confirmation",
     "case": "lv-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lv-0\\messages.po",
+    "catalog": "data/confirmation/lv-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10722,7 +10731,7 @@
     "population": "confirmation",
     "case": "lv-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lv-1\\messages.po",
+    "catalog": "data/confirmation/lv-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10752,7 +10761,7 @@
     "population": "confirmation",
     "case": "lv-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lv-1\\messages.po",
+    "catalog": "data/confirmation/lv-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10782,7 +10791,7 @@
     "population": "confirmation",
     "case": "lv-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lv-2\\messages.po",
+    "catalog": "data/confirmation/lv-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10812,7 +10821,7 @@
     "population": "confirmation",
     "case": "lv-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lv-2\\messages.po",
+    "catalog": "data/confirmation/lv-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10842,7 +10851,7 @@
     "population": "confirmation",
     "case": "lv-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lv-3\\messages.po",
+    "catalog": "data/confirmation/lv-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10872,7 +10881,7 @@
     "population": "confirmation",
     "case": "lv-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lv-3\\messages.po",
+    "catalog": "data/confirmation/lv-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10902,7 +10911,7 @@
     "population": "confirmation",
     "case": "lv-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lv-4\\messages.po",
+    "catalog": "data/confirmation/lv-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10932,7 +10941,7 @@
     "population": "confirmation",
     "case": "lv-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lv-4\\messages.po",
+    "catalog": "data/confirmation/lv-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10962,7 +10971,7 @@
     "population": "confirmation",
     "case": "lv-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lv-5\\messages.po",
+    "catalog": "data/confirmation/lv-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -10992,7 +11001,7 @@
     "population": "confirmation",
     "case": "lv-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lv-5\\messages.po",
+    "catalog": "data/confirmation/lv-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11022,7 +11031,7 @@
     "population": "confirmation",
     "case": "lv-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lv-6\\messages.po",
+    "catalog": "data/confirmation/lv-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11052,7 +11061,7 @@
     "population": "confirmation",
     "case": "lv-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lv-6\\messages.po",
+    "catalog": "data/confirmation/lv-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11082,7 +11091,7 @@
     "population": "confirmation",
     "case": "lv-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\lv-7\\messages.po",
+    "catalog": "data/confirmation/lv-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11112,7 +11121,7 @@
     "population": "confirmation",
     "case": "lv-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\lv-7\\messages.po",
+    "catalog": "data/confirmation/lv-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11142,7 +11151,7 @@
     "population": "confirmation",
     "case": "ro-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ro-0\\messages.po",
+    "catalog": "data/confirmation/ro-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11172,7 +11181,7 @@
     "population": "confirmation",
     "case": "ro-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ro-0\\messages.po",
+    "catalog": "data/confirmation/ro-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11202,7 +11211,7 @@
     "population": "confirmation",
     "case": "ro-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ro-1\\messages.po",
+    "catalog": "data/confirmation/ro-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11232,7 +11241,7 @@
     "population": "confirmation",
     "case": "ro-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ro-1\\messages.po",
+    "catalog": "data/confirmation/ro-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11262,7 +11271,7 @@
     "population": "confirmation",
     "case": "ro-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ro-2\\messages.po",
+    "catalog": "data/confirmation/ro-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11292,7 +11301,7 @@
     "population": "confirmation",
     "case": "ro-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ro-2\\messages.po",
+    "catalog": "data/confirmation/ro-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11322,7 +11331,7 @@
     "population": "confirmation",
     "case": "ro-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ro-3\\messages.po",
+    "catalog": "data/confirmation/ro-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11352,7 +11361,7 @@
     "population": "confirmation",
     "case": "ro-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ro-3\\messages.po",
+    "catalog": "data/confirmation/ro-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11382,7 +11391,7 @@
     "population": "confirmation",
     "case": "ro-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ro-4\\messages.po",
+    "catalog": "data/confirmation/ro-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11412,7 +11421,7 @@
     "population": "confirmation",
     "case": "ro-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ro-4\\messages.po",
+    "catalog": "data/confirmation/ro-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11442,7 +11451,7 @@
     "population": "confirmation",
     "case": "ro-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ro-5\\messages.po",
+    "catalog": "data/confirmation/ro-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11472,7 +11481,7 @@
     "population": "confirmation",
     "case": "ro-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ro-5\\messages.po",
+    "catalog": "data/confirmation/ro-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11502,7 +11511,7 @@
     "population": "confirmation",
     "case": "ro-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ro-6\\messages.po",
+    "catalog": "data/confirmation/ro-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11532,7 +11541,7 @@
     "population": "confirmation",
     "case": "ro-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ro-6\\messages.po",
+    "catalog": "data/confirmation/ro-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11562,7 +11571,7 @@
     "population": "confirmation",
     "case": "ro-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ro-7\\messages.po",
+    "catalog": "data/confirmation/ro-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11592,7 +11601,7 @@
     "population": "confirmation",
     "case": "ro-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ro-7\\messages.po",
+    "catalog": "data/confirmation/ro-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11622,7 +11631,7 @@
     "population": "confirmation",
     "case": "ga-0-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ga-0\\messages.po",
+    "catalog": "data/confirmation/ga-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11672,7 +11681,7 @@
     "population": "confirmation",
     "case": "ga-0-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ga-0\\messages.po",
+    "catalog": "data/confirmation/ga-0/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11722,7 +11731,7 @@
     "population": "confirmation",
     "case": "ga-1-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ga-1\\messages.po",
+    "catalog": "data/confirmation/ga-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11772,7 +11781,7 @@
     "population": "confirmation",
     "case": "ga-1-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ga-1\\messages.po",
+    "catalog": "data/confirmation/ga-1/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11822,7 +11831,7 @@
     "population": "confirmation",
     "case": "ga-2-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ga-2\\messages.po",
+    "catalog": "data/confirmation/ga-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11872,7 +11881,7 @@
     "population": "confirmation",
     "case": "ga-2-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ga-2\\messages.po",
+    "catalog": "data/confirmation/ga-2/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11922,7 +11931,7 @@
     "population": "confirmation",
     "case": "ga-3-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ga-3\\messages.po",
+    "catalog": "data/confirmation/ga-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -11972,7 +11981,7 @@
     "population": "confirmation",
     "case": "ga-3-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ga-3\\messages.po",
+    "catalog": "data/confirmation/ga-3/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -12022,7 +12031,7 @@
     "population": "confirmation",
     "case": "ga-4-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ga-4\\messages.po",
+    "catalog": "data/confirmation/ga-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -12072,7 +12081,7 @@
     "population": "confirmation",
     "case": "ga-4-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ga-4\\messages.po",
+    "catalog": "data/confirmation/ga-4/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -12122,7 +12131,7 @@
     "population": "confirmation",
     "case": "ga-5-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ga-5\\messages.po",
+    "catalog": "data/confirmation/ga-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -12172,7 +12181,7 @@
     "population": "confirmation",
     "case": "ga-5-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ga-5\\messages.po",
+    "catalog": "data/confirmation/ga-5/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -12222,7 +12231,7 @@
     "population": "confirmation",
     "case": "ga-6-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ga-6\\messages.po",
+    "catalog": "data/confirmation/ga-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -12272,7 +12281,7 @@
     "population": "confirmation",
     "case": "ga-6-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ga-6\\messages.po",
+    "catalog": "data/confirmation/ga-6/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -12322,7 +12331,7 @@
     "population": "confirmation",
     "case": "ga-7-clean",
     "category": "legitimate",
-    "catalog": "data\\confirmation\\ga-7\\messages.po",
+    "catalog": "data/confirmation/ga-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [
@@ -12372,7 +12381,7 @@
     "population": "confirmation",
     "case": "ga-7-mutant",
     "category": "mutation",
-    "catalog": "data\\confirmation\\ga-7\\messages.po",
+    "catalog": "data/confirmation/ga-7/messages.po",
     "error": false,
     "hint": true,
     "findings": [

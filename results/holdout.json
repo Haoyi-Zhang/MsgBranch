@@ -23,8 +23,8 @@
       "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
     },
     "actual": {
-      "src/msgbranch/project.py": "8c35e9c459d0f4882b134a91744f578e45a4424df931dde3db2fd35440cc554e",
-      "src/msgbranch/runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73",
+      "src/msgbranch/project.py": "eaaa114f8a69266b7fddf6910c0fb601fd891d70d2b09c83d6ba7071788cb475",
+      "src/msgbranch/runtime.py": "5812f19fb95d266ad4a2f86ce9f43bf218c5f72bc7cb51bdbbf9b3faf15c14bd",
       "src/msgbranch/program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
       "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044"
     }
@@ -289,7 +289,7 @@
                   "named_types": [
                     [
                       "count",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -312,7 +312,7 @@
                 "named_types": [
                   [
                     "count",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -334,7 +334,7 @@
                   "named_types": [
                     [
                       "count",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -392,7 +392,7 @@
                   "named_types": [
                     [
                       "count",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -415,7 +415,7 @@
                 "named_types": [
                   [
                     "count",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -437,7 +437,7 @@
                   "named_types": [
                     [
                       "count",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1005,7 +1005,7 @@
                   "named_types": [
                     [
                       "minutes",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1028,7 +1028,7 @@
                 "named_types": [
                   [
                     "minutes",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -1050,7 +1050,7 @@
                   "named_types": [
                     [
                       "minutes",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1112,7 +1112,7 @@
                   "named_types": [
                     [
                       "minutes",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1135,7 +1135,7 @@
                 "named_types": [
                   [
                     "minutes",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -1157,7 +1157,7 @@
                   "named_types": [
                     [
                       "minutes",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],

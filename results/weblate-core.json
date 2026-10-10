@@ -1028,6 +1028,44 @@
   },
   {
     "population": "controls",
+    "case": "percent-char-literal",
+    "category": "legitimate",
+    "strict": false,
+    "alarm": false,
+    "checks": [
+      {
+        "message_id": "%c item",
+        "format_flag": "python-format",
+        "strict": false,
+        "fuzzy": false,
+        "alarm": false,
+        "details": [
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "population": "controls",
+    "case": "percent-char-literal",
+    "category": "legitimate",
+    "strict": true,
+    "alarm": false,
+    "checks": [
+      {
+        "message_id": "%c item",
+        "format_flag": "python-format",
+        "strict": true,
+        "fuzzy": false,
+        "alarm": false,
+        "details": [
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "population": "controls",
     "case": "context-singular",
     "category": "legitimate",
     "strict": false,

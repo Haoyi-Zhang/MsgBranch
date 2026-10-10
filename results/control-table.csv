@@ -21,6 +21,7 @@ gettext,fuzzy-fallback,legitimate,0,0,0,0,2,201
 gettext,dynamic-key,unknown,0,0,0,0,2,201
 gettext,dynamic-supplier,unknown,0,0,0,0,2,201
 gettext,percent-char-int,legitimate,0,0,0,0,1,201
+gettext,percent-char-literal,legitimate,0,0,0,0,1,201
 gettext,context-singular,legitimate,0,0,0,0,1,201
 gettext,context-plural,legitimate,0,0,0,0,2,201
 gettext,nested-brace-format,legitimate,0,0,0,0,1,201

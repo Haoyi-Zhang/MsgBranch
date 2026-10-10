@@ -82,14 +82,14 @@ def evaluate() -> dict:
             n
             for n in DOMAIN
             if has_failure({"n": n, **reference(source, runtime, n)}, spec)
-        } if not spec["expected_unknown"] else set()
+        } if not spec.get("expected_project_unknown", spec["expected_unknown"]) else set()
         flow = audit_project(source_path, [catalog_path], max_count=200, analysis_mode="flow")
         direct = audit_project(source_path, [catalog_path], max_count=200, analysis_mode="direct")
         flow_errors = classified_counts(flow, "error")
         direct_errors = classified_counts(direct, "error")
         flow_unknown = flow["summary"]["unknown"] > 0
         direct_unknown = direct["summary"]["unknown"] > 0
-        expected_unknown = bool(spec["expected_unknown"])
+        expected_unknown = bool(spec.get("expected_project_unknown", spec["expected_unknown"]))
         flow_exact = flow_unknown == expected_unknown and (expected_unknown or flow_errors == actual_failures)
         direct_exact = direct_unknown == expected_unknown and (expected_unknown or direct_errors == actual_failures)
         rows.append(

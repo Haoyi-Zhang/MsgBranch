@@ -1,11 +1,11 @@
 {
   "controls": {
-    "units": 25,
+    "units": 26,
     "errors": 3,
     "hints": 2,
     "by_category": {
       "legitimate": {
-        "units": 16,
+        "units": 17,
         "errors": 1,
         "hints": 2
       },

@@ -21,14 +21,14 @@
   "openhangar_outcomes_recounted": 248,
   "bedrock_assertions_matched": 7,
   "cost_medians_recomputed": 36,
-  "weblate_component_unit_records_recounted": 822,
-  "localhero_component_unit_records_recounted": 413,
+  "weblate_component_unit_records_recounted": 824,
+  "localhero_component_unit_records_recounted": 414,
   "xrpldashboard_outcomes_recounted": 8,
   "public_fix_candidates_recounted": 20,
-  "babel_cli_catalogs_recounted": 227,
-  "flow_validation_controls_recounted": 25,
+  "babel_cli_catalogs_recounted": 228,
+  "flow_validation_controls_recounted": 26,
   "flow_validation_runtime_executions_recounted": 4623,
-  "project_audit_findings_recounted": 47,
+  "project_audit_findings_recounted": 48,
   "holdout_findings_recounted": 3,
   "holdout_runtime_executions_recounted": 10,
   "holdout_accounting": {
@@ -37,9 +37,9 @@
     "runtime_executions": 10
   },
   "project_qualification_accounting": {
-    "findings": 47,
+    "findings": 48,
     "transitions": {
-      "unknown_to_clean": 20,
+      "unknown_to_clean": 19,
       "unknown_to_error": 4,
       "clean_to_unknown": 4,
       "error_to_unknown": 3,

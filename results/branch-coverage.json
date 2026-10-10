@@ -3,9 +3,9 @@
   "denominator": "units observed in the full declared input domain; unknown gettext families and exploratory Fluent contract probes excluded; branchless cases contribute zero Fluent selector units",
   "totals": {
     "gettext": {
-      "reachable": 49,
-      "ordinary": 40,
-      "selected": 49
+      "reachable": 50,
+      "ordinary": 41,
+      "selected": 50
     },
     "Fluent": {
       "reachable": 24,

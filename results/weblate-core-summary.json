@@ -1,11 +1,11 @@
 {
   "controls": {
     "default": {
-      "units": 25,
+      "units": 26,
       "alarms": 4,
       "by_category": {
         "legitimate": {
-          "units": 16,
+          "units": 17,
           "alarms": 2
         },
         "mutation": {
@@ -19,11 +19,11 @@
       }
     },
     "strict": {
-      "units": 25,
+      "units": 26,
       "alarms": 6,
       "by_category": {
         "legitimate": {
-          "units": 16,
+          "units": 17,
           "alarms": 4
         },
         "mutation": {

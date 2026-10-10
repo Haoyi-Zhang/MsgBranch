@@ -845,9 +845,21 @@
     "id": "percent-char-int",
     "locale": "en",
     "category": "legitimate",
-    "note": "Percent %c accepts an integer code point; primitive type recovery must not reject it.",
+    "note": "Native bounded execution is valid on 0..200. Static singular lookup does not bind n to that domain, so the project analyzer must retain its unresolved Unicode codepoint range.",
     "source": "data/controls/percent-char-int/call.py",
     "catalog": "data/controls/percent-char-int/messages.po",
+    "expected_error_counts": [],
+    "expected_unknown": false,
+    "contains": null,
+    "expected_project_unknown": true
+  },
+  {
+    "id": "percent-char-literal",
+    "locale": "en",
+    "category": "legitimate",
+    "note": "A retained positive counterpart: the literal codepoint 65 is valid for native percent-character conversion.",
+    "source": "data/controls/percent-char-literal/call.py",
+    "catalog": "data/controls/percent-char-literal/messages.po",
     "expected_error_counts": [],
     "expected_unknown": false,
     "contains": null

@@ -81,7 +81,8 @@ class CatalogRuntime:
         if key in self.translator._catalog:
             resolution = 'catalog'
         elif (key, index) in self.translator._catalog:
-            resolution = 'catalog-plural-at-one'
+            origin = self._plural_origin(message, index, context=context)
+            resolution = 'catalog-plural-at-one' if origin == 'catalog' else origin
         else:
             resolution = 'source-fallback'
         self.trace.append(Lookup('pgettext', message, None, None, None, resolution, result, context))

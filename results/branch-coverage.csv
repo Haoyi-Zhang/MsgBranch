@@ -19,6 +19,7 @@ gettext,wrong-dialect,2,2,2
 gettext,compiler-empty-plural,2,2,2
 gettext,fuzzy-fallback,2,2,2
 gettext,percent-char-int,1,1,1
+gettext,percent-char-literal,1,1,1
 gettext,context-singular,1,1,1
 gettext,context-plural,2,2,2
 gettext,nested-brace-format,1,1,1

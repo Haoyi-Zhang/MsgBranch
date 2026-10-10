@@ -12,7 +12,7 @@ C = '%(n)d item'
 D = '%(n)d items'
 CASES=[]
 
-def case(key, locale, ids, translations, body, category='legitimate', note='', flags=('python-format',), expected_error_counts=None, expected_unknown=False, contains=None, context=None):
+def case(key, locale, ids, translations, body, category='legitimate', note='', flags=('python-format',), expected_error_counts=None, expected_unknown=False, contains=None, context=None, expected_project_unknown=None):
     directory=FOLDER/key
     directory.mkdir(parents=True,exist_ok=True)
     source='def message(n: int):\n'+''.join('    '+line+'\n' for line in body.splitlines())
@@ -24,6 +24,8 @@ def case(key, locale, ids, translations, body, category='legitimate', note='', f
         write_po(fp,catalog,width=88,omit_header=False)
     CASES.append({'id':key,'locale':locale,'category':category,'note':note,'source':f'data/controls/{key}/call.py','catalog':f'data/controls/{key}/messages.po',
                   'expected_error_counts':expected_error_counts or [],'expected_unknown':expected_unknown,'contains':contains})
+    if expected_project_unknown is not None:
+        CASES[-1]['expected_project_unknown'] = expected_project_unknown
 
 case('reorder','en',(S,P),('One item for %(name)s: %(n)d','%(n)d items for %(name)s'),f'msg = ngettext({S!r}, {P!r}, n)\nreturn msg % {{"name": "Ada", "n": n}}',note='Named arguments are reordered, never rewritten by MsgBranch.')
 case('omit-singular-count','en',(S,P),('One item for %(name)s','%(n)d items for %(name)s'),f'msg = ngettext({S!r}, {P!r}, n)\nreturn msg % {{"name": "Ada", "n": n}}',note='In the sole n=1 branch, the count is intentionally implicit.')
@@ -46,7 +48,8 @@ case('compiler-empty-plural','en',(C,D),('',D),f'return ngettext({C!r}, {D!r}, n
 case('fuzzy-fallback','en',(C,D),(C,D),f'return ngettext({C!r}, {D!r}, n) % {{"n": n}}',flags=('python-format','fuzzy'),note='Fuzzy translation is omitted at compilation; source fallback is intended.')
 case('dynamic-key','en',(C,D),(C,D),f'key = {C!r} if n == 1 else {D!r}\nreturn gettext(key) % {{"n": n}}',category='unknown',expected_unknown=True,note='Even finite dynamic identifier is outside literal-ID adapter; never silently passed.')
 case('dynamic-supplier','en',(C,D),(C,D),f'return ngettext({C!r}, {D!r}, n) % make_args(n)',category='unknown',expected_unknown=True,note='Unresolved external mapping supplier is unknown.')
-case('percent-char-int','en','%c item','%c item','return gettext("%c item") % n',note='Percent %c accepts an integer code point; primitive type recovery must not reject it.')
+case('percent-char-int','en','%c item','%c item','return gettext("%c item") % n',expected_project_unknown=True,note='Native bounded execution is valid on 0..200. Static singular lookup does not bind n to that domain, so the project analyzer must retain its unresolved Unicode codepoint range.')
+case('percent-char-literal','en','%c item','%c item','return gettext("%c item") % 65',note='A retained positive counterpart: the literal codepoint 65 is valid for native percent-character conversion.')
 case('context-singular','fr','Open','Ouvrir','return pgettext("menu", "Open")',flags=(),context='menu',note='Contextual singular lookup is selected through GNUTranslations.pgettext.')
 case('context-plural','fr',(C,D),('%(n)d fichier','%(n)d fichiers'),f'return npgettext("files", {C!r}, {D!r}, n) % {{"n": n}}',context='files',note='Contextual plural lookup retains branch-specific percent requirements.')
 case('nested-brace-format','en','{value:.{precision}f}','{value:.{precision}f}','return gettext("{value:.{precision}f}").format(value=1.25, precision=2)',flags=('python-brace-format',),note='Nested format-spec fields are recovered without treating the translation as prose.')

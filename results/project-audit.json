@@ -1,22 +1,22 @@
 {
   "summary": {
     "evaluation_mode": "current-source",
-    "control_cases": 25,
+    "control_cases": 26,
     "field_slices": 6,
-    "call_catalog_findings": 47,
+    "call_catalog_findings": 48,
     "clean": 23,
     "errors": 9,
-    "unknown": 15,
-    "selected_patterns": 82,
-    "direct_clean": 7,
+    "unknown": 16,
+    "selected_patterns": 83,
+    "direct_clean": 8,
     "direct_errors": 8,
     "direct_unknown": 32,
-    "direct_selected_patterns": 80,
-    "flow_recovered_calls": 40,
+    "direct_selected_patterns": 81,
+    "flow_recovered_calls": 41,
     "type_error_witnesses": 1,
-    "type_unknown_witnesses": 0,
+    "type_unknown_witnesses": 1,
     "ablation": {
-      "unknown_to_clean": 20,
+      "unknown_to_clean": 19,
       "unknown_to_error": 4,
       "clean_to_unknown": 4,
       "error_to_unknown": 3,
@@ -157,7 +157,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -180,7 +180,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -202,7 +202,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -260,7 +260,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -283,7 +283,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -305,7 +305,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -363,7 +363,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -386,7 +386,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -408,7 +408,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -466,7 +466,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -489,7 +489,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -511,7 +511,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -573,7 +573,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -596,7 +596,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -618,7 +618,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -680,7 +680,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -703,7 +703,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -725,7 +725,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1468,7 +1468,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1494,7 +1494,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -1516,7 +1516,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1574,7 +1574,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1597,7 +1597,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -1619,7 +1619,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1677,7 +1677,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1700,7 +1700,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -1722,7 +1722,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1780,7 +1780,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1803,7 +1803,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -1825,7 +1825,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1887,7 +1887,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1910,7 +1910,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -1932,7 +1932,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -1994,7 +1994,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -2017,7 +2017,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -2039,7 +2039,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -3399,7 +3399,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -3422,7 +3422,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -3444,7 +3444,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -3841,7 +3841,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -3864,7 +3864,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -3886,7 +3886,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -3948,7 +3948,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -3971,7 +3971,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -3993,7 +3993,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -4369,7 +4369,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -4392,7 +4392,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -4414,7 +4414,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -4472,7 +4472,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -4495,7 +4495,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -4517,7 +4517,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -5713,7 +5713,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "unused",
@@ -5741,7 +5741,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "unused",
@@ -5768,7 +5768,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "unused",
@@ -5835,7 +5835,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "unused",
@@ -5863,7 +5863,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "unused",
@@ -5890,7 +5890,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "unused",
@@ -6295,7 +6295,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -6318,7 +6318,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -6340,7 +6340,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -6402,7 +6402,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -6425,7 +6425,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -6447,7 +6447,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -6823,7 +6823,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -6846,7 +6846,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -6868,7 +6868,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -6930,7 +6930,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -6953,7 +6953,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -6975,7 +6975,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -7344,7 +7344,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -7367,7 +7367,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -7389,7 +7389,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -7651,7 +7651,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -7677,7 +7677,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -7699,7 +7699,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -7766,7 +7766,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -7792,7 +7792,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -7814,7 +7814,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -8185,7 +8185,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -8208,7 +8208,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -8230,7 +8230,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -8296,7 +8296,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -8319,7 +8319,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -8341,7 +8341,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -8698,7 +8698,7 @@
               "named_types": [
                 [
                   "precision",
-                  "int"
+                  "bounded-nonnegative-int"
                 ],
                 [
                   "value",
@@ -8743,7 +8743,7 @@
                   "named_types": [
                     [
                       "precision",
-                      "any"
+                      "format-digits"
                     ],
                     [
                       "value",
@@ -8764,7 +8764,7 @@
                   "named_types": [
                     [
                       "precision",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "value",
@@ -8792,7 +8792,7 @@
                 "named_types": [
                   [
                     "precision",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "value",
@@ -8819,7 +8819,7 @@
                   "named_types": [
                     [
                       "precision",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "value",
@@ -8868,7 +8868,7 @@
               "named_types": [
                 [
                   "precision",
-                  "int"
+                  "bounded-nonnegative-int"
                 ],
                 [
                   "value",
@@ -8913,7 +8913,7 @@
                   "named_types": [
                     [
                       "precision",
-                      "any"
+                      "format-digits"
                     ],
                     [
                       "value",
@@ -8934,7 +8934,7 @@
                   "named_types": [
                     [
                       "precision",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "value",
@@ -8962,7 +8962,7 @@
                 "named_types": [
                   [
                     "precision",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "value",
@@ -9115,7 +9115,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -9143,7 +9143,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "name",
@@ -9170,7 +9170,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -9237,7 +9237,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -9265,7 +9265,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "name",
@@ -9292,7 +9292,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -9622,7 +9622,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -9650,7 +9650,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "name",
@@ -9677,7 +9677,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -9744,7 +9744,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -9772,7 +9772,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "name",
@@ -9799,7 +9799,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -10017,9 +10017,9 @@
         "literal_calls": 1,
         "catalogs": 1,
         "findings": 1,
-        "clean": 1,
+        "clean": 0,
         "errors": 0,
-        "unknown": 0,
+        "unknown": 1,
         "selected_patterns": 1,
         "runtime_observations": 1,
         "unique_runtime_lookup_sets": 1,
@@ -10028,7 +10028,7 @@
         "flow_recovered_calls": 1,
         "flow_resolved_witnesses": 1,
         "type_error_witnesses": 0,
-        "type_unknown_witnesses": 0
+        "type_unknown_witnesses": 1
       },
       "direct_summary": {
         "source_root": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\controls\\percent-char-int\\call.py",
@@ -10052,7 +10052,7 @@
         "type_unknown_witnesses": 0
       },
       "ablation": {
-        "unknown_to_clean": 1,
+        "unknown_to_clean": 0,
         "unknown_to_error": 0,
         "clean_to_unknown": 0,
         "error_to_unknown": 0,
@@ -10124,11 +10124,18 @@
                   ],
                   "is_mapping": false
                 },
-                "status": "clean",
+                "status": "unknown",
                 "missing": [],
                 "type_mismatches": [],
-                "type_unknown": [],
-                "positional_missing": 0
+                "type_unknown": [
+                  {
+                    "position": 0,
+                    "required": "char",
+                    "supplied": "int"
+                  }
+                ],
+                "positional_missing": 0,
+                "reason": "selected pattern type requirement cannot be proved from the local supplier"
               },
               "effective_supplier": {
                 "status": "known",
@@ -10171,7 +10178,7 @@
               "covered_count_total": 1
             }
           ],
-          "status": "clean",
+          "status": "unknown",
           "unreachable_count_ranges": [],
           "reason": null
         }
@@ -10268,6 +10275,284 @@
             }
           ],
           "status": "unknown",
+          "unreachable_count_ranges": [],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "case": "percent-char-literal",
+      "source": "data\\controls\\percent-char-literal\\call.py",
+      "catalogs": [
+        "data\\controls\\percent-char-literal\\messages.po"
+      ],
+      "summary": {
+        "source_root": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\controls\\percent-char-literal\\call.py",
+        "analysis_mode": "flow",
+        "python_files": 1,
+        "calls": 1,
+        "literal_calls": 1,
+        "catalogs": 1,
+        "findings": 1,
+        "clean": 1,
+        "errors": 0,
+        "unknown": 0,
+        "selected_patterns": 1,
+        "runtime_observations": 1,
+        "unique_runtime_lookup_sets": 1,
+        "runtime_lookup_cache_hits": 0,
+        "flow_models": 2,
+        "flow_recovered_calls": 1,
+        "flow_resolved_witnesses": 1,
+        "type_error_witnesses": 0,
+        "type_unknown_witnesses": 0
+      },
+      "direct_summary": {
+        "source_root": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\controls\\percent-char-literal\\call.py",
+        "analysis_mode": "direct",
+        "python_files": 1,
+        "calls": 1,
+        "literal_calls": 1,
+        "catalogs": 1,
+        "findings": 1,
+        "clean": 1,
+        "errors": 0,
+        "unknown": 0,
+        "selected_patterns": 1,
+        "runtime_observations": 1,
+        "unique_runtime_lookup_sets": 1,
+        "runtime_lookup_cache_hits": 0,
+        "flow_models": 0,
+        "flow_recovered_calls": 0,
+        "flow_resolved_witnesses": 0,
+        "type_error_witnesses": 0,
+        "type_unknown_witnesses": 0
+      },
+      "ablation": {
+        "unknown_to_clean": 0,
+        "unknown_to_error": 0,
+        "clean_to_unknown": 0,
+        "error_to_unknown": 0,
+        "other_changes": 0
+      },
+      "findings": [
+        {
+          "call": {
+            "path": "call.py",
+            "line": 2,
+            "column": 11,
+            "callee": "gettext",
+            "kind": "singular",
+            "singular": "%c item",
+            "plural": null,
+            "supplier": {
+              "status": "known",
+              "mode": "percent",
+              "names": [],
+              "positional": 1,
+              "reason": null,
+              "named_types": [],
+              "positional_types": [
+                "bounded-nonnegative-int"
+              ],
+              "is_mapping": false
+            },
+            "status": "literal",
+            "reason": null,
+            "context": null,
+            "count_binding": "domain",
+            "count_literal": null
+          },
+          "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\controls\\percent-char-literal\\messages.po",
+          "babel_checks": [],
+          "witnesses": [
+            {
+              "count": null,
+              "pattern": "%c item",
+              "lookup": {
+                "method": "gettext",
+                "singular": "%c item",
+                "plural": null,
+                "count": null,
+                "branch": null,
+                "resolution": "catalog",
+                "output": "%c item",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [],
+                  "positional": 1,
+                  "reason": null,
+                  "named_types": [],
+                  "positional_types": [
+                    "char"
+                  ]
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [],
+                  "positional": 1,
+                  "reason": null,
+                  "named_types": [],
+                  "positional_types": [
+                    "bounded-nonnegative-int"
+                  ],
+                  "is_mapping": false
+                },
+                "status": "clean",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [],
+                "positional_missing": 0
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [],
+                "positional": 1,
+                "reason": null,
+                "named_types": [],
+                "positional_types": [
+                  "bounded-nonnegative-int"
+                ],
+                "is_mapping": false
+              },
+              "flow": {
+                "use_lines": [
+                  2
+                ],
+                "reason": null,
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [],
+                  "positional": 1,
+                  "reason": null,
+                  "named_types": [],
+                  "positional_types": [
+                    "bounded-nonnegative-int"
+                  ],
+                  "is_mapping": false
+                },
+                "reachable": true
+              },
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  null,
+                  null
+                ]
+              ],
+              "covered_count_total": 1
+            }
+          ],
+          "status": "clean",
+          "unreachable_count_ranges": [],
+          "reason": null
+        }
+      ],
+      "direct_findings": [
+        {
+          "call": {
+            "path": "call.py",
+            "line": 2,
+            "column": 11,
+            "callee": "gettext",
+            "kind": "singular",
+            "singular": "%c item",
+            "plural": null,
+            "supplier": {
+              "status": "known",
+              "mode": "percent",
+              "names": [],
+              "positional": 1,
+              "reason": null,
+              "named_types": [],
+              "positional_types": [
+                "bounded-nonnegative-int"
+              ],
+              "is_mapping": false
+            },
+            "status": "literal",
+            "reason": null,
+            "context": null,
+            "count_binding": "domain",
+            "count_literal": null
+          },
+          "catalog": "D:\\Desktop\\内部审核项目\\01_导师合作\\05_Xunzhu Tang\\P124_ICSE_MsgBranch\\artifact\\data\\controls\\percent-char-literal\\messages.po",
+          "babel_checks": [],
+          "witnesses": [
+            {
+              "count": null,
+              "pattern": "%c item",
+              "lookup": {
+                "method": "gettext",
+                "singular": "%c item",
+                "plural": null,
+                "count": null,
+                "branch": null,
+                "resolution": "catalog",
+                "output": "%c item",
+                "context": null
+              },
+              "qualification": {
+                "requirements": {
+                  "status": "known",
+                  "dialect": "percent",
+                  "names": [],
+                  "positional": 1,
+                  "reason": null,
+                  "named_types": [],
+                  "positional_types": [
+                    "char"
+                  ]
+                },
+                "supplier": {
+                  "status": "known",
+                  "mode": "percent",
+                  "names": [],
+                  "positional": 1,
+                  "reason": null,
+                  "named_types": [],
+                  "positional_types": [
+                    "bounded-nonnegative-int"
+                  ],
+                  "is_mapping": false
+                },
+                "status": "clean",
+                "missing": [],
+                "type_mismatches": [],
+                "type_unknown": [],
+                "positional_missing": 0
+              },
+              "effective_supplier": {
+                "status": "known",
+                "mode": "percent",
+                "names": [],
+                "positional": 1,
+                "reason": null,
+                "named_types": [],
+                "positional_types": [
+                  "bounded-nonnegative-int"
+                ],
+                "is_mapping": false
+              },
+              "flow": null,
+              "fallback": false,
+              "covered_count_ranges": [
+                [
+                  null,
+                  null
+                ]
+              ],
+              "covered_count_total": 1
+            }
+          ],
+          "status": "clean",
           "unreachable_count_ranges": [],
           "reason": null
         }
@@ -10404,7 +10689,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -10432,7 +10717,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "name",
@@ -10459,7 +10744,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -10531,7 +10816,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -10559,7 +10844,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ],
                   [
                     "name",
@@ -10586,7 +10871,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ],
                     [
                       "name",
@@ -10927,7 +11212,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -10950,7 +11235,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -10972,7 +11257,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -11102,7 +11387,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -11125,7 +11410,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -11147,7 +11432,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -11273,7 +11558,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -11296,7 +11581,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -11318,7 +11603,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -12060,7 +12345,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -12086,7 +12371,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -12108,7 +12393,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -12170,7 +12455,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -12193,7 +12478,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -12215,7 +12500,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -12587,7 +12872,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -12610,7 +12895,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -12632,7 +12917,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -12698,7 +12983,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -12721,7 +13006,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -12743,7 +13028,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -13173,7 +13458,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -13196,7 +13481,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -13218,7 +13503,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -13280,7 +13565,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -13303,7 +13588,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -13325,7 +13610,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16330,7 +16615,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16352,7 +16637,7 @@
                 "named_types": [
                   [
                     "threshold",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -16374,7 +16659,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16432,7 +16717,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16455,7 +16740,7 @@
                 "named_types": [
                   [
                     "threshold",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -16477,7 +16762,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16575,7 +16860,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16598,7 +16883,7 @@
                 "named_types": [
                   [
                     "threshold",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -16620,7 +16905,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16675,7 +16960,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16697,7 +16982,7 @@
                 "named_types": [
                   [
                     "threshold",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -16719,7 +17004,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16810,7 +17095,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16832,7 +17117,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -16854,7 +17139,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16912,7 +17197,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -16938,7 +17223,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -16960,7 +17245,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -17058,7 +17343,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -17084,7 +17369,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -17106,7 +17391,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -17161,7 +17446,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -17183,7 +17468,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -17205,7 +17490,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18154,7 +18439,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18176,7 +18461,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -18198,7 +18483,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18256,7 +18541,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18279,7 +18564,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -18301,7 +18586,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18399,7 +18684,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18422,7 +18707,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -18444,7 +18729,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18499,7 +18784,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18521,7 +18806,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -18543,7 +18828,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18634,7 +18919,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18656,7 +18941,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -18678,7 +18963,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18736,7 +19021,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18759,7 +19044,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -18781,7 +19066,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18879,7 +19164,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18902,7 +19187,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -18924,7 +19209,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -18979,7 +19264,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],
@@ -19001,7 +19286,7 @@
                 "named_types": [
                   [
                     "n",
-                    "int"
+                    "bounded-nonnegative-int"
                   ]
                 ],
                 "positional_types": [],
@@ -19023,7 +19308,7 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "bounded-nonnegative-int"
                     ]
                   ],
                   "positional_types": [],

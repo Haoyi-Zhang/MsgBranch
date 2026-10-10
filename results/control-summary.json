@@ -1,10 +1,10 @@
 {
-  "families": 25,
-  "legitimate": 16,
+  "families": 26,
+  "legitimate": 17,
   "mutations": 7,
   "unknown_families": 2,
-  "bounded_runs": 5025,
-  "direct_reference_checks": 4623,
+  "bounded_runs": 5226,
+  "direct_reference_checks": 4824,
   "reference_disagreements": 0,
   "mutation_detection": {
     "ordinary_detects": 4,
@@ -18,8 +18,8 @@
     "babel_alarm": 0,
     "placeholder_equality_alarm": 3
   },
-  "selected_representatives": 55,
-  "total_planner_ms": 100.9704,
+  "selected_representatives": 56,
+  "total_planner_ms": 99.1941,
   "python": "3.12.14",
   "babel": "2.18.0",
   "platform": "Windows-11-10.0.28000-SP0",

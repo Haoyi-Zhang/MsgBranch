@@ -1,9 +1,9 @@
 {
-  "gettext_known_families": 23,
+  "gettext_known_families": 24,
   "gettext_unknown_families": 2,
   "gettext_legitimate_equality_supported": 11,
   "gettext_legitimate_equality_false_alarms": 3,
-  "gettext_known_representatives": 51,
+  "gettext_known_representatives": 52,
   "fluent_recorded_selected": 37,
   "note": "Representative counts are not defect counts. Fluent reductions are post-execution trace grouping, not predictive generation."
 }
