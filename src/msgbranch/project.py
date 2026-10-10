@@ -218,17 +218,15 @@ def _primitive_type(node: ast.AST) -> str:
 
 def _mapping_supplier(node: ast.AST, mode: str) -> Supplier:
     if isinstance(node, ast.Dict):
-        names: list[str] = []
-        types: list[tuple[str, str]] = []
+        types: dict[str, str] = {}
         for key, value_node in zip(node.keys, node.values, strict=True):
             if key is None:
                 return Supplier("unknown", mode, reason="mapping expansion")
             value = _literal_string(key)
             if value is None:
                 return Supplier("unknown", mode, reason="dynamic mapping key")
-            names.append(value)
-            types.append((value, _primitive_type(value_node)))
-        return Supplier("known", mode, tuple(sorted(set(names))), named_types=tuple(sorted(types)), is_mapping=True)
+            types[value] = _primitive_type(value_node)
+        return Supplier("known", mode, tuple(sorted(types)), named_types=tuple(sorted(types.items())), is_mapping=True)
     if isinstance(node, ast.List):
         return Supplier("unknown", mode, reason="percent list supplier is not a positional tuple")
     if isinstance(node, ast.Tuple):
@@ -599,14 +597,22 @@ class _FlowScanner:
                 continue
             if isinstance(statement, (ast.For, ast.AsyncFor, ast.While)):
                 self._expr(statement.test if isinstance(statement, ast.While) else statement.iter, env)
-                previous = self.reachable
+                before = dict(env)
+                body_env, else_env = dict(before), dict(before)
                 self.reachable = _Unknown("unsupported loop reachability")
-                body_env = self._block(statement.body, dict(env)) or {}
+                if not isinstance(statement, ast.While):
+                    self._bind(statement.target, _Unknown("loop iteration value"), body_env)
+                self._block(statement.body, body_env)
                 self.reachable = _Unknown("unsupported loop reachability")
-                self._block(statement.orelse, dict(env))
-                self.reachable = previous
-                for name, value in body_env.items():
-                    if env.get(name) != value:
+                self._block(statement.orelse, else_env)
+                # Neither iteration count nor break/else termination is modeled.
+                # Preserve effects from both branches, including terminated ones,
+                # and do not certify a later use as unconditionally reachable.
+                self.reachable = _Unknown("unsupported loop reachability")
+                for name in set(before) | set(body_env) | set(else_env):
+                    if body_env.get(name) != before.get(name) or else_env.get(name) != before.get(name):
+                        if isinstance(before.get(name), _MessageValue):
+                            self._record(before[name], "unknown", _Unknown("loop-dependent message binding"), statement)
                         env[name] = _Unknown("loop-dependent value")
                 continue
             if isinstance(statement, (ast.With, ast.AsyncWith)):
@@ -705,7 +711,7 @@ class _FlowScanner:
                     self._expr(child.format_spec, env)
             return _Primitive("str")
         if isinstance(node, ast.Dict):
-            items: list[tuple[str, Any]] = []
+            items: dict[str, Any] = {}
             reason = None
             for key, value in zip(node.keys, node.values, strict=True):
                 self._expr(key, env)
@@ -714,8 +720,8 @@ class _FlowScanner:
                 if key is None or literal is None:
                     reason = "mapping expansion or dynamic mapping key"
                 else:
-                    items.append((literal, item))
-            return _MappingValue(tuple(items), reason is not None, reason)
+                    items[literal] = item
+            return _MappingValue(tuple(items.items()), reason is not None, reason)
         if isinstance(node, (ast.Tuple, ast.List)):
             items = tuple(self._expr(item.value if isinstance(item, ast.Starred) else item, env)
                           for item in node.elts)
@@ -729,6 +735,11 @@ class _FlowScanner:
             operand = self._expr(node.operand, env)
             if isinstance(node.op, ast.Not):
                 return _Primitive("bool")
+            if (isinstance(operand, _Primitive) and operand.has_literal
+                    and type(operand.literal) in {int, float}
+                    and isinstance(node.op, (ast.USub, ast.UAdd))):
+                literal = -operand.literal if isinstance(node.op, ast.USub) else +operand.literal
+                return _Primitive(operand.type_name, literal, True)
             if isinstance(operand, _Primitive) and operand.type_name in {"int", "float", "number"}:
                 return _Primitive(operand.type_name)
             return _Primitive("unknown")
@@ -763,7 +774,13 @@ class _FlowScanner:
                         "number",
                     }:
                         return _Primitive("number")
-            if isinstance(node.op, (ast.Sub, ast.Mult, ast.FloorDiv, ast.Div, ast.Pow)):
+            if isinstance(node.op, ast.Pow):
+                if isinstance(left, _Primitive) and isinstance(right, _Primitive):
+                    if left.type_name == right.type_name == "int":
+                        if right.has_literal and type(right.literal) is int:
+                            return _Primitive("int" if right.literal >= 0 else "float")
+                return _Primitive("unknown")
+            if isinstance(node.op, (ast.Sub, ast.Mult, ast.FloorDiv, ast.Div)):
                 if isinstance(left, _Primitive) and isinstance(right, _Primitive):
                     if left.type_name == right.type_name == "int" and not isinstance(node.op, ast.Div):
                         return _Primitive("int")
@@ -795,8 +812,13 @@ class _FlowScanner:
                 if shape.count_index is not None:
                     count_node = node.args[shape.count_index]
                     if isinstance(count_node, ast.Name):
-                        count_var = count_node.id
-                        env[count_var] = _Primitive("int", symbol=count_var)
+                        binding = env.get(count_node.id)
+                        count_var = (binding.symbol if isinstance(binding, _Primitive) and binding.symbol is not None
+                                     else f"count:{node.lineno}:{node.col_offset}")
+                        # A later lookup of a reassigned name must not revive the
+                        # symbol used by an earlier message's selector.
+                        if not isinstance(binding, _Primitive) or not binding.has_literal:
+                            env[count_node.id] = _Primitive("int", symbol=count_var)
                 message = _MessageValue(node.lineno, node.col_offset, count_var)
                 self._record(message, "lookup", None, node)
                 if any(keyword.arg is None for keyword in node.keywords):
@@ -872,8 +894,6 @@ def _scalar(node: ast.AST, env: Mapping[str, Any], count_var: str | None, count:
     if isinstance(node, ast.Constant):
         return node.value
     if isinstance(node, ast.Name):
-        if count_var is not None and node.id == count_var and count is not None:
-            return count
         return _value_scalar(env.get(node.id), count_var, count)
     if isinstance(node, ast.Compare):
         return _condition(node, env, count_var, count)
@@ -980,7 +1000,7 @@ def _condition(node: ast.AST, env: Mapping[str, Any], count_var: str | None, cou
 
 def _abstract_type(value: Any, count_var: str | None, count: int | None) -> str:
     if isinstance(value, _Primitive):
-        if value.symbol == count_var and count is not None:
+        if count_var is not None and value.symbol == count_var and count is not None:
             return "int"
         return value.type_name
     if isinstance(value, _ConditionalValue):
