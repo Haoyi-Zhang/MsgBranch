@@ -22,11 +22,11 @@
   "implementation_sha256": {
     "partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044",
     "program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
-    "runtime.py": "ab86b6fddd970828d099104f54b49d7671223749ec1ccd0ba69c12315f1ecc73"
+    "runtime.py": "5812f19fb95d266ad4a2f86ce9f43bf218c5f72bc7cb51bdbbf9b3faf15c14bd"
   },
-  "generator_sha256": "0a2791a43316c7693f111d6b60243cace2869c389175e0ddfc26bc8c6a1b3251",
+  "generator_sha256": "9dd8f2ea755e54e8e7e4d092dca2c5085fd86446dc3d029f75ae0fdb03af310a",
   "environment": {
-    "python": "3.13.5",
+    "python": "3.12.14",
     "babel": "2.18.0"
   },
   "status": "fresh-seed generated confirmation after implementation freeze; same disclosed grammar, not a field holdout",

@@ -11,14 +11,18 @@
   "gnu_msgfmt": {
     "status": "unavailable",
     "path": null,
-    "correct_replay_command": "msgfmt --check --check-format -o /dev/null messages.po",
+    "correct_replay_command": "msgfmt --check --check-format -o OUTPUT.mo messages.po",
     "format_configuration": "PO python-format or python-brace-format flags; not a --language option"
   },
   "babel_cli": {
     "status": "executed",
-    "command": "pybabel compile --use-fuzzy -i INPUT.po -o OUTPUT.mo",
+    "command": "pybabel compile -i INPUT.po -o OUTPUT.mo",
     "result": "results/babel-cli.json",
-    "note": "27 frozen catalogs plus two negative controls; this is Babel CLI, not GNU msgfmt"
+    "catalogs": 228,
+    "successful_catalogs": 226,
+    "diagnosed_catalog_errors": 2,
+    "negative_controls": 2,
+    "note": "All retained ordinary catalogs plus separate negative controls; common temporary inputs preserve message flags and clear only the template-header fuzzy marker. This is Babel CLI, not GNU msgfmt"
   },
   "msgbranch_project_auditor": {
     "status": "executed",

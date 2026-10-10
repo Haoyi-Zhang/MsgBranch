@@ -7,8 +7,8 @@
     "operator": 0,
     "guard": "n == 70",
     "demand_index": 1,
-    "source": "data\\validation\\en-0\\clean.py",
-    "catalog": "data\\validation\\en-0\\messages.po",
+    "source": "data/validation/en-0/clean.py",
+    "catalog": "data/validation/en-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -947,7 +947,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4259
+    "planning_ms": 0.3928
   },
   {
     "id": "en-0-mutant",
@@ -957,8 +957,8 @@
     "operator": 0,
     "guard": "n == 70",
     "demand_index": 1,
-    "source": "data\\validation\\en-0\\mutant.py",
-    "catalog": "data\\validation\\en-0\\messages.po",
+    "source": "data/validation/en-0/mutant.py",
+    "catalog": "data/validation/en-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -1897,7 +1897,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3029
+    "planning_ms": 0.2927
   },
   {
     "id": "en-1-clean",
@@ -1907,8 +1907,8 @@
     "operator": 1,
     "guard": "n >= 645 and n < 652",
     "demand_index": 1,
-    "source": "data\\validation\\en-1\\clean.py",
-    "catalog": "data\\validation\\en-1\\messages.po",
+    "source": "data/validation/en-1/clean.py",
+    "catalog": "data/validation/en-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -2847,7 +2847,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3692
+    "planning_ms": 0.3715
   },
   {
     "id": "en-1-mutant",
@@ -2857,8 +2857,8 @@
     "operator": 1,
     "guard": "n >= 645 and n < 652",
     "demand_index": 1,
-    "source": "data\\validation\\en-1\\mutant.py",
-    "catalog": "data\\validation\\en-1\\messages.po",
+    "source": "data/validation/en-1/mutant.py",
+    "catalog": "data/validation/en-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -3797,7 +3797,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3587
+    "planning_ms": 0.3289
   },
   {
     "id": "en-2-clean",
@@ -3807,8 +3807,8 @@
     "operator": 2,
     "guard": "n % 7 == 3",
     "demand_index": 0,
-    "source": "data\\validation\\en-2\\clean.py",
-    "catalog": "data\\validation\\en-2\\messages.po",
+    "source": "data/validation/en-2/clean.py",
+    "catalog": "data/validation/en-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -4747,7 +4747,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3542
+    "planning_ms": 0.3349
   },
   {
     "id": "en-2-mutant",
@@ -4757,8 +4757,8 @@
     "operator": 2,
     "guard": "n % 7 == 3",
     "demand_index": 0,
-    "source": "data\\validation\\en-2\\mutant.py",
-    "catalog": "data\\validation\\en-2\\messages.po",
+    "source": "data/validation/en-2/mutant.py",
+    "catalog": "data/validation/en-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -5697,7 +5697,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3879
+    "planning_ms": 0.2993
   },
   {
     "id": "en-3-clean",
@@ -5707,8 +5707,8 @@
     "operator": 3,
     "guard": "n > 688 and n % 7 == 1",
     "demand_index": 1,
-    "source": "data\\validation\\en-3\\clean.py",
-    "catalog": "data\\validation\\en-3\\messages.po",
+    "source": "data/validation/en-3/clean.py",
+    "catalog": "data/validation/en-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -6647,7 +6647,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4246
+    "planning_ms": 0.3755
   },
   {
     "id": "en-3-mutant",
@@ -6657,8 +6657,8 @@
     "operator": 3,
     "guard": "n > 688 and n % 7 == 1",
     "demand_index": 1,
-    "source": "data\\validation\\en-3\\mutant.py",
-    "catalog": "data\\validation\\en-3\\messages.po",
+    "source": "data/validation/en-3/mutant.py",
+    "catalog": "data/validation/en-3/messages.po",
     "domain_size": 1001,
     "failures": 44,
     "active_mutation": true,
@@ -7597,7 +7597,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4435
+    "planning_ms": 0.4262
   },
   {
     "id": "en-4-clean",
@@ -7607,8 +7607,8 @@
     "operator": 4,
     "guard": "not (n < 177 or n >= 180)",
     "demand_index": 1,
-    "source": "data\\validation\\en-4\\clean.py",
-    "catalog": "data\\validation\\en-4\\messages.po",
+    "source": "data/validation/en-4/clean.py",
+    "catalog": "data/validation/en-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -8547,7 +8547,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4828
+    "planning_ms": 0.3501
   },
   {
     "id": "en-4-mutant",
@@ -8557,8 +8557,8 @@
     "operator": 4,
     "guard": "not (n < 177 or n >= 180)",
     "demand_index": 1,
-    "source": "data\\validation\\en-4\\mutant.py",
-    "catalog": "data\\validation\\en-4\\messages.po",
+    "source": "data/validation/en-4/mutant.py",
+    "catalog": "data/validation/en-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -9497,7 +9497,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.418
+    "planning_ms": 0.3293
   },
   {
     "id": "en-5-clean",
@@ -9507,8 +9507,8 @@
     "operator": 5,
     "guard": "n == 524 or n == 561",
     "demand_index": 1,
-    "source": "data\\validation\\en-5\\clean.py",
-    "catalog": "data\\validation\\en-5\\messages.po",
+    "source": "data/validation/en-5/clean.py",
+    "catalog": "data/validation/en-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -10447,7 +10447,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3831
+    "planning_ms": 0.3854
   },
   {
     "id": "en-5-mutant",
@@ -10457,8 +10457,8 @@
     "operator": 5,
     "guard": "n == 524 or n == 561",
     "demand_index": 1,
-    "source": "data\\validation\\en-5\\mutant.py",
-    "catalog": "data\\validation\\en-5\\messages.po",
+    "source": "data/validation/en-5/mutant.py",
+    "catalog": "data/validation/en-5/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -11397,7 +11397,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3805
+    "planning_ms": 0.3324
   },
   {
     "id": "en-6-clean",
@@ -11407,8 +11407,8 @@
     "operator": 6,
     "guard": "388 <= n and n <= 469",
     "demand_index": 0,
-    "source": "data\\validation\\en-6\\clean.py",
-    "catalog": "data\\validation\\en-6\\messages.po",
+    "source": "data/validation/en-6/clean.py",
+    "catalog": "data/validation/en-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -12347,7 +12347,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3821
+    "planning_ms": 0.3418
   },
   {
     "id": "en-6-mutant",
@@ -12357,8 +12357,8 @@
     "operator": 6,
     "guard": "388 <= n and n <= 469",
     "demand_index": 0,
-    "source": "data\\validation\\en-6\\mutant.py",
-    "catalog": "data\\validation\\en-6\\messages.po",
+    "source": "data/validation/en-6/mutant.py",
+    "catalog": "data/validation/en-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -13297,7 +13297,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.379
+    "planning_ms": 0.3207
   },
   {
     "id": "en-7-clean",
@@ -13307,8 +13307,8 @@
     "operator": 7,
     "guard": "294 <= n < 296",
     "demand_index": 1,
-    "source": "data\\validation\\en-7\\clean.py",
-    "catalog": "data\\validation\\en-7\\messages.po",
+    "source": "data/validation/en-7/clean.py",
+    "catalog": "data/validation/en-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -14247,7 +14247,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3532
+    "planning_ms": 0.3012
   },
   {
     "id": "en-7-mutant",
@@ -14257,8 +14257,8 @@
     "operator": 7,
     "guard": "294 <= n < 296",
     "demand_index": 1,
-    "source": "data\\validation\\en-7\\mutant.py",
-    "catalog": "data\\validation\\en-7\\messages.po",
+    "source": "data/validation/en-7/mutant.py",
+    "catalog": "data/validation/en-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -15197,7 +15197,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3285
+    "planning_ms": 0.2953
   },
   {
     "id": "fr-0-clean",
@@ -15207,8 +15207,8 @@
     "operator": 0,
     "guard": "n == 103",
     "demand_index": 1,
-    "source": "data\\validation\\fr-0\\clean.py",
-    "catalog": "data\\validation\\fr-0\\messages.po",
+    "source": "data/validation/fr-0/clean.py",
+    "catalog": "data/validation/fr-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -16147,7 +16147,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3257
+    "planning_ms": 0.3077
   },
   {
     "id": "fr-0-mutant",
@@ -16157,8 +16157,8 @@
     "operator": 0,
     "guard": "n == 103",
     "demand_index": 1,
-    "source": "data\\validation\\fr-0\\mutant.py",
-    "catalog": "data\\validation\\fr-0\\messages.po",
+    "source": "data/validation/fr-0/mutant.py",
+    "catalog": "data/validation/fr-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -17097,7 +17097,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3215
+    "planning_ms": 0.3092
   },
   {
     "id": "fr-1-clean",
@@ -17107,8 +17107,8 @@
     "operator": 1,
     "guard": "n >= 698 and n < 705",
     "demand_index": 0,
-    "source": "data\\validation\\fr-1\\clean.py",
-    "catalog": "data\\validation\\fr-1\\messages.po",
+    "source": "data/validation/fr-1/clean.py",
+    "catalog": "data/validation/fr-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -18047,7 +18047,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4136
+    "planning_ms": 0.3624
   },
   {
     "id": "fr-1-mutant",
@@ -18057,8 +18057,8 @@
     "operator": 1,
     "guard": "n >= 698 and n < 705",
     "demand_index": 0,
-    "source": "data\\validation\\fr-1\\mutant.py",
-    "catalog": "data\\validation\\fr-1\\messages.po",
+    "source": "data/validation/fr-1/mutant.py",
+    "catalog": "data/validation/fr-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -18997,7 +18997,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.392
+    "planning_ms": 0.3483
   },
   {
     "id": "fr-2-clean",
@@ -19007,8 +19007,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\validation\\fr-2\\clean.py",
-    "catalog": "data\\validation\\fr-2\\messages.po",
+    "source": "data/validation/fr-2/clean.py",
+    "catalog": "data/validation/fr-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -20049,7 +20049,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3635
+    "planning_ms": 0.3644
   },
   {
     "id": "fr-2-mutant",
@@ -20059,8 +20059,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\validation\\fr-2\\mutant.py",
-    "catalog": "data\\validation\\fr-2\\messages.po",
+    "source": "data/validation/fr-2/mutant.py",
+    "catalog": "data/validation/fr-2/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -21101,7 +21101,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3466
+    "planning_ms": 0.3193
   },
   {
     "id": "fr-3-clean",
@@ -21111,8 +21111,8 @@
     "operator": 3,
     "guard": "n > 710 and n % 7 == 3",
     "demand_index": 0,
-    "source": "data\\validation\\fr-3\\clean.py",
-    "catalog": "data\\validation\\fr-3\\messages.po",
+    "source": "data/validation/fr-3/clean.py",
+    "catalog": "data/validation/fr-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -22051,7 +22051,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4298
+    "planning_ms": 0.405
   },
   {
     "id": "fr-3-mutant",
@@ -22061,8 +22061,8 @@
     "operator": 3,
     "guard": "n > 710 and n % 7 == 3",
     "demand_index": 0,
-    "source": "data\\validation\\fr-3\\mutant.py",
-    "catalog": "data\\validation\\fr-3\\messages.po",
+    "source": "data/validation/fr-3/mutant.py",
+    "catalog": "data/validation/fr-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -23001,7 +23001,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4139
+    "planning_ms": 0.3951
   },
   {
     "id": "fr-4-clean",
@@ -23011,8 +23011,8 @@
     "operator": 4,
     "guard": "not (n < 322 or n >= 325)",
     "demand_index": 0,
-    "source": "data\\validation\\fr-4\\clean.py",
-    "catalog": "data\\validation\\fr-4\\messages.po",
+    "source": "data/validation/fr-4/clean.py",
+    "catalog": "data/validation/fr-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -23951,7 +23951,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3802
+    "planning_ms": 0.3774
   },
   {
     "id": "fr-4-mutant",
@@ -23961,8 +23961,8 @@
     "operator": 4,
     "guard": "not (n < 322 or n >= 325)",
     "demand_index": 0,
-    "source": "data\\validation\\fr-4\\mutant.py",
-    "catalog": "data\\validation\\fr-4\\messages.po",
+    "source": "data/validation/fr-4/mutant.py",
+    "catalog": "data/validation/fr-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -24901,7 +24901,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4009
+    "planning_ms": 0.3668
   },
   {
     "id": "fr-5-clean",
@@ -24911,8 +24911,8 @@
     "operator": 5,
     "guard": "n == 445 or n == 479",
     "demand_index": 0,
-    "source": "data\\validation\\fr-5\\clean.py",
-    "catalog": "data\\validation\\fr-5\\messages.po",
+    "source": "data/validation/fr-5/clean.py",
+    "catalog": "data/validation/fr-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -25851,7 +25851,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3854
+    "planning_ms": 0.3571
   },
   {
     "id": "fr-5-mutant",
@@ -25861,8 +25861,8 @@
     "operator": 5,
     "guard": "n == 445 or n == 479",
     "demand_index": 0,
-    "source": "data\\validation\\fr-5\\mutant.py",
-    "catalog": "data\\validation\\fr-5\\messages.po",
+    "source": "data/validation/fr-5/mutant.py",
+    "catalog": "data/validation/fr-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -26801,7 +26801,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3754
+    "planning_ms": 0.3688
   },
   {
     "id": "fr-6-clean",
@@ -26811,8 +26811,8 @@
     "operator": 6,
     "guard": "128 <= n and n <= 167",
     "demand_index": 0,
-    "source": "data\\validation\\fr-6\\clean.py",
-    "catalog": "data\\validation\\fr-6\\messages.po",
+    "source": "data/validation/fr-6/clean.py",
+    "catalog": "data/validation/fr-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -27751,7 +27751,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3863
+    "planning_ms": 0.3446
   },
   {
     "id": "fr-6-mutant",
@@ -27761,8 +27761,8 @@
     "operator": 6,
     "guard": "128 <= n and n <= 167",
     "demand_index": 0,
-    "source": "data\\validation\\fr-6\\mutant.py",
-    "catalog": "data\\validation\\fr-6\\messages.po",
+    "source": "data/validation/fr-6/mutant.py",
+    "catalog": "data/validation/fr-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -28701,7 +28701,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3754
+    "planning_ms": 0.3493
   },
   {
     "id": "fr-7-clean",
@@ -28711,8 +28711,8 @@
     "operator": 7,
     "guard": "429 <= n < 431",
     "demand_index": 0,
-    "source": "data\\validation\\fr-7\\clean.py",
-    "catalog": "data\\validation\\fr-7\\messages.po",
+    "source": "data/validation/fr-7/clean.py",
+    "catalog": "data/validation/fr-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -29651,7 +29651,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3535
+    "planning_ms": 0.3244
   },
   {
     "id": "fr-7-mutant",
@@ -29661,8 +29661,8 @@
     "operator": 7,
     "guard": "429 <= n < 431",
     "demand_index": 0,
-    "source": "data\\validation\\fr-7\\mutant.py",
-    "catalog": "data\\validation\\fr-7\\messages.po",
+    "source": "data/validation/fr-7/mutant.py",
+    "catalog": "data/validation/fr-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -30601,7 +30601,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5688
+    "planning_ms": 0.3169
   },
   {
     "id": "ja-0-clean",
@@ -30611,8 +30611,8 @@
     "operator": 0,
     "guard": "n == 74",
     "demand_index": 0,
-    "source": "data\\validation\\ja-0\\clean.py",
-    "catalog": "data\\validation\\ja-0\\messages.po",
+    "source": "data/validation/ja-0/clean.py",
+    "catalog": "data/validation/ja-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -31448,7 +31448,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3074
+    "planning_ms": 0.279
   },
   {
     "id": "ja-0-mutant",
@@ -31458,8 +31458,8 @@
     "operator": 0,
     "guard": "n == 74",
     "demand_index": 0,
-    "source": "data\\validation\\ja-0\\mutant.py",
-    "catalog": "data\\validation\\ja-0\\messages.po",
+    "source": "data/validation/ja-0/mutant.py",
+    "catalog": "data/validation/ja-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -32295,7 +32295,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.282
+    "planning_ms": 0.2645
   },
   {
     "id": "ja-1-clean",
@@ -32305,8 +32305,8 @@
     "operator": 1,
     "guard": "n >= 671 and n < 678",
     "demand_index": 0,
-    "source": "data\\validation\\ja-1\\clean.py",
-    "catalog": "data\\validation\\ja-1\\messages.po",
+    "source": "data/validation/ja-1/clean.py",
+    "catalog": "data/validation/ja-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -33142,7 +33142,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3488
+    "planning_ms": 0.3311
   },
   {
     "id": "ja-1-mutant",
@@ -33152,8 +33152,8 @@
     "operator": 1,
     "guard": "n >= 671 and n < 678",
     "demand_index": 0,
-    "source": "data\\validation\\ja-1\\mutant.py",
-    "catalog": "data\\validation\\ja-1\\messages.po",
+    "source": "data/validation/ja-1/mutant.py",
+    "catalog": "data/validation/ja-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -33989,7 +33989,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3822
+    "planning_ms": 0.3232
   },
   {
     "id": "ja-2-clean",
@@ -33999,8 +33999,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 0,
-    "source": "data\\validation\\ja-2\\clean.py",
-    "catalog": "data\\validation\\ja-2\\messages.po",
+    "source": "data/validation/ja-2/clean.py",
+    "catalog": "data/validation/ja-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -34836,7 +34836,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3246
+    "planning_ms": 0.3099
   },
   {
     "id": "ja-2-mutant",
@@ -34846,8 +34846,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 0,
-    "source": "data\\validation\\ja-2\\mutant.py",
-    "catalog": "data\\validation\\ja-2\\messages.po",
+    "source": "data/validation/ja-2/mutant.py",
+    "catalog": "data/validation/ja-2/messages.po",
     "domain_size": 1001,
     "failures": 143,
     "active_mutation": true,
@@ -35683,7 +35683,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.2927
+    "planning_ms": 0.2886
   },
   {
     "id": "ja-3-clean",
@@ -35693,8 +35693,8 @@
     "operator": 3,
     "guard": "n > 456 and n % 7 == 6",
     "demand_index": 0,
-    "source": "data\\validation\\ja-3\\clean.py",
-    "catalog": "data\\validation\\ja-3\\messages.po",
+    "source": "data/validation/ja-3/clean.py",
+    "catalog": "data/validation/ja-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -36530,7 +36530,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3826
+    "planning_ms": 0.3678
   },
   {
     "id": "ja-3-mutant",
@@ -36540,8 +36540,8 @@
     "operator": 3,
     "guard": "n > 456 and n % 7 == 6",
     "demand_index": 0,
-    "source": "data\\validation\\ja-3\\mutant.py",
-    "catalog": "data\\validation\\ja-3\\messages.po",
+    "source": "data/validation/ja-3/mutant.py",
+    "catalog": "data/validation/ja-3/messages.po",
     "domain_size": 1001,
     "failures": 78,
     "active_mutation": true,
@@ -37377,7 +37377,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3733
+    "planning_ms": 0.3486
   },
   {
     "id": "ja-4-clean",
@@ -37387,8 +37387,8 @@
     "operator": 4,
     "guard": "not (n < 146 or n >= 149)",
     "demand_index": 0,
-    "source": "data\\validation\\ja-4\\clean.py",
-    "catalog": "data\\validation\\ja-4\\messages.po",
+    "source": "data/validation/ja-4/clean.py",
+    "catalog": "data/validation/ja-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -38224,7 +38224,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5324
+    "planning_ms": 0.3229
   },
   {
     "id": "ja-4-mutant",
@@ -38234,8 +38234,8 @@
     "operator": 4,
     "guard": "not (n < 146 or n >= 149)",
     "demand_index": 0,
-    "source": "data\\validation\\ja-4\\mutant.py",
-    "catalog": "data\\validation\\ja-4\\messages.po",
+    "source": "data/validation/ja-4/mutant.py",
+    "catalog": "data/validation/ja-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -39071,7 +39071,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3255
+    "planning_ms": 0.3296
   },
   {
     "id": "ja-5-clean",
@@ -39081,8 +39081,8 @@
     "operator": 5,
     "guard": "n == 332 or n == 463",
     "demand_index": 0,
-    "source": "data\\validation\\ja-5\\clean.py",
-    "catalog": "data\\validation\\ja-5\\messages.po",
+    "source": "data/validation/ja-5/clean.py",
+    "catalog": "data/validation/ja-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -39918,7 +39918,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3628
+    "planning_ms": 0.3226
   },
   {
     "id": "ja-5-mutant",
@@ -39928,8 +39928,8 @@
     "operator": 5,
     "guard": "n == 332 or n == 463",
     "demand_index": 0,
-    "source": "data\\validation\\ja-5\\mutant.py",
-    "catalog": "data\\validation\\ja-5\\messages.po",
+    "source": "data/validation/ja-5/mutant.py",
+    "catalog": "data/validation/ja-5/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -40765,7 +40765,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.337
+    "planning_ms": 0.3115
   },
   {
     "id": "ja-6-clean",
@@ -40775,8 +40775,8 @@
     "operator": 6,
     "guard": "621 <= n and n <= 715",
     "demand_index": 0,
-    "source": "data\\validation\\ja-6\\clean.py",
-    "catalog": "data\\validation\\ja-6\\messages.po",
+    "source": "data/validation/ja-6/clean.py",
+    "catalog": "data/validation/ja-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -41612,7 +41612,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3338
+    "planning_ms": 0.3144
   },
   {
     "id": "ja-6-mutant",
@@ -41622,8 +41622,8 @@
     "operator": 6,
     "guard": "621 <= n and n <= 715",
     "demand_index": 0,
-    "source": "data\\validation\\ja-6\\mutant.py",
-    "catalog": "data\\validation\\ja-6\\messages.po",
+    "source": "data/validation/ja-6/mutant.py",
+    "catalog": "data/validation/ja-6/messages.po",
     "domain_size": 1001,
     "failures": 95,
     "active_mutation": true,
@@ -42459,7 +42459,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3412
+    "planning_ms": 0.3089
   },
   {
     "id": "ja-7-clean",
@@ -42469,8 +42469,8 @@
     "operator": 7,
     "guard": "192 <= n < 194",
     "demand_index": 0,
-    "source": "data\\validation\\ja-7\\clean.py",
-    "catalog": "data\\validation\\ja-7\\messages.po",
+    "source": "data/validation/ja-7/clean.py",
+    "catalog": "data/validation/ja-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -43306,7 +43306,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.311
+    "planning_ms": 0.3076
   },
   {
     "id": "ja-7-mutant",
@@ -43316,8 +43316,8 @@
     "operator": 7,
     "guard": "192 <= n < 194",
     "demand_index": 0,
-    "source": "data\\validation\\ja-7\\mutant.py",
-    "catalog": "data\\validation\\ja-7\\messages.po",
+    "source": "data/validation/ja-7/mutant.py",
+    "catalog": "data/validation/ja-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -44153,7 +44153,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.2933
+    "planning_ms": 0.2868
   },
   {
     "id": "ru-0-clean",
@@ -44163,8 +44163,8 @@
     "operator": 0,
     "guard": "n == 254",
     "demand_index": 0,
-    "source": "data\\validation\\ru-0\\clean.py",
-    "catalog": "data\\validation\\ru-0\\messages.po",
+    "source": "data/validation/ru-0/clean.py",
+    "catalog": "data/validation/ru-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -45206,7 +45206,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8631
+    "planning_ms": 0.8312
   },
   {
     "id": "ru-0-mutant",
@@ -45216,8 +45216,8 @@
     "operator": 0,
     "guard": "n == 254",
     "demand_index": 0,
-    "source": "data\\validation\\ru-0\\mutant.py",
-    "catalog": "data\\validation\\ru-0\\messages.po",
+    "source": "data/validation/ru-0/mutant.py",
+    "catalog": "data/validation/ru-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -46259,7 +46259,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8181
+    "planning_ms": 0.87
   },
   {
     "id": "ru-1-clean",
@@ -46269,8 +46269,8 @@
     "operator": 1,
     "guard": "n >= 574 and n < 581",
     "demand_index": 2,
-    "source": "data\\validation\\ru-1\\clean.py",
-    "catalog": "data\\validation\\ru-1\\messages.po",
+    "source": "data/validation/ru-1/clean.py",
+    "catalog": "data/validation/ru-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -47414,7 +47414,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2093
+    "planning_ms": 1.2908
   },
   {
     "id": "ru-1-mutant",
@@ -47424,8 +47424,8 @@
     "operator": 1,
     "guard": "n >= 574 and n < 581",
     "demand_index": 2,
-    "source": "data\\validation\\ru-1\\mutant.py",
-    "catalog": "data\\validation\\ru-1\\messages.po",
+    "source": "data/validation/ru-1/mutant.py",
+    "catalog": "data/validation/ru-1/messages.po",
     "domain_size": 1001,
     "failures": 6,
     "active_mutation": true,
@@ -48569,7 +48569,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2048
+    "planning_ms": 1.1563
   },
   {
     "id": "ru-2-clean",
@@ -48579,8 +48579,8 @@
     "operator": 2,
     "guard": "n % 7 == 4",
     "demand_index": 0,
-    "source": "data\\validation\\ru-2\\clean.py",
-    "catalog": "data\\validation\\ru-2\\messages.po",
+    "source": "data/validation/ru-2/clean.py",
+    "catalog": "data/validation/ru-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -49826,7 +49826,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.1097
+    "planning_ms": 2.1154
   },
   {
     "id": "ru-2-mutant",
@@ -49836,8 +49836,8 @@
     "operator": 2,
     "guard": "n % 7 == 4",
     "demand_index": 0,
-    "source": "data\\validation\\ru-2\\mutant.py",
-    "catalog": "data\\validation\\ru-2\\messages.po",
+    "source": "data/validation/ru-2/mutant.py",
+    "catalog": "data/validation/ru-2/messages.po",
     "domain_size": 1001,
     "failures": 13,
     "active_mutation": true,
@@ -51083,7 +51083,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.4568
+    "planning_ms": 1.9923
   },
   {
     "id": "ru-3-clean",
@@ -51093,8 +51093,8 @@
     "operator": 3,
     "guard": "n > 707 and n % 7 == 5",
     "demand_index": 2,
-    "source": "data\\validation\\ru-3\\clean.py",
-    "catalog": "data\\validation\\ru-3\\messages.po",
+    "source": "data/validation/ru-3/clean.py",
+    "catalog": "data/validation/ru-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -52340,7 +52340,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.7825
+    "planning_ms": 3.674
   },
   {
     "id": "ru-3-mutant",
@@ -52350,8 +52350,8 @@
     "operator": 3,
     "guard": "n > 707 and n % 7 == 5",
     "demand_index": 2,
-    "source": "data\\validation\\ru-3\\mutant.py",
-    "catalog": "data\\validation\\ru-3\\messages.po",
+    "source": "data/validation/ru-3/mutant.py",
+    "catalog": "data/validation/ru-3/messages.po",
     "domain_size": 1001,
     "failures": 26,
     "active_mutation": true,
@@ -53597,7 +53597,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.7841
+    "planning_ms": 3.7002
   },
   {
     "id": "ru-4-clean",
@@ -53607,8 +53607,8 @@
     "operator": 4,
     "guard": "not (n < 541 or n >= 544)",
     "demand_index": 2,
-    "source": "data\\validation\\ru-4\\clean.py",
-    "catalog": "data\\validation\\ru-4\\messages.po",
+    "source": "data/validation/ru-4/clean.py",
+    "catalog": "data/validation/ru-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -54752,7 +54752,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2911
+    "planning_ms": 1.3764
   },
   {
     "id": "ru-4-mutant",
@@ -54762,8 +54762,8 @@
     "operator": 4,
     "guard": "not (n < 541 or n >= 544)",
     "demand_index": 2,
-    "source": "data\\validation\\ru-4\\mutant.py",
-    "catalog": "data\\validation\\ru-4\\messages.po",
+    "source": "data/validation/ru-4/mutant.py",
+    "catalog": "data/validation/ru-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -55907,7 +55907,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2906
+    "planning_ms": 1.3055
   },
   {
     "id": "ru-5-clean",
@@ -55917,8 +55917,8 @@
     "operator": 5,
     "guard": "n == 671 or n == 776",
     "demand_index": 2,
-    "source": "data\\validation\\ru-5\\clean.py",
-    "catalog": "data\\validation\\ru-5\\messages.po",
+    "source": "data/validation/ru-5/clean.py",
+    "catalog": "data/validation/ru-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -57062,7 +57062,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.7645
+    "planning_ms": 1.6541
   },
   {
     "id": "ru-5-mutant",
@@ -57072,8 +57072,8 @@
     "operator": 5,
     "guard": "n == 671 or n == 776",
     "demand_index": 2,
-    "source": "data\\validation\\ru-5\\mutant.py",
-    "catalog": "data\\validation\\ru-5\\messages.po",
+    "source": "data/validation/ru-5/mutant.py",
+    "catalog": "data/validation/ru-5/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -58217,7 +58217,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.8436
+    "planning_ms": 1.7901
   },
   {
     "id": "ru-6-clean",
@@ -58227,8 +58227,8 @@
     "operator": 6,
     "guard": "583 <= n and n <= 600",
     "demand_index": 1,
-    "source": "data\\validation\\ru-6\\clean.py",
-    "catalog": "data\\validation\\ru-6\\messages.po",
+    "source": "data/validation/ru-6/clean.py",
+    "catalog": "data/validation/ru-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -59474,7 +59474,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3073
+    "planning_ms": 1.3421
   },
   {
     "id": "ru-6-mutant",
@@ -59484,8 +59484,8 @@
     "operator": 6,
     "guard": "583 <= n and n <= 600",
     "demand_index": 1,
-    "source": "data\\validation\\ru-6\\mutant.py",
-    "catalog": "data\\validation\\ru-6\\messages.po",
+    "source": "data/validation/ru-6/mutant.py",
+    "catalog": "data/validation/ru-6/messages.po",
     "domain_size": 1001,
     "failures": 5,
     "active_mutation": true,
@@ -60731,7 +60731,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2835
+    "planning_ms": 1.3027
   },
   {
     "id": "ru-7-clean",
@@ -60741,8 +60741,8 @@
     "operator": 7,
     "guard": "323 <= n < 325",
     "demand_index": 2,
-    "source": "data\\validation\\ru-7\\clean.py",
-    "catalog": "data\\validation\\ru-7\\messages.po",
+    "source": "data/validation/ru-7/clean.py",
+    "catalog": "data/validation/ru-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -61784,7 +61784,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8994
+    "planning_ms": 0.8612
   },
   {
     "id": "ru-7-mutant",
@@ -61794,8 +61794,8 @@
     "operator": 7,
     "guard": "323 <= n < 325",
     "demand_index": 2,
-    "source": "data\\validation\\ru-7\\mutant.py",
-    "catalog": "data\\validation\\ru-7\\messages.po",
+    "source": "data/validation/ru-7/mutant.py",
+    "catalog": "data/validation/ru-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -62837,7 +62837,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9733
+    "planning_ms": 0.8722
   },
   {
     "id": "ar-0-clean",
@@ -62847,8 +62847,8 @@
     "operator": 0,
     "guard": "n == 363",
     "demand_index": 5,
-    "source": "data\\validation\\ar-0\\clean.py",
-    "catalog": "data\\validation\\ar-0\\messages.po",
+    "source": "data/validation/ar-0/clean.py",
+    "catalog": "data/validation/ar-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -64199,7 +64199,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9189
+    "planning_ms": 0.9519
   },
   {
     "id": "ar-0-mutant",
@@ -64209,8 +64209,8 @@
     "operator": 0,
     "guard": "n == 363",
     "demand_index": 5,
-    "source": "data\\validation\\ar-0\\mutant.py",
-    "catalog": "data\\validation\\ar-0\\messages.po",
+    "source": "data/validation/ar-0/mutant.py",
+    "catalog": "data/validation/ar-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -65561,7 +65561,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9657
+    "planning_ms": 0.9211
   },
   {
     "id": "ar-1-clean",
@@ -65571,8 +65571,8 @@
     "operator": 1,
     "guard": "n >= 144 and n < 151",
     "demand_index": 1,
-    "source": "data\\validation\\ar-1\\clean.py",
-    "catalog": "data\\validation\\ar-1\\messages.po",
+    "source": "data/validation/ar-1/clean.py",
+    "catalog": "data/validation/ar-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -66923,7 +66923,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2709
+    "planning_ms": 1.2763
   },
   {
     "id": "ar-1-mutant",
@@ -66933,8 +66933,8 @@
     "operator": 1,
     "guard": "n >= 144 and n < 151",
     "demand_index": 1,
-    "source": "data\\validation\\ar-1\\mutant.py",
-    "catalog": "data\\validation\\ar-1\\messages.po",
+    "source": "data/validation/ar-1/mutant.py",
+    "catalog": "data/validation/ar-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -68285,7 +68285,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2441
+    "planning_ms": 1.4367
   },
   {
     "id": "ar-2-clean",
@@ -68295,8 +68295,8 @@
     "operator": 2,
     "guard": "n % 7 == 0",
     "demand_index": 2,
-    "source": "data\\validation\\ar-2\\clean.py",
-    "catalog": "data\\validation\\ar-2\\messages.po",
+    "source": "data/validation/ar-2/clean.py",
+    "catalog": "data/validation/ar-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -69851,7 +69851,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.2026
+    "planning_ms": 2.3758
   },
   {
     "id": "ar-2-mutant",
@@ -69861,8 +69861,8 @@
     "operator": 2,
     "guard": "n % 7 == 0",
     "demand_index": 2,
-    "source": "data\\validation\\ar-2\\mutant.py",
-    "catalog": "data\\validation\\ar-2\\messages.po",
+    "source": "data/validation/ar-2/mutant.py",
+    "catalog": "data/validation/ar-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -71417,7 +71417,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.1375
+    "planning_ms": 2.1033
   },
   {
     "id": "ar-3-clean",
@@ -71427,8 +71427,8 @@
     "operator": 3,
     "guard": "n > 589 and n % 7 == 5",
     "demand_index": 3,
-    "source": "data\\validation\\ar-3\\clean.py",
-    "catalog": "data\\validation\\ar-3\\messages.po",
+    "source": "data/validation/ar-3/clean.py",
+    "catalog": "data/validation/ar-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -72983,7 +72983,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.9917
+    "planning_ms": 3.9764
   },
   {
     "id": "ar-3-mutant",
@@ -72993,8 +72993,8 @@
     "operator": 3,
     "guard": "n > 589 and n % 7 == 5",
     "demand_index": 3,
-    "source": "data\\validation\\ar-3\\mutant.py",
-    "catalog": "data\\validation\\ar-3\\messages.po",
+    "source": "data/validation/ar-3/mutant.py",
+    "catalog": "data/validation/ar-3/messages.po",
     "domain_size": 1001,
     "failures": 5,
     "active_mutation": true,
@@ -74549,7 +74549,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.9426
+    "planning_ms": 3.94
   },
   {
     "id": "ar-4-clean",
@@ -74559,8 +74559,8 @@
     "operator": 4,
     "guard": "not (n < 166 or n >= 169)",
     "demand_index": 1,
-    "source": "data\\validation\\ar-4\\clean.py",
-    "catalog": "data\\validation\\ar-4\\messages.po",
+    "source": "data/validation/ar-4/clean.py",
+    "catalog": "data/validation/ar-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -75911,7 +75911,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3516
+    "planning_ms": 1.3697
   },
   {
     "id": "ar-4-mutant",
@@ -75921,8 +75921,8 @@
     "operator": 4,
     "guard": "not (n < 166 or n >= 169)",
     "demand_index": 1,
-    "source": "data\\validation\\ar-4\\mutant.py",
-    "catalog": "data\\validation\\ar-4\\messages.po",
+    "source": "data/validation/ar-4/mutant.py",
+    "catalog": "data/validation/ar-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -77273,7 +77273,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4285
+    "planning_ms": 1.3063
   },
   {
     "id": "ar-5-clean",
@@ -77283,8 +77283,8 @@
     "operator": 5,
     "guard": "n == 256 or n == 289",
     "demand_index": 4,
-    "source": "data\\validation\\ar-5\\clean.py",
-    "catalog": "data\\validation\\ar-5\\messages.po",
+    "source": "data/validation/ar-5/clean.py",
+    "catalog": "data/validation/ar-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -78635,7 +78635,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4521
+    "planning_ms": 1.4175
   },
   {
     "id": "ar-5-mutant",
@@ -78645,8 +78645,8 @@
     "operator": 5,
     "guard": "n == 256 or n == 289",
     "demand_index": 4,
-    "source": "data\\validation\\ar-5\\mutant.py",
-    "catalog": "data\\validation\\ar-5\\messages.po",
+    "source": "data/validation/ar-5/mutant.py",
+    "catalog": "data/validation/ar-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -79997,7 +79997,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.1683
+    "planning_ms": 1.3586
   },
   {
     "id": "ar-6-clean",
@@ -80007,8 +80007,8 @@
     "operator": 6,
     "guard": "514 <= n and n <= 611",
     "demand_index": 3,
-    "source": "data\\validation\\ar-6\\clean.py",
-    "catalog": "data\\validation\\ar-6\\messages.po",
+    "source": "data/validation/ar-6/clean.py",
+    "catalog": "data/validation/ar-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -81563,7 +81563,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.6922
+    "planning_ms": 1.7182
   },
   {
     "id": "ar-6-mutant",
@@ -81573,8 +81573,8 @@
     "operator": 6,
     "guard": "514 <= n and n <= 611",
     "demand_index": 3,
-    "source": "data\\validation\\ar-6\\mutant.py",
-    "catalog": "data\\validation\\ar-6\\messages.po",
+    "source": "data/validation/ar-6/mutant.py",
+    "catalog": "data/validation/ar-6/messages.po",
     "domain_size": 1001,
     "failures": 8,
     "active_mutation": true,
@@ -83129,7 +83129,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.6664
+    "planning_ms": 1.6002
   },
   {
     "id": "ar-7-clean",
@@ -83139,8 +83139,8 @@
     "operator": 7,
     "guard": "651 <= n < 653",
     "demand_index": 0,
-    "source": "data\\validation\\ar-7\\clean.py",
-    "catalog": "data\\validation\\ar-7\\messages.po",
+    "source": "data/validation/ar-7/clean.py",
+    "catalog": "data/validation/ar-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -84491,7 +84491,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9793
+    "planning_ms": 0.9598
   },
   {
     "id": "ar-7-mutant",
@@ -84501,8 +84501,8 @@
     "operator": 7,
     "guard": "651 <= n < 653",
     "demand_index": 0,
-    "source": "data\\validation\\ar-7\\mutant.py",
-    "catalog": "data\\validation\\ar-7\\messages.po",
+    "source": "data/validation/ar-7/mutant.py",
+    "catalog": "data/validation/ar-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -85853,7 +85853,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9617
+    "planning_ms": 0.9332
   },
   {
     "id": "pl-0-clean",
@@ -85863,8 +85863,8 @@
     "operator": 0,
     "guard": "n == 367",
     "demand_index": 1,
-    "source": "data\\validation\\pl-0\\clean.py",
-    "catalog": "data\\validation\\pl-0\\messages.po",
+    "source": "data/validation/pl-0/clean.py",
+    "catalog": "data/validation/pl-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -86906,7 +86906,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8897
+    "planning_ms": 0.8105
   },
   {
     "id": "pl-0-mutant",
@@ -86916,8 +86916,8 @@
     "operator": 0,
     "guard": "n == 367",
     "demand_index": 1,
-    "source": "data\\validation\\pl-0\\mutant.py",
-    "catalog": "data\\validation\\pl-0\\messages.po",
+    "source": "data/validation/pl-0/mutant.py",
+    "catalog": "data/validation/pl-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -87959,7 +87959,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9003
+    "planning_ms": 0.8094
   },
   {
     "id": "pl-1-clean",
@@ -87969,8 +87969,8 @@
     "operator": 1,
     "guard": "n >= 95 and n < 102",
     "demand_index": 1,
-    "source": "data\\validation\\pl-1\\clean.py",
-    "catalog": "data\\validation\\pl-1\\messages.po",
+    "source": "data/validation/pl-1/clean.py",
+    "catalog": "data/validation/pl-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -89012,7 +89012,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1322
+    "planning_ms": 1.1016
   },
   {
     "id": "pl-1-mutant",
@@ -89022,8 +89022,8 @@
     "operator": 1,
     "guard": "n >= 95 and n < 102",
     "demand_index": 1,
-    "source": "data\\validation\\pl-1\\mutant.py",
-    "catalog": "data\\validation\\pl-1\\messages.po",
+    "source": "data/validation/pl-1/mutant.py",
+    "catalog": "data/validation/pl-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -90065,7 +90065,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1261
+    "planning_ms": 1.2861
   },
   {
     "id": "pl-2-clean",
@@ -90075,8 +90075,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 2,
-    "source": "data\\validation\\pl-2\\clean.py",
-    "catalog": "data\\validation\\pl-2\\messages.po",
+    "source": "data/validation/pl-2/clean.py",
+    "catalog": "data/validation/pl-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -91220,7 +91220,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.9948
+    "planning_ms": 5.4875
   },
   {
     "id": "pl-2-mutant",
@@ -91230,8 +91230,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 2,
-    "source": "data\\validation\\pl-2\\mutant.py",
-    "catalog": "data\\validation\\pl-2\\messages.po",
+    "source": "data/validation/pl-2/mutant.py",
+    "catalog": "data/validation/pl-2/messages.po",
     "domain_size": 1001,
     "failures": 104,
     "active_mutation": true,
@@ -92375,7 +92375,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.254
+    "planning_ms": 1.988
   },
   {
     "id": "pl-3-clean",
@@ -92385,8 +92385,8 @@
     "operator": 3,
     "guard": "n > 624 and n % 7 == 1",
     "demand_index": 2,
-    "source": "data\\validation\\pl-3\\clean.py",
-    "catalog": "data\\validation\\pl-3\\messages.po",
+    "source": "data/validation/pl-3/clean.py",
+    "catalog": "data/validation/pl-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -93530,7 +93530,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.8785
+    "planning_ms": 3.6897
   },
   {
     "id": "pl-3-mutant",
@@ -93540,8 +93540,8 @@
     "operator": 3,
     "guard": "n > 624 and n % 7 == 1",
     "demand_index": 2,
-    "source": "data\\validation\\pl-3\\mutant.py",
-    "catalog": "data\\validation\\pl-3\\messages.po",
+    "source": "data/validation/pl-3/mutant.py",
+    "catalog": "data/validation/pl-3/messages.po",
     "domain_size": 1001,
     "failures": 39,
     "active_mutation": true,
@@ -94685,7 +94685,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.8792
+    "planning_ms": 3.7182
   },
   {
     "id": "pl-4-clean",
@@ -94695,8 +94695,8 @@
     "operator": 4,
     "guard": "not (n < 417 or n >= 420)",
     "demand_index": 2,
-    "source": "data\\validation\\pl-4\\clean.py",
-    "catalog": "data\\validation\\pl-4\\messages.po",
+    "source": "data/validation/pl-4/clean.py",
+    "catalog": "data/validation/pl-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -95738,7 +95738,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2105
+    "planning_ms": 1.2264
   },
   {
     "id": "pl-4-mutant",
@@ -95748,8 +95748,8 @@
     "operator": 4,
     "guard": "not (n < 417 or n >= 420)",
     "demand_index": 2,
-    "source": "data\\validation\\pl-4\\mutant.py",
-    "catalog": "data\\validation\\pl-4\\messages.po",
+    "source": "data/validation/pl-4/mutant.py",
+    "catalog": "data/validation/pl-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -96791,7 +96791,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2322
+    "planning_ms": 1.177
   },
   {
     "id": "pl-5-clean",
@@ -96801,8 +96801,8 @@
     "operator": 5,
     "guard": "n == 509 or n == 564",
     "demand_index": 2,
-    "source": "data\\validation\\pl-5\\clean.py",
-    "catalog": "data\\validation\\pl-5\\messages.po",
+    "source": "data/validation/pl-5/clean.py",
+    "catalog": "data/validation/pl-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -97946,7 +97946,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5183
+    "planning_ms": 1.3731
   },
   {
     "id": "pl-5-mutant",
@@ -97956,8 +97956,8 @@
     "operator": 5,
     "guard": "n == 509 or n == 564",
     "demand_index": 2,
-    "source": "data\\validation\\pl-5\\mutant.py",
-    "catalog": "data\\validation\\pl-5\\messages.po",
+    "source": "data/validation/pl-5/mutant.py",
+    "catalog": "data/validation/pl-5/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -99101,7 +99101,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.436
+    "planning_ms": 1.3979
   },
   {
     "id": "pl-6-clean",
@@ -99111,8 +99111,8 @@
     "operator": 6,
     "guard": "510 <= n and n <= 560",
     "demand_index": 2,
-    "source": "data\\validation\\pl-6\\clean.py",
-    "catalog": "data\\validation\\pl-6\\messages.po",
+    "source": "data/validation/pl-6/clean.py",
+    "catalog": "data/validation/pl-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -100256,7 +100256,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3587
+    "planning_ms": 1.3103
   },
   {
     "id": "pl-6-mutant",
@@ -100266,8 +100266,8 @@
     "operator": 6,
     "guard": "510 <= n and n <= 560",
     "demand_index": 2,
-    "source": "data\\validation\\pl-6\\mutant.py",
-    "catalog": "data\\validation\\pl-6\\messages.po",
+    "source": "data/validation/pl-6/mutant.py",
+    "catalog": "data/validation/pl-6/messages.po",
     "domain_size": 1001,
     "failures": 39,
     "active_mutation": true,
@@ -101411,7 +101411,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4912
+    "planning_ms": 1.3159
   },
   {
     "id": "pl-7-clean",
@@ -101421,8 +101421,8 @@
     "operator": 7,
     "guard": "698 <= n < 700",
     "demand_index": 1,
-    "source": "data\\validation\\pl-7\\clean.py",
-    "catalog": "data\\validation\\pl-7\\messages.po",
+    "source": "data/validation/pl-7/clean.py",
+    "catalog": "data/validation/pl-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -102464,7 +102464,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8727
+    "planning_ms": 0.8754
   },
   {
     "id": "pl-7-mutant",
@@ -102474,8 +102474,8 @@
     "operator": 7,
     "guard": "698 <= n < 700",
     "demand_index": 1,
-    "source": "data\\validation\\pl-7\\mutant.py",
-    "catalog": "data\\validation\\pl-7\\messages.po",
+    "source": "data/validation/pl-7/mutant.py",
+    "catalog": "data/validation/pl-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -103517,7 +103517,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8496
+    "planning_ms": 0.9109
   },
   {
     "id": "cs-0-clean",
@@ -103527,8 +103527,8 @@
     "operator": 0,
     "guard": "n == 77",
     "demand_index": 0,
-    "source": "data\\validation\\cs-0\\clean.py",
-    "catalog": "data\\validation\\cs-0\\messages.po",
+    "source": "data/validation/cs-0/clean.py",
+    "catalog": "data/validation/cs-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -104570,7 +104570,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3662
+    "planning_ms": 0.3579
   },
   {
     "id": "cs-0-mutant",
@@ -104580,8 +104580,8 @@
     "operator": 0,
     "guard": "n == 77",
     "demand_index": 0,
-    "source": "data\\validation\\cs-0\\mutant.py",
-    "catalog": "data\\validation\\cs-0\\messages.po",
+    "source": "data/validation/cs-0/mutant.py",
+    "catalog": "data/validation/cs-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -105623,7 +105623,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.419
+    "planning_ms": 0.3339
   },
   {
     "id": "cs-1-clean",
@@ -105633,8 +105633,8 @@
     "operator": 1,
     "guard": "n >= 491 and n < 498",
     "demand_index": 1,
-    "source": "data\\validation\\cs-1\\clean.py",
-    "catalog": "data\\validation\\cs-1\\messages.po",
+    "source": "data/validation/cs-1/clean.py",
+    "catalog": "data/validation/cs-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -106676,7 +106676,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4044
+    "planning_ms": 0.3952
   },
   {
     "id": "cs-1-mutant",
@@ -106686,8 +106686,8 @@
     "operator": 1,
     "guard": "n >= 491 and n < 498",
     "demand_index": 1,
-    "source": "data\\validation\\cs-1\\mutant.py",
-    "catalog": "data\\validation\\cs-1\\messages.po",
+    "source": "data/validation/cs-1/mutant.py",
+    "catalog": "data/validation/cs-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -107729,7 +107729,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3882
+    "planning_ms": 0.4268
   },
   {
     "id": "cs-2-clean",
@@ -107739,8 +107739,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 1,
-    "source": "data\\validation\\cs-2\\clean.py",
-    "catalog": "data\\validation\\cs-2\\messages.po",
+    "source": "data/validation/cs-2/clean.py",
+    "catalog": "data/validation/cs-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -108782,7 +108782,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4091
+    "planning_ms": 0.3815
   },
   {
     "id": "cs-2-mutant",
@@ -108792,8 +108792,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 1,
-    "source": "data\\validation\\cs-2\\mutant.py",
-    "catalog": "data\\validation\\cs-2\\messages.po",
+    "source": "data/validation/cs-2/mutant.py",
+    "catalog": "data/validation/cs-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -109835,7 +109835,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3756
+    "planning_ms": 0.3673
   },
   {
     "id": "cs-3-clean",
@@ -109845,8 +109845,8 @@
     "operator": 3,
     "guard": "n > 340 and n % 7 == 2",
     "demand_index": 0,
-    "source": "data\\validation\\cs-3\\clean.py",
-    "catalog": "data\\validation\\cs-3\\messages.po",
+    "source": "data/validation/cs-3/clean.py",
+    "catalog": "data/validation/cs-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -110888,7 +110888,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.6564
+    "planning_ms": 0.4872
   },
   {
     "id": "cs-3-mutant",
@@ -110898,8 +110898,8 @@
     "operator": 3,
     "guard": "n > 340 and n % 7 == 2",
     "demand_index": 0,
-    "source": "data\\validation\\cs-3\\mutant.py",
-    "catalog": "data\\validation\\cs-3\\messages.po",
+    "source": "data/validation/cs-3/mutant.py",
+    "catalog": "data/validation/cs-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -111941,7 +111941,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4957
+    "planning_ms": 0.4476
   },
   {
     "id": "cs-4-clean",
@@ -111951,8 +111951,8 @@
     "operator": 4,
     "guard": "not (n < 280 or n >= 283)",
     "demand_index": 0,
-    "source": "data\\validation\\cs-4\\clean.py",
-    "catalog": "data\\validation\\cs-4\\messages.po",
+    "source": "data/validation/cs-4/clean.py",
+    "catalog": "data/validation/cs-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -112994,7 +112994,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5564
+    "planning_ms": 0.6688
   },
   {
     "id": "cs-4-mutant",
@@ -113004,8 +113004,8 @@
     "operator": 4,
     "guard": "not (n < 280 or n >= 283)",
     "demand_index": 0,
-    "source": "data\\validation\\cs-4\\mutant.py",
-    "catalog": "data\\validation\\cs-4\\messages.po",
+    "source": "data/validation/cs-4/mutant.py",
+    "catalog": "data/validation/cs-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -114047,7 +114047,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4578
+    "planning_ms": 0.4015
   },
   {
     "id": "cs-5-clean",
@@ -114057,8 +114057,8 @@
     "operator": 5,
     "guard": "n == 505 or n == 546",
     "demand_index": 0,
-    "source": "data\\validation\\cs-5\\clean.py",
-    "catalog": "data\\validation\\cs-5\\messages.po",
+    "source": "data/validation/cs-5/clean.py",
+    "catalog": "data/validation/cs-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -115100,7 +115100,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4797
+    "planning_ms": 0.4012
   },
   {
     "id": "cs-5-mutant",
@@ -115110,8 +115110,8 @@
     "operator": 5,
     "guard": "n == 505 or n == 546",
     "demand_index": 0,
-    "source": "data\\validation\\cs-5\\mutant.py",
-    "catalog": "data\\validation\\cs-5\\messages.po",
+    "source": "data/validation/cs-5/mutant.py",
+    "catalog": "data/validation/cs-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -116153,7 +116153,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4627
+    "planning_ms": 0.4029
   },
   {
     "id": "cs-6-clean",
@@ -116163,8 +116163,8 @@
     "operator": 6,
     "guard": "146 <= n and n <= 177",
     "demand_index": 0,
-    "source": "data\\validation\\cs-6\\clean.py",
-    "catalog": "data\\validation\\cs-6\\messages.po",
+    "source": "data/validation/cs-6/clean.py",
+    "catalog": "data/validation/cs-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -117206,7 +117206,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4596
+    "planning_ms": 0.3924
   },
   {
     "id": "cs-6-mutant",
@@ -117216,8 +117216,8 @@
     "operator": 6,
     "guard": "146 <= n and n <= 177",
     "demand_index": 0,
-    "source": "data\\validation\\cs-6\\mutant.py",
-    "catalog": "data\\validation\\cs-6\\messages.po",
+    "source": "data/validation/cs-6/mutant.py",
+    "catalog": "data/validation/cs-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -118259,7 +118259,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4688
+    "planning_ms": 0.3823
   },
   {
     "id": "cs-7-clean",
@@ -118269,8 +118269,8 @@
     "operator": 7,
     "guard": "112 <= n < 114",
     "demand_index": 0,
-    "source": "data\\validation\\cs-7\\clean.py",
-    "catalog": "data\\validation\\cs-7\\messages.po",
+    "source": "data/validation/cs-7/clean.py",
+    "catalog": "data/validation/cs-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -119312,7 +119312,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4301
+    "planning_ms": 0.3605
   },
   {
     "id": "cs-7-mutant",
@@ -119322,8 +119322,8 @@
     "operator": 7,
     "guard": "112 <= n < 114",
     "demand_index": 0,
-    "source": "data\\validation\\cs-7\\mutant.py",
-    "catalog": "data\\validation\\cs-7\\messages.po",
+    "source": "data/validation/cs-7/mutant.py",
+    "catalog": "data/validation/cs-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -120365,7 +120365,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.7482
+    "planning_ms": 0.3458
   },
   {
     "id": "sl-0-clean",
@@ -120375,8 +120375,8 @@
     "operator": 0,
     "guard": "n == 204",
     "demand_index": 1,
-    "source": "data\\validation\\sl-0\\clean.py",
-    "catalog": "data\\validation\\sl-0\\messages.po",
+    "source": "data/validation/sl-0/clean.py",
+    "catalog": "data/validation/sl-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -121521,7 +121521,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9544
+    "planning_ms": 0.8372
   },
   {
     "id": "sl-0-mutant",
@@ -121531,8 +121531,8 @@
     "operator": 0,
     "guard": "n == 204",
     "demand_index": 1,
-    "source": "data\\validation\\sl-0\\mutant.py",
-    "catalog": "data\\validation\\sl-0\\messages.po",
+    "source": "data/validation/sl-0/mutant.py",
+    "catalog": "data/validation/sl-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -122677,7 +122677,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8529
+    "planning_ms": 0.8575
   },
   {
     "id": "sl-1-clean",
@@ -122687,8 +122687,8 @@
     "operator": 1,
     "guard": "n >= 93 and n < 100",
     "demand_index": 3,
-    "source": "data\\validation\\sl-1\\clean.py",
-    "catalog": "data\\validation\\sl-1\\messages.po",
+    "source": "data/validation/sl-1/clean.py",
+    "catalog": "data/validation/sl-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -123833,7 +123833,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.153
+    "planning_ms": 1.1228
   },
   {
     "id": "sl-1-mutant",
@@ -123843,8 +123843,8 @@
     "operator": 1,
     "guard": "n >= 93 and n < 100",
     "demand_index": 3,
-    "source": "data\\validation\\sl-1\\mutant.py",
-    "catalog": "data\\validation\\sl-1\\messages.po",
+    "source": "data/validation/sl-1/mutant.py",
+    "catalog": "data/validation/sl-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -124989,7 +124989,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1755
+    "planning_ms": 1.1711
   },
   {
     "id": "sl-2-clean",
@@ -124999,8 +124999,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\validation\\sl-2\\clean.py",
-    "catalog": "data\\validation\\sl-2\\messages.po",
+    "source": "data/validation/sl-2/clean.py",
+    "catalog": "data/validation/sl-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -126451,7 +126451,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.1173
+    "planning_ms": 2.1278
   },
   {
     "id": "sl-2-mutant",
@@ -126461,8 +126461,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\validation\\sl-2\\mutant.py",
-    "catalog": "data\\validation\\sl-2\\messages.po",
+    "source": "data/validation/sl-2/mutant.py",
+    "catalog": "data/validation/sl-2/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -127913,7 +127913,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.1574
+    "planning_ms": 2.0611
   },
   {
     "id": "sl-3-clean",
@@ -127923,8 +127923,8 @@
     "operator": 3,
     "guard": "n > 79 and n % 7 == 4",
     "demand_index": 0,
-    "source": "data\\validation\\sl-3\\clean.py",
-    "catalog": "data\\validation\\sl-3\\messages.po",
+    "source": "data/validation/sl-3/clean.py",
+    "catalog": "data/validation/sl-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -129375,7 +129375,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.7909
+    "planning_ms": 4.011
   },
   {
     "id": "sl-3-mutant",
@@ -129385,8 +129385,8 @@
     "operator": 3,
     "guard": "n > 79 and n % 7 == 4",
     "demand_index": 0,
-    "source": "data\\validation\\sl-3\\mutant.py",
-    "catalog": "data\\validation\\sl-3\\messages.po",
+    "source": "data/validation/sl-3/mutant.py",
+    "catalog": "data/validation/sl-3/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -130837,7 +130837,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.8256
+    "planning_ms": 3.6639
   },
   {
     "id": "sl-4-clean",
@@ -130847,8 +130847,8 @@
     "operator": 4,
     "guard": "not (n < 681 or n >= 684)",
     "demand_index": 2,
-    "source": "data\\validation\\sl-4\\clean.py",
-    "catalog": "data\\validation\\sl-4\\messages.po",
+    "source": "data/validation/sl-4/clean.py",
+    "catalog": "data/validation/sl-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -131993,7 +131993,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2672
+    "planning_ms": 1.242
   },
   {
     "id": "sl-4-mutant",
@@ -132003,8 +132003,8 @@
     "operator": 4,
     "guard": "not (n < 681 or n >= 684)",
     "demand_index": 2,
-    "source": "data\\validation\\sl-4\\mutant.py",
-    "catalog": "data\\validation\\sl-4\\messages.po",
+    "source": "data/validation/sl-4/mutant.py",
+    "catalog": "data/validation/sl-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -133149,7 +133149,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2794
+    "planning_ms": 1.2831
   },
   {
     "id": "sl-5-clean",
@@ -133159,8 +133159,8 @@
     "operator": 5,
     "guard": "n == 74 or n == 176",
     "demand_index": 0,
-    "source": "data\\validation\\sl-5\\clean.py",
-    "catalog": "data\\validation\\sl-5\\messages.po",
+    "source": "data/validation/sl-5/clean.py",
+    "catalog": "data/validation/sl-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -134305,7 +134305,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5201
+    "planning_ms": 1.5816
   },
   {
     "id": "sl-5-mutant",
@@ -134315,8 +134315,8 @@
     "operator": 5,
     "guard": "n == 74 or n == 176",
     "demand_index": 0,
-    "source": "data\\validation\\sl-5\\mutant.py",
-    "catalog": "data\\validation\\sl-5\\messages.po",
+    "source": "data/validation/sl-5/mutant.py",
+    "catalog": "data/validation/sl-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -135461,7 +135461,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5467
+    "planning_ms": 1.6001
   },
   {
     "id": "sl-6-clean",
@@ -135471,8 +135471,8 @@
     "operator": 6,
     "guard": "102 <= n and n <= 139",
     "demand_index": 3,
-    "source": "data\\validation\\sl-6\\clean.py",
-    "catalog": "data\\validation\\sl-6\\messages.po",
+    "source": "data/validation/sl-6/clean.py",
+    "catalog": "data/validation/sl-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -136821,7 +136821,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4042
+    "planning_ms": 1.3588
   },
   {
     "id": "sl-6-mutant",
@@ -136831,8 +136831,8 @@
     "operator": 6,
     "guard": "102 <= n and n <= 139",
     "demand_index": 3,
-    "source": "data\\validation\\sl-6\\mutant.py",
-    "catalog": "data\\validation\\sl-6\\messages.po",
+    "source": "data/validation/sl-6/mutant.py",
+    "catalog": "data/validation/sl-6/messages.po",
     "domain_size": 1001,
     "failures": 35,
     "active_mutation": true,
@@ -138181,7 +138181,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5171
+    "planning_ms": 1.3603
   },
   {
     "id": "sl-7-clean",
@@ -138191,8 +138191,8 @@
     "operator": 7,
     "guard": "663 <= n < 665",
     "demand_index": 0,
-    "source": "data\\validation\\sl-7\\clean.py",
-    "catalog": "data\\validation\\sl-7\\messages.po",
+    "source": "data/validation/sl-7/clean.py",
+    "catalog": "data/validation/sl-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -139337,7 +139337,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9282
+    "planning_ms": 1.0232
   },
   {
     "id": "sl-7-mutant",
@@ -139347,8 +139347,8 @@
     "operator": 7,
     "guard": "663 <= n < 665",
     "demand_index": 0,
-    "source": "data\\validation\\sl-7\\mutant.py",
-    "catalog": "data\\validation\\sl-7\\messages.po",
+    "source": "data/validation/sl-7/mutant.py",
+    "catalog": "data/validation/sl-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -140493,7 +140493,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8942
+    "planning_ms": 0.8425
   },
   {
     "id": "lt-0-clean",
@@ -140503,8 +140503,8 @@
     "operator": 0,
     "guard": "n == 481",
     "demand_index": 2,
-    "source": "data\\validation\\lt-0\\clean.py",
-    "catalog": "data\\validation\\lt-0\\messages.po",
+    "source": "data/validation/lt-0/clean.py",
+    "catalog": "data/validation/lt-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -141546,7 +141546,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8501
+    "planning_ms": 0.798
   },
   {
     "id": "lt-0-mutant",
@@ -141556,8 +141556,8 @@
     "operator": 0,
     "guard": "n == 481",
     "demand_index": 2,
-    "source": "data\\validation\\lt-0\\mutant.py",
-    "catalog": "data\\validation\\lt-0\\messages.po",
+    "source": "data/validation/lt-0/mutant.py",
+    "catalog": "data/validation/lt-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -142599,7 +142599,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.0478
+    "planning_ms": 0.7943
   },
   {
     "id": "lt-1-clean",
@@ -142609,8 +142609,8 @@
     "operator": 1,
     "guard": "n >= 232 and n < 239",
     "demand_index": 1,
-    "source": "data\\validation\\lt-1\\clean.py",
-    "catalog": "data\\validation\\lt-1\\messages.po",
+    "source": "data/validation/lt-1/clean.py",
+    "catalog": "data/validation/lt-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -143652,7 +143652,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1503
+    "planning_ms": 1.1482
   },
   {
     "id": "lt-1-mutant",
@@ -143662,8 +143662,8 @@
     "operator": 1,
     "guard": "n >= 232 and n < 239",
     "demand_index": 1,
-    "source": "data\\validation\\lt-1\\mutant.py",
-    "catalog": "data\\validation\\lt-1\\messages.po",
+    "source": "data/validation/lt-1/mutant.py",
+    "catalog": "data/validation/lt-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -144705,7 +144705,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2284
+    "planning_ms": 1.2983
   },
   {
     "id": "lt-2-clean",
@@ -144715,8 +144715,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\validation\\lt-2\\clean.py",
-    "catalog": "data\\validation\\lt-2\\messages.po",
+    "source": "data/validation/lt-2/clean.py",
+    "catalog": "data/validation/lt-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -145962,7 +145962,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.2007
+    "planning_ms": 2.1719
   },
   {
     "id": "lt-2-mutant",
@@ -145972,8 +145972,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\validation\\lt-2\\mutant.py",
-    "catalog": "data\\validation\\lt-2\\messages.po",
+    "source": "data/validation/lt-2/mutant.py",
+    "catalog": "data/validation/lt-2/messages.po",
     "domain_size": 1001,
     "failures": 13,
     "active_mutation": true,
@@ -147219,7 +147219,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.111
+    "planning_ms": 2.0974
   },
   {
     "id": "lt-3-clean",
@@ -147229,8 +147229,8 @@
     "operator": 3,
     "guard": "n > 146 and n % 7 == 6",
     "demand_index": 2,
-    "source": "data\\validation\\lt-3\\clean.py",
-    "catalog": "data\\validation\\lt-3\\messages.po",
+    "source": "data/validation/lt-3/clean.py",
+    "catalog": "data/validation/lt-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -148476,7 +148476,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.9584
+    "planning_ms": 3.9578
   },
   {
     "id": "lt-3-mutant",
@@ -148486,8 +148486,8 @@
     "operator": 3,
     "guard": "n > 146 and n % 7 == 6",
     "demand_index": 2,
-    "source": "data\\validation\\lt-3\\mutant.py",
-    "catalog": "data\\validation\\lt-3\\messages.po",
+    "source": "data/validation/lt-3/mutant.py",
+    "catalog": "data/validation/lt-3/messages.po",
     "domain_size": 1001,
     "failures": 23,
     "active_mutation": true,
@@ -149733,7 +149733,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 4.0405
+    "planning_ms": 3.7732
   },
   {
     "id": "lt-4-clean",
@@ -149743,8 +149743,8 @@
     "operator": 4,
     "guard": "not (n < 247 or n >= 250)",
     "demand_index": 2,
-    "source": "data\\validation\\lt-4\\clean.py",
-    "catalog": "data\\validation\\lt-4\\messages.po",
+    "source": "data/validation/lt-4/clean.py",
+    "catalog": "data/validation/lt-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -150786,7 +150786,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.248
+    "planning_ms": 1.2488
   },
   {
     "id": "lt-4-mutant",
@@ -150796,8 +150796,8 @@
     "operator": 4,
     "guard": "not (n < 247 or n >= 250)",
     "demand_index": 2,
-    "source": "data\\validation\\lt-4\\mutant.py",
-    "catalog": "data\\validation\\lt-4\\messages.po",
+    "source": "data/validation/lt-4/mutant.py",
+    "catalog": "data/validation/lt-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -151839,7 +151839,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3015
+    "planning_ms": 1.253
   },
   {
     "id": "lt-5-clean",
@@ -151849,8 +151849,8 @@
     "operator": 5,
     "guard": "n == 555 or n == 603",
     "demand_index": 1,
-    "source": "data\\validation\\lt-5\\clean.py",
-    "catalog": "data\\validation\\lt-5\\messages.po",
+    "source": "data/validation/lt-5/clean.py",
+    "catalog": "data/validation/lt-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -152892,7 +152892,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4153
+    "planning_ms": 1.3841
   },
   {
     "id": "lt-5-mutant",
@@ -152902,8 +152902,8 @@
     "operator": 5,
     "guard": "n == 555 or n == 603",
     "demand_index": 1,
-    "source": "data\\validation\\lt-5\\mutant.py",
-    "catalog": "data\\validation\\lt-5\\messages.po",
+    "source": "data/validation/lt-5/mutant.py",
+    "catalog": "data/validation/lt-5/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -153945,7 +153945,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4326
+    "planning_ms": 1.4012
   },
   {
     "id": "lt-6-clean",
@@ -153955,8 +153955,8 @@
     "operator": 6,
     "guard": "108 <= n and n <= 178",
     "demand_index": 2,
-    "source": "data\\validation\\lt-6\\clean.py",
-    "catalog": "data\\validation\\lt-6\\messages.po",
+    "source": "data/validation/lt-6/clean.py",
+    "catalog": "data/validation/lt-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -155202,7 +155202,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5004
+    "planning_ms": 1.5116
   },
   {
     "id": "lt-6-mutant",
@@ -155212,8 +155212,8 @@
     "operator": 6,
     "guard": "108 <= n and n <= 178",
     "demand_index": 2,
-    "source": "data\\validation\\lt-6\\mutant.py",
-    "catalog": "data\\validation\\lt-6\\messages.po",
+    "source": "data/validation/lt-6/mutant.py",
+    "catalog": "data/validation/lt-6/messages.po",
     "domain_size": 1001,
     "failures": 16,
     "active_mutation": true,
@@ -156459,7 +156459,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4952
+    "planning_ms": 1.5397
   },
   {
     "id": "lt-7-clean",
@@ -156469,8 +156469,8 @@
     "operator": 7,
     "guard": "156 <= n < 158",
     "demand_index": 1,
-    "source": "data\\validation\\lt-7\\clean.py",
-    "catalog": "data\\validation\\lt-7\\messages.po",
+    "source": "data/validation/lt-7/clean.py",
+    "catalog": "data/validation/lt-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -157512,7 +157512,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9236
+    "planning_ms": 0.9641
   },
   {
     "id": "lt-7-mutant",
@@ -157522,8 +157522,8 @@
     "operator": 7,
     "guard": "156 <= n < 158",
     "demand_index": 1,
-    "source": "data\\validation\\lt-7\\mutant.py",
-    "catalog": "data\\validation\\lt-7\\messages.po",
+    "source": "data/validation/lt-7/mutant.py",
+    "catalog": "data/validation/lt-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -158565,7 +158565,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8766
+    "planning_ms": 0.9374
   },
   {
     "id": "lv-0-clean",
@@ -158575,8 +158575,8 @@
     "operator": 0,
     "guard": "n == 343",
     "demand_index": 1,
-    "source": "data\\validation\\lv-0\\clean.py",
-    "catalog": "data\\validation\\lv-0\\messages.po",
+    "source": "data/validation/lv-0/clean.py",
+    "catalog": "data/validation/lv-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -159618,7 +159618,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8677
+    "planning_ms": 1.0138
   },
   {
     "id": "lv-0-mutant",
@@ -159628,8 +159628,8 @@
     "operator": 0,
     "guard": "n == 343",
     "demand_index": 1,
-    "source": "data\\validation\\lv-0\\mutant.py",
-    "catalog": "data\\validation\\lv-0\\messages.po",
+    "source": "data/validation/lv-0/mutant.py",
+    "catalog": "data/validation/lv-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -160671,7 +160671,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8409
+    "planning_ms": 0.8032
   },
   {
     "id": "lv-1-clean",
@@ -160681,8 +160681,8 @@
     "operator": 1,
     "guard": "n >= 632 and n < 639",
     "demand_index": 1,
-    "source": "data\\validation\\lv-1\\clean.py",
-    "catalog": "data\\validation\\lv-1\\messages.po",
+    "source": "data/validation/lv-1/clean.py",
+    "catalog": "data/validation/lv-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -161724,7 +161724,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3756
+    "planning_ms": 1.145
   },
   {
     "id": "lv-1-mutant",
@@ -161734,8 +161734,8 @@
     "operator": 1,
     "guard": "n >= 632 and n < 639",
     "demand_index": 1,
-    "source": "data\\validation\\lv-1\\mutant.py",
-    "catalog": "data\\validation\\lv-1\\messages.po",
+    "source": "data/validation/lv-1/mutant.py",
+    "catalog": "data/validation/lv-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -162777,7 +162777,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1342
+    "planning_ms": 1.1382
   },
   {
     "id": "lv-2-clean",
@@ -162787,8 +162787,8 @@
     "operator": 2,
     "guard": "n % 7 == 3",
     "demand_index": 2,
-    "source": "data\\validation\\lv-2\\clean.py",
-    "catalog": "data\\validation\\lv-2\\messages.po",
+    "source": "data/validation/lv-2/clean.py",
+    "catalog": "data/validation/lv-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -163932,7 +163932,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0628
+    "planning_ms": 2.0693
   },
   {
     "id": "lv-2-mutant",
@@ -163942,8 +163942,8 @@
     "operator": 2,
     "guard": "n % 7 == 3",
     "demand_index": 2,
-    "source": "data\\validation\\lv-2\\mutant.py",
-    "catalog": "data\\validation\\lv-2\\messages.po",
+    "source": "data/validation/lv-2/mutant.py",
+    "catalog": "data/validation/lv-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -165087,7 +165087,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0035
+    "planning_ms": 2.0011
   },
   {
     "id": "lv-3-clean",
@@ -165097,8 +165097,8 @@
     "operator": 3,
     "guard": "n > 416 and n % 7 == 2",
     "demand_index": 2,
-    "source": "data\\validation\\lv-3\\clean.py",
-    "catalog": "data\\validation\\lv-3\\messages.po",
+    "source": "data/validation/lv-3/clean.py",
+    "catalog": "data/validation/lv-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -166242,7 +166242,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 4.0436
+    "planning_ms": 4.0971
   },
   {
     "id": "lv-3-mutant",
@@ -166252,8 +166252,8 @@
     "operator": 3,
     "guard": "n > 416 and n % 7 == 2",
     "demand_index": 2,
-    "source": "data\\validation\\lv-3\\mutant.py",
-    "catalog": "data\\validation\\lv-3\\messages.po",
+    "source": "data/validation/lv-3/mutant.py",
+    "catalog": "data/validation/lv-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -167397,7 +167397,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 4.1405
+    "planning_ms": 4.3356
   },
   {
     "id": "lv-4-clean",
@@ -167407,8 +167407,8 @@
     "operator": 4,
     "guard": "not (n < 585 or n >= 588)",
     "demand_index": 2,
-    "source": "data\\validation\\lv-4\\clean.py",
-    "catalog": "data\\validation\\lv-4\\messages.po",
+    "source": "data/validation/lv-4/clean.py",
+    "catalog": "data/validation/lv-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -168450,7 +168450,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2757
+    "planning_ms": 1.2977
   },
   {
     "id": "lv-4-mutant",
@@ -168460,8 +168460,8 @@
     "operator": 4,
     "guard": "not (n < 585 or n >= 588)",
     "demand_index": 2,
-    "source": "data\\validation\\lv-4\\mutant.py",
-    "catalog": "data\\validation\\lv-4\\messages.po",
+    "source": "data/validation/lv-4/mutant.py",
+    "catalog": "data/validation/lv-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -169503,7 +169503,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2287
+    "planning_ms": 1.2924
   },
   {
     "id": "lv-5-clean",
@@ -169513,8 +169513,8 @@
     "operator": 5,
     "guard": "n == 579 or n == 621",
     "demand_index": 0,
-    "source": "data\\validation\\lv-5\\clean.py",
-    "catalog": "data\\validation\\lv-5\\messages.po",
+    "source": "data/validation/lv-5/clean.py",
+    "catalog": "data/validation/lv-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -170658,7 +170658,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4093
+    "planning_ms": 1.4173
   },
   {
     "id": "lv-5-mutant",
@@ -170668,8 +170668,8 @@
     "operator": 5,
     "guard": "n == 579 or n == 621",
     "demand_index": 0,
-    "source": "data\\validation\\lv-5\\mutant.py",
-    "catalog": "data\\validation\\lv-5\\messages.po",
+    "source": "data/validation/lv-5/mutant.py",
+    "catalog": "data/validation/lv-5/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -171813,7 +171813,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4121
+    "planning_ms": 1.4217
   },
   {
     "id": "lv-6-clean",
@@ -171823,8 +171823,8 @@
     "operator": 6,
     "guard": "621 <= n and n <= 633",
     "demand_index": 1,
-    "source": "data\\validation\\lv-6\\clean.py",
-    "catalog": "data\\validation\\lv-6\\messages.po",
+    "source": "data/validation/lv-6/clean.py",
+    "catalog": "data/validation/lv-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -172968,7 +172968,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2235
+    "planning_ms": 1.1871
   },
   {
     "id": "lv-6-mutant",
@@ -172978,8 +172978,8 @@
     "operator": 6,
     "guard": "621 <= n and n <= 633",
     "demand_index": 1,
-    "source": "data\\validation\\lv-6\\mutant.py",
-    "catalog": "data\\validation\\lv-6\\messages.po",
+    "source": "data/validation/lv-6/mutant.py",
+    "catalog": "data/validation/lv-6/messages.po",
     "domain_size": 1001,
     "failures": 11,
     "active_mutation": true,
@@ -174123,7 +174123,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2523
+    "planning_ms": 1.2279
   },
   {
     "id": "lv-7-clean",
@@ -174133,8 +174133,8 @@
     "operator": 7,
     "guard": "662 <= n < 664",
     "demand_index": 0,
-    "source": "data\\validation\\lv-7\\clean.py",
-    "catalog": "data\\validation\\lv-7\\messages.po",
+    "source": "data/validation/lv-7/clean.py",
+    "catalog": "data/validation/lv-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -175176,7 +175176,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8687
+    "planning_ms": 0.8625
   },
   {
     "id": "lv-7-mutant",
@@ -175186,8 +175186,8 @@
     "operator": 7,
     "guard": "662 <= n < 664",
     "demand_index": 0,
-    "source": "data\\validation\\lv-7\\mutant.py",
-    "catalog": "data\\validation\\lv-7\\messages.po",
+    "source": "data/validation/lv-7/mutant.py",
+    "catalog": "data/validation/lv-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -176229,7 +176229,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9398
+    "planning_ms": 0.8593
   },
   {
     "id": "ro-0-clean",
@@ -176239,8 +176239,8 @@
     "operator": 0,
     "guard": "n == 66",
     "demand_index": 2,
-    "source": "data\\validation\\ro-0\\clean.py",
-    "catalog": "data\\validation\\ro-0\\messages.po",
+    "source": "data/validation/ro-0/clean.py",
+    "catalog": "data/validation/ro-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -177282,7 +177282,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.733
+    "planning_ms": 0.7052
   },
   {
     "id": "ro-0-mutant",
@@ -177292,8 +177292,8 @@
     "operator": 0,
     "guard": "n == 66",
     "demand_index": 2,
-    "source": "data\\validation\\ro-0\\mutant.py",
-    "catalog": "data\\validation\\ro-0\\messages.po",
+    "source": "data/validation/ro-0/mutant.py",
+    "catalog": "data/validation/ro-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -178335,7 +178335,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.684
+    "planning_ms": 0.6956
   },
   {
     "id": "ro-1-clean",
@@ -178345,8 +178345,8 @@
     "operator": 1,
     "guard": "n >= 495 and n < 502",
     "demand_index": 1,
-    "source": "data\\validation\\ro-1\\clean.py",
-    "catalog": "data\\validation\\ro-1\\messages.po",
+    "source": "data/validation/ro-1/clean.py",
+    "catalog": "data/validation/ro-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -179490,7 +179490,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.139
+    "planning_ms": 1.1783
   },
   {
     "id": "ro-1-mutant",
@@ -179500,8 +179500,8 @@
     "operator": 1,
     "guard": "n >= 495 and n < 502",
     "demand_index": 1,
-    "source": "data\\validation\\ro-1\\mutant.py",
-    "catalog": "data\\validation\\ro-1\\messages.po",
+    "source": "data/validation/ro-1/mutant.py",
+    "catalog": "data/validation/ro-1/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -180645,7 +180645,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2094
+    "planning_ms": 1.1657
   },
   {
     "id": "ro-2-clean",
@@ -180655,8 +180655,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 2,
-    "source": "data\\validation\\ro-2\\clean.py",
-    "catalog": "data\\validation\\ro-2\\messages.po",
+    "source": "data/validation/ro-2/clean.py",
+    "catalog": "data/validation/ro-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -181800,7 +181800,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0061
+    "planning_ms": 2.129
   },
   {
     "id": "ro-2-mutant",
@@ -181810,8 +181810,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 2,
-    "source": "data\\validation\\ro-2\\mutant.py",
-    "catalog": "data\\validation\\ro-2\\messages.po",
+    "source": "data/validation/ro-2/mutant.py",
+    "catalog": "data/validation/ro-2/messages.po",
     "domain_size": 1001,
     "failures": 115,
     "active_mutation": true,
@@ -182955,7 +182955,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.9711
+    "planning_ms": 2.8558
   },
   {
     "id": "ro-3-clean",
@@ -182965,8 +182965,8 @@
     "operator": 3,
     "guard": "n > 600 and n % 7 == 0",
     "demand_index": 0,
-    "source": "data\\validation\\ro-3\\clean.py",
-    "catalog": "data\\validation\\ro-3\\messages.po",
+    "source": "data/validation/ro-3/clean.py",
+    "catalog": "data/validation/ro-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -184110,7 +184110,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.9064
+    "planning_ms": 3.9106
   },
   {
     "id": "ro-3-mutant",
@@ -184120,8 +184120,8 @@
     "operator": 3,
     "guard": "n > 600 and n % 7 == 0",
     "demand_index": 0,
-    "source": "data\\validation\\ro-3\\mutant.py",
-    "catalog": "data\\validation\\ro-3\\messages.po",
+    "source": "data/validation/ro-3/mutant.py",
+    "catalog": "data/validation/ro-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -185265,7 +185265,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 4.0045
+    "planning_ms": 4.0938
   },
   {
     "id": "ro-4-clean",
@@ -185275,8 +185275,8 @@
     "operator": 4,
     "guard": "not (n < 122 or n >= 125)",
     "demand_index": 2,
-    "source": "data\\validation\\ro-4\\clean.py",
-    "catalog": "data\\validation\\ro-4\\messages.po",
+    "source": "data/validation/ro-4/clean.py",
+    "catalog": "data/validation/ro-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -186318,7 +186318,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.267
+    "planning_ms": 1.2135
   },
   {
     "id": "ro-4-mutant",
@@ -186328,8 +186328,8 @@
     "operator": 4,
     "guard": "not (n < 122 or n >= 125)",
     "demand_index": 2,
-    "source": "data\\validation\\ro-4\\mutant.py",
-    "catalog": "data\\validation\\ro-4\\messages.po",
+    "source": "data/validation/ro-4/mutant.py",
+    "catalog": "data/validation/ro-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -187371,7 +187371,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2249
+    "planning_ms": 1.2974
   },
   {
     "id": "ro-5-clean",
@@ -187381,8 +187381,8 @@
     "operator": 5,
     "guard": "n == 431 or n == 502",
     "demand_index": 2,
-    "source": "data\\validation\\ro-5\\clean.py",
-    "catalog": "data\\validation\\ro-5\\messages.po",
+    "source": "data/validation/ro-5/clean.py",
+    "catalog": "data/validation/ro-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -188526,7 +188526,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5794
+    "planning_ms": 1.4806
   },
   {
     "id": "ro-5-mutant",
@@ -188536,8 +188536,8 @@
     "operator": 5,
     "guard": "n == 431 or n == 502",
     "demand_index": 2,
-    "source": "data\\validation\\ro-5\\mutant.py",
-    "catalog": "data\\validation\\ro-5\\messages.po",
+    "source": "data/validation/ro-5/mutant.py",
+    "catalog": "data/validation/ro-5/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -189681,7 +189681,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.6553
+    "planning_ms": 1.5334
   },
   {
     "id": "ro-6-clean",
@@ -189691,8 +189691,8 @@
     "operator": 6,
     "guard": "527 <= n and n <= 573",
     "demand_index": 0,
-    "source": "data\\validation\\ro-6\\clean.py",
-    "catalog": "data\\validation\\ro-6\\messages.po",
+    "source": "data/validation/ro-6/clean.py",
+    "catalog": "data/validation/ro-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -190734,7 +190734,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3429
+    "planning_ms": 1.2772
   },
   {
     "id": "ro-6-mutant",
@@ -190744,8 +190744,8 @@
     "operator": 6,
     "guard": "527 <= n and n <= 573",
     "demand_index": 0,
-    "source": "data\\validation\\ro-6\\mutant.py",
-    "catalog": "data\\validation\\ro-6\\messages.po",
+    "source": "data/validation/ro-6/mutant.py",
+    "catalog": "data/validation/ro-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -191787,7 +191787,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.32
+    "planning_ms": 1.2829
   },
   {
     "id": "ro-7-clean",
@@ -191797,8 +191797,8 @@
     "operator": 7,
     "guard": "244 <= n < 246",
     "demand_index": 1,
-    "source": "data\\validation\\ro-7\\clean.py",
-    "catalog": "data\\validation\\ro-7\\messages.po",
+    "source": "data/validation/ro-7/clean.py",
+    "catalog": "data/validation/ro-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -192840,7 +192840,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8544
+    "planning_ms": 0.8522
   },
   {
     "id": "ro-7-mutant",
@@ -192850,8 +192850,8 @@
     "operator": 7,
     "guard": "244 <= n < 246",
     "demand_index": 1,
-    "source": "data\\validation\\ro-7\\mutant.py",
-    "catalog": "data\\validation\\ro-7\\messages.po",
+    "source": "data/validation/ro-7/mutant.py",
+    "catalog": "data/validation/ro-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -193893,7 +193893,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8326
+    "planning_ms": 0.8346
   },
   {
     "id": "ga-0-clean",
@@ -193903,8 +193903,8 @@
     "operator": 0,
     "guard": "n == 184",
     "demand_index": 3,
-    "source": "data\\validation\\ga-0\\clean.py",
-    "catalog": "data\\validation\\ga-0\\messages.po",
+    "source": "data/validation/ga-0/clean.py",
+    "catalog": "data/validation/ga-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -195152,7 +195152,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4463
+    "planning_ms": 0.4538
   },
   {
     "id": "ga-0-mutant",
@@ -195162,8 +195162,8 @@
     "operator": 0,
     "guard": "n == 184",
     "demand_index": 3,
-    "source": "data\\validation\\ga-0\\mutant.py",
-    "catalog": "data\\validation\\ga-0\\messages.po",
+    "source": "data/validation/ga-0/mutant.py",
+    "catalog": "data/validation/ga-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -196411,7 +196411,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4308
+    "planning_ms": 0.4353
   },
   {
     "id": "ga-1-clean",
@@ -196421,8 +196421,8 @@
     "operator": 1,
     "guard": "n >= 105 and n < 112",
     "demand_index": 1,
-    "source": "data\\validation\\ga-1\\clean.py",
-    "catalog": "data\\validation\\ga-1\\messages.po",
+    "source": "data/validation/ga-1/clean.py",
+    "catalog": "data/validation/ga-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -197670,7 +197670,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4996
+    "planning_ms": 0.4994
   },
   {
     "id": "ga-1-mutant",
@@ -197680,8 +197680,8 @@
     "operator": 1,
     "guard": "n >= 105 and n < 112",
     "demand_index": 1,
-    "source": "data\\validation\\ga-1\\mutant.py",
-    "catalog": "data\\validation\\ga-1\\messages.po",
+    "source": "data/validation/ga-1/mutant.py",
+    "catalog": "data/validation/ga-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -198929,7 +198929,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4908
+    "planning_ms": 0.4946
   },
   {
     "id": "ga-2-clean",
@@ -198939,8 +198939,8 @@
     "operator": 2,
     "guard": "n % 7 == 6",
     "demand_index": 2,
-    "source": "data\\validation\\ga-2\\clean.py",
-    "catalog": "data\\validation\\ga-2\\messages.po",
+    "source": "data/validation/ga-2/clean.py",
+    "catalog": "data/validation/ga-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -200290,7 +200290,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.7141
+    "planning_ms": 0.5307
   },
   {
     "id": "ga-2-mutant",
@@ -200300,8 +200300,8 @@
     "operator": 2,
     "guard": "n % 7 == 6",
     "demand_index": 2,
-    "source": "data\\validation\\ga-2\\mutant.py",
-    "catalog": "data\\validation\\ga-2\\messages.po",
+    "source": "data/validation/ga-2/mutant.py",
+    "catalog": "data/validation/ga-2/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -201651,7 +201651,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5037
+    "planning_ms": 0.5023
   },
   {
     "id": "ga-3-clean",
@@ -201661,8 +201661,8 @@
     "operator": 3,
     "guard": "n > 242 and n % 7 == 5",
     "demand_index": 2,
-    "source": "data\\validation\\ga-3\\clean.py",
-    "catalog": "data\\validation\\ga-3\\messages.po",
+    "source": "data/validation/ga-3/clean.py",
+    "catalog": "data/validation/ga-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -202910,7 +202910,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.539
+    "planning_ms": 0.5353
   },
   {
     "id": "ga-3-mutant",
@@ -202920,8 +202920,8 @@
     "operator": 3,
     "guard": "n > 242 and n % 7 == 5",
     "demand_index": 2,
-    "source": "data\\validation\\ga-3\\mutant.py",
-    "catalog": "data\\validation\\ga-3\\messages.po",
+    "source": "data/validation/ga-3/mutant.py",
+    "catalog": "data/validation/ga-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -204169,7 +204169,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5577
+    "planning_ms": 0.5075
   },
   {
     "id": "ga-4-clean",
@@ -204179,8 +204179,8 @@
     "operator": 4,
     "guard": "not (n < 590 or n >= 593)",
     "demand_index": 4,
-    "source": "data\\validation\\ga-4\\clean.py",
-    "catalog": "data\\validation\\ga-4\\messages.po",
+    "source": "data/validation/ga-4/clean.py",
+    "catalog": "data/validation/ga-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -205428,7 +205428,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5132
+    "planning_ms": 0.494
   },
   {
     "id": "ga-4-mutant",
@@ -205438,8 +205438,8 @@
     "operator": 4,
     "guard": "not (n < 590 or n >= 593)",
     "demand_index": 4,
-    "source": "data\\validation\\ga-4\\mutant.py",
-    "catalog": "data\\validation\\ga-4\\messages.po",
+    "source": "data/validation/ga-4/mutant.py",
+    "catalog": "data/validation/ga-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -206687,7 +206687,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5092
+    "planning_ms": 0.479
   },
   {
     "id": "ga-5-clean",
@@ -206697,8 +206697,8 @@
     "operator": 5,
     "guard": "n == 696 or n == 741",
     "demand_index": 0,
-    "source": "data\\validation\\ga-5\\clean.py",
-    "catalog": "data\\validation\\ga-5\\messages.po",
+    "source": "data/validation/ga-5/clean.py",
+    "catalog": "data/validation/ga-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -207946,7 +207946,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5072
+    "planning_ms": 0.4916
   },
   {
     "id": "ga-5-mutant",
@@ -207956,8 +207956,8 @@
     "operator": 5,
     "guard": "n == 696 or n == 741",
     "demand_index": 0,
-    "source": "data\\validation\\ga-5\\mutant.py",
-    "catalog": "data\\validation\\ga-5\\messages.po",
+    "source": "data/validation/ga-5/mutant.py",
+    "catalog": "data/validation/ga-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -209205,7 +209205,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5273
+    "planning_ms": 0.488
   },
   {
     "id": "ga-6-clean",
@@ -209215,8 +209215,8 @@
     "operator": 6,
     "guard": "37 <= n and n <= 79",
     "demand_index": 4,
-    "source": "data\\validation\\ga-6\\clean.py",
-    "catalog": "data\\validation\\ga-6\\messages.po",
+    "source": "data/validation/ga-6/clean.py",
+    "catalog": "data/validation/ga-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -210464,7 +210464,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4885
+    "planning_ms": 0.4735
   },
   {
     "id": "ga-6-mutant",
@@ -210474,8 +210474,8 @@
     "operator": 6,
     "guard": "37 <= n and n <= 79",
     "demand_index": 4,
-    "source": "data\\validation\\ga-6\\mutant.py",
-    "catalog": "data\\validation\\ga-6\\messages.po",
+    "source": "data/validation/ga-6/mutant.py",
+    "catalog": "data/validation/ga-6/messages.po",
     "domain_size": 1001,
     "failures": 43,
     "active_mutation": true,
@@ -211723,7 +211723,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4768
+    "planning_ms": 0.4523
   },
   {
     "id": "ga-7-clean",
@@ -211733,8 +211733,8 @@
     "operator": 7,
     "guard": "658 <= n < 660",
     "demand_index": 4,
-    "source": "data\\validation\\ga-7\\clean.py",
-    "catalog": "data\\validation\\ga-7\\messages.po",
+    "source": "data/validation/ga-7/clean.py",
+    "catalog": "data/validation/ga-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -212982,7 +212982,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5224
+    "planning_ms": 0.4464
   },
   {
     "id": "ga-7-mutant",
@@ -212992,8 +212992,8 @@
     "operator": 7,
     "guard": "658 <= n < 660",
     "demand_index": 4,
-    "source": "data\\validation\\ga-7\\mutant.py",
-    "catalog": "data\\validation\\ga-7\\messages.po",
+    "source": "data/validation/ga-7/mutant.py",
+    "catalog": "data/validation/ga-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -214241,6 +214241,6 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5301
+    "planning_ms": 0.4497
   }
 ]

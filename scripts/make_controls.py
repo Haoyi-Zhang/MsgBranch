@@ -16,7 +16,7 @@ def case(key, locale, ids, translations, body, category='legitimate', note='', f
     directory=FOLDER/key
     directory.mkdir(parents=True,exist_ok=True)
     source='def message(n: int):\n'+''.join('    '+line+'\n' for line in body.splitlines())
-    (directory/'call.py').write_text(source)
+    (directory/'call.py').write_text(source, encoding='utf-8', newline='\n')
     catalog=Catalog(locale=locale,domain='controls',project='MsgBranch constructed controls',version='0.1',copyright_holder='MsgBranch contributors',creation_date=datetime(2026,9,30,tzinfo=timezone.utc),revision_date=datetime(2026,9,30,tzinfo=timezone.utc))
     if ids is not None:
         catalog.add(ids,translations,flags=flags,context=context)
@@ -53,5 +53,5 @@ case('percent-char-literal','en','%c item','%c item','return gettext("%c item") 
 case('context-singular','fr','Open','Ouvrir','return pgettext("menu", "Open")',flags=(),context='menu',note='Contextual singular lookup is selected through GNUTranslations.pgettext.')
 case('context-plural','fr',(C,D),('%(n)d fichier','%(n)d fichiers'),f'return npgettext("files", {C!r}, {D!r}, n) % {{"n": n}}',context='files',note='Contextual plural lookup retains branch-specific percent requirements.')
 case('nested-brace-format','en','{value:.{precision}f}','{value:.{precision}f}','return gettext("{value:.{precision}f}").format(value=1.25, precision=2)',flags=('python-brace-format',),note='Nested format-spec fields are recovered without treating the translation as prose.')
-(ROOT/'data/control-manifest.json').write_text(json.dumps(CASES,indent=2)+'\n')
+(ROOT/'data/control-manifest.json').write_text(json.dumps(CASES,indent=2)+'\n', encoding='utf-8', newline='\n')
 print(f'Wrote {len(CASES)} constructed families')

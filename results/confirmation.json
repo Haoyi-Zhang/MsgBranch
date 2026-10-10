@@ -7,8 +7,8 @@
     "operator": 0,
     "guard": "n == 352",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-0\\clean.py",
-    "catalog": "data\\confirmation\\en-0\\messages.po",
+    "source": "data/confirmation/en-0/clean.py",
+    "catalog": "data/confirmation/en-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -947,7 +947,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4668
+    "planning_ms": 0.3997
   },
   {
     "id": "en-0-mutant",
@@ -957,8 +957,8 @@
     "operator": 0,
     "guard": "n == 352",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-0\\mutant.py",
-    "catalog": "data\\confirmation\\en-0\\messages.po",
+    "source": "data/confirmation/en-0/mutant.py",
+    "catalog": "data/confirmation/en-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -1897,7 +1897,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3364
+    "planning_ms": 0.2967
   },
   {
     "id": "en-1-clean",
@@ -1907,8 +1907,8 @@
     "operator": 1,
     "guard": "n >= 292 and n < 299",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-1\\clean.py",
-    "catalog": "data\\confirmation\\en-1\\messages.po",
+    "source": "data/confirmation/en-1/clean.py",
+    "catalog": "data/confirmation/en-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -2847,7 +2847,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4
+    "planning_ms": 0.3433
   },
   {
     "id": "en-1-mutant",
@@ -2857,8 +2857,8 @@
     "operator": 1,
     "guard": "n >= 292 and n < 299",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-1\\mutant.py",
-    "catalog": "data\\confirmation\\en-1\\messages.po",
+    "source": "data/confirmation/en-1/mutant.py",
+    "catalog": "data/confirmation/en-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -3797,7 +3797,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4107
+    "planning_ms": 0.3183
   },
   {
     "id": "en-2-clean",
@@ -3807,8 +3807,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-2\\clean.py",
-    "catalog": "data\\confirmation\\en-2\\messages.po",
+    "source": "data/confirmation/en-2/clean.py",
+    "catalog": "data/confirmation/en-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -4747,7 +4747,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3835
+    "planning_ms": 0.3702
   },
   {
     "id": "en-2-mutant",
@@ -4757,8 +4757,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-2\\mutant.py",
-    "catalog": "data\\confirmation\\en-2\\messages.po",
+    "source": "data/confirmation/en-2/mutant.py",
+    "catalog": "data/confirmation/en-2/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -5697,7 +5697,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3745
+    "planning_ms": 0.3016
   },
   {
     "id": "en-3-clean",
@@ -5707,8 +5707,8 @@
     "operator": 3,
     "guard": "n > 602 and n % 7 == 2",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-3\\clean.py",
-    "catalog": "data\\confirmation\\en-3\\messages.po",
+    "source": "data/confirmation/en-3/clean.py",
+    "catalog": "data/confirmation/en-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -6647,7 +6647,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4261
+    "planning_ms": 0.3852
   },
   {
     "id": "en-3-mutant",
@@ -6657,8 +6657,8 @@
     "operator": 3,
     "guard": "n > 602 and n % 7 == 2",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-3\\mutant.py",
-    "catalog": "data\\confirmation\\en-3\\messages.po",
+    "source": "data/confirmation/en-3/mutant.py",
+    "catalog": "data/confirmation/en-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -7597,7 +7597,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4068
+    "planning_ms": 0.3692
   },
   {
     "id": "en-4-clean",
@@ -7607,8 +7607,8 @@
     "operator": 4,
     "guard": "not (n < 247 or n >= 250)",
     "demand_index": 1,
-    "source": "data\\confirmation\\en-4\\clean.py",
-    "catalog": "data\\confirmation\\en-4\\messages.po",
+    "source": "data/confirmation/en-4/clean.py",
+    "catalog": "data/confirmation/en-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -8547,7 +8547,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4282
+    "planning_ms": 0.3528
   },
   {
     "id": "en-4-mutant",
@@ -8557,8 +8557,8 @@
     "operator": 4,
     "guard": "not (n < 247 or n >= 250)",
     "demand_index": 1,
-    "source": "data\\confirmation\\en-4\\mutant.py",
-    "catalog": "data\\confirmation\\en-4\\messages.po",
+    "source": "data/confirmation/en-4/mutant.py",
+    "catalog": "data/confirmation/en-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -9497,7 +9497,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3595
+    "planning_ms": 0.3331
   },
   {
     "id": "en-5-clean",
@@ -9507,8 +9507,8 @@
     "operator": 5,
     "guard": "n == 252 or n == 332",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-5\\clean.py",
-    "catalog": "data\\confirmation\\en-5\\messages.po",
+    "source": "data/confirmation/en-5/clean.py",
+    "catalog": "data/confirmation/en-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -10447,7 +10447,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3835
+    "planning_ms": 0.3451
   },
   {
     "id": "en-5-mutant",
@@ -10457,8 +10457,8 @@
     "operator": 5,
     "guard": "n == 252 or n == 332",
     "demand_index": 0,
-    "source": "data\\confirmation\\en-5\\mutant.py",
-    "catalog": "data\\confirmation\\en-5\\messages.po",
+    "source": "data/confirmation/en-5/mutant.py",
+    "catalog": "data/confirmation/en-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -11397,7 +11397,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3466
+    "planning_ms": 0.3238
   },
   {
     "id": "en-6-clean",
@@ -11407,8 +11407,8 @@
     "operator": 6,
     "guard": "207 <= n and n <= 233",
     "demand_index": 1,
-    "source": "data\\confirmation\\en-6\\clean.py",
-    "catalog": "data\\confirmation\\en-6\\messages.po",
+    "source": "data/confirmation/en-6/clean.py",
+    "catalog": "data/confirmation/en-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -12347,7 +12347,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3602
+    "planning_ms": 0.3305
   },
   {
     "id": "en-6-mutant",
@@ -12357,8 +12357,8 @@
     "operator": 6,
     "guard": "207 <= n and n <= 233",
     "demand_index": 1,
-    "source": "data\\confirmation\\en-6\\mutant.py",
-    "catalog": "data\\confirmation\\en-6\\messages.po",
+    "source": "data/confirmation/en-6/mutant.py",
+    "catalog": "data/confirmation/en-6/messages.po",
     "domain_size": 1001,
     "failures": 27,
     "active_mutation": true,
@@ -13297,7 +13297,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3585
+    "planning_ms": 0.3284
   },
   {
     "id": "en-7-clean",
@@ -13307,8 +13307,8 @@
     "operator": 7,
     "guard": "736 <= n < 738",
     "demand_index": 1,
-    "source": "data\\confirmation\\en-7\\clean.py",
-    "catalog": "data\\confirmation\\en-7\\messages.po",
+    "source": "data/confirmation/en-7/clean.py",
+    "catalog": "data/confirmation/en-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -14247,7 +14247,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3212
+    "planning_ms": 0.3192
   },
   {
     "id": "en-7-mutant",
@@ -14257,8 +14257,8 @@
     "operator": 7,
     "guard": "736 <= n < 738",
     "demand_index": 1,
-    "source": "data\\confirmation\\en-7\\mutant.py",
-    "catalog": "data\\confirmation\\en-7\\messages.po",
+    "source": "data/confirmation/en-7/mutant.py",
+    "catalog": "data/confirmation/en-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -15197,7 +15197,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.311
+    "planning_ms": 0.3581
   },
   {
     "id": "fr-0-clean",
@@ -15207,8 +15207,8 @@
     "operator": 0,
     "guard": "n == 75",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-0\\clean.py",
-    "catalog": "data\\confirmation\\fr-0\\messages.po",
+    "source": "data/confirmation/fr-0/clean.py",
+    "catalog": "data/confirmation/fr-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -16147,7 +16147,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3228
+    "planning_ms": 0.3179
   },
   {
     "id": "fr-0-mutant",
@@ -16157,8 +16157,8 @@
     "operator": 0,
     "guard": "n == 75",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-0\\mutant.py",
-    "catalog": "data\\confirmation\\fr-0\\messages.po",
+    "source": "data/confirmation/fr-0/mutant.py",
+    "catalog": "data/confirmation/fr-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -17097,7 +17097,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3149
+    "planning_ms": 0.3194
   },
   {
     "id": "fr-1-clean",
@@ -17107,8 +17107,8 @@
     "operator": 1,
     "guard": "n >= 641 and n < 648",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-1\\clean.py",
-    "catalog": "data\\confirmation\\fr-1\\messages.po",
+    "source": "data/confirmation/fr-1/clean.py",
+    "catalog": "data/confirmation/fr-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -18047,7 +18047,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3693
+    "planning_ms": 0.3558
   },
   {
     "id": "fr-1-mutant",
@@ -18057,8 +18057,8 @@
     "operator": 1,
     "guard": "n >= 641 and n < 648",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-1\\mutant.py",
-    "catalog": "data\\confirmation\\fr-1\\messages.po",
+    "source": "data/confirmation/fr-1/mutant.py",
+    "catalog": "data/confirmation/fr-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -18997,7 +18997,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3727
+    "planning_ms": 0.3532
   },
   {
     "id": "fr-2-clean",
@@ -19007,8 +19007,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-2\\clean.py",
-    "catalog": "data\\confirmation\\fr-2\\messages.po",
+    "source": "data/confirmation/fr-2/clean.py",
+    "catalog": "data/confirmation/fr-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -19947,7 +19947,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3586
+    "planning_ms": 0.3333
   },
   {
     "id": "fr-2-mutant",
@@ -19957,8 +19957,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-2\\mutant.py",
-    "catalog": "data\\confirmation\\fr-2\\messages.po",
+    "source": "data/confirmation/fr-2/mutant.py",
+    "catalog": "data/confirmation/fr-2/messages.po",
     "domain_size": 1001,
     "failures": 143,
     "active_mutation": true,
@@ -20897,7 +20897,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3386
+    "planning_ms": 0.3268
   },
   {
     "id": "fr-3-clean",
@@ -20907,8 +20907,8 @@
     "operator": 3,
     "guard": "n > 408 and n % 7 == 6",
     "demand_index": 0,
-    "source": "data\\confirmation\\fr-3\\clean.py",
-    "catalog": "data\\confirmation\\fr-3\\messages.po",
+    "source": "data/confirmation/fr-3/clean.py",
+    "catalog": "data/confirmation/fr-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -21847,7 +21847,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4165
+    "planning_ms": 0.3957
   },
   {
     "id": "fr-3-mutant",
@@ -21857,8 +21857,8 @@
     "operator": 3,
     "guard": "n > 408 and n % 7 == 6",
     "demand_index": 0,
-    "source": "data\\confirmation\\fr-3\\mutant.py",
-    "catalog": "data\\confirmation\\fr-3\\messages.po",
+    "source": "data/confirmation/fr-3/mutant.py",
+    "catalog": "data/confirmation/fr-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -22797,7 +22797,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.42
+    "planning_ms": 0.434
   },
   {
     "id": "fr-4-clean",
@@ -22807,8 +22807,8 @@
     "operator": 4,
     "guard": "not (n < 85 or n >= 88)",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-4\\clean.py",
-    "catalog": "data\\confirmation\\fr-4\\messages.po",
+    "source": "data/confirmation/fr-4/clean.py",
+    "catalog": "data/confirmation/fr-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -23747,7 +23747,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3865
+    "planning_ms": 0.3667
   },
   {
     "id": "fr-4-mutant",
@@ -23757,8 +23757,8 @@
     "operator": 4,
     "guard": "not (n < 85 or n >= 88)",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-4\\mutant.py",
-    "catalog": "data\\confirmation\\fr-4\\messages.po",
+    "source": "data/confirmation/fr-4/mutant.py",
+    "catalog": "data/confirmation/fr-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -24697,7 +24697,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3741
+    "planning_ms": 0.372
   },
   {
     "id": "fr-5-clean",
@@ -24707,8 +24707,8 @@
     "operator": 5,
     "guard": "n == 303 or n == 427",
     "demand_index": 0,
-    "source": "data\\confirmation\\fr-5\\clean.py",
-    "catalog": "data\\confirmation\\fr-5\\messages.po",
+    "source": "data/confirmation/fr-5/clean.py",
+    "catalog": "data/confirmation/fr-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -25647,7 +25647,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.374
+    "planning_ms": 0.3619
   },
   {
     "id": "fr-5-mutant",
@@ -25657,8 +25657,8 @@
     "operator": 5,
     "guard": "n == 303 or n == 427",
     "demand_index": 0,
-    "source": "data\\confirmation\\fr-5\\mutant.py",
-    "catalog": "data\\confirmation\\fr-5\\messages.po",
+    "source": "data/confirmation/fr-5/mutant.py",
+    "catalog": "data/confirmation/fr-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -26597,7 +26597,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3614
+    "planning_ms": 0.3498
   },
   {
     "id": "fr-6-clean",
@@ -26607,8 +26607,8 @@
     "operator": 6,
     "guard": "465 <= n and n <= 545",
     "demand_index": 0,
-    "source": "data\\confirmation\\fr-6\\clean.py",
-    "catalog": "data\\confirmation\\fr-6\\messages.po",
+    "source": "data/confirmation/fr-6/clean.py",
+    "catalog": "data/confirmation/fr-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -27547,7 +27547,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4112
+    "planning_ms": 0.3654
   },
   {
     "id": "fr-6-mutant",
@@ -27557,8 +27557,8 @@
     "operator": 6,
     "guard": "465 <= n and n <= 545",
     "demand_index": 0,
-    "source": "data\\confirmation\\fr-6\\mutant.py",
-    "catalog": "data\\confirmation\\fr-6\\messages.po",
+    "source": "data/confirmation/fr-6/mutant.py",
+    "catalog": "data/confirmation/fr-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -28497,7 +28497,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3557
+    "planning_ms": 0.3554
   },
   {
     "id": "fr-7-clean",
@@ -28507,8 +28507,8 @@
     "operator": 7,
     "guard": "64 <= n < 66",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-7\\clean.py",
-    "catalog": "data\\confirmation\\fr-7\\messages.po",
+    "source": "data/confirmation/fr-7/clean.py",
+    "catalog": "data/confirmation/fr-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -29447,7 +29447,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4678
+    "planning_ms": 0.3273
   },
   {
     "id": "fr-7-mutant",
@@ -29457,8 +29457,8 @@
     "operator": 7,
     "guard": "64 <= n < 66",
     "demand_index": 1,
-    "source": "data\\confirmation\\fr-7\\mutant.py",
-    "catalog": "data\\confirmation\\fr-7\\messages.po",
+    "source": "data/confirmation/fr-7/mutant.py",
+    "catalog": "data/confirmation/fr-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -30397,7 +30397,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3261
+    "planning_ms": 0.3223
   },
   {
     "id": "ja-0-clean",
@@ -30407,8 +30407,8 @@
     "operator": 0,
     "guard": "n == 268",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-0\\clean.py",
-    "catalog": "data\\confirmation\\ja-0\\messages.po",
+    "source": "data/confirmation/ja-0/clean.py",
+    "catalog": "data/confirmation/ja-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -31244,7 +31244,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.303
+    "planning_ms": 0.2808
   },
   {
     "id": "ja-0-mutant",
@@ -31254,8 +31254,8 @@
     "operator": 0,
     "guard": "n == 268",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-0\\mutant.py",
-    "catalog": "data\\confirmation\\ja-0\\messages.po",
+    "source": "data/confirmation/ja-0/mutant.py",
+    "catalog": "data/confirmation/ja-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -32091,7 +32091,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.2889
+    "planning_ms": 0.2808
   },
   {
     "id": "ja-1-clean",
@@ -32101,8 +32101,8 @@
     "operator": 1,
     "guard": "n >= 446 and n < 453",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-1\\clean.py",
-    "catalog": "data\\confirmation\\ja-1\\messages.po",
+    "source": "data/confirmation/ja-1/clean.py",
+    "catalog": "data/confirmation/ja-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -32938,7 +32938,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3284
+    "planning_ms": 0.3384
   },
   {
     "id": "ja-1-mutant",
@@ -32948,8 +32948,8 @@
     "operator": 1,
     "guard": "n >= 446 and n < 453",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-1\\mutant.py",
-    "catalog": "data\\confirmation\\ja-1\\messages.po",
+    "source": "data/confirmation/ja-1/mutant.py",
+    "catalog": "data/confirmation/ja-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -33785,7 +33785,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3631
+    "planning_ms": 0.3099
   },
   {
     "id": "ja-2-clean",
@@ -33795,8 +33795,8 @@
     "operator": 2,
     "guard": "n % 7 == 2",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-2\\clean.py",
-    "catalog": "data\\confirmation\\ja-2\\messages.po",
+    "source": "data/confirmation/ja-2/clean.py",
+    "catalog": "data/confirmation/ja-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -34632,7 +34632,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3168
+    "planning_ms": 0.2979
   },
   {
     "id": "ja-2-mutant",
@@ -34642,8 +34642,8 @@
     "operator": 2,
     "guard": "n % 7 == 2",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-2\\mutant.py",
-    "catalog": "data\\confirmation\\ja-2\\messages.po",
+    "source": "data/confirmation/ja-2/mutant.py",
+    "catalog": "data/confirmation/ja-2/messages.po",
     "domain_size": 1001,
     "failures": 143,
     "active_mutation": true,
@@ -35479,7 +35479,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.2947
+    "planning_ms": 0.2937
   },
   {
     "id": "ja-3-clean",
@@ -35489,8 +35489,8 @@
     "operator": 3,
     "guard": "n > 38 and n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-3\\clean.py",
-    "catalog": "data\\confirmation\\ja-3\\messages.po",
+    "source": "data/confirmation/ja-3/clean.py",
+    "catalog": "data/confirmation/ja-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -36326,7 +36326,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4297
+    "planning_ms": 0.3657
   },
   {
     "id": "ja-3-mutant",
@@ -36336,8 +36336,8 @@
     "operator": 3,
     "guard": "n > 38 and n % 7 == 1",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-3\\mutant.py",
-    "catalog": "data\\confirmation\\ja-3\\messages.po",
+    "source": "data/confirmation/ja-3/mutant.py",
+    "catalog": "data/confirmation/ja-3/messages.po",
     "domain_size": 1001,
     "failures": 137,
     "active_mutation": true,
@@ -37173,7 +37173,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3535
+    "planning_ms": 0.347
   },
   {
     "id": "ja-4-clean",
@@ -37183,8 +37183,8 @@
     "operator": 4,
     "guard": "not (n < 447 or n >= 450)",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-4\\clean.py",
-    "catalog": "data\\confirmation\\ja-4\\messages.po",
+    "source": "data/confirmation/ja-4/clean.py",
+    "catalog": "data/confirmation/ja-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -38020,7 +38020,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3842
+    "planning_ms": 0.3331
   },
   {
     "id": "ja-4-mutant",
@@ -38030,8 +38030,8 @@
     "operator": 4,
     "guard": "not (n < 447 or n >= 450)",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-4\\mutant.py",
-    "catalog": "data\\confirmation\\ja-4\\messages.po",
+    "source": "data/confirmation/ja-4/mutant.py",
+    "catalog": "data/confirmation/ja-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -38867,7 +38867,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3647
+    "planning_ms": 0.3149
   },
   {
     "id": "ja-5-clean",
@@ -38877,8 +38877,8 @@
     "operator": 5,
     "guard": "n == 277 or n == 321",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-5\\clean.py",
-    "catalog": "data\\confirmation\\ja-5\\messages.po",
+    "source": "data/confirmation/ja-5/clean.py",
+    "catalog": "data/confirmation/ja-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -39714,7 +39714,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3413
+    "planning_ms": 0.3303
   },
   {
     "id": "ja-5-mutant",
@@ -39724,8 +39724,8 @@
     "operator": 5,
     "guard": "n == 277 or n == 321",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-5\\mutant.py",
-    "catalog": "data\\confirmation\\ja-5\\messages.po",
+    "source": "data/confirmation/ja-5/mutant.py",
+    "catalog": "data/confirmation/ja-5/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -40561,7 +40561,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3345
+    "planning_ms": 0.312
   },
   {
     "id": "ja-6-clean",
@@ -40571,8 +40571,8 @@
     "operator": 6,
     "guard": "563 <= n and n <= 647",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-6\\clean.py",
-    "catalog": "data\\confirmation\\ja-6\\messages.po",
+    "source": "data/confirmation/ja-6/clean.py",
+    "catalog": "data/confirmation/ja-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -41408,7 +41408,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3393
+    "planning_ms": 0.3331
   },
   {
     "id": "ja-6-mutant",
@@ -41418,8 +41418,8 @@
     "operator": 6,
     "guard": "563 <= n and n <= 647",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-6\\mutant.py",
-    "catalog": "data\\confirmation\\ja-6\\messages.po",
+    "source": "data/confirmation/ja-6/mutant.py",
+    "catalog": "data/confirmation/ja-6/messages.po",
     "domain_size": 1001,
     "failures": 85,
     "active_mutation": true,
@@ -42255,7 +42255,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3411
+    "planning_ms": 0.3191
   },
   {
     "id": "ja-7-clean",
@@ -42265,8 +42265,8 @@
     "operator": 7,
     "guard": "293 <= n < 295",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-7\\clean.py",
-    "catalog": "data\\confirmation\\ja-7\\messages.po",
+    "source": "data/confirmation/ja-7/clean.py",
+    "catalog": "data/confirmation/ja-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -43102,7 +43102,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.2972
+    "planning_ms": 0.3053
   },
   {
     "id": "ja-7-mutant",
@@ -43112,8 +43112,8 @@
     "operator": 7,
     "guard": "293 <= n < 295",
     "demand_index": 0,
-    "source": "data\\confirmation\\ja-7\\mutant.py",
-    "catalog": "data\\confirmation\\ja-7\\messages.po",
+    "source": "data/confirmation/ja-7/mutant.py",
+    "catalog": "data/confirmation/ja-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -43949,7 +43949,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.2926
+    "planning_ms": 0.2889
   },
   {
     "id": "ru-0-clean",
@@ -43959,8 +43959,8 @@
     "operator": 0,
     "guard": "n == 91",
     "demand_index": 1,
-    "source": "data\\confirmation\\ru-0\\clean.py",
-    "catalog": "data\\confirmation\\ru-0\\messages.po",
+    "source": "data/confirmation/ru-0/clean.py",
+    "catalog": "data/confirmation/ru-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -45002,7 +45002,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.7853
+    "planning_ms": 0.8257
   },
   {
     "id": "ru-0-mutant",
@@ -45012,8 +45012,8 @@
     "operator": 0,
     "guard": "n == 91",
     "demand_index": 1,
-    "source": "data\\confirmation\\ru-0\\mutant.py",
-    "catalog": "data\\confirmation\\ru-0\\messages.po",
+    "source": "data/confirmation/ru-0/mutant.py",
+    "catalog": "data/confirmation/ru-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -46055,7 +46055,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.7856
+    "planning_ms": 0.8138
   },
   {
     "id": "ru-1-clean",
@@ -46065,8 +46065,8 @@
     "operator": 1,
     "guard": "n >= 529 and n < 536",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-1\\clean.py",
-    "catalog": "data\\confirmation\\ru-1\\messages.po",
+    "source": "data/confirmation/ru-1/clean.py",
+    "catalog": "data/confirmation/ru-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -47312,7 +47312,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2495
+    "planning_ms": 1.2116
   },
   {
     "id": "ru-1-mutant",
@@ -47322,8 +47322,8 @@
     "operator": 1,
     "guard": "n >= 529 and n < 536",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-1\\mutant.py",
-    "catalog": "data\\confirmation\\ru-1\\messages.po",
+    "source": "data/confirmation/ru-1/mutant.py",
+    "catalog": "data/confirmation/ru-1/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -48569,7 +48569,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.279
+    "planning_ms": 1.1592
   },
   {
     "id": "ru-2-clean",
@@ -48579,8 +48579,8 @@
     "operator": 2,
     "guard": "n % 7 == 0",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-2\\clean.py",
-    "catalog": "data\\confirmation\\ru-2\\messages.po",
+    "source": "data/confirmation/ru-2/clean.py",
+    "catalog": "data/confirmation/ru-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -49826,7 +49826,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0814
+    "planning_ms": 2.0296
   },
   {
     "id": "ru-2-mutant",
@@ -49836,8 +49836,8 @@
     "operator": 2,
     "guard": "n % 7 == 0",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-2\\mutant.py",
-    "catalog": "data\\confirmation\\ru-2\\messages.po",
+    "source": "data/confirmation/ru-2/mutant.py",
+    "catalog": "data/confirmation/ru-2/messages.po",
     "domain_size": 1001,
     "failures": 13,
     "active_mutation": true,
@@ -51083,7 +51083,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0492
+    "planning_ms": 1.9905
   },
   {
     "id": "ru-3-clean",
@@ -51093,8 +51093,8 @@
     "operator": 3,
     "guard": "n > 222 and n % 7 == 6",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-3\\clean.py",
-    "catalog": "data\\confirmation\\ru-3\\messages.po",
+    "source": "data/confirmation/ru-3/clean.py",
+    "catalog": "data/confirmation/ru-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -52340,7 +52340,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.9977
+    "planning_ms": 4.1915
   },
   {
     "id": "ru-3-mutant",
@@ -52350,8 +52350,8 @@
     "operator": 3,
     "guard": "n > 222 and n % 7 == 6",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-3\\mutant.py",
-    "catalog": "data\\confirmation\\ru-3\\messages.po",
+    "source": "data/confirmation/ru-3/mutant.py",
+    "catalog": "data/confirmation/ru-3/messages.po",
     "domain_size": 1001,
     "failures": 10,
     "active_mutation": true,
@@ -53597,7 +53597,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 4.3219
+    "planning_ms": 3.9556
   },
   {
     "id": "ru-4-clean",
@@ -53607,8 +53607,8 @@
     "operator": 4,
     "guard": "not (n < 560 or n >= 563)",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-4\\clean.py",
-    "catalog": "data\\confirmation\\ru-4\\messages.po",
+    "source": "data/confirmation/ru-4/clean.py",
+    "catalog": "data/confirmation/ru-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -54854,7 +54854,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3336
+    "planning_ms": 1.3304
   },
   {
     "id": "ru-4-mutant",
@@ -54864,8 +54864,8 @@
     "operator": 4,
     "guard": "not (n < 560 or n >= 563)",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-4\\mutant.py",
-    "catalog": "data\\confirmation\\ru-4\\messages.po",
+    "source": "data/confirmation/ru-4/mutant.py",
+    "catalog": "data/confirmation/ru-4/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -56111,7 +56111,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4303
+    "planning_ms": 1.3658
   },
   {
     "id": "ru-5-clean",
@@ -56121,8 +56121,8 @@
     "operator": 5,
     "guard": "n == 449 or n == 482",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-5\\clean.py",
-    "catalog": "data\\confirmation\\ru-5\\messages.po",
+    "source": "data/confirmation/ru-5/clean.py",
+    "catalog": "data/confirmation/ru-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -57266,7 +57266,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4112
+    "planning_ms": 1.4001
   },
   {
     "id": "ru-5-mutant",
@@ -57276,8 +57276,8 @@
     "operator": 5,
     "guard": "n == 449 or n == 482",
     "demand_index": 0,
-    "source": "data\\confirmation\\ru-5\\mutant.py",
-    "catalog": "data\\confirmation\\ru-5\\messages.po",
+    "source": "data/confirmation/ru-5/mutant.py",
+    "catalog": "data/confirmation/ru-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -58421,7 +58421,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4212
+    "planning_ms": 1.3788
   },
   {
     "id": "ru-6-clean",
@@ -58431,8 +58431,8 @@
     "operator": 6,
     "guard": "473 <= n and n <= 496",
     "demand_index": 2,
-    "source": "data\\confirmation\\ru-6\\clean.py",
-    "catalog": "data\\confirmation\\ru-6\\messages.po",
+    "source": "data/confirmation/ru-6/clean.py",
+    "catalog": "data/confirmation/ru-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -59678,7 +59678,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.378
+    "planning_ms": 1.2725
   },
   {
     "id": "ru-6-mutant",
@@ -59688,8 +59688,8 @@
     "operator": 6,
     "guard": "473 <= n and n <= 496",
     "demand_index": 2,
-    "source": "data\\confirmation\\ru-6\\mutant.py",
-    "catalog": "data\\confirmation\\ru-6\\messages.po",
+    "source": "data/confirmation/ru-6/mutant.py",
+    "catalog": "data/confirmation/ru-6/messages.po",
     "domain_size": 1001,
     "failures": 14,
     "active_mutation": true,
@@ -60935,7 +60935,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3435
+    "planning_ms": 1.3179
   },
   {
     "id": "ru-7-clean",
@@ -60945,8 +60945,8 @@
     "operator": 7,
     "guard": "647 <= n < 649",
     "demand_index": 2,
-    "source": "data\\confirmation\\ru-7\\clean.py",
-    "catalog": "data\\confirmation\\ru-7\\messages.po",
+    "source": "data/confirmation/ru-7/clean.py",
+    "catalog": "data/confirmation/ru-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -61988,7 +61988,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8905
+    "planning_ms": 0.8813
   },
   {
     "id": "ru-7-mutant",
@@ -61998,8 +61998,8 @@
     "operator": 7,
     "guard": "647 <= n < 649",
     "demand_index": 2,
-    "source": "data\\confirmation\\ru-7\\mutant.py",
-    "catalog": "data\\confirmation\\ru-7\\messages.po",
+    "source": "data/confirmation/ru-7/mutant.py",
+    "catalog": "data/confirmation/ru-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -63041,7 +63041,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.89
+    "planning_ms": 0.8754
   },
   {
     "id": "ar-0-clean",
@@ -63051,8 +63051,8 @@
     "operator": 0,
     "guard": "n == 114",
     "demand_index": 3,
-    "source": "data\\confirmation\\ar-0\\clean.py",
-    "catalog": "data\\confirmation\\ar-0\\messages.po",
+    "source": "data/confirmation/ar-0/clean.py",
+    "catalog": "data/confirmation/ar-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -64403,7 +64403,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.941
+    "planning_ms": 0.8886
   },
   {
     "id": "ar-0-mutant",
@@ -64413,8 +64413,8 @@
     "operator": 0,
     "guard": "n == 114",
     "demand_index": 3,
-    "source": "data\\confirmation\\ar-0\\mutant.py",
-    "catalog": "data\\confirmation\\ar-0\\messages.po",
+    "source": "data/confirmation/ar-0/mutant.py",
+    "catalog": "data/confirmation/ar-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -65765,7 +65765,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9344
+    "planning_ms": 0.8859
   },
   {
     "id": "ar-1-clean",
@@ -65775,8 +65775,8 @@
     "operator": 1,
     "guard": "n >= 376 and n < 383",
     "demand_index": 0,
-    "source": "data\\confirmation\\ar-1\\clean.py",
-    "catalog": "data\\confirmation\\ar-1\\messages.po",
+    "source": "data/confirmation/ar-1/clean.py",
+    "catalog": "data/confirmation/ar-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -67127,7 +67127,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4011
+    "planning_ms": 1.2403
   },
   {
     "id": "ar-1-mutant",
@@ -67137,8 +67137,8 @@
     "operator": 1,
     "guard": "n >= 376 and n < 383",
     "demand_index": 0,
-    "source": "data\\confirmation\\ar-1\\mutant.py",
-    "catalog": "data\\confirmation\\ar-1\\messages.po",
+    "source": "data/confirmation/ar-1/mutant.py",
+    "catalog": "data/confirmation/ar-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -68489,7 +68489,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2761
+    "planning_ms": 1.2376
   },
   {
     "id": "ar-2-clean",
@@ -68499,8 +68499,8 @@
     "operator": 2,
     "guard": "n % 7 == 6",
     "demand_index": 5,
-    "source": "data\\confirmation\\ar-2\\clean.py",
-    "catalog": "data\\confirmation\\ar-2\\messages.po",
+    "source": "data/confirmation/ar-2/clean.py",
+    "catalog": "data/confirmation/ar-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -70055,7 +70055,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.2182
+    "planning_ms": 2.0904
   },
   {
     "id": "ar-2-mutant",
@@ -70065,8 +70065,8 @@
     "operator": 2,
     "guard": "n % 7 == 6",
     "demand_index": 5,
-    "source": "data\\confirmation\\ar-2\\mutant.py",
-    "catalog": "data\\confirmation\\ar-2\\messages.po",
+    "source": "data/confirmation/ar-2/mutant.py",
+    "catalog": "data/confirmation/ar-2/messages.po",
     "domain_size": 1001,
     "failures": 127,
     "active_mutation": true,
@@ -71621,7 +71621,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.1497
+    "planning_ms": 2.1392
   },
   {
     "id": "ar-3-clean",
@@ -71631,8 +71631,8 @@
     "operator": 3,
     "guard": "n > 225 and n % 7 == 6",
     "demand_index": 1,
-    "source": "data\\confirmation\\ar-3\\clean.py",
-    "catalog": "data\\confirmation\\ar-3\\messages.po",
+    "source": "data/confirmation/ar-3/clean.py",
+    "catalog": "data/confirmation/ar-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -73187,7 +73187,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 4.2704
+    "planning_ms": 4.1488
   },
   {
     "id": "ar-3-mutant",
@@ -73197,8 +73197,8 @@
     "operator": 3,
     "guard": "n > 225 and n % 7 == 6",
     "demand_index": 1,
-    "source": "data\\confirmation\\ar-3\\mutant.py",
-    "catalog": "data\\confirmation\\ar-3\\messages.po",
+    "source": "data/confirmation/ar-3/mutant.py",
+    "catalog": "data/confirmation/ar-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -74753,7 +74753,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 4.1354
+    "planning_ms": 4.2482
   },
   {
     "id": "ar-4-clean",
@@ -74763,8 +74763,8 @@
     "operator": 4,
     "guard": "not (n < 326 or n >= 329)",
     "demand_index": 1,
-    "source": "data\\confirmation\\ar-4\\clean.py",
-    "catalog": "data\\confirmation\\ar-4\\messages.po",
+    "source": "data/confirmation/ar-4/clean.py",
+    "catalog": "data/confirmation/ar-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -76115,7 +76115,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.682
+    "planning_ms": 1.4206
   },
   {
     "id": "ar-4-mutant",
@@ -76125,8 +76125,8 @@
     "operator": 4,
     "guard": "not (n < 326 or n >= 329)",
     "demand_index": 1,
-    "source": "data\\confirmation\\ar-4\\mutant.py",
-    "catalog": "data\\confirmation\\ar-4\\messages.po",
+    "source": "data/confirmation/ar-4/mutant.py",
+    "catalog": "data/confirmation/ar-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -77477,7 +77477,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3343
+    "planning_ms": 1.3645
   },
   {
     "id": "ar-5-clean",
@@ -77487,8 +77487,8 @@
     "operator": 5,
     "guard": "n == 722 or n == 800",
     "demand_index": 1,
-    "source": "data\\confirmation\\ar-5\\clean.py",
-    "catalog": "data\\confirmation\\ar-5\\messages.po",
+    "source": "data/confirmation/ar-5/clean.py",
+    "catalog": "data/confirmation/ar-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -78941,7 +78941,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.6511
+    "planning_ms": 1.6524
   },
   {
     "id": "ar-5-mutant",
@@ -78951,8 +78951,8 @@
     "operator": 5,
     "guard": "n == 722 or n == 800",
     "demand_index": 1,
-    "source": "data\\confirmation\\ar-5\\mutant.py",
-    "catalog": "data\\confirmation\\ar-5\\messages.po",
+    "source": "data/confirmation/ar-5/mutant.py",
+    "catalog": "data/confirmation/ar-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -80405,7 +80405,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.6217
+    "planning_ms": 1.5939
   },
   {
     "id": "ar-6-clean",
@@ -80415,8 +80415,8 @@
     "operator": 6,
     "guard": "462 <= n and n <= 553",
     "demand_index": 2,
-    "source": "data\\confirmation\\ar-6\\clean.py",
-    "catalog": "data\\confirmation\\ar-6\\messages.po",
+    "source": "data/confirmation/ar-6/clean.py",
+    "catalog": "data/confirmation/ar-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -81971,7 +81971,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.7248
+    "planning_ms": 1.7061
   },
   {
     "id": "ar-6-mutant",
@@ -81981,8 +81981,8 @@
     "operator": 6,
     "guard": "462 <= n and n <= 553",
     "demand_index": 2,
-    "source": "data\\confirmation\\ar-6\\mutant.py",
-    "catalog": "data\\confirmation\\ar-6\\messages.po",
+    "source": "data/confirmation/ar-6/mutant.py",
+    "catalog": "data/confirmation/ar-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -83537,7 +83537,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0725
+    "planning_ms": 1.5711
   },
   {
     "id": "ar-7-clean",
@@ -83547,8 +83547,8 @@
     "operator": 7,
     "guard": "193 <= n < 195",
     "demand_index": 0,
-    "source": "data\\confirmation\\ar-7\\clean.py",
-    "catalog": "data\\confirmation\\ar-7\\messages.po",
+    "source": "data/confirmation/ar-7/clean.py",
+    "catalog": "data/confirmation/ar-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -84899,7 +84899,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9964
+    "planning_ms": 0.9168
   },
   {
     "id": "ar-7-mutant",
@@ -84909,8 +84909,8 @@
     "operator": 7,
     "guard": "193 <= n < 195",
     "demand_index": 0,
-    "source": "data\\confirmation\\ar-7\\mutant.py",
-    "catalog": "data\\confirmation\\ar-7\\messages.po",
+    "source": "data/confirmation/ar-7/mutant.py",
+    "catalog": "data/confirmation/ar-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -86261,7 +86261,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9633
+    "planning_ms": 0.9279
   },
   {
     "id": "pl-0-clean",
@@ -86271,8 +86271,8 @@
     "operator": 0,
     "guard": "n == 622",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-0\\clean.py",
-    "catalog": "data\\confirmation\\pl-0\\messages.po",
+    "source": "data/confirmation/pl-0/clean.py",
+    "catalog": "data/confirmation/pl-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -87314,7 +87314,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8711
+    "planning_ms": 0.8393
   },
   {
     "id": "pl-0-mutant",
@@ -87324,8 +87324,8 @@
     "operator": 0,
     "guard": "n == 622",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-0\\mutant.py",
-    "catalog": "data\\confirmation\\pl-0\\messages.po",
+    "source": "data/confirmation/pl-0/mutant.py",
+    "catalog": "data/confirmation/pl-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -88367,7 +88367,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8527
+    "planning_ms": 0.7972
   },
   {
     "id": "pl-1-clean",
@@ -88377,8 +88377,8 @@
     "operator": 1,
     "guard": "n >= 240 and n < 247",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-1\\clean.py",
-    "catalog": "data\\confirmation\\pl-1\\messages.po",
+    "source": "data/confirmation/pl-1/clean.py",
+    "catalog": "data/confirmation/pl-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -89522,7 +89522,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1666
+    "planning_ms": 1.1726
   },
   {
     "id": "pl-1-mutant",
@@ -89532,8 +89532,8 @@
     "operator": 1,
     "guard": "n >= 240 and n < 247",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-1\\mutant.py",
-    "catalog": "data\\confirmation\\pl-1\\messages.po",
+    "source": "data/confirmation/pl-1/mutant.py",
+    "catalog": "data/confirmation/pl-1/messages.po",
     "domain_size": 1001,
     "failures": 4,
     "active_mutation": true,
@@ -90677,7 +90677,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.156
+    "planning_ms": 1.1269
   },
   {
     "id": "pl-2-clean",
@@ -90687,8 +90687,8 @@
     "operator": 2,
     "guard": "n % 7 == 3",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-2\\clean.py",
-    "catalog": "data\\confirmation\\pl-2\\messages.po",
+    "source": "data/confirmation/pl-2/clean.py",
+    "catalog": "data/confirmation/pl-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -91832,7 +91832,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.5153
+    "planning_ms": 2.1645
   },
   {
     "id": "pl-2-mutant",
@@ -91842,8 +91842,8 @@
     "operator": 2,
     "guard": "n % 7 == 3",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-2\\mutant.py",
-    "catalog": "data\\confirmation\\pl-2\\messages.po",
+    "source": "data/confirmation/pl-2/mutant.py",
+    "catalog": "data/confirmation/pl-2/messages.po",
     "domain_size": 1001,
     "failures": 104,
     "active_mutation": true,
@@ -92987,7 +92987,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.9254
+    "planning_ms": 1.9841
   },
   {
     "id": "pl-3-clean",
@@ -92997,8 +92997,8 @@
     "operator": 3,
     "guard": "n > 579 and n % 7 == 6",
     "demand_index": 1,
-    "source": "data\\confirmation\\pl-3\\clean.py",
-    "catalog": "data\\confirmation\\pl-3\\messages.po",
+    "source": "data/confirmation/pl-3/clean.py",
+    "catalog": "data/confirmation/pl-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -94142,7 +94142,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.9398
+    "planning_ms": 3.8785
   },
   {
     "id": "pl-3-mutant",
@@ -94152,8 +94152,8 @@
     "operator": 3,
     "guard": "n > 579 and n % 7 == 6",
     "demand_index": 1,
-    "source": "data\\confirmation\\pl-3\\mutant.py",
-    "catalog": "data\\confirmation\\pl-3\\messages.po",
+    "source": "data/confirmation/pl-3/mutant.py",
+    "catalog": "data/confirmation/pl-3/messages.po",
     "domain_size": 1001,
     "failures": 17,
     "active_mutation": true,
@@ -95297,7 +95297,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.817
+    "planning_ms": 3.8429
   },
   {
     "id": "pl-4-clean",
@@ -95307,8 +95307,8 @@
     "operator": 4,
     "guard": "not (n < 183 or n >= 186)",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-4\\clean.py",
-    "catalog": "data\\confirmation\\pl-4\\messages.po",
+    "source": "data/confirmation/pl-4/clean.py",
+    "catalog": "data/confirmation/pl-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -96452,7 +96452,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2668
+    "planning_ms": 1.2176
   },
   {
     "id": "pl-4-mutant",
@@ -96462,8 +96462,8 @@
     "operator": 4,
     "guard": "not (n < 183 or n >= 186)",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-4\\mutant.py",
-    "catalog": "data\\confirmation\\pl-4\\messages.po",
+    "source": "data/confirmation/pl-4/mutant.py",
+    "catalog": "data/confirmation/pl-4/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -97607,7 +97607,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3687
+    "planning_ms": 1.386
   },
   {
     "id": "pl-5-clean",
@@ -97617,8 +97617,8 @@
     "operator": 5,
     "guard": "n == 338 or n == 446",
     "demand_index": 1,
-    "source": "data\\confirmation\\pl-5\\clean.py",
-    "catalog": "data\\confirmation\\pl-5\\messages.po",
+    "source": "data/confirmation/pl-5/clean.py",
+    "catalog": "data/confirmation/pl-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -98660,7 +98660,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.7008
+    "planning_ms": 1.5647
   },
   {
     "id": "pl-5-mutant",
@@ -98670,8 +98670,8 @@
     "operator": 5,
     "guard": "n == 338 or n == 446",
     "demand_index": 1,
-    "source": "data\\confirmation\\pl-5\\mutant.py",
-    "catalog": "data\\confirmation\\pl-5\\messages.po",
+    "source": "data/confirmation/pl-5/mutant.py",
+    "catalog": "data/confirmation/pl-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -99713,7 +99713,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5597
+    "planning_ms": 1.5363
   },
   {
     "id": "pl-6-clean",
@@ -99723,8 +99723,8 @@
     "operator": 6,
     "guard": "140 <= n and n <= 240",
     "demand_index": 1,
-    "source": "data\\confirmation\\pl-6\\clean.py",
-    "catalog": "data\\confirmation\\pl-6\\messages.po",
+    "source": "data/confirmation/pl-6/clean.py",
+    "catalog": "data/confirmation/pl-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -100868,7 +100868,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.7214
+    "planning_ms": 1.4855
   },
   {
     "id": "pl-6-mutant",
@@ -100878,8 +100878,8 @@
     "operator": 6,
     "guard": "140 <= n and n <= 240",
     "demand_index": 1,
-    "source": "data\\confirmation\\pl-6\\mutant.py",
-    "catalog": "data\\confirmation\\pl-6\\messages.po",
+    "source": "data/confirmation/pl-6/mutant.py",
+    "catalog": "data/confirmation/pl-6/messages.po",
     "domain_size": 1001,
     "failures": 27,
     "active_mutation": true,
@@ -102023,7 +102023,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.6663
+    "planning_ms": 1.4906
   },
   {
     "id": "pl-7-clean",
@@ -102033,8 +102033,8 @@
     "operator": 7,
     "guard": "495 <= n < 497",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-7\\clean.py",
-    "catalog": "data\\confirmation\\pl-7\\messages.po",
+    "source": "data/confirmation/pl-7/clean.py",
+    "catalog": "data/confirmation/pl-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -103076,7 +103076,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8655
+    "planning_ms": 0.8771
   },
   {
     "id": "pl-7-mutant",
@@ -103086,8 +103086,8 @@
     "operator": 7,
     "guard": "495 <= n < 497",
     "demand_index": 2,
-    "source": "data\\confirmation\\pl-7\\mutant.py",
-    "catalog": "data\\confirmation\\pl-7\\messages.po",
+    "source": "data/confirmation/pl-7/mutant.py",
+    "catalog": "data/confirmation/pl-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -104129,7 +104129,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8311
+    "planning_ms": 0.8523
   },
   {
     "id": "cs-0-clean",
@@ -104139,8 +104139,8 @@
     "operator": 0,
     "guard": "n == 588",
     "demand_index": 2,
-    "source": "data\\confirmation\\cs-0\\clean.py",
-    "catalog": "data\\confirmation\\cs-0\\messages.po",
+    "source": "data/confirmation/cs-0/clean.py",
+    "catalog": "data/confirmation/cs-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -105182,7 +105182,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3673
+    "planning_ms": 0.3604
   },
   {
     "id": "cs-0-mutant",
@@ -105192,8 +105192,8 @@
     "operator": 0,
     "guard": "n == 588",
     "demand_index": 2,
-    "source": "data\\confirmation\\cs-0\\mutant.py",
-    "catalog": "data\\confirmation\\cs-0\\messages.po",
+    "source": "data/confirmation/cs-0/mutant.py",
+    "catalog": "data/confirmation/cs-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -106235,7 +106235,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5435
+    "planning_ms": 0.3523
   },
   {
     "id": "cs-1-clean",
@@ -106245,8 +106245,8 @@
     "operator": 1,
     "guard": "n >= 486 and n < 493",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-1\\clean.py",
-    "catalog": "data\\confirmation\\cs-1\\messages.po",
+    "source": "data/confirmation/cs-1/clean.py",
+    "catalog": "data/confirmation/cs-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -107288,7 +107288,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4985
+    "planning_ms": 0.3912
   },
   {
     "id": "cs-1-mutant",
@@ -107298,8 +107298,8 @@
     "operator": 1,
     "guard": "n >= 486 and n < 493",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-1\\mutant.py",
-    "catalog": "data\\confirmation\\cs-1\\messages.po",
+    "source": "data/confirmation/cs-1/mutant.py",
+    "catalog": "data/confirmation/cs-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -108341,7 +108341,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4341
+    "planning_ms": 0.3959
   },
   {
     "id": "cs-2-clean",
@@ -108351,8 +108351,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 1,
-    "source": "data\\confirmation\\cs-2\\clean.py",
-    "catalog": "data\\confirmation\\cs-2\\messages.po",
+    "source": "data/confirmation/cs-2/clean.py",
+    "catalog": "data/confirmation/cs-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -109394,7 +109394,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3768
+    "planning_ms": 0.381
   },
   {
     "id": "cs-2-mutant",
@@ -109404,8 +109404,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 1,
-    "source": "data\\confirmation\\cs-2\\mutant.py",
-    "catalog": "data\\confirmation\\cs-2\\messages.po",
+    "source": "data/confirmation/cs-2/mutant.py",
+    "catalog": "data/confirmation/cs-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -110447,7 +110447,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3711
+    "planning_ms": 0.3656
   },
   {
     "id": "cs-3-clean",
@@ -110457,8 +110457,8 @@
     "operator": 3,
     "guard": "n > 97 and n % 7 == 0",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-3\\clean.py",
-    "catalog": "data\\confirmation\\cs-3\\messages.po",
+    "source": "data/confirmation/cs-3/clean.py",
+    "catalog": "data/confirmation/cs-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -111500,7 +111500,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.449
+    "planning_ms": 0.4343
   },
   {
     "id": "cs-3-mutant",
@@ -111510,8 +111510,8 @@
     "operator": 3,
     "guard": "n > 97 and n % 7 == 0",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-3\\mutant.py",
-    "catalog": "data\\confirmation\\cs-3\\messages.po",
+    "source": "data/confirmation/cs-3/mutant.py",
+    "catalog": "data/confirmation/cs-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -112553,7 +112553,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5524
+    "planning_ms": 0.4119
   },
   {
     "id": "cs-4-clean",
@@ -112563,8 +112563,8 @@
     "operator": 4,
     "guard": "not (n < 303 or n >= 306)",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-4\\clean.py",
-    "catalog": "data\\confirmation\\cs-4\\messages.po",
+    "source": "data/confirmation/cs-4/clean.py",
+    "catalog": "data/confirmation/cs-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -113606,7 +113606,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5106
+    "planning_ms": 0.4949
   },
   {
     "id": "cs-4-mutant",
@@ -113616,8 +113616,8 @@
     "operator": 4,
     "guard": "not (n < 303 or n >= 306)",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-4\\mutant.py",
-    "catalog": "data\\confirmation\\cs-4\\messages.po",
+    "source": "data/confirmation/cs-4/mutant.py",
+    "catalog": "data/confirmation/cs-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -114659,7 +114659,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4217
+    "planning_ms": 0.3994
   },
   {
     "id": "cs-5-clean",
@@ -114669,8 +114669,8 @@
     "operator": 5,
     "guard": "n == 538 or n == 601",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-5\\clean.py",
-    "catalog": "data\\confirmation\\cs-5\\messages.po",
+    "source": "data/confirmation/cs-5/clean.py",
+    "catalog": "data/confirmation/cs-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -115712,7 +115712,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4102
+    "planning_ms": 0.3926
   },
   {
     "id": "cs-5-mutant",
@@ -115722,8 +115722,8 @@
     "operator": 5,
     "guard": "n == 538 or n == 601",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-5\\mutant.py",
-    "catalog": "data\\confirmation\\cs-5\\messages.po",
+    "source": "data/confirmation/cs-5/mutant.py",
+    "catalog": "data/confirmation/cs-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -116765,7 +116765,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4014
+    "planning_ms": 0.4409
   },
   {
     "id": "cs-6-clean",
@@ -116775,8 +116775,8 @@
     "operator": 6,
     "guard": "572 <= n and n <= 634",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-6\\clean.py",
-    "catalog": "data\\confirmation\\cs-6\\messages.po",
+    "source": "data/confirmation/cs-6/clean.py",
+    "catalog": "data/confirmation/cs-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -117818,7 +117818,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4026
+    "planning_ms": 0.3903
   },
   {
     "id": "cs-6-mutant",
@@ -117828,8 +117828,8 @@
     "operator": 6,
     "guard": "572 <= n and n <= 634",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-6\\mutant.py",
-    "catalog": "data\\confirmation\\cs-6\\messages.po",
+    "source": "data/confirmation/cs-6/mutant.py",
+    "catalog": "data/confirmation/cs-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -118871,7 +118871,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4597
+    "planning_ms": 0.3851
   },
   {
     "id": "cs-7-clean",
@@ -118881,8 +118881,8 @@
     "operator": 7,
     "guard": "676 <= n < 678",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-7\\clean.py",
-    "catalog": "data\\confirmation\\cs-7\\messages.po",
+    "source": "data/confirmation/cs-7/clean.py",
+    "catalog": "data/confirmation/cs-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -119924,7 +119924,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.3988
+    "planning_ms": 0.3567
   },
   {
     "id": "cs-7-mutant",
@@ -119934,8 +119934,8 @@
     "operator": 7,
     "guard": "676 <= n < 678",
     "demand_index": 0,
-    "source": "data\\confirmation\\cs-7\\mutant.py",
-    "catalog": "data\\confirmation\\cs-7\\messages.po",
+    "source": "data/confirmation/cs-7/mutant.py",
+    "catalog": "data/confirmation/cs-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -120977,7 +120977,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.37
+    "planning_ms": 0.3638
   },
   {
     "id": "sl-0-clean",
@@ -120987,8 +120987,8 @@
     "operator": 0,
     "guard": "n == 619",
     "demand_index": 3,
-    "source": "data\\confirmation\\sl-0\\clean.py",
-    "catalog": "data\\confirmation\\sl-0\\messages.po",
+    "source": "data/confirmation/sl-0/clean.py",
+    "catalog": "data/confirmation/sl-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -122133,7 +122133,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8191
+    "planning_ms": 0.8392
   },
   {
     "id": "sl-0-mutant",
@@ -122143,8 +122143,8 @@
     "operator": 0,
     "guard": "n == 619",
     "demand_index": 3,
-    "source": "data\\confirmation\\sl-0\\mutant.py",
-    "catalog": "data\\confirmation\\sl-0\\messages.po",
+    "source": "data/confirmation/sl-0/mutant.py",
+    "catalog": "data/confirmation/sl-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -123289,7 +123289,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.818
+    "planning_ms": 0.821
   },
   {
     "id": "sl-1-clean",
@@ -123299,8 +123299,8 @@
     "operator": 1,
     "guard": "n >= 265 and n < 272",
     "demand_index": 2,
-    "source": "data\\confirmation\\sl-1\\clean.py",
-    "catalog": "data\\confirmation\\sl-1\\messages.po",
+    "source": "data/confirmation/sl-1/clean.py",
+    "catalog": "data/confirmation/sl-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -124445,7 +124445,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1543
+    "planning_ms": 1.1368
   },
   {
     "id": "sl-1-mutant",
@@ -124455,8 +124455,8 @@
     "operator": 1,
     "guard": "n >= 265 and n < 272",
     "demand_index": 2,
-    "source": "data\\confirmation\\sl-1\\mutant.py",
-    "catalog": "data\\confirmation\\sl-1\\messages.po",
+    "source": "data/confirmation/sl-1/mutant.py",
+    "catalog": "data/confirmation/sl-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -125601,7 +125601,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2004
+    "planning_ms": 1.2068
   },
   {
     "id": "sl-2-clean",
@@ -125611,8 +125611,8 @@
     "operator": 2,
     "guard": "n % 7 == 0",
     "demand_index": 3,
-    "source": "data\\confirmation\\sl-2\\clean.py",
-    "catalog": "data\\confirmation\\sl-2\\messages.po",
+    "source": "data/confirmation/sl-2/clean.py",
+    "catalog": "data/confirmation/sl-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -127063,7 +127063,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0994
+    "planning_ms": 2.1604
   },
   {
     "id": "sl-2-mutant",
@@ -127073,8 +127073,8 @@
     "operator": 2,
     "guard": "n % 7 == 0",
     "demand_index": 3,
-    "source": "data\\confirmation\\sl-2\\mutant.py",
-    "catalog": "data\\confirmation\\sl-2\\messages.po",
+    "source": "data/confirmation/sl-2/mutant.py",
+    "catalog": "data/confirmation/sl-2/messages.po",
     "domain_size": 1001,
     "failures": 138,
     "active_mutation": true,
@@ -128525,7 +128525,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.1465
+    "planning_ms": 2.0719
   },
   {
     "id": "sl-3-clean",
@@ -128535,8 +128535,8 @@
     "operator": 3,
     "guard": "n > 654 and n % 7 == 1",
     "demand_index": 2,
-    "source": "data\\confirmation\\sl-3\\clean.py",
-    "catalog": "data\\confirmation\\sl-3\\messages.po",
+    "source": "data/confirmation/sl-3/clean.py",
+    "catalog": "data/confirmation/sl-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -129885,7 +129885,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.9956
+    "planning_ms": 3.7086
   },
   {
     "id": "sl-3-mutant",
@@ -129895,8 +129895,8 @@
     "operator": 3,
     "guard": "n > 654 and n % 7 == 1",
     "demand_index": 2,
-    "source": "data\\confirmation\\sl-3\\mutant.py",
-    "catalog": "data\\confirmation\\sl-3\\messages.po",
+    "source": "data/confirmation/sl-3/mutant.py",
+    "catalog": "data/confirmation/sl-3/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -131245,7 +131245,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.8899
+    "planning_ms": 3.8798
   },
   {
     "id": "sl-4-clean",
@@ -131255,8 +131255,8 @@
     "operator": 4,
     "guard": "not (n < 140 or n >= 143)",
     "demand_index": 0,
-    "source": "data\\confirmation\\sl-4\\clean.py",
-    "catalog": "data\\confirmation\\sl-4\\messages.po",
+    "source": "data/confirmation/sl-4/clean.py",
+    "catalog": "data/confirmation/sl-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -132401,7 +132401,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2872
+    "planning_ms": 1.2409
   },
   {
     "id": "sl-4-mutant",
@@ -132411,8 +132411,8 @@
     "operator": 4,
     "guard": "not (n < 140 or n >= 143)",
     "demand_index": 0,
-    "source": "data\\confirmation\\sl-4\\mutant.py",
-    "catalog": "data\\confirmation\\sl-4\\messages.po",
+    "source": "data/confirmation/sl-4/mutant.py",
+    "catalog": "data/confirmation/sl-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -133557,7 +133557,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2727
+    "planning_ms": 1.2498
   },
   {
     "id": "sl-5-clean",
@@ -133567,8 +133567,8 @@
     "operator": 5,
     "guard": "n == 541 or n == 555",
     "demand_index": 3,
-    "source": "data\\confirmation\\sl-5\\clean.py",
-    "catalog": "data\\confirmation\\sl-5\\messages.po",
+    "source": "data/confirmation/sl-5/clean.py",
+    "catalog": "data/confirmation/sl-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -134713,7 +134713,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.304
+    "planning_ms": 1.2636
   },
   {
     "id": "sl-5-mutant",
@@ -134723,8 +134723,8 @@
     "operator": 5,
     "guard": "n == 541 or n == 555",
     "demand_index": 3,
-    "source": "data\\confirmation\\sl-5\\mutant.py",
-    "catalog": "data\\confirmation\\sl-5\\messages.po",
+    "source": "data/confirmation/sl-5/mutant.py",
+    "catalog": "data/confirmation/sl-5/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -135869,7 +135869,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3358
+    "planning_ms": 1.294
   },
   {
     "id": "sl-6-clean",
@@ -135879,8 +135879,8 @@
     "operator": 6,
     "guard": "340 <= n and n <= 423",
     "demand_index": 0,
-    "source": "data\\confirmation\\sl-6\\clean.py",
-    "catalog": "data\\confirmation\\sl-6\\messages.po",
+    "source": "data/confirmation/sl-6/clean.py",
+    "catalog": "data/confirmation/sl-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -137331,7 +137331,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5738
+    "planning_ms": 1.5298
   },
   {
     "id": "sl-6-mutant",
@@ -137341,8 +137341,8 @@
     "operator": 6,
     "guard": "340 <= n and n <= 423",
     "demand_index": 0,
-    "source": "data\\confirmation\\sl-6\\mutant.py",
-    "catalog": "data\\confirmation\\sl-6\\messages.po",
+    "source": "data/confirmation/sl-6/mutant.py",
+    "catalog": "data/confirmation/sl-6/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -138793,7 +138793,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5596
+    "planning_ms": 1.5602
   },
   {
     "id": "sl-7-clean",
@@ -138803,8 +138803,8 @@
     "operator": 7,
     "guard": "662 <= n < 664",
     "demand_index": 1,
-    "source": "data\\confirmation\\sl-7\\clean.py",
-    "catalog": "data\\confirmation\\sl-7\\messages.po",
+    "source": "data/confirmation/sl-7/clean.py",
+    "catalog": "data/confirmation/sl-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -139949,7 +139949,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.0696
+    "planning_ms": 1.0569
   },
   {
     "id": "sl-7-mutant",
@@ -139959,8 +139959,8 @@
     "operator": 7,
     "guard": "662 <= n < 664",
     "demand_index": 1,
-    "source": "data\\confirmation\\sl-7\\mutant.py",
-    "catalog": "data\\confirmation\\sl-7\\messages.po",
+    "source": "data/confirmation/sl-7/mutant.py",
+    "catalog": "data/confirmation/sl-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -141105,7 +141105,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9139
+    "planning_ms": 0.8525
   },
   {
     "id": "lt-0-clean",
@@ -141115,8 +141115,8 @@
     "operator": 0,
     "guard": "n == 75",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-0\\clean.py",
-    "catalog": "data\\confirmation\\lt-0\\messages.po",
+    "source": "data/confirmation/lt-0/clean.py",
+    "catalog": "data/confirmation/lt-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -142158,7 +142158,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.7593
+    "planning_ms": 0.7242
   },
   {
     "id": "lt-0-mutant",
@@ -142168,8 +142168,8 @@
     "operator": 0,
     "guard": "n == 75",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-0\\mutant.py",
-    "catalog": "data\\confirmation\\lt-0\\messages.po",
+    "source": "data/confirmation/lt-0/mutant.py",
+    "catalog": "data/confirmation/lt-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -143211,7 +143211,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.7442
+    "planning_ms": 0.7289
   },
   {
     "id": "lt-1-clean",
@@ -143221,8 +143221,8 @@
     "operator": 1,
     "guard": "n >= 531 and n < 538",
     "demand_index": 0,
-    "source": "data\\confirmation\\lt-1\\clean.py",
-    "catalog": "data\\confirmation\\lt-1\\messages.po",
+    "source": "data/confirmation/lt-1/clean.py",
+    "catalog": "data/confirmation/lt-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -144366,7 +144366,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3267
+    "planning_ms": 1.1946
   },
   {
     "id": "lt-1-mutant",
@@ -144376,8 +144376,8 @@
     "operator": 1,
     "guard": "n >= 531 and n < 538",
     "demand_index": 0,
-    "source": "data\\confirmation\\lt-1\\mutant.py",
-    "catalog": "data\\confirmation\\lt-1\\messages.po",
+    "source": "data/confirmation/lt-1/mutant.py",
+    "catalog": "data/confirmation/lt-1/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -145521,7 +145521,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2458
+    "planning_ms": 1.1882
   },
   {
     "id": "lt-2-clean",
@@ -145531,8 +145531,8 @@
     "operator": 2,
     "guard": "n % 7 == 4",
     "demand_index": 1,
-    "source": "data\\confirmation\\lt-2\\clean.py",
-    "catalog": "data\\confirmation\\lt-2\\messages.po",
+    "source": "data/confirmation/lt-2/clean.py",
+    "catalog": "data/confirmation/lt-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -146778,7 +146778,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.1488
+    "planning_ms": 2.0862
   },
   {
     "id": "lt-2-mutant",
@@ -146788,8 +146788,8 @@
     "operator": 2,
     "guard": "n % 7 == 4",
     "demand_index": 1,
-    "source": "data\\confirmation\\lt-2\\mutant.py",
-    "catalog": "data\\confirmation\\lt-2\\messages.po",
+    "source": "data/confirmation/lt-2/mutant.py",
+    "catalog": "data/confirmation/lt-2/messages.po",
     "domain_size": 1001,
     "failures": 103,
     "active_mutation": true,
@@ -148035,7 +148035,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0106
+    "planning_ms": 2.0402
   },
   {
     "id": "lt-3-clean",
@@ -148045,8 +148045,8 @@
     "operator": 3,
     "guard": "n > 677 and n % 7 == 5",
     "demand_index": 0,
-    "source": "data\\confirmation\\lt-3\\clean.py",
-    "catalog": "data\\confirmation\\lt-3\\messages.po",
+    "source": "data/confirmation/lt-3/clean.py",
+    "catalog": "data/confirmation/lt-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -149292,7 +149292,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.7718
+    "planning_ms": 3.7582
   },
   {
     "id": "lt-3-mutant",
@@ -149302,8 +149302,8 @@
     "operator": 3,
     "guard": "n > 677 and n % 7 == 5",
     "demand_index": 0,
-    "source": "data\\confirmation\\lt-3\\mutant.py",
-    "catalog": "data\\confirmation\\lt-3\\messages.po",
+    "source": "data/confirmation/lt-3/mutant.py",
+    "catalog": "data/confirmation/lt-3/messages.po",
     "domain_size": 1001,
     "failures": 5,
     "active_mutation": true,
@@ -150549,7 +150549,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.7954
+    "planning_ms": 3.8355
   },
   {
     "id": "lt-4-clean",
@@ -150559,8 +150559,8 @@
     "operator": 4,
     "guard": "not (n < 153 or n >= 156)",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-4\\clean.py",
-    "catalog": "data\\confirmation\\lt-4\\messages.po",
+    "source": "data/confirmation/lt-4/clean.py",
+    "catalog": "data/confirmation/lt-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -151602,7 +151602,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2592
+    "planning_ms": 1.2572
   },
   {
     "id": "lt-4-mutant",
@@ -151612,8 +151612,8 @@
     "operator": 4,
     "guard": "not (n < 153 or n >= 156)",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-4\\mutant.py",
-    "catalog": "data\\confirmation\\lt-4\\messages.po",
+    "source": "data/confirmation/lt-4/mutant.py",
+    "catalog": "data/confirmation/lt-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -152655,7 +152655,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3313
+    "planning_ms": 1.2439
   },
   {
     "id": "lt-5-clean",
@@ -152665,8 +152665,8 @@
     "operator": 5,
     "guard": "n == 65 or n == 118",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-5\\clean.py",
-    "catalog": "data\\confirmation\\lt-5\\messages.po",
+    "source": "data/confirmation/lt-5/clean.py",
+    "catalog": "data/confirmation/lt-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -153810,7 +153810,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.304
+    "planning_ms": 1.303
   },
   {
     "id": "lt-5-mutant",
@@ -153820,8 +153820,8 @@
     "operator": 5,
     "guard": "n == 65 or n == 118",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-5\\mutant.py",
-    "catalog": "data\\confirmation\\lt-5\\messages.po",
+    "source": "data/confirmation/lt-5/mutant.py",
+    "catalog": "data/confirmation/lt-5/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -154965,7 +154965,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2846
+    "planning_ms": 1.3085
   },
   {
     "id": "lt-6-clean",
@@ -154975,8 +154975,8 @@
     "operator": 6,
     "guard": "201 <= n and n <= 259",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-6\\clean.py",
-    "catalog": "data\\confirmation\\lt-6\\messages.po",
+    "source": "data/confirmation/lt-6/clean.py",
+    "catalog": "data/confirmation/lt-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -156222,7 +156222,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4763
+    "planning_ms": 1.466
   },
   {
     "id": "lt-6-mutant",
@@ -156232,8 +156232,8 @@
     "operator": 6,
     "guard": "201 <= n and n <= 259",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-6\\mutant.py",
-    "catalog": "data\\confirmation\\lt-6\\messages.po",
+    "source": "data/confirmation/lt-6/mutant.py",
+    "catalog": "data/confirmation/lt-6/messages.po",
     "domain_size": 1001,
     "failures": 14,
     "active_mutation": true,
@@ -157479,7 +157479,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4288
+    "planning_ms": 1.4414
   },
   {
     "id": "lt-7-clean",
@@ -157489,8 +157489,8 @@
     "operator": 7,
     "guard": "250 <= n < 252",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-7\\clean.py",
-    "catalog": "data\\confirmation\\lt-7\\messages.po",
+    "source": "data/confirmation/lt-7/clean.py",
+    "catalog": "data/confirmation/lt-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -158634,7 +158634,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.0748
+    "planning_ms": 1.0143
   },
   {
     "id": "lt-7-mutant",
@@ -158644,8 +158644,8 @@
     "operator": 7,
     "guard": "250 <= n < 252",
     "demand_index": 2,
-    "source": "data\\confirmation\\lt-7\\mutant.py",
-    "catalog": "data\\confirmation\\lt-7\\messages.po",
+    "source": "data/confirmation/lt-7/mutant.py",
+    "catalog": "data/confirmation/lt-7/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -159789,7 +159789,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8776
+    "planning_ms": 0.8512
   },
   {
     "id": "lv-0-clean",
@@ -159799,8 +159799,8 @@
     "operator": 0,
     "guard": "n == 681",
     "demand_index": 2,
-    "source": "data\\confirmation\\lv-0\\clean.py",
-    "catalog": "data\\confirmation\\lv-0\\messages.po",
+    "source": "data/confirmation/lv-0/clean.py",
+    "catalog": "data/confirmation/lv-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -160842,7 +160842,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8135
+    "planning_ms": 0.821
   },
   {
     "id": "lv-0-mutant",
@@ -160852,8 +160852,8 @@
     "operator": 0,
     "guard": "n == 681",
     "demand_index": 2,
-    "source": "data\\confirmation\\lv-0\\mutant.py",
-    "catalog": "data\\confirmation\\lv-0\\messages.po",
+    "source": "data/confirmation/lv-0/mutant.py",
+    "catalog": "data/confirmation/lv-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -161895,7 +161895,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.839
+    "planning_ms": 0.7832
   },
   {
     "id": "lv-1-clean",
@@ -161905,8 +161905,8 @@
     "operator": 1,
     "guard": "n >= 503 and n < 510",
     "demand_index": 1,
-    "source": "data\\confirmation\\lv-1\\clean.py",
-    "catalog": "data\\confirmation\\lv-1\\messages.po",
+    "source": "data/confirmation/lv-1/clean.py",
+    "catalog": "data/confirmation/lv-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -162948,7 +162948,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1736
+    "planning_ms": 1.1228
   },
   {
     "id": "lv-1-mutant",
@@ -162958,8 +162958,8 @@
     "operator": 1,
     "guard": "n >= 503 and n < 510",
     "demand_index": 1,
-    "source": "data\\confirmation\\lv-1\\mutant.py",
-    "catalog": "data\\confirmation\\lv-1\\messages.po",
+    "source": "data/confirmation/lv-1/mutant.py",
+    "catalog": "data/confirmation/lv-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -164001,7 +164001,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.1471
+    "planning_ms": 1.1149
   },
   {
     "id": "lv-2-clean",
@@ -164011,8 +164011,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 2,
-    "source": "data\\confirmation\\lv-2\\clean.py",
-    "catalog": "data\\confirmation\\lv-2\\messages.po",
+    "source": "data/confirmation/lv-2/clean.py",
+    "catalog": "data/confirmation/lv-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -165156,7 +165156,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0139
+    "planning_ms": 1.9733
   },
   {
     "id": "lv-2-mutant",
@@ -165166,8 +165166,8 @@
     "operator": 2,
     "guard": "n % 7 == 1",
     "demand_index": 2,
-    "source": "data\\confirmation\\lv-2\\mutant.py",
-    "catalog": "data\\confirmation\\lv-2\\messages.po",
+    "source": "data/confirmation/lv-2/mutant.py",
+    "catalog": "data/confirmation/lv-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -166311,7 +166311,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 2.0124
+    "planning_ms": 1.9376
   },
   {
     "id": "lv-3-clean",
@@ -166321,8 +166321,8 @@
     "operator": 3,
     "guard": "n > 77 and n % 7 == 1",
     "demand_index": 1,
-    "source": "data\\confirmation\\lv-3\\clean.py",
-    "catalog": "data\\confirmation\\lv-3\\messages.po",
+    "source": "data/confirmation/lv-3/clean.py",
+    "catalog": "data/confirmation/lv-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -167466,7 +167466,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.6364
+    "planning_ms": 3.4686
   },
   {
     "id": "lv-3-mutant",
@@ -167476,8 +167476,8 @@
     "operator": 3,
     "guard": "n > 77 and n % 7 == 1",
     "demand_index": 1,
-    "source": "data\\confirmation\\lv-3\\mutant.py",
-    "catalog": "data\\confirmation\\lv-3\\messages.po",
+    "source": "data/confirmation/lv-3/mutant.py",
+    "catalog": "data/confirmation/lv-3/messages.po",
     "domain_size": 1001,
     "failures": 121,
     "active_mutation": true,
@@ -168621,7 +168621,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.661
+    "planning_ms": 3.4221
   },
   {
     "id": "lv-4-clean",
@@ -168631,8 +168631,8 @@
     "operator": 4,
     "guard": "not (n < 262 or n >= 265)",
     "demand_index": 2,
-    "source": "data\\confirmation\\lv-4\\clean.py",
-    "catalog": "data\\confirmation\\lv-4\\messages.po",
+    "source": "data/confirmation/lv-4/clean.py",
+    "catalog": "data/confirmation/lv-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -169674,7 +169674,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2052
+    "planning_ms": 1.2164
   },
   {
     "id": "lv-4-mutant",
@@ -169684,8 +169684,8 @@
     "operator": 4,
     "guard": "not (n < 262 or n >= 265)",
     "demand_index": 2,
-    "source": "data\\confirmation\\lv-4\\mutant.py",
-    "catalog": "data\\confirmation\\lv-4\\messages.po",
+    "source": "data/confirmation/lv-4/mutant.py",
+    "catalog": "data/confirmation/lv-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -170727,7 +170727,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2522
+    "planning_ms": 1.2847
   },
   {
     "id": "lv-5-clean",
@@ -170737,8 +170737,8 @@
     "operator": 5,
     "guard": "n == 553 or n == 648",
     "demand_index": 1,
-    "source": "data\\confirmation\\lv-5\\clean.py",
-    "catalog": "data\\confirmation\\lv-5\\messages.po",
+    "source": "data/confirmation/lv-5/clean.py",
+    "catalog": "data/confirmation/lv-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -171780,7 +171780,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5653
+    "planning_ms": 1.5369
   },
   {
     "id": "lv-5-mutant",
@@ -171790,8 +171790,8 @@
     "operator": 5,
     "guard": "n == 553 or n == 648",
     "demand_index": 1,
-    "source": "data\\confirmation\\lv-5\\mutant.py",
-    "catalog": "data\\confirmation\\lv-5\\messages.po",
+    "source": "data/confirmation/lv-5/mutant.py",
+    "catalog": "data/confirmation/lv-5/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -172833,7 +172833,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.6534
+    "planning_ms": 1.5062
   },
   {
     "id": "lv-6-clean",
@@ -172843,8 +172843,8 @@
     "operator": 6,
     "guard": "578 <= n and n <= 602",
     "demand_index": 1,
-    "source": "data\\confirmation\\lv-6\\clean.py",
-    "catalog": "data\\confirmation\\lv-6\\messages.po",
+    "source": "data/confirmation/lv-6/clean.py",
+    "catalog": "data/confirmation/lv-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -173988,7 +173988,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.3124
+    "planning_ms": 1.2337
   },
   {
     "id": "lv-6-mutant",
@@ -173998,8 +173998,8 @@
     "operator": 6,
     "guard": "578 <= n and n <= 602",
     "demand_index": 1,
-    "source": "data\\confirmation\\lv-6\\mutant.py",
-    "catalog": "data\\confirmation\\lv-6\\messages.po",
+    "source": "data/confirmation/lv-6/mutant.py",
+    "catalog": "data/confirmation/lv-6/messages.po",
     "domain_size": 1001,
     "failures": 22,
     "active_mutation": true,
@@ -175143,7 +175143,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.302
+    "planning_ms": 1.2066
   },
   {
     "id": "lv-7-clean",
@@ -175153,8 +175153,8 @@
     "operator": 7,
     "guard": "86 <= n < 88",
     "demand_index": 2,
-    "source": "data\\confirmation\\lv-7\\clean.py",
-    "catalog": "data\\confirmation\\lv-7\\messages.po",
+    "source": "data/confirmation/lv-7/clean.py",
+    "catalog": "data/confirmation/lv-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -176196,7 +176196,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8129
+    "planning_ms": 0.7841
   },
   {
     "id": "lv-7-mutant",
@@ -176206,8 +176206,8 @@
     "operator": 7,
     "guard": "86 <= n < 88",
     "demand_index": 2,
-    "source": "data\\confirmation\\lv-7\\mutant.py",
-    "catalog": "data\\confirmation\\lv-7\\messages.po",
+    "source": "data/confirmation/lv-7/mutant.py",
+    "catalog": "data/confirmation/lv-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -177249,7 +177249,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8038
+    "planning_ms": 0.7621
   },
   {
     "id": "ro-0-clean",
@@ -177259,8 +177259,8 @@
     "operator": 0,
     "guard": "n == 736",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-0\\clean.py",
-    "catalog": "data\\confirmation\\ro-0\\messages.po",
+    "source": "data/confirmation/ro-0/clean.py",
+    "catalog": "data/confirmation/ro-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -178302,7 +178302,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.7769
+    "planning_ms": 0.7506
   },
   {
     "id": "ro-0-mutant",
@@ -178312,8 +178312,8 @@
     "operator": 0,
     "guard": "n == 736",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-0\\mutant.py",
-    "catalog": "data\\confirmation\\ro-0\\messages.po",
+    "source": "data/confirmation/ro-0/mutant.py",
+    "catalog": "data/confirmation/ro-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -179355,7 +179355,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.7577
+    "planning_ms": 0.7511
   },
   {
     "id": "ro-1-clean",
@@ -179365,8 +179365,8 @@
     "operator": 1,
     "guard": "n >= 37 and n < 44",
     "demand_index": 2,
-    "source": "data\\confirmation\\ro-1\\clean.py",
-    "catalog": "data\\confirmation\\ro-1\\messages.po",
+    "source": "data/confirmation/ro-1/clean.py",
+    "catalog": "data/confirmation/ro-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -180408,7 +180408,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9799
+    "planning_ms": 0.8872
   },
   {
     "id": "ro-1-mutant",
@@ -180418,8 +180418,8 @@
     "operator": 1,
     "guard": "n >= 37 and n < 44",
     "demand_index": 2,
-    "source": "data\\confirmation\\ro-1\\mutant.py",
-    "catalog": "data\\confirmation\\ro-1\\messages.po",
+    "source": "data/confirmation/ro-1/mutant.py",
+    "catalog": "data/confirmation/ro-1/messages.po",
     "domain_size": 1001,
     "failures": 7,
     "active_mutation": true,
@@ -181461,7 +181461,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.9172
+    "planning_ms": 0.8893
   },
   {
     "id": "ro-2-clean",
@@ -181471,8 +181471,8 @@
     "operator": 2,
     "guard": "n % 7 == 2",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-2\\clean.py",
-    "catalog": "data\\confirmation\\ro-2\\messages.po",
+    "source": "data/confirmation/ro-2/clean.py",
+    "catalog": "data/confirmation/ro-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -182616,7 +182616,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.9846
+    "planning_ms": 1.9545
   },
   {
     "id": "ro-2-mutant",
@@ -182626,8 +182626,8 @@
     "operator": 2,
     "guard": "n % 7 == 2",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-2\\mutant.py",
-    "catalog": "data\\confirmation\\ro-2\\messages.po",
+    "source": "data/confirmation/ro-2/mutant.py",
+    "catalog": "data/confirmation/ro-2/messages.po",
     "domain_size": 1001,
     "failures": 27,
     "active_mutation": true,
@@ -183771,7 +183771,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.9552
+    "planning_ms": 1.9521
   },
   {
     "id": "ro-3-clean",
@@ -183781,8 +183781,8 @@
     "operator": 3,
     "guard": "n > 235 and n % 7 == 3",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-3\\clean.py",
-    "catalog": "data\\confirmation\\ro-3\\messages.po",
+    "source": "data/confirmation/ro-3/clean.py",
+    "catalog": "data/confirmation/ro-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -184926,7 +184926,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 3.9753
+    "planning_ms": 3.9653
   },
   {
     "id": "ro-3-mutant",
@@ -184936,8 +184936,8 @@
     "operator": 3,
     "guard": "n > 235 and n % 7 == 3",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-3\\mutant.py",
-    "catalog": "data\\confirmation\\ro-3\\messages.po",
+    "source": "data/confirmation/ro-3/mutant.py",
+    "catalog": "data/confirmation/ro-3/messages.po",
     "domain_size": 1001,
     "failures": 19,
     "active_mutation": true,
@@ -186081,7 +186081,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 4.1514
+    "planning_ms": 4.1327
   },
   {
     "id": "ro-4-clean",
@@ -186091,8 +186091,8 @@
     "operator": 4,
     "guard": "not (n < 650 or n >= 653)",
     "demand_index": 2,
-    "source": "data\\confirmation\\ro-4\\clean.py",
-    "catalog": "data\\confirmation\\ro-4\\messages.po",
+    "source": "data/confirmation/ro-4/clean.py",
+    "catalog": "data/confirmation/ro-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -187134,7 +187134,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2592
+    "planning_ms": 1.2018
   },
   {
     "id": "ro-4-mutant",
@@ -187144,8 +187144,8 @@
     "operator": 4,
     "guard": "not (n < 650 or n >= 653)",
     "demand_index": 2,
-    "source": "data\\confirmation\\ro-4\\mutant.py",
-    "catalog": "data\\confirmation\\ro-4\\messages.po",
+    "source": "data/confirmation/ro-4/mutant.py",
+    "catalog": "data/confirmation/ro-4/messages.po",
     "domain_size": 1001,
     "failures": 3,
     "active_mutation": true,
@@ -188187,7 +188187,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.2441
+    "planning_ms": 1.1872
   },
   {
     "id": "ro-5-clean",
@@ -188197,8 +188197,8 @@
     "operator": 5,
     "guard": "n == 495 or n == 560",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-5\\clean.py",
-    "catalog": "data\\confirmation\\ro-5\\messages.po",
+    "source": "data/confirmation/ro-5/clean.py",
+    "catalog": "data/confirmation/ro-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -189240,7 +189240,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4295
+    "planning_ms": 1.4093
   },
   {
     "id": "ro-5-mutant",
@@ -189250,8 +189250,8 @@
     "operator": 5,
     "guard": "n == 495 or n == 560",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-5\\mutant.py",
-    "catalog": "data\\confirmation\\ro-5\\messages.po",
+    "source": "data/confirmation/ro-5/mutant.py",
+    "catalog": "data/confirmation/ro-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -190293,7 +190293,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.4466
+    "planning_ms": 1.3807
   },
   {
     "id": "ro-6-clean",
@@ -190303,8 +190303,8 @@
     "operator": 6,
     "guard": "377 <= n and n <= 497",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-6\\clean.py",
-    "catalog": "data\\confirmation\\ro-6\\messages.po",
+    "source": "data/confirmation/ro-6/clean.py",
+    "catalog": "data/confirmation/ro-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -191448,7 +191448,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.5984
+    "planning_ms": 1.5323
   },
   {
     "id": "ro-6-mutant",
@@ -191458,8 +191458,8 @@
     "operator": 6,
     "guard": "377 <= n and n <= 497",
     "demand_index": 1,
-    "source": "data\\confirmation\\ro-6\\mutant.py",
-    "catalog": "data\\confirmation\\ro-6\\messages.po",
+    "source": "data/confirmation/ro-6/mutant.py",
+    "catalog": "data/confirmation/ro-6/messages.po",
     "domain_size": 1001,
     "failures": 19,
     "active_mutation": true,
@@ -192603,7 +192603,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 1.6025
+    "planning_ms": 1.5104
   },
   {
     "id": "ro-7-clean",
@@ -192613,8 +192613,8 @@
     "operator": 7,
     "guard": "203 <= n < 205",
     "demand_index": 0,
-    "source": "data\\confirmation\\ro-7\\clean.py",
-    "catalog": "data\\confirmation\\ro-7\\messages.po",
+    "source": "data/confirmation/ro-7/clean.py",
+    "catalog": "data/confirmation/ro-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -193656,7 +193656,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8449
+    "planning_ms": 0.8352
   },
   {
     "id": "ro-7-mutant",
@@ -193666,8 +193666,8 @@
     "operator": 7,
     "guard": "203 <= n < 205",
     "demand_index": 0,
-    "source": "data\\confirmation\\ro-7\\mutant.py",
-    "catalog": "data\\confirmation\\ro-7\\messages.po",
+    "source": "data/confirmation/ro-7/mutant.py",
+    "catalog": "data/confirmation/ro-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -194709,7 +194709,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.8327
+    "planning_ms": 0.8658
   },
   {
     "id": "ga-0-clean",
@@ -194719,8 +194719,8 @@
     "operator": 0,
     "guard": "n == 582",
     "demand_index": 4,
-    "source": "data\\confirmation\\ga-0\\clean.py",
-    "catalog": "data\\confirmation\\ga-0\\messages.po",
+    "source": "data/confirmation/ga-0/clean.py",
+    "catalog": "data/confirmation/ga-0/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -195968,7 +195968,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4414
+    "planning_ms": 0.4509
   },
   {
     "id": "ga-0-mutant",
@@ -195978,8 +195978,8 @@
     "operator": 0,
     "guard": "n == 582",
     "demand_index": 4,
-    "source": "data\\confirmation\\ga-0\\mutant.py",
-    "catalog": "data\\confirmation\\ga-0\\messages.po",
+    "source": "data/confirmation/ga-0/mutant.py",
+    "catalog": "data/confirmation/ga-0/messages.po",
     "domain_size": 1001,
     "failures": 1,
     "active_mutation": true,
@@ -197227,7 +197227,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.447
+    "planning_ms": 0.4234
   },
   {
     "id": "ga-1-clean",
@@ -197237,8 +197237,8 @@
     "operator": 1,
     "guard": "n >= 738 and n < 745",
     "demand_index": 1,
-    "source": "data\\confirmation\\ga-1\\clean.py",
-    "catalog": "data\\confirmation\\ga-1\\messages.po",
+    "source": "data/confirmation/ga-1/clean.py",
+    "catalog": "data/confirmation/ga-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -198486,7 +198486,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4853
+    "planning_ms": 0.4801
   },
   {
     "id": "ga-1-mutant",
@@ -198496,8 +198496,8 @@
     "operator": 1,
     "guard": "n >= 738 and n < 745",
     "demand_index": 1,
-    "source": "data\\confirmation\\ga-1\\mutant.py",
-    "catalog": "data\\confirmation\\ga-1\\messages.po",
+    "source": "data/confirmation/ga-1/mutant.py",
+    "catalog": "data/confirmation/ga-1/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -199745,7 +199745,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4744
+    "planning_ms": 0.4694
   },
   {
     "id": "ga-2-clean",
@@ -199755,8 +199755,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 4,
-    "source": "data\\confirmation\\ga-2\\clean.py",
-    "catalog": "data\\confirmation\\ga-2\\messages.po",
+    "source": "data/confirmation/ga-2/clean.py",
+    "catalog": "data/confirmation/ga-2/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -201106,7 +201106,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5085
+    "planning_ms": 0.5633
   },
   {
     "id": "ga-2-mutant",
@@ -201116,8 +201116,8 @@
     "operator": 2,
     "guard": "n % 7 == 5",
     "demand_index": 4,
-    "source": "data\\confirmation\\ga-2\\mutant.py",
-    "catalog": "data\\confirmation\\ga-2\\messages.po",
+    "source": "data/confirmation/ga-2/mutant.py",
+    "catalog": "data/confirmation/ga-2/messages.po",
     "domain_size": 1001,
     "failures": 142,
     "active_mutation": true,
@@ -202467,7 +202467,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4942
+    "planning_ms": 0.4816
   },
   {
     "id": "ga-3-clean",
@@ -202477,8 +202477,8 @@
     "operator": 3,
     "guard": "n > 505 and n % 7 == 5",
     "demand_index": 3,
-    "source": "data\\confirmation\\ga-3\\clean.py",
-    "catalog": "data\\confirmation\\ga-3\\messages.po",
+    "source": "data/confirmation/ga-3/clean.py",
+    "catalog": "data/confirmation/ga-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -203726,7 +203726,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5469
+    "planning_ms": 0.526
   },
   {
     "id": "ga-3-mutant",
@@ -203736,8 +203736,8 @@
     "operator": 3,
     "guard": "n > 505 and n % 7 == 5",
     "demand_index": 3,
-    "source": "data\\confirmation\\ga-3\\mutant.py",
-    "catalog": "data\\confirmation\\ga-3\\messages.po",
+    "source": "data/confirmation/ga-3/mutant.py",
+    "catalog": "data/confirmation/ga-3/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -204985,7 +204985,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5514
+    "planning_ms": 0.5063
   },
   {
     "id": "ga-4-clean",
@@ -204995,8 +204995,8 @@
     "operator": 4,
     "guard": "not (n < 132 or n >= 135)",
     "demand_index": 0,
-    "source": "data\\confirmation\\ga-4\\clean.py",
-    "catalog": "data\\confirmation\\ga-4\\messages.po",
+    "source": "data/confirmation/ga-4/clean.py",
+    "catalog": "data/confirmation/ga-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -206244,7 +206244,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4991
+    "planning_ms": 0.4964
   },
   {
     "id": "ga-4-mutant",
@@ -206254,8 +206254,8 @@
     "operator": 4,
     "guard": "not (n < 132 or n >= 135)",
     "demand_index": 0,
-    "source": "data\\confirmation\\ga-4\\mutant.py",
-    "catalog": "data\\confirmation\\ga-4\\messages.po",
+    "source": "data/confirmation/ga-4/mutant.py",
+    "catalog": "data/confirmation/ga-4/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -207503,7 +207503,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5516
+    "planning_ms": 0.4791
   },
   {
     "id": "ga-5-clean",
@@ -207513,8 +207513,8 @@
     "operator": 5,
     "guard": "n == 353 or n == 420",
     "demand_index": 3,
-    "source": "data\\confirmation\\ga-5\\clean.py",
-    "catalog": "data\\confirmation\\ga-5\\messages.po",
+    "source": "data/confirmation/ga-5/clean.py",
+    "catalog": "data/confirmation/ga-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -208762,7 +208762,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.5134
+    "planning_ms": 0.645
   },
   {
     "id": "ga-5-mutant",
@@ -208772,8 +208772,8 @@
     "operator": 5,
     "guard": "n == 353 or n == 420",
     "demand_index": 3,
-    "source": "data\\confirmation\\ga-5\\mutant.py",
-    "catalog": "data\\confirmation\\ga-5\\messages.po",
+    "source": "data/confirmation/ga-5/mutant.py",
+    "catalog": "data/confirmation/ga-5/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -210021,7 +210021,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.501
+    "planning_ms": 0.473
   },
   {
     "id": "ga-6-clean",
@@ -210031,8 +210031,8 @@
     "operator": 6,
     "guard": "324 <= n and n <= 420",
     "demand_index": 2,
-    "source": "data\\confirmation\\ga-6\\clean.py",
-    "catalog": "data\\confirmation\\ga-6\\messages.po",
+    "source": "data/confirmation/ga-6/clean.py",
+    "catalog": "data/confirmation/ga-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -211280,7 +211280,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4863
+    "planning_ms": 0.501
   },
   {
     "id": "ga-6-mutant",
@@ -211290,8 +211290,8 @@
     "operator": 6,
     "guard": "324 <= n and n <= 420",
     "demand_index": 2,
-    "source": "data\\confirmation\\ga-6\\mutant.py",
-    "catalog": "data\\confirmation\\ga-6\\messages.po",
+    "source": "data/confirmation/ga-6/mutant.py",
+    "catalog": "data/confirmation/ga-6/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -212539,7 +212539,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4802
+    "planning_ms": 0.4751
   },
   {
     "id": "ga-7-clean",
@@ -212549,8 +212549,8 @@
     "operator": 7,
     "guard": "372 <= n < 374",
     "demand_index": 4,
-    "source": "data\\confirmation\\ga-7\\clean.py",
-    "catalog": "data\\confirmation\\ga-7\\messages.po",
+    "source": "data/confirmation/ga-7/clean.py",
+    "catalog": "data/confirmation/ga-7/messages.po",
     "domain_size": 1001,
     "failures": 0,
     "active_mutation": false,
@@ -213798,7 +213798,7 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.495
+    "planning_ms": 0.4495
   },
   {
     "id": "ga-7-mutant",
@@ -213808,8 +213808,8 @@
     "operator": 7,
     "guard": "372 <= n < 374",
     "demand_index": 4,
-    "source": "data\\confirmation\\ga-7\\mutant.py",
-    "catalog": "data\\confirmation\\ga-7\\messages.po",
+    "source": "data/confirmation/ga-7/mutant.py",
+    "catalog": "data/confirmation/ga-7/messages.po",
     "domain_size": 1001,
     "failures": 2,
     "active_mutation": true,
@@ -215057,6 +215057,6 @@
     ],
     "babel_alarm": false,
     "babel_checks": [],
-    "planning_ms": 0.4539
+    "planning_ms": 0.4361
   }
 ]

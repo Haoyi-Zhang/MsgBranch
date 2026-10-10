@@ -9,20 +9,26 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def run():
     executable = shutil.which("msgfmt")
+    babel_result = json.loads((ROOT / "results/babel-cli.json").read_text(encoding="utf-8"))
+    babel_summary = babel_result["summary"]
     data = {
         "python": platform.python_version(), "platform": platform.platform(),
         "packages": {n: importlib.metadata.version(n) for n in ["Babel", "attrs", "pytz", "Jinja2", "pytest"]},
         "gnu_msgfmt": {
             "status": "available-not-measured" if executable else "unavailable",
             "path": executable,
-            "correct_replay_command": "msgfmt --check --check-format -o /dev/null messages.po",
+            "correct_replay_command": "msgfmt --check --check-format -o OUTPUT.mo messages.po",
             "format_configuration": "PO python-format or python-brace-format flags; not a --language option",
         },
         "babel_cli": {
             "status": "executed",
-            "command": "pybabel compile --use-fuzzy -i INPUT.po -o OUTPUT.mo",
+            "command": "pybabel compile -i INPUT.po -o OUTPUT.mo",
             "result": "results/babel-cli.json",
-            "note": "27 frozen catalogs plus two negative controls; this is Babel CLI, not GNU msgfmt",
+            "catalogs": babel_summary["catalogs"],
+            "successful_catalogs": babel_summary["cli_success"],
+            "diagnosed_catalog_errors": babel_summary["cli_failures"],
+            "negative_controls": len(babel_result["negative_controls"]),
+            "note": "All retained ordinary catalogs plus separate negative controls; common temporary inputs preserve message flags and clear only the template-header fuzzy marker. This is Babel CLI, not GNU msgfmt",
         },
         "msgbranch_project_auditor": {
             "status": "executed",

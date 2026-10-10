@@ -36,7 +36,7 @@ def generate():
             'environment':{'python':platform.python_version(),'babel':babel.__version__},
             'status':'fresh-seed generated confirmation after implementation freeze; same disclosed grammar, not a field holdout',
             'protocol':'8 guard families x 12 locales x paired clean/mutant; every generated pair retained; 100 uniform-random seeds per equal final execution budget'}
-    (root/'protocol.json').write_text(json.dumps(freeze,indent=2)+'\n')
+    (root/'protocol.json').write_text(json.dumps(freeze,indent=2)+'\n', encoding='utf-8', newline='\n')
     rng=random.Random(SEED); manifest=[]
     for locale in LOCALES:
         for op in range(8):
@@ -55,16 +55,16 @@ def generate():
             po=[line for line in po if not line.startswith(('"POT-Creation-Date:','"PO-Revision-Date:'))]
             base=f'{locale}-{op}'
             folder=root/base;folder.mkdir(exist_ok=True)
-            (folder/'messages.po').write_text('\n'.join(po)+'\n')
+            (folder/'messages.po').write_text('\n'.join(po)+'\n', encoding='utf-8', newline='\n')
             for mutant in (False,True):
                 name=base+('-mutant' if mutant else '-clean')
                 yes='{"n": n}' if mutant else '{"n": n, "owner": "Ada", "unused": "x"}'
                 src=f'def message(n):\n    msg = ngettext({singular!r}, {plural!r}, n)\n    args = {yes} if {guard} else {{"n": n, "owner": "Ada"}}\n    return msg % args\n'
-                path=folder/('mutant.py' if mutant else 'clean.py');path.write_text(src)
+                path=folder/('mutant.py' if mutant else 'clean.py');path.write_text(src, encoding='utf-8', newline='\n')
                 manifest.append({'id':name,'pair':base,'category':'mutation' if mutant else 'legitimate',
                                  'locale':locale,'operator':op,'guard':guard,'demand_index':need,
-                                 'source':str(path.relative_to(ROOT)), 'catalog':str((folder/'messages.po').relative_to(ROOT))})
-    (root/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+                                 'source':path.relative_to(ROOT).as_posix(), 'catalog':(folder/'messages.po').relative_to(ROOT).as_posix()})
+    (root/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n', encoding='utf-8', newline='\n')
     return manifest
 
 def selection(p,rt,high,source_only=False,branch_only=False):
@@ -149,8 +149,8 @@ def main():
       'selected_executions':sum(r['budget'] for r in summaries),
       'median_planning_calls':statistics.median(r['planning_calls'] for r in summaries),
       'max_planning_calls':max(r['planning_calls'] for r in summaries)}
-    (outdir/'confirmation.json').write_text(json.dumps(summaries,indent=2)+'\n')
-    (outdir/'confirmation-selected.json').write_text(json.dumps(selections,indent=2)+'\n')
-    (outdir/'confirmation-summary.json').write_text(json.dumps(total,indent=2)+'\n')
+    (outdir/'confirmation.json').write_text(json.dumps(summaries,indent=2)+'\n', encoding='utf-8', newline='\n')
+    (outdir/'confirmation-selected.json').write_text(json.dumps(selections,indent=2)+'\n', encoding='utf-8', newline='\n')
+    (outdir/'confirmation-summary.json').write_text(json.dumps(total,indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps(total,indent=2))
 if __name__=='__main__':main()
