@@ -221,7 +221,13 @@ def _integer_supplier_type(value: int) -> str:
         return "bounded-nonnegative-int"
     if 0 <= value <= 0x10FFFF:
         return "unicode-codepoint-int"
-    return "int"
+    # Integer presentation has no float range limit. Floating presentation
+    # converts first; preserve that separate range fact in the abstraction.
+    try:
+        float(value)
+    except OverflowError:
+        return "float-overflow-int"
+    return "finite-float-int"
 
 
 def _literal_supplier_type(node: ast.AST) -> str:
@@ -1171,7 +1177,7 @@ def _percent_requirement(code: str) -> str:
     if code in "oxX":
         return "int"
     if code in "eEfFgG":
-        return "number"
+        return "float-number"
     if code == "c":
         return "char"
     return "any"
@@ -1193,12 +1199,13 @@ def _brace_requirement(spec: str, conversion: str | None) -> str | None:
         return None
     code = match.group("code")
     if code is None:
-        # Alignment/width alone works for the admitted primitive types. Other
-        # modifiers without a presentation type have type-dependent semantics.
+        # Nonempty alignment/width requires a formatting implementation;
+        # object.__format__ accepts only the empty spec (e.g. None). Explicit
+        # string conversion happens before presentation and changes this case.
         if (match.group("align") == "=" or any(match.group(name) is not None
                 for name in ("sign", "alternate", "grouping", "precision"))):
             return None
-        return "any"
+        return "any" if conversion in {"s", "r", "a"} else "formattable"
     if code in "bcdnosxX" and match.group("precision") is not None and code != "s":
         return None
     if code == "n" and match.group("grouping") is not None:
@@ -1215,8 +1222,10 @@ def _brace_requirement(spec: str, conversion: str | None) -> str | None:
         return "codepoint"
     if code in "bdosxX":
         return "int" if code != "s" else "str"
-    if code in "eEfFgGn%":
+    if code == "n":
         return "number"
+    if code in "eEfFgG%":
+        return "float-number"
     return None
 
 
@@ -1225,6 +1234,12 @@ def _merge_requirement(existing: str | None, new: str) -> str:
         return new
     if new == "any" or new == existing:
         return existing
+    if existing == "formattable":
+        return new
+    if new == "formattable":
+        return existing
+    if {existing, new} <= {"number", "float-number"}:
+        return "float-number"
     if {existing, new} <= {"int", "decimal", "number"}:
         if "int" not in {existing, new}:
             return "decimal"
@@ -1357,13 +1372,20 @@ def _compatible(requirement: str, supplied: str) -> bool | None:
     if requirement in {"char", "codepoint"}:
         if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "bool"}:
             return True
-        if supplied == "int" or (requirement == "char" and supplied == "str"):
+        if supplied in {"int", "finite-float-int", "float-overflow-int"} or (requirement == "char" and supplied == "str"):
             return None
         return False
-    if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int"}:
+    if requirement == "float-number":
+        if supplied == "int":
+            return None  # An integer annotation alone does not bound conversion.
+        return supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "finite-float-int",
+                            "float", "finite-float", "nonfinite-float", "bool"}
+    if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "finite-float-int", "float-overflow-int"}:
         supplied = "int"
     if requirement == "any":
         return True
+    if requirement == "formattable":
+        return supplied in {"int", "bool", "str", "float", "finite-float", "nonfinite-float", "number"}
     if requirement == "int":
         return supplied in {"int", "bool"}
     if requirement == "decimal":

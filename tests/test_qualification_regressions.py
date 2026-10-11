@@ -251,3 +251,60 @@ def test_unresolved_precision_does_not_invent_valid_digits(tmp_path, mode):
     with pytest.raises(ValueError):
         _native(source, po, -1)
     assert finding["status"] == "unknown"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("spec", [">4", "*>4", "04"])
+def test_none_with_nonempty_alignment_is_not_clean(tmp_path, mode, spec):
+    pattern = "{x:" + spec + "}"
+    source = f'def render():\n    return gettext({pattern!r}).format(x=None)\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    with pytest.raises(TypeError):
+        _native(source, po)
+    assert finding["status"] == "error"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("pattern", ["{x}", "{x!s:>4}", "{x!r:>4}"])
+def test_none_without_spec_or_after_string_conversion_is_clean(tmp_path, mode, pattern):
+    source = f'def render():\n    return gettext({pattern!r}).format(x=None)\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    assert isinstance(_native(source, po), str)
+    assert finding["status"] == "clean"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("pattern", ["{x:f}", "{x:e}", "{x:g}", "{x:%}", "%(x)f", "%(x)e", "%(x)g"])
+def test_large_integer_float_conversion_is_not_clean(tmp_path, mode, pattern):
+    value = 10 ** 400
+    operation = f'gettext({pattern!r}).format(x={value})' if pattern.startswith("{") else f'gettext({pattern!r}) % {{"x": {value}}}'
+    source = f'def render():\n    return {operation}\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    with pytest.raises(OverflowError):
+        _native(source, po)
+    # Percent presentation inside braces is outside the current mixed-dialect
+    # parser; it must stay unknown, never turn into a success.
+    assert finding["status"] == ("unknown" if pattern == "{x:%}" else "error")
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("pattern", ["{x:f}", "%(x)f"])
+def test_unbounded_integer_float_conversion_is_unknown(tmp_path, mode, pattern):
+    operation = f'gettext({pattern!r}).format(x=value)' if pattern.startswith("{") else f'gettext({pattern!r}) % {{"x": value}}'
+    source = f'def render(value: int):\n    return {operation}\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    assert isinstance(_native(source, po, 17), str)
+    with pytest.raises(OverflowError):
+        _native(source, po, 10 ** 400)
+    assert finding["status"] == "unknown"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("code", ["d", "n", "x"])
+def test_large_integer_integer_presentation_remains_clean(tmp_path, mode, code):
+    value = 10 ** 400
+    pattern = "{x:" + code + "}"
+    source = f'def render():\n    return gettext({pattern!r}).format(x={value})\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    assert isinstance(_native(source, po), str)
+    assert finding["status"] == "clean"
