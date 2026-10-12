@@ -1337,6 +1337,10 @@ def pattern_requirements(pattern: str) -> PatternRequirements:
             return PatternRequirements("unknown", "percent", reason="dynamic width or precision is unsupported")
         code = match.group(2)
         if code == "%":
+            if match.group(0) != "%%":
+                return PatternRequirements(
+                    "unknown", "percent", reason="literal percent escape must be doubled without decorations"
+                )
             continue
         requirement = _percent_requirement(code)
         if match.group(1) is None:
