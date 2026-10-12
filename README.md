@@ -97,8 +97,6 @@ MsgBranch checks technical compatibility and documented fallback obligations. It
 - `data/holdout/PROTOCOL.json` records source identities and the retained external-regression scope.
 - `docs/references.csv` and `docs/references.json` are the verified bibliographic ledger used by the paper.
 
-## Licensing and research assistance
+## Materials
 
-New MsgBranch code and constructed fixtures are MIT. Retained third-party slices keep their original notices and licenses; the MsgBranch license does not relicense them. No fonts, credentials, chats, or private data are included.
-
-Language models assisted with implementation, experiment scripting, literature organization, and prose drafting. Every reported numeric result is produced by the retained local programs, every cited source is present in the reference ledger, and no model-generated translation is evaluated as human linguistic evidence.
+Local programs produce the reported numeric results; the reference ledger identifies the cited sources. Translation quality is not measured.
