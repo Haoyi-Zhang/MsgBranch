@@ -23,6 +23,7 @@ import math
 from pathlib import Path
 import re
 from string import Formatter
+import sys
 from typing import Any, Iterable, Mapping
 
 from .runtime import CatalogRuntime
@@ -94,6 +95,12 @@ class _Primitive:
     literal: Any = None
     has_literal: bool = False
     symbol: str | None = None
+
+
+@dataclass(frozen=True)
+class _ConversionValue:
+    name: str
+    value: Any
 
 
 @dataclass(frozen=True)
@@ -210,6 +217,10 @@ def _primitive_type(node: ast.AST) -> str:
     if isinstance(node, ast.BoolOp):
         return "unknown"  # and/or return operands, not necessarily bools.
     if isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
+        if node.func.id in {"float", "str", "int"}:
+            if len(node.args) == 1 and not node.keywords:
+                return _conversion_type(node.func.id, _literal_supplier_type(node.args[0]))
+            return "unknown"
         return {"str": "str", "int": "int", "float": "float", "bool": "bool", "len": "int"}.get(
             node.func.id, "unknown"
         )
@@ -221,6 +232,9 @@ def _integer_supplier_type(value: int) -> str:
         return "bounded-nonnegative-int"
     if 0 <= value <= 0x10FFFF:
         return "unicode-codepoint-int"
+    digit_limit = sys.get_int_max_str_digits()
+    if digit_limit and abs(value) >= 10 ** digit_limit:
+        return "decimal-overflow-int"
     # Integer presentation has no float range limit. Floating presentation
     # converts first; preserve that separate range fact in the abstraction.
     try:
@@ -228,6 +242,36 @@ def _integer_supplier_type(value: int) -> str:
     except OverflowError:
         return "float-overflow-int"
     return "finite-float-int"
+
+
+def _float_conversion_type(supplied: str) -> str:
+    # A float-producing call is not evidence that its argument can be coerced.
+    # In particular an unbounded or overflow-sized integer may raise first.
+    if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "finite-float-int",
+                    "float", "finite-float", "nonfinite-float", "bool"}:
+        return "float"
+    return "unknown"
+
+
+def _conversion_type(name: str, supplied: str) -> str:
+    if name == "float":
+        return _float_conversion_type(supplied)
+    integers = {"int", "bounded-nonnegative-int", "unicode-codepoint-int",
+                "finite-float-int", "float-overflow-int", "decimal-overflow-int"}
+    if name == "int":
+        if supplied in integers:
+            return supplied
+        if supplied == "bool":
+            return "bounded-nonnegative-int"
+        if supplied == "finite-float":
+            return "finite-float-int"
+        return "unknown"
+    if name == "str":
+        if supplied == "decimal-overflow-int" or (supplied == "int" and sys.get_int_max_str_digits()):
+            return "unknown"
+        if supplied in integers | {"str", "bool", "none", "float", "finite-float", "nonfinite-float"}:
+            return "str"
+    return "unknown"
 
 
 def _literal_supplier_type(node: ast.AST) -> str:
@@ -824,6 +868,12 @@ class _FlowScanner:
                 if isinstance(left, _Primitive) and isinstance(right, _Primitive):
                     if left.type_name == right.type_name == "int":
                         if right.has_literal and type(right.literal) is int:
+                            # Retain range facts for small literal powers without
+                            # evaluating an unbounded integer expression.
+                            if (left.has_literal and type(left.literal) is int
+                                    and 0 <= right.literal <= 4096
+                                    and abs(left.literal).bit_length() * right.literal <= 4096):
+                                return _Primitive("int", left.literal ** right.literal, True)
                             return _Primitive("int" if right.literal >= 0 else "float")
                 return _Primitive("unknown")
             if isinstance(node.op, (ast.Sub, ast.Mult, ast.FloorDiv, ast.Div)):
@@ -878,6 +928,10 @@ class _FlowScanner:
 
             if isinstance(node.func, ast.Name):
                 if node.func.id in {"str", "int", "float", "bool"} and len(node.args) == 1 and not node.keywords:
+                    if node.func.id in {"float", "str", "int"}:
+                        # Retain the argument until a witness supplies an actual
+                        # selector count; an annotation alone is still unbounded.
+                        return _ConversionValue(node.func.id, arguments[0])
                     return _Primitive(node.func.id)
                 if node.func.id == "len" and len(node.args) == 1 and not node.keywords:
                     return _Primitive("int")
@@ -919,6 +973,14 @@ def _env_dict(items: tuple[tuple[str, Any], ...]) -> dict[str, Any]:
 
 
 def _value_scalar(value: Any, count_var: str | None, count: int | None) -> Any:
+    if isinstance(value, _ConversionValue):
+        argument = _value_scalar(value.value, count_var, count)
+        if type(argument) not in (int, float, str, bool):
+            return None
+        try:
+            return {"str": str, "int": int, "float": float}[value.name](argument)
+        except (TypeError, ValueError, OverflowError):
+            return None
     if type(value) is bool:
         return value
     if isinstance(value, _Primitive):
@@ -995,7 +1057,7 @@ def _scalar(node: ast.AST, env: Mapping[str, Any], count_var: str | None, count:
                 return float(value)
             if node.func.id == "bool":
                 return bool(value)
-        except (TypeError, ValueError):
+        except (TypeError, ValueError, OverflowError):
             return None
     return None
 
@@ -1045,6 +1107,8 @@ def _condition(node: ast.AST, env: Mapping[str, Any], count_var: str | None, cou
 
 
 def _abstract_type(value: Any, count_var: str | None, count: int | None) -> str:
+    if isinstance(value, _ConversionValue):
+        return _conversion_type(value.name, _abstract_type(value.value, count_var, count))
     if isinstance(value, _Primitive):
         if count_var is not None and value.symbol == count_var and count is not None:
             return _integer_supplier_type(count)
@@ -1104,7 +1168,7 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
             named_types=named_types,
             positional_types=positional_types,
         )
-    if isinstance(value, _Primitive):
+    if isinstance(value, (_Primitive, _ConversionValue)):
         primitive_type = _abstract_type(value, count_var, count)
         if primitive_type == "unknown":
             return Supplier("unknown", mode, reason="dynamic formatting supplier")
@@ -1180,12 +1244,12 @@ def _percent_requirement(code: str) -> str:
         return "float-number"
     if code == "c":
         return "char"
-    return "any"
+    return "stringable"
 
 
 def _brace_requirement(spec: str, conversion: str | None) -> str | None:
     if not spec:
-        return "any"
+        return "stringable"
     # Admit a bounded mini-language, not an arbitrary prefix ending in a
     # familiar type code. Nested width/precision fields are checked separately.
     match = re.fullmatch(
@@ -1205,7 +1269,7 @@ def _brace_requirement(spec: str, conversion: str | None) -> str | None:
         if (match.group("align") == "=" or any(match.group(name) is not None
                 for name in ("sign", "alternate", "grouping", "precision"))):
             return None
-        return "any" if conversion in {"s", "r", "a"} else "formattable"
+        return "stringable" if conversion in {"s", "r", "a"} else "formattable"
     if code in "bcdnosxX" and match.group("precision") is not None and code != "s":
         return None
     if code == "n" and match.group("grouping") is not None:
@@ -1217,10 +1281,12 @@ def _brace_requirement(spec: str, conversion: str | None) -> str | None:
         return None
     if conversion in {"s", "r", "a"}:
         # Native conversion produces a string *before* applying the spec.
-        return "any" if code == "s" else "invalid-converted-string-spec"
+        return "stringable" if code == "s" else "invalid-converted-string-spec"
     if code == "c":
         return "codepoint"
     if code in "bdosxX":
+        if code == "d":
+            return "decimal-int"
         return "int" if code != "s" else "str"
     if code == "n":
         return "number"
@@ -1234,24 +1300,26 @@ def _merge_requirement(existing: str | None, new: str) -> str:
         return new
     if new == "any" or new == existing:
         return existing
-    if existing == "formattable":
-        return new
-    if new == "formattable":
-        return existing
+    if {existing, new} <= {"stringable", "formattable"}:
+        return "formattable"
+    if existing in {"stringable", "formattable"}:
+        return "decimal-int" if new == "int" else new
+    if new in {"stringable", "formattable"}:
+        return "decimal-int" if existing == "int" else existing
     if {existing, new} <= {"number", "float-number"}:
         return "float-number"
-    if {existing, new} <= {"int", "decimal", "number"}:
-        if "int" not in {existing, new}:
+    if {existing, new} <= {"int", "decimal-int", "decimal", "number"}:
+        if not {"int", "decimal-int"} & {existing, new}:
             return "decimal"
-        return "int"
+        return "decimal-int"
     if {existing, new} <= {"int", "char"}:
         return "codepoint"
     if "format-digits" in {existing, new} and {existing, new} <= {
-        "format-digits", "codepoint", "char", "int", "decimal", "number"
+        "format-digits", "codepoint", "char", "int", "decimal-int", "decimal", "number"
     }:
         return "format-digits"
     if "codepoint" in {existing, new} and {existing, new} <= {
-        "codepoint", "char", "int", "decimal", "number"
+        "codepoint", "char", "int", "decimal-int", "decimal", "number"
     }:
         return "codepoint"
     return "mixed"
@@ -1372,7 +1440,7 @@ def _compatible(requirement: str, supplied: str) -> bool | None:
     if requirement in {"char", "codepoint"}:
         if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "bool"}:
             return True
-        if supplied in {"int", "finite-float-int", "float-overflow-int"} or (requirement == "char" and supplied == "str"):
+        if supplied in {"int", "finite-float-int", "float-overflow-int", "decimal-overflow-int"} or (requirement == "char" and supplied == "str"):
             return None
         return False
     if requirement == "float-number":
@@ -1380,13 +1448,20 @@ def _compatible(requirement: str, supplied: str) -> bool | None:
             return None  # An integer annotation alone does not bound conversion.
         return supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "finite-float-int",
                             "float", "finite-float", "nonfinite-float", "bool"}
-    if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "finite-float-int", "float-overflow-int"}:
+    if requirement in {"stringable", "formattable", "decimal-int", "decimal", "number"}:
+        if supplied == "decimal-overflow-int":
+            return False
+        if supplied == "int" and sys.get_int_max_str_digits():
+            return None  # Decimal presentation needs a proven integer range.
+    if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int", "finite-float-int", "float-overflow-int", "decimal-overflow-int"}:
         supplied = "int"
     if requirement == "any":
         return True
+    if requirement == "stringable":
+        return True
     if requirement == "formattable":
         return supplied in {"int", "bool", "str", "float", "finite-float", "nonfinite-float", "number"}
-    if requirement == "int":
+    if requirement in {"int", "decimal-int"}:
         return supplied in {"int", "bool"}
     if requirement == "decimal":
         if supplied in {"float", "number"}:

@@ -5,6 +5,7 @@ comparisons. No upstream application, study driver or target module is imported.
 """
 import gettext
 from io import BytesIO
+import sys
 
 from babel.messages.catalog import Catalog
 from babel.messages.pofile import write_po
@@ -37,7 +38,7 @@ def _fixture(tmp_path, source, pattern, *, mode="flow", require_catalog=False, f
 def _native(source, po, *args):
     # Direct GNUTranslations lookup, not the adapter's provenance annotation.
     translation = gettext.GNUTranslations(BytesIO(CatalogRuntime(po).mo))
-    namespace = {"__builtins__": {}, "int": int, "gettext": translation.gettext,
+    namespace = {"__builtins__": {}, "int": int, "float": float, "str": str, "gettext": translation.gettext,
                  "pgettext": translation.pgettext}
     exec(compile(source, "<owned-qualification-regression>", "exec"), namespace)
     return namespace["render"](*args)
@@ -305,6 +306,117 @@ def test_large_integer_integer_presentation_remains_clean(tmp_path, mode, code):
     value = 10 ** 400
     pattern = "{x:" + code + "}"
     source = f'def render():\n    return gettext({pattern!r}).format(x={value})\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    assert isinstance(_native(source, po), str)
+    assert finding["status"] == "clean"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("pattern", ["{x:f}", "%(x)f"])
+@pytest.mark.parametrize("expression,parameter", [
+    (f"float({10 ** 400})", False),
+    ("float(10 ** 400)", False),
+    ("float(value)", True),
+])
+def test_float_coercion_does_not_erase_integer_overflow(tmp_path, mode, pattern, expression, parameter):
+    signature = "value: int" if parameter else ""
+    operation = (f'gettext({pattern!r}).format(x={expression})' if pattern.startswith("{")
+                 else f'gettext({pattern!r}) % {{"x": {expression}}}')
+    source = f'def render({signature}):\n    return {operation}\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    with pytest.raises(OverflowError):
+        _native(source, po, *([10 ** 400] if parameter else []))
+    assert finding["status"] == "unknown"
+    if parameter:
+        assert isinstance(_native(source, po, 17), str)
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("expression", ["float(17)", "float(1.25)", "float(True)"])
+def test_proven_primitive_float_coercion_remains_clean(tmp_path, mode, expression):
+    pattern = "{x:f}"
+    source = f'def render():\n    return gettext({pattern!r}).format(x={expression})\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    assert isinstance(_native(source, po), str)
+    assert finding["status"] == "clean"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("parameter", [False, True])
+@pytest.mark.parametrize("pattern", [
+    "{x:d}", "{x:n}", "{x}", "{x:>4}", "{x!s:>4}",
+    "{x:x} {x}", "{x:x} {x:>4}",
+    "%(x)d", "%(x)i", "%(x)u", "%(x)s", "%(x)r", "%(x)a",
+])
+def test_unbounded_decimal_integer_presentation_is_not_clean(tmp_path, mode, parameter, pattern):
+    limit = sys.get_int_max_str_digits()
+    if not limit or limit > 10000:
+        pytest.skip("requires an enabled, bounded native integer string limit")
+    exponent = max(limit + 1, 1300)
+    expression = "value" if parameter else f"10 ** {exponent}"
+    signature = "value: int" if parameter else ""
+    operation = (f'gettext({pattern!r}).format(x={expression})' if pattern.startswith("{")
+                 else f'gettext({pattern!r}) % {{"x": {expression}}}')
+    source = f'def render({signature}):\n    return {operation}\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    with pytest.raises(ValueError, match="integer string conversion"):
+        _native(source, po, *([10 ** exponent] if parameter else []))
+    assert finding["status"] == "unknown"
+    if parameter:
+        assert isinstance(_native(source, po, 17), str)
+
+
+@pytest.mark.parametrize("code", ["b", "o", "x", "X"])
+def test_unbounded_nondecimal_integer_presentation_remains_clean(tmp_path, code):
+    pattern = "{x:" + code + "}"
+    source = f'def render(value: int):\n    return gettext({pattern!r}).format(x=value)\n'
+    po, finding = _fixture(tmp_path, source, pattern)
+    assert isinstance(_native(source, po, 10 ** 5000), str)
+    assert finding["status"] == "clean"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("pattern", ["{x:>4} {x}", "{x} {x:>4}"])
+def test_repeated_empty_spec_does_not_discard_alignment_requirement(tmp_path, mode, pattern):
+    source = f'def render():\n    return gettext({pattern!r}).format(x=None)\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    with pytest.raises(TypeError):
+        _native(source, po)
+    assert finding["status"] == "error"
+
+
+@pytest.mark.parametrize("expression", [f"float({10 ** 400})", "int(1e400)"])
+def test_overflowing_primitive_condition_remains_unknown(tmp_path, expression):
+    pattern = "{x:f}"
+    source = (f'def render():\n    msg = gettext({pattern!r})\n'
+              f'    if {expression}:\n        return msg.format(x=1.25)\n'
+              '    return msg.format(x=2.5)\n')
+    po, finding = _fixture(tmp_path, source, pattern)
+    with pytest.raises(OverflowError):
+        _native(source, po)
+    assert finding["status"] == "unknown"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("expression,pattern,error", [
+    ("str(10 ** 5000)", "{x}", ValueError),
+    ("int(1e400)", "{x:x}", OverflowError),
+])
+def test_supplier_conversion_failure_is_not_erased_by_result_type(tmp_path, mode, expression, pattern, error):
+    if expression.startswith("str") and (not sys.get_int_max_str_digits() or sys.get_int_max_str_digits() >= 5000):
+        pytest.skip("requires an enabled decimal limit below the owned test value")
+    source = f'def render():\n    return gettext({pattern!r}).format(x={expression})\n'
+    po, finding = _fixture(tmp_path, source, pattern, mode=mode)
+    with pytest.raises(error):
+        _native(source, po)
+    assert finding["status"] == "unknown"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("expression", ["str(17)", "str(1.25)", "str(None)", "int(17)", "int(1.25)", "int(True)"])
+def test_safe_owned_supplier_conversion_remains_clean(tmp_path, mode, expression):
+    pattern = "{x}"
+    source = f'def render():\n    return gettext({pattern!r}).format(x={expression})\n'
     po, finding = _fixture(tmp_path, source, pattern, mode=mode)
     assert isinstance(_native(source, po), str)
     assert finding["status"] == "clean"

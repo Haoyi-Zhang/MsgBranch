@@ -57,8 +57,8 @@ The analyzer is validated in three complementary ways.
 
 The pytest suite checks native formatting, supplier effects, count paths, contexts, planner admission, classification, caches, and resource budgets. Native differential fixtures cover fixed selectors, loop `else` effects, lookup provenance, repeated lookup, duplicate dictionary keys, container aliases and escapes, contextual compiler substitution, primitive format requirements, character ranges, and nested precision. Unsupported mutation and format specifications remain unknown. Unit tests are separate from the generated studies and timing campaigns below.
 
-1. **Trusted controls.** Twenty-six constructed families cover legal reordering, branch-specific omission, contexts, nested fields, percent characters, type mismatch, count-dependent suppliers, two dynamic interpreter-unsupported cases, and a value-range case left unknown by project qualification. Across 4,623 direct reference executions, flow qualification matches all 26 expected control classifications with zero known false positives or false negatives. The direct-syntax ablation matches 9/26.
-2. **Same-finding ablation.** On 26 controls plus six field slices, both analyzers inspect the same 48 call/catalog findings. Direct syntax yields 8 clean, 8 error, and 32 unknown findings. Bounded flow yields 23 clean, 9 error, and 16 unknown findings: 19 unknown-to-clean and 4 unknown-to-error changes, while 4 clean and 3 error findings become unknown because Sphinx object-state reachability is unresolved. Those changes do not establish runtime failures.
+1. **Trusted controls.** Under the active CPython decimal-conversion limit, all 26 expected classifications match: 22 controls are statically admitted and four remain unknown. The native harness independently executes 23 bounded controls over 4,623 inputs. The additional static unknown is a singular lookup whose integer supplier has no selector-domain binding. The direct-syntax ablation matches 10/26 classifications and 6/22 statically admitted controls.
+2. **Same-finding ablation.** The same 48 call/catalog findings yield direct 8 clean, 8 error, and 32 unknown versus flow 22 clean, 9 error, and 17 unknown. Eighteen unknowns become clean and four become errors; four clean and three error findings become unknown because Sphinx object-state reachability is unresolved. The integer-range uncertainty is not a failure of its bounded native replay.
 3. **External regressions.** A Danish Solaar receiver boundary and an Estonian virt-manager installation-wait boundary contribute two clean call/catalog findings, one unresolved singular-call reachability finding, and ten native executions matching the boundary oracle. These are known regressions, not a blind holdout or whole-project recall measurement. `holdout_evaluate.py --mode frozen-source` separately requires the unchanged historical analyzer identity; the default current-regression mode preserves that identity record without claiming to match it.
 
 ## Evidence inventory
@@ -70,8 +70,8 @@ The pytest suite checks native formatting, supplier effects, count paths, contex
 | xrpldashboard repair | 4/4 pre-repair errors, 0/4 after | One interpolation-layer repair; ordinary count one detects it |
 | AZM CRM repair | Missing MO resolves English source; compiled MO resolves Arabic | One artifact-delivery repair; artifact presence plus a runtime smoke test detects it |
 | Public repair screen | 20 leads, 17 repair groups, four executable repairs | Frozen post-discovery ledger, not prevalence evidence |
-| Trusted analyzer controls | 26/26 expected flow classifications; 9/26 direct | 4,623 direct executions; three project-qualification cases remain unknown by construction |
-| Project ablation | 48 findings: direct 8/8/32 vs flow 23/9/16 clean/error/unknown | 23 direct unknowns resolved; 7 additional reachability unknowns retained |
+| Trusted analyzer controls | 26/26 expected flow classifications; 10/26 direct | 22 statically admitted, 4 unknown; 23 bounded native controls and 4,623 executions |
+| Project ablation | 48 findings: direct 8/8/32 vs flow 22/9/17 clean/error/unknown | 22 direct unknowns resolved; 7 additional reachability unknowns retained |
 | External regressions | 2 projects, 2 clean findings, 1 unknown, 10 matching executions | Known adapted boundaries; no claim of exhaustive project coverage |
 | Babel CLI | 228/228 MO/runtime outputs match; 226 accepted and 2 diagnosed format errors | Actual `pybabel compile`, plus format and encoding negative controls |
 | Generated validation study | 52/52 active constructed mutations detected by product planning | 192 paired families; sensitivity analysis, not field-defect recall |
@@ -93,6 +93,7 @@ MsgBranch checks technical compatibility and documented fallback obligations. It
 - `SOURCE-LEDGER.md` records immutable sources, transformations, and exclusions.
 - `THIRD-PARTY-NOTICES.md` maps retained files to their licenses.
 - `results/` contains raw runs, summaries, ablations, timing records, statistical receipts, and the independent result audit.
+- `evidence/range-qualification/` records current functional control and ablation results separately from the frozen studies. The detailed project record is lossless gzip JSON. Its runtime receipt identifies the active decimal-conversion limit; the paper generator reads these functional records without replacing study timings. Primitive conversion regressions preserve their argument ranges until witness qualification, so failing `str`, `int`, or `float` coercion is not justified by its nominal result type.
 - `data/holdout/PROTOCOL.json` records source identities and the retained external-regression scope.
 - `docs/references.csv` and `docs/references.json` are the verified bibliographic ledger used by the paper.
 
