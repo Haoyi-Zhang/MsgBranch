@@ -4,9 +4,9 @@
     "control_cases": 26,
     "field_slices": 6,
     "call_catalog_findings": 48,
-    "clean": 23,
+    "clean": 22,
     "errors": 9,
-    "unknown": 16,
+    "unknown": 17,
     "selected_patterns": 83,
     "direct_clean": 8,
     "direct_errors": 8,
@@ -14,9 +14,9 @@
     "direct_selected_patterns": 81,
     "flow_recovered_calls": 41,
     "type_error_witnesses": 1,
-    "type_unknown_witnesses": 1,
+    "type_unknown_witnesses": 2,
     "ablation": {
-      "unknown_to_clean": 19,
+      "unknown_to_clean": 18,
       "unknown_to_error": 4,
       "clean_to_unknown": 4,
       "error_to_unknown": 3,
@@ -32,7 +32,7 @@
         "data\\controls\\arabic-six-form\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\arabic-six-form\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -53,7 +53,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\arabic-six-form\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -113,7 +113,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\arabic-six-form\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -785,7 +785,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\arabic-six-form\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -1336,7 +1336,7 @@
         "data\\controls\\arabic-zero-key\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\arabic-zero-key\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -1357,7 +1357,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\arabic-zero-key\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -1417,7 +1417,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\arabic-zero-key\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\messages.po",
           "babel_checks": [
             {
               "message": "('%(n)d item', '%(n)d items')",
@@ -2099,7 +2099,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\arabic-zero-key\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\messages.po",
           "babel_checks": [
             {
               "message": "('%(n)d item', '%(n)d items')",
@@ -2653,7 +2653,7 @@
         "data\\controls\\brace-missing\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\brace-missing\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -2674,7 +2674,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\brace-missing\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -2727,7 +2727,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\brace-missing\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -2756,11 +2756,11 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "decimal-int"
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -2873,7 +2873,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\brace-missing\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -2902,11 +2902,11 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "decimal-int"
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -2961,16 +2961,16 @@
         "data\\controls\\brace-reorder\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\brace-reorder\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
         "literal_calls": 1,
         "catalogs": 1,
         "findings": 1,
-        "clean": 1,
+        "clean": 0,
         "errors": 0,
-        "unknown": 0,
+        "unknown": 1,
         "selected_patterns": 1,
         "runtime_observations": 1,
         "unique_runtime_lookup_sets": 1,
@@ -2979,10 +2979,10 @@
         "flow_recovered_calls": 1,
         "flow_resolved_witnesses": 1,
         "type_error_witnesses": 0,
-        "type_unknown_witnesses": 0
+        "type_unknown_witnesses": 1
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\brace-reorder\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -3003,7 +3003,7 @@
         "type_unknown_witnesses": 0
       },
       "ablation": {
-        "unknown_to_clean": 1,
+        "unknown_to_clean": 0,
         "unknown_to_error": 0,
         "clean_to_unknown": 0,
         "error_to_unknown": 0,
@@ -3035,7 +3035,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\brace-reorder\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -3064,11 +3064,11 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "decimal-int"
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -3095,11 +3095,18 @@
                   "positional_types": [],
                   "is_mapping": false
                 },
-                "status": "clean",
+                "status": "unknown",
                 "missing": [],
                 "type_mismatches": [],
-                "type_unknown": [],
-                "positional_missing": 0
+                "type_unknown": [
+                  {
+                    "field": "n",
+                    "required": "decimal-int",
+                    "supplied": "int"
+                  }
+                ],
+                "positional_missing": 0,
+                "reason": "selected pattern type requirement cannot be proved from the local supplier"
               },
               "effective_supplier": {
                 "status": "known",
@@ -3162,7 +3169,7 @@
               "covered_count_total": 1
             }
           ],
-          "status": "clean",
+          "status": "unknown",
           "unreachable_count_ranges": [],
           "reason": null
         }
@@ -3193,7 +3200,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\brace-reorder\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -3222,11 +3229,11 @@
                   "named_types": [
                     [
                       "n",
-                      "int"
+                      "decimal-int"
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -3281,7 +3288,7 @@
         "data\\controls\\branch-specific-args\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\branch-specific-args\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -3302,7 +3309,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\branch-specific-args\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -3355,7 +3362,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\branch-specific-args\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -3571,7 +3578,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\branch-specific-args\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -3716,7 +3723,7 @@
         "data\\controls\\compiler-empty-plural\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\compiler-empty-plural\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -3737,7 +3744,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\compiler-empty-plural\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -3797,7 +3804,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\compiler-empty-plural\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4049,7 +4056,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\compiler-empty-plural\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4244,7 +4251,7 @@
         "data\\controls\\context-plural\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\context-plural\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -4265,7 +4272,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\context-plural\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -4325,7 +4332,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\context-plural\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4573,7 +4580,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\context-plural\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4764,7 +4771,7 @@
         "data\\controls\\context-singular\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\context-singular\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -4785,7 +4792,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\context-singular\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -4838,7 +4845,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\context-singular\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4945,7 +4952,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\context-singular\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -5020,7 +5027,7 @@
         "data\\controls\\dynamic-key\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\dynamic-key\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-key\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -5041,7 +5048,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\dynamic-key\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-key\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -5152,7 +5159,7 @@
         "data\\controls\\dynamic-supplier\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\dynamic-supplier\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -5173,7 +5180,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\dynamic-supplier\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -5226,7 +5233,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\dynamic-supplier\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -5429,7 +5436,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\dynamic-supplier\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -5582,7 +5589,7 @@
         "data\\controls\\extra-unused-arg\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\extra-unused-arg\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -5603,7 +5610,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\extra-unused-arg\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -5668,7 +5675,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\extra-unused-arg\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -5955,7 +5962,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\extra-unused-arg\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -6170,7 +6177,7 @@
         "data\\controls\\fuzzy-fallback\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\fuzzy-fallback\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -6191,7 +6198,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\fuzzy-fallback\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -6251,7 +6258,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\fuzzy-fallback\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -6503,7 +6510,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\fuzzy-fallback\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -6698,7 +6705,7 @@
         "data\\controls\\intended-fallback\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\intended-fallback\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -6719,7 +6726,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\intended-fallback\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -6779,7 +6786,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\intended-fallback\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7031,7 +7038,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\intended-fallback\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7226,7 +7233,7 @@
         "data\\controls\\japanese-one-form\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\japanese-one-form\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -7247,7 +7254,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\japanese-one-form\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -7300,7 +7307,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\japanese-one-form\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7438,7 +7445,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\japanese-one-form\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7521,7 +7528,7 @@
         "data\\controls\\missing-always\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\missing-always\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -7542,7 +7549,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\missing-always\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -7602,7 +7609,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\missing-always\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7635,7 +7642,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -7750,7 +7757,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -7870,7 +7877,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\missing-always\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7903,7 +7910,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -7995,7 +8002,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -8067,7 +8074,7 @@
         "data\\controls\\missing-at-100\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\missing-at-100\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -8088,7 +8095,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\missing-at-100\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -8141,7 +8148,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\missing-at-100\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -8475,7 +8482,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\missing-at-100\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -8628,7 +8635,7 @@
         "data\\controls\\nested-brace-format\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\nested-brace-format\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -8649,7 +8656,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\nested-brace-format\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -8714,7 +8721,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\nested-brace-format\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -8884,7 +8891,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\nested-brace-format\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -8996,7 +9003,7 @@
         "data\\controls\\omit-optional-owner\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\omit-optional-owner\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -9017,7 +9024,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\omit-optional-owner\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -9070,7 +9077,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\omit-optional-owner\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -9345,7 +9352,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\omit-optional-owner\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -9498,7 +9505,7 @@
         "data\\controls\\omit-singular-count\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\omit-singular-count\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -9519,7 +9526,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\omit-singular-count\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -9572,7 +9579,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\omit-singular-count\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -9605,7 +9612,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -9727,7 +9734,7 @@
                   "named_types": [
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -9852,7 +9859,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\omit-singular-count\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -9885,7 +9892,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -9955,7 +9962,7 @@
                   "named_types": [
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -10010,7 +10017,7 @@
         "data\\controls\\percent-char-int\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\percent-char-int\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -10031,7 +10038,7 @@
         "type_unknown_witnesses": 1
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\percent-char-int\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -10084,7 +10091,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\percent-char-int\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10209,7 +10216,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\percent-char-int\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10287,7 +10294,7 @@
         "data\\controls\\percent-char-literal\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\percent-char-literal\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -10308,7 +10315,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\percent-char-literal\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -10363,7 +10370,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\percent-char-literal\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10483,7 +10490,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\percent-char-literal\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10565,7 +10572,7 @@
         "data\\controls\\reorder\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\reorder\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -10586,7 +10593,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\reorder\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -10639,7 +10646,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\reorder\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10672,7 +10679,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -10799,7 +10806,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -10924,7 +10931,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\reorder\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10957,7 +10964,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -11032,7 +11039,7 @@
                     ],
                     [
                       "name",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -11087,7 +11094,7 @@
         "data\\controls\\russian-three-form\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\russian-three-form\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -11108,7 +11115,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\russian-three-form\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -11168,7 +11175,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\russian-three-form\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -11727,7 +11734,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\russian-three-form\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -12213,7 +12220,7 @@
         "data\\controls\\translation-new-key\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\translation-new-key\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -12234,7 +12241,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\translation-new-key\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -12294,7 +12301,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\translation-new-key\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\messages.po",
           "babel_checks": [
             {
               "message": "('%(n)d item', '%(n)d items')",
@@ -12556,7 +12563,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\translation-new-key\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\messages.po",
           "babel_checks": [
             {
               "message": "('%(n)d item', '%(n)d items')",
@@ -12754,7 +12761,7 @@
         "data\\controls\\type-at-100\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\type-at-100\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -12775,7 +12782,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\type-at-100\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -12828,7 +12835,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\type-at-100\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13187,7 +13194,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\type-at-100\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13340,7 +13347,7 @@
         "data\\controls\\wrong-dialect\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\wrong-dialect\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -13361,7 +13368,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\wrong-dialect\\call.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -13414,7 +13421,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\wrong-dialect\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13659,7 +13666,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\controls\\wrong-dialect\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13814,7 +13821,7 @@
         "data\\upstream\\sphinx\\ja.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\before.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\before.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 5,
@@ -13835,7 +13842,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\before.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\before.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 5,
@@ -13888,7 +13895,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13996,7 +14003,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14162,7 +14169,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14187,7 +14194,7 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any"
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -14274,7 +14281,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14365,7 +14372,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14514,7 +14521,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14539,7 +14546,7 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any"
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -14593,7 +14600,7 @@
         "data\\upstream\\sphinx\\ja.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\after.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\after.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 7,
@@ -14614,7 +14621,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\after.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\after.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 7,
@@ -14667,7 +14674,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14775,7 +14782,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14883,7 +14890,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14908,8 +14915,8 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any",
-                    "any"
+                    "stringable",
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -14994,7 +15001,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15019,8 +15026,8 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any",
-                    "any"
+                    "stringable",
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -15105,7 +15112,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15130,8 +15137,8 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any",
-                    "any"
+                    "stringable",
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -15216,7 +15223,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15241,8 +15248,8 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any",
-                    "any"
+                    "stringable",
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -15327,7 +15334,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15352,7 +15359,7 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any"
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -15439,7 +15446,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15530,7 +15537,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15621,7 +15628,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15646,8 +15653,8 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any",
-                    "any"
+                    "stringable",
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -15717,7 +15724,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15742,8 +15749,8 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any",
-                    "any"
+                    "stringable",
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -15813,7 +15820,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15838,8 +15845,8 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any",
-                    "any"
+                    "stringable",
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -15908,7 +15915,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15933,8 +15940,8 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any",
-                    "any"
+                    "stringable",
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -16004,7 +16011,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16029,7 +16036,7 @@
                   "reason": null,
                   "named_types": [],
                   "positional_types": [
-                    "any"
+                    "stringable"
                   ]
                 },
                 "supplier": {
@@ -16083,7 +16090,7 @@
         "data\\upstream\\jupyter\\notebook.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\jupyter\\running_server_info.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\running_server_info.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -16104,7 +16111,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\jupyter\\running_server_info.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\running_server_info.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -16157,7 +16164,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\jupyter\\notebook.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\notebook.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16352,7 +16359,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\upstream\\jupyter\\notebook.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\notebook.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16497,7 +16504,7 @@
         "data\\openhangar\\before\\nl.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\project_calls.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\project_calls.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 2,
@@ -16518,7 +16525,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\project_calls.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\project_calls.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 2,
@@ -16578,7 +16585,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\fr.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16701,7 +16708,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -16816,7 +16823,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\nl.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16844,7 +16851,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -17058,7 +17065,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\fr.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17181,7 +17188,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -17299,7 +17306,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\nl.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17327,7 +17334,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -17546,7 +17553,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\fr.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17646,7 +17653,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -17674,7 +17681,7 @@
                 "type_unknown": [
                   {
                     "field": "threshold",
-                    "required": "any",
+                    "required": "stringable",
                     "supplied": "unknown"
                   }
                 ],
@@ -17745,7 +17752,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\nl.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17773,7 +17780,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -17801,7 +17808,7 @@
                 "type_unknown": [
                   {
                     "field": "threshold",
-                    "required": "any",
+                    "required": "stringable",
                     "supplied": "unknown"
                   }
                 ],
@@ -17948,7 +17955,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\fr.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -18048,7 +18055,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -18143,7 +18150,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\before\\nl.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -18171,7 +18178,7 @@
                   "named_types": [
                     [
                       "threshold",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -18321,7 +18328,7 @@
         "data\\openhangar\\after\\nl.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\project_calls.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\project_calls.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 2,
@@ -18342,7 +18349,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\project_calls.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\project_calls.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 2,
@@ -18402,7 +18409,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\fr.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -18525,7 +18532,7 @@
                   "named_types": [
                     [
                       "n",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -18640,7 +18647,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\nl.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -18668,7 +18675,7 @@
                   "named_types": [
                     [
                       "n",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -18882,7 +18889,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\fr.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19005,7 +19012,7 @@
                   "named_types": [
                     [
                       "n",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -19120,7 +19127,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\nl.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19148,7 +19155,7 @@
                   "named_types": [
                     [
                       "n",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -19364,7 +19371,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\fr.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19464,7 +19471,7 @@
                   "named_types": [
                     [
                       "n",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -19492,7 +19499,7 @@
                 "type_unknown": [
                   {
                     "field": "n",
-                    "required": "any",
+                    "required": "stringable",
                     "supplied": "unknown"
                   }
                 ],
@@ -19563,7 +19570,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\nl.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19591,7 +19598,7 @@
                   "named_types": [
                     [
                       "n",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -19619,7 +19626,7 @@
                 "type_unknown": [
                   {
                     "field": "n",
-                    "required": "any",
+                    "required": "stringable",
                     "supplied": "unknown"
                   }
                 ],
@@ -19766,7 +19773,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\fr.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19866,7 +19873,7 @@
                   "named_types": [
                     [
                       "n",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -19894,7 +19901,7 @@
                 "type_unknown": [
                   {
                     "field": "n",
-                    "required": "any",
+                    "required": "stringable",
                     "supplied": "unknown"
                   }
                 ],
@@ -19965,7 +19972,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\openhangar\\after\\nl.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19993,7 +20000,7 @@
                   "named_types": [
                     [
                       "n",
-                      "any"
+                      "stringable"
                     ]
                   ],
                   "positional_types": []
@@ -20021,7 +20028,7 @@
                 "type_unknown": [
                   {
                     "field": "n",
-                    "required": "any",
+                    "required": "stringable",
                     "supplied": "unknown"
                   }
                 ],
@@ -20146,7 +20153,7 @@
         "data\\azm-build\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\azm-build\\source.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\source.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -20167,7 +20174,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\azm-build\\source.py",
+        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\source.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -20220,7 +20227,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\azm-build\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -20327,7 +20334,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\reviewer-repair-industry-20261011\\P124\\artifact\\data\\azm-build\\messages.po",
+          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {

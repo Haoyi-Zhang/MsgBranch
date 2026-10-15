@@ -51,6 +51,13 @@ Generated pytest guards perform analyzer requalification, not native target exec
 
 Primitive percent tuples require exact positional arity; unused mapping keys remain permitted. An unkeyed percent conversion treats a mapping as one object; mixed keyed and unkeyed conversions remain unknown. Decimal percent conversions (`d`, `i`, `u`) admit finite literal floats as well as integers, while octal/hex percent and integer brace formats remain integer-only. Brace conversions (`!s`, `!r`, `!a`) produce strings before the format specification is checked. Value-dependent coercion, arbitrary objects, unmodeled format specifications and unsupported control flow are outside this bounded qualification model and can remain unknown. The owned regression fixtures compare these admitted cases with native Python formatting; they do not constitute an installed Jupyter-method comparison.
 
+Boolean conversions retain the qualification of the evaluated argument, including
+failures during container construction. Length is known for closed sized
+literals. Overwritten dictionary values still contribute construction
+preconditions; unresolved calls remain unknown. The additional 33 owned
+regression cases exercise these conditions independently of the retained study
+denominators.
+
 ## Analyzer validation
 
 The analyzer is validated in three complementary ways.

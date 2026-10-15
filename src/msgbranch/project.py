@@ -108,6 +108,7 @@ class _MappingValue:
     items: tuple[tuple[str, Any], ...]
     unknown_keys: bool = False
     reason: str | None = None
+    all_constructed_items_closed: bool = True
 
 
 @dataclass(frozen=True)
@@ -254,6 +255,14 @@ def _float_conversion_type(supplied: str) -> str:
 
 
 def _conversion_type(name: str, supplied: str) -> str:
+    if name == "bool":
+        # Preserve the argument's qualification rather than erasing a failed
+        # or unresolved computation behind the constructor's result type.
+        if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int",
+                       "finite-float-int", "float-overflow-int", "decimal-overflow-int",
+                       "float", "finite-float", "nonfinite-float", "str", "bool", "none"}:
+            return "bool"
+        return "unknown"
     if name == "float":
         return _float_conversion_type(supplied)
     integers = {"int", "bounded-nonnegative-int", "unicode-codepoint-int",
@@ -508,6 +517,28 @@ def _annotation_type(node: ast.AST | None) -> str:
     if isinstance(node, ast.Constant) and isinstance(node.value, str):
         return {"int": "int", "str": "str", "float": "float", "bool": "bool"}.get(node.value, "unknown")
     return "unknown"
+
+
+def _closed_literal_value(value: Any) -> bool:
+    """Whether constructing an owned primitive/container needs no unresolved evaluation."""
+    if isinstance(value, _Primitive):
+        return value.has_literal and type(value.literal) in {str, int, float, bool, type(None)}
+    if isinstance(value, _SequenceValue):
+        return not value.unknown_items and all(_closed_literal_value(item) for item in value.items)
+    if isinstance(value, _MappingValue):
+        return (not value.unknown_keys and value.all_constructed_items_closed
+                and all(_closed_literal_value(item) for _, item in value.items))
+    return False
+
+
+def _literal_container_length(value: Any) -> int | None:
+    if not _closed_literal_value(value):
+        return None
+    if isinstance(value, _Primitive) and type(value.literal) is str:
+        return len(value.literal)
+    if isinstance(value, (_SequenceValue, _MappingValue)):
+        return len(value.items)
+    return None
 
 
 class _FlowScanner:
@@ -803,15 +834,19 @@ class _FlowScanner:
         if isinstance(node, ast.Dict):
             items: dict[str, Any] = {}
             reason = None
+            all_items_closed = True
             for key, value in zip(node.keys, node.values, strict=True):
                 self._expr(key, env)
                 item = self._expr(value, env)
+                # Overwritten values are still evaluated by Python. A later
+                # duplicate key must not erase a failed/unknown construction.
+                all_items_closed = all_items_closed and _closed_literal_value(item)
                 literal = _literal_string(key)
                 if key is None or literal is None:
                     reason = "mapping expansion or dynamic mapping key"
                 else:
                     items[literal] = item
-            return _MappingValue(tuple(items.items()), reason is not None, reason)
+            return _MappingValue(tuple(items.items()), reason is not None, reason, all_items_closed)
         if isinstance(node, (ast.Tuple, ast.List)):
             items = tuple(self._expr(item.value if isinstance(item, ast.Starred) else item, env)
                           for item in node.elts)
@@ -928,13 +963,18 @@ class _FlowScanner:
 
             if isinstance(node.func, ast.Name):
                 if node.func.id in {"str", "int", "float", "bool"} and len(node.args) == 1 and not node.keywords:
-                    if node.func.id in {"float", "str", "int"}:
-                        # Retain the argument until a witness supplies an actual
-                        # selector count; an annotation alone is still unbounded.
-                        return _ConversionValue(node.func.id, arguments[0])
-                    return _Primitive(node.func.id)
+                    if node.func.id == "bool":
+                        size = _literal_container_length(arguments[0])
+                        if size is not None:
+                            return _Primitive("bool", bool(size), True)
+                    # Retain the argument until a witness supplies an actual
+                    # selector count; an annotation alone is still unbounded.
+                    return _ConversionValue(node.func.id, arguments[0])
                 if node.func.id == "len" and len(node.args) == 1 and not node.keywords:
-                    return _Primitive("int")
+                    size = _literal_container_length(arguments[0])
+                    if size is not None:
+                        return _Primitive("int", size, True)
+                    return _Unknown("len argument is not a proven sized literal")
                 if node.func.id == "dict" and not node.args and all(keyword.arg is not None for keyword in node.keywords):
                     return _MappingValue(keywords)
             if isinstance(node.func, ast.Attribute):
@@ -978,7 +1018,7 @@ def _value_scalar(value: Any, count_var: str | None, count: int | None) -> Any:
         if type(argument) not in (int, float, str, bool):
             return None
         try:
-            return {"str": str, "int": int, "float": float}[value.name](argument)
+            return {"str": str, "int": int, "float": float, "bool": bool}[value.name](argument)
         except (TypeError, ValueError, OverflowError):
             return None
     if type(value) is bool:
