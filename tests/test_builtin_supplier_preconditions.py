@@ -65,3 +65,41 @@ def test_boolean_conversion_binding_can_be_used_as_a_local_condition(tmp_path, v
                   encoding="utf-8")
     report = audit_project(app, [po], max_count=2, analysis_mode="flow")
     assert report["findings"][0]["status"] == "clean"
+
+
+@pytest.mark.parametrize("mode", ["direct", "flow"])
+@pytest.mark.parametrize("expression,error", [
+    ("len(1)", TypeError),
+    ("bool(1 // 0)", ZeroDivisionError),
+    ("bool(not (1 // 0))", ZeroDivisionError),
+    ("bool((1 // 0) < 2)", ZeroDivisionError),
+    ("bool(f'{1 // 0}')", ZeroDivisionError),
+    ("bool(f'{1:bad}')", ValueError),
+])
+@pytest.mark.parametrize("shape", ["tuple", "mapping", "keyword"])
+def test_nested_supplier_preserves_evaluation_preconditions(tmp_path, mode, expression, error, shape):
+    operation = {
+        "tuple": 'gettext("%x") % (' + expression + ',)',
+        "mapping": 'gettext("%(x)x") % {"x": ' + expression + '}',
+        "keyword": 'gettext("{x:x}").format(x=' + expression + ')',
+    }[shape]
+    source = 'def render():\n    return ' + operation + '\n'
+    app, po = tmp_path / "nested.py", tmp_path / "empty.po"
+    app.write_text(source, encoding="utf-8")
+    po.write_text('msgid ""\nmsgstr ""\n"Content-Type: text/plain; charset=UTF-8\\n"\n', encoding="utf-8")
+    namespace = {"__builtins__": {}, "gettext": gettext.NullTranslations().gettext,
+                 "bool": bool, "len": len}
+    exec(compile(source, "<owned-nested-supplier>", "exec"), namespace)
+    with pytest.raises(error):
+        namespace["render"]()
+    finding = audit_project(app, [po], max_count=2, analysis_mode=mode)["findings"][0]
+    assert finding["status"] != "clean"
+
+
+@pytest.mark.parametrize("expression", ["bool(0)", "len('Ada')", "bool(not 0)"])
+def test_closed_nested_suppliers_keep_flow_qualification(tmp_path, expression):
+    source = 'def render():\n    return gettext("%x") % (' + expression + ',)\n'
+    app, po = tmp_path / "closed.py", tmp_path / "empty.po"
+    app.write_text(source, encoding="utf-8")
+    po.write_text('msgid ""\nmsgstr ""\n"Content-Type: text/plain; charset=UTF-8\\n"\n', encoding="utf-8")
+    assert audit_project(app, [po], max_count=2, analysis_mode="flow")["findings"][0]["status"] == "clean"

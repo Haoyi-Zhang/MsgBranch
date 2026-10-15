@@ -54,9 +54,10 @@ Primitive percent tuples require exact positional arity; unused mapping keys rem
 Boolean conversions retain the qualification of the evaluated argument, including
 failures during container construction. Length is known for closed sized
 literals. Overwritten dictionary values still contribute construction
-preconditions; unresolved calls remain unknown. The additional 33 owned
-regression cases exercise these conditions independently of the retained study
-denominators.
+preconditions; unresolved calls remain unknown. Comparisons retain evaluated
+operands until witness qualification, and unresolved formatted-string
+construction remains unknown. The 72 owned supplier-precondition regression
+cases exercise these conditions independently of the retained study denominators.
 
 ## Analyzer validation
 

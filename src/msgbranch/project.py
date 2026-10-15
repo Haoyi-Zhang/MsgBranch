@@ -104,6 +104,12 @@ class _ConversionValue:
 
 
 @dataclass(frozen=True)
+class _PredicateValue:
+    values: tuple[Any, ...]
+    operators: tuple[type, ...]
+
+
+@dataclass(frozen=True)
 class _MappingValue:
     items: tuple[tuple[str, Any], ...]
     unknown_keys: bool = False
@@ -212,19 +218,28 @@ def _primitive_type(node: ast.AST) -> str:
         if value is None:
             return "none"
     if isinstance(node, ast.JoinedStr):
-        return "str"
+        return "str" if all(isinstance(x, ast.Constant) and type(x.value) is str for x in node.values) else "unknown"
     if isinstance(node, ast.Compare):
-        return "bool"
+        if all(isinstance(x, ast.Constant) for x in [node.left, *node.comparators]):
+            return "bool" if _condition(node, {}, None, None) is not None else "unknown"
+        return "unknown"
     if isinstance(node, ast.BoolOp):
         return "unknown"  # and/or return operands, not necessarily bools.
     if isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
-        if node.func.id in {"float", "str", "int"}:
+        if node.func.id in {"float", "str", "int", "bool"}:
             if len(node.args) == 1 and not node.keywords:
                 return _conversion_type(node.func.id, _literal_supplier_type(node.args[0]))
             return "unknown"
-        return {"str": "str", "int": "int", "float": "float", "bool": "bool", "len": "int"}.get(
-            node.func.id, "unknown"
-        )
+        if node.func.id == "len" and len(node.args) == 1 and not node.keywords:
+            try:
+                # literal_eval constructs literals only, never arbitrary calls
+                # or arithmetic. It also visits overwritten dictionary values.
+                value = ast.literal_eval(node.args[0])
+            except (TypeError, ValueError, SyntaxError):
+                return "unknown"
+            if type(value) in {str, tuple, list, dict, set, bytes}:
+                return _integer_supplier_type(len(value))
+        return "unknown"
     return "unknown"
 
 
@@ -255,7 +270,7 @@ def _float_conversion_type(supplied: str) -> str:
 
 
 def _conversion_type(name: str, supplied: str) -> str:
-    if name == "bool":
+    if name in {"bool", "not"}:
         # Preserve the argument's qualification rather than erasing a failed
         # or unresolved computation behind the constructor's result type.
         if supplied in {"bounded-nonnegative-int", "unicode-codepoint-int",
@@ -826,11 +841,17 @@ class _FlowScanner:
         if isinstance(node, ast.Name):
             return env.get(node.id, _Primitive("unknown", symbol=node.id))
         if isinstance(node, ast.JoinedStr):
+            formatted = False
             for child in node.values:
                 if isinstance(child, ast.FormattedValue):
+                    formatted = True
                     self._expr(child.value, env)
                     self._expr(child.format_spec, env)
-            return _Primitive("str")
+            # Both expression evaluation and the format specification may
+            # raise, even when the eventual result would have type str.
+            if formatted:
+                return _Unknown("formatted-string construction is not qualified")
+            return _Primitive("str", "".join(x.value for x in node.values), True)
         if isinstance(node, ast.Dict):
             items: dict[str, Any] = {}
             reason = None
@@ -859,7 +880,7 @@ class _FlowScanner:
         if isinstance(node, ast.UnaryOp):
             operand = self._expr(node.operand, env)
             if isinstance(node.op, ast.Not):
-                return _Primitive("bool")
+                return _ConversionValue("not", operand)
             if (isinstance(operand, _Primitive) and operand.has_literal
                     and type(operand.literal) in {int, float}
                     and isinstance(node.op, (ast.USub, ast.UAdd))):
@@ -877,10 +898,8 @@ class _FlowScanner:
                                      later if isinstance(node.op, ast.And) else retained,
                                      retained if isinstance(node.op, ast.And) else later)
         if isinstance(node, ast.Compare):
-            self._expr(node.left, env)
-            for child in node.comparators:
-                self._expr(child, env)
-            return _Primitive("bool")
+            values = tuple(self._expr(child, env) for child in [node.left, *node.comparators])
+            return _PredicateValue(values, tuple(type(op) for op in node.ops))
         if isinstance(node, ast.BinOp):
             left = self._expr(node.left, env)
             right = self._expr(node.right, env)
@@ -1013,12 +1032,37 @@ def _env_dict(items: tuple[tuple[str, Any], ...]) -> dict[str, Any]:
 
 
 def _value_scalar(value: Any, count_var: str | None, count: int | None) -> Any:
+    if isinstance(value, _PredicateValue):
+        current = _value_scalar(value.values[0], count_var, count)
+        if current is None:
+            return None
+        for kind, argument in zip(value.operators, value.values[1:], strict=True):
+            right = _value_scalar(argument, count_var, count)
+            if right is None:
+                return None
+            try:
+                if kind is ast.Eq: result = current == right
+                elif kind is ast.NotEq: result = current != right
+                elif kind is ast.Lt: result = current < right
+                elif kind is ast.LtE: result = current <= right
+                elif kind is ast.Gt: result = current > right
+                elif kind is ast.GtE: result = current >= right
+                elif kind is ast.Is: result = current is right
+                elif kind is ast.IsNot: result = current is not right
+                else: return None
+            except TypeError:
+                return None
+            if not result:
+                return False
+            current = right
+        return True
     if isinstance(value, _ConversionValue):
         argument = _value_scalar(value.value, count_var, count)
         if type(argument) not in (int, float, str, bool):
             return None
         try:
-            return {"str": str, "int": int, "float": float, "bool": bool}[value.name](argument)
+            return {"str": str, "int": int, "float": float, "bool": bool,
+                    "not": lambda x: not x}[value.name](argument)
         except (TypeError, ValueError, OverflowError):
             return None
     if type(value) is bool:
@@ -1147,6 +1191,8 @@ def _condition(node: ast.AST, env: Mapping[str, Any], count_var: str | None, cou
 
 
 def _abstract_type(value: Any, count_var: str | None, count: int | None) -> str:
+    if isinstance(value, _PredicateValue):
+        return "bool" if _value_scalar(value, count_var, count) is not None else "unknown"
     if isinstance(value, _ConversionValue):
         return _conversion_type(value.name, _abstract_type(value.value, count_var, count))
     if isinstance(value, _Primitive):
@@ -1208,7 +1254,7 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
             named_types=named_types,
             positional_types=positional_types,
         )
-    if isinstance(value, (_Primitive, _ConversionValue)):
+    if isinstance(value, (_Primitive, _ConversionValue, _PredicateValue)):
         primitive_type = _abstract_type(value, count_var, count)
         if primitive_type == "unknown":
             return Supplier("unknown", mode, reason="dynamic formatting supplier")
