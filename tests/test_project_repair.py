@@ -38,7 +38,9 @@ def native(source, po, *args):
     runtime = CatalogRuntime(po)
     namespace = {"__builtins__": {}, "str": str, "int": int, "float": float, "bool": bool, "len": len,
                  "gettext": runtime.gettext, "ngettext": runtime.ngettext}
-    exec(compile(source, "<owned-msgbranch-fixture>", "exec"), namespace)
+    # These source fixtures model the ordinary source semantics, including
+    # assert-expression effects, independently of the test runner's flags.
+    exec(compile(source, "<owned-msgbranch-fixture>", "exec", optimize=0), namespace)
     try:
         return "clean", namespace["render"](*args)
     except (TypeError, ValueError, KeyError, IndexError, OverflowError) as exc:
@@ -217,14 +219,15 @@ def emit_guard(monkeypatch, capsys, app, po, guard, *options):
     return exit_info.value.code
 
 
-def run_guard(guard):
+def run_guard(guard, *, optimize=-1):
     namespace = {}
-    exec(compile(guard.read_text(encoding="utf-8"), str(guard), "exec"), namespace)
+    exec(compile(guard.read_text(encoding="utf-8"), str(guard), "exec", optimize=optimize), namespace)
     namespace["test_localized_message_boundaries"]()
 
 
 @pytest.mark.parametrize("analysis_mode", ["flow", "direct"])
-def test_generated_guard_preserves_all_wrapper_lists_and_executes(tmp_path, monkeypatch, capsys, analysis_mode):
+@pytest.mark.parametrize("optimize", [0, 2])
+def test_generated_guard_preserves_all_wrapper_lists_and_executes(tmp_path, monkeypatch, capsys, analysis_mode, optimize):
     app = tmp_path / "app.py"
     app.write_text('def render(n: int):\n'
                    '    a = tr("safe")\n'
@@ -254,7 +257,7 @@ def test_generated_guard_preserves_all_wrapper_lists_and_executes(tmp_path, monk
         calls.append((kwargs, result["summary"]))
         return result
     monkeypatch.setattr(project, "audit_project", observed)
-    run_guard(guard)
+    run_guard(guard, optimize=optimize)
     assert len(calls) == 1
     config, summary = calls[0]
     assert summary["calls"] == summary["clean"] == 6
@@ -268,20 +271,21 @@ def test_generated_guard_preserves_all_wrapper_lists_and_executes(tmp_path, monk
     # Other recognized calls remain: losing only one wrapper must still fail.
     app.write_text(app.read_text(encoding="utf-8").replace('tr("safe")', 'lost("safe")'), encoding="utf-8")
     with pytest.raises(AssertionError, match="boundary recognition lost"):
-        run_guard(guard)
+        run_guard(guard, optimize=optimize)
     # A zero-call analysis cannot pass this previously nonempty guard.
     app.write_text('def render():\n    return "safe"\n', encoding="utf-8")
     with pytest.raises(AssertionError, match="boundary recognition lost"):
-        run_guard(guard)
+        run_guard(guard, optimize=optimize)
 
 
-def test_generated_custom_wrapper_guard_fails_real_qualification(tmp_path, monkeypatch, capsys):
+@pytest.mark.parametrize("optimize", [0, 2])
+def test_generated_custom_wrapper_guard_fails_real_qualification(tmp_path, monkeypatch, capsys, optimize):
     app, po, _ = fixture(tmp_path, 'def render():\n    return gettext("%(owner)s") % {}\n', "%(owner)s")
     app.write_text('def render():\n    return tr("%(owner)s") % {}\n', encoding="utf-8")
     guard = tmp_path / "test_guard.py"
     assert emit_guard(monkeypatch, capsys, app, po, guard, "--singular-callee", "tr") == 1
     with pytest.raises(AssertionError):
-        run_guard(guard)
+        run_guard(guard, optimize=optimize)
 
 
 def test_no_recognized_boundary_cannot_emit_guard(tmp_path, monkeypatch, capsys):

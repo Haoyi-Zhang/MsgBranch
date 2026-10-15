@@ -56,7 +56,8 @@ failures during container construction. Length is known for closed sized
 literals. Overwritten dictionary values still contribute construction
 preconditions; unresolved calls remain unknown. Comparisons retain evaluated
 operands until witness qualification, and unresolved formatted-string
-construction remains unknown. The 72 owned supplier-precondition regression
+construction remains unknown. Negative integer powers retain the nonzero-base
+and floating-conversion conditions. The 143 owned supplier-precondition regression
 cases exercise these conditions independently of the retained study denominators.
 
 ## Analyzer validation

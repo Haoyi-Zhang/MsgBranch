@@ -115,6 +115,7 @@ class _MappingValue:
     unknown_keys: bool = False
     reason: str | None = None
     all_constructed_items_closed: bool = True
+    constructed_values: tuple[Any, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -317,6 +318,8 @@ def _mapping_supplier(node: ast.AST, mode: str) -> Supplier:
             value = _literal_string(key)
             if value is None:
                 return Supplier("unknown", mode, reason="dynamic mapping key")
+            if value in types and types[value] == "unknown":
+                return Supplier("unknown", mode, reason="overwritten mapping value construction is not qualified")
             types[value] = _literal_supplier_type(value_node)
         return Supplier("known", mode, tuple(sorted(types)), named_types=tuple(sorted(types.items())), is_mapping=True)
     if isinstance(node, ast.List):
@@ -854,11 +857,13 @@ class _FlowScanner:
             return _Primitive("str", "".join(x.value for x in node.values), True)
         if isinstance(node, ast.Dict):
             items: dict[str, Any] = {}
+            constructed = []
             reason = None
             all_items_closed = True
             for key, value in zip(node.keys, node.values, strict=True):
                 self._expr(key, env)
                 item = self._expr(value, env)
+                constructed.append(item)
                 # Overwritten values are still evaluated by Python. A later
                 # duplicate key must not erase a failed/unknown construction.
                 all_items_closed = all_items_closed and _closed_literal_value(item)
@@ -867,7 +872,8 @@ class _FlowScanner:
                     reason = "mapping expansion or dynamic mapping key"
                 else:
                     items[literal] = item
-            return _MappingValue(tuple(items.items()), reason is not None, reason, all_items_closed)
+            return _MappingValue(tuple(items.items()), reason is not None, reason,
+                                 all_items_closed, tuple(constructed))
         if isinstance(node, (ast.Tuple, ast.List)):
             items = tuple(self._expr(item.value if isinstance(item, ast.Starred) else item, env)
                           for item in node.elts)
@@ -922,13 +928,26 @@ class _FlowScanner:
                 if isinstance(left, _Primitive) and isinstance(right, _Primitive):
                     if left.type_name == right.type_name == "int":
                         if right.has_literal and type(right.literal) is int:
+                            if right.literal < 0:
+                                # A negative integer exponent converts the base
+                                # to float and may fail before formatting.
+                                if (not left.has_literal or type(left.literal) is not int
+                                        or right.literal < -4096
+                                        or abs(left.literal).bit_length() > 4096):
+                                    return _Unknown("negative power evaluation is not qualified")
+                                try:
+                                    result = left.literal ** right.literal
+                                except (ZeroDivisionError, OverflowError):
+                                    return _Unknown("negative power evaluation fails")
+                                return _Primitive("finite-float" if math.isfinite(result)
+                                                  else "nonfinite-float", result, True)
                             # Retain range facts for small literal powers without
                             # evaluating an unbounded integer expression.
                             if (left.has_literal and type(left.literal) is int
                                     and 0 <= right.literal <= 4096
                                     and abs(left.literal).bit_length() * right.literal <= 4096):
                                 return _Primitive("int", left.literal ** right.literal, True)
-                            return _Primitive("int" if right.literal >= 0 else "float")
+                            return _Primitive("int")
                 return _Primitive("unknown")
             if isinstance(node.op, (ast.Sub, ast.Mult, ast.FloorDiv, ast.Div)):
                 if isinstance(left, _Primitive) and isinstance(right, _Primitive):
@@ -1213,6 +1232,34 @@ def _abstract_type(value: Any, count_var: str | None, count: int | None) -> str:
     return "unknown"
 
 
+def _construction_qualified(value: Any, count_var: str | None, count: int | None) -> bool:
+    """Check evaluation obligations independently of a mapping's last-write view."""
+    if _closed_literal_value(value):
+        return True
+    if isinstance(value, _Primitive):
+        # A bound primitive or selector witness is an input, not evidence that
+        # an unresolved arithmetic expression producing its type succeeded.
+        return value.symbol is not None and _abstract_type(value, count_var, count) != "unknown"
+    if isinstance(value, _ConversionValue):
+        return (_construction_qualified(value.value, count_var, count)
+                and _abstract_type(value, count_var, count) != "unknown")
+    if isinstance(value, _PredicateValue):
+        return _value_scalar(value, count_var, count) is not None
+    if isinstance(value, _SequenceValue):
+        return (not value.unknown_items
+                and all(_construction_qualified(item, count_var, count) for item in value.items))
+    if isinstance(value, _MappingValue):
+        return (not value.unknown_keys and
+                all(_construction_qualified(item, count_var, count)
+                    for item in value.constructed_values or tuple(item for _, item in value.items)))
+    if isinstance(value, _ConditionalValue):
+        branch = _condition(value.test, _env_dict(value.env), count_var, count)
+        alternatives = ((value.when_true,) if branch is True else (value.when_false,)
+                        if branch is False else (value.when_true, value.when_false))
+        return all(_construction_qualified(item, count_var, count) for item in alternatives)
+    return False
+
+
 def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: int | None) -> Supplier:
     if isinstance(value, _ConditionalValue):
         branch = _condition(value.test, _env_dict(value.env), count_var, count)
@@ -1230,6 +1277,8 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
     if isinstance(value, _MappingValue):
         if value.unknown_keys:
             return Supplier("unknown", mode, reason=value.reason or "unknown mapping keys")
+        if not value.all_constructed_items_closed and not _construction_qualified(value, count_var, count):
+            return Supplier("unknown", mode, reason="mapping value construction is not qualified")
         names = tuple(sorted({name for name, _ in value.items}))
         types = tuple(sorted((name, _abstract_type(item, count_var, count)) for name, item in value.items))
         return Supplier("known", mode, names, named_types=types, is_mapping=True)
@@ -1967,11 +2016,12 @@ def test_localized_message_boundaries():
     expected = set({expected!r})
     actual = {{tuple(finding["call"][field] for field in fields) + (finding["catalog"],)
               for finding in report["findings"]}}
-    assert expected and expected <= actual, ("boundary recognition lost", expected - actual, report)
-    assert report["summary"]["literal_calls"] > 0, report
-    assert report["summary"]["selected_patterns"] > 0, report
-    assert report["summary"]["errors"] == 0, report
-    assert report["summary"]["unknown"] == 0, report
+    if not expected or not expected <= actual:
+        raise AssertionError(("boundary recognition lost", expected - actual, report))
+    if report["summary"]["literal_calls"] <= 0 or report["summary"]["selected_patterns"] <= 0:
+        raise AssertionError(report)
+    if report["summary"]["errors"] != 0 or report["summary"]["unknown"] != 0:
+        raise AssertionError(report)
 '''
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
