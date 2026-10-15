@@ -11,9 +11,13 @@ python -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt
 python scripts/reproduce.py
-python scripts/native_replay.py
-python scripts/reproduce.py --full
 ```
+
+On Windows PowerShell, activate with `.\.venv\Scripts\Activate.ps1` instead.
+For the seeded studies and timing measurements, run
+`python scripts/reproduce.py --full` instead of the default reproduction command.
+The separate complete generated-input replay is `python scripts/native_replay.py`.
+Run commands from this artifact directory; generated reports go to `results/`.
 
 All retained inputs run locally after dependency installation. No GPU, model API, paid service, credential, production system, or live third-party endpoint is used. The portable driver runs the current pytest suite as a checked stage before any study scripts, then verifies immutable inputs and licenses, executes four historical repair replays, evaluates the project analyzer and its direct-syntax ablation, checks retained two-project regressions, invokes the actual Babel CLI, and audits result accounting. A failed unit stage stops the driver. Native replay is a separate step that additionally executes all 384,384 retained generated inputs and their selected witnesses. Full mode regenerates both seeded studies and the cost measurements after the unit stage. Test counts are reported by pytest; the frozen study records do not establish a pass count for later source revisions.
 
@@ -30,6 +34,9 @@ python -m msgbranch.cli data/controls/missing-at-100/call.py \
   --max-count 200 --output witness.json
 ```
 
+In Windows PowerShell, set
+`$env:PYTHONPATH="$PWD\src;$PWD\vendor\python-fluent"` before either CLI.
+
 Exit 0 means no violation was observed under the declared domain and implemented checks. Exit 1 means a qualified runtime failure or forbidden fallback was observed. Exit 2 means analysis is unavailable or unknown, which takes precedence. `--require-catalog` is appropriate only where source fallback violates the application obligation. The default planner is exhaustive; `--planner partition` explicitly selects the bounded predictive planner.
 
 The boundary CLI interprets a restricted Python AST and never imports the supplied file. Domains are integer intervals within 0..10,000 with explicit cell and evaluation budgets. It supports gettext-family calls, percent formatting, brace formatting, contexts, branch-specific omissions, and primitive formatting type constraints. Unsupported fields, dynamic identifiers, unresolved values, and budget exhaustion remain unknown.
@@ -37,7 +44,7 @@ The boundary CLI interprets a restricted Python AST and never imports the suppli
 ## Project auditor
 
 ```sh
-msgbranch-project path/to/python/project path/to/messages.po \
+python -m msgbranch.project path/to/python/project path/to/messages.po \
   --max-count 200 --require-catalog \
   --output project-findings.json \
   --emit-pytest generated_regressions.py
@@ -104,7 +111,7 @@ MsgBranch checks technical compatibility and documented fallback obligations. It
 - `results/` contains raw runs, summaries, ablations, timing records, statistical receipts, and the independent result audit.
 - `evidence/range-qualification/` records current functional control and ablation results separately from the frozen studies. The detailed project record is lossless gzip JSON. Its runtime receipt identifies the active decimal-conversion limit; the paper generator reads these functional records without replacing study timings. Primitive conversion regressions preserve their argument ranges until witness qualification, so failing `str`, `int`, or `float` coercion is not justified by its nominal result type.
 - `data/holdout/PROTOCOL.json` records source identities and the retained external-regression scope.
-- `docs/references.csv` and `docs/references.json` are the verified bibliographic ledger used by the paper.
+- `docs/references.csv` and `docs/references.json` are the bibliographic ledger used by the paper. The 69 sources include papers, standards, documentation, code and repair records; access levels and manuscript roles are recorded per source. `python scripts/reference_audit.py` checks the BibTeX, citation, JSON and CSV keys, duplicate identifiers and canonical URLs.
 
 ## Materials
 

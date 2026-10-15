@@ -17,7 +17,9 @@ manuscript_present = BIB.is_file() and TEX.is_file()
 if manuscript_present:
     bib_text = BIB.read_text(encoding="utf-8")
     tex_text = TEX.read_text(encoding="utf-8")
-    bib_keys = re.findall(r"^@\w+\{([^,]+),", bib_text, flags=re.MULTILINE)
+    entries = re.findall(r"^@(\w+)\s*\{([^,]+),", bib_text, flags=re.MULTILINE)
+    bib_keys = [key for _, key in entries]
+    control_keys = {key for kind, key in entries if kind.lower() == "ieeetranbstctl"}
     cited: list[str] = []
     for command in ("cite", "bstctlcite"):
         for group in re.findall(rf"\\{command}\{{([^}}]+)\}}", tex_text):
@@ -26,13 +28,14 @@ else:
     # The standalone repository intentionally omits the manuscript. Validate
     # the ledger internally; the complete bundle performs the full TeX/BibTeX audit.
     bib_keys = []
+    control_keys = set()
     cited = []
 json_rows = json.loads(JSON_LEDGER.read_text(encoding="utf-8"))
 with CSV_LEDGER.open(encoding="utf-8", newline="") as handle:
     csv_rows = list(csv.DictReader(handle))
 json_keys = [row["key"] for row in json_rows]
 csv_keys = [row["key"] for row in csv_rows]
-article_keys = [key for key in bib_keys if key != "IEEEcontrol"] if manuscript_present else json_keys.copy()
+article_keys = [key for key in bib_keys if key not in control_keys] if manuscript_present else json_keys.copy()
 
 def duplicates(values: list[str]) -> list[str]:
     return sorted(key for key, count in Counter(values).items() if count > 1)
@@ -46,9 +49,9 @@ receipt = {
     "scope": "full manuscript/BibTeX/ledger audit" if manuscript_present else "standalone ledger audit; manuscript intentionally absent",
     "bibliography_entries_total": len(bib_keys) if manuscript_present else None,
     "bibliographic_sources": len(article_keys),
-    "unique_cited_keys": len(set(cited) - {"IEEEcontrol"}) if manuscript_present else None,
+    "unique_cited_keys": len(set(cited) - control_keys) if manuscript_present else None,
     "missing_bibliography_keys": sorted(set(cited) - set(bib_keys)) if manuscript_present else [],
-    "uncited_bibliography_keys": sorted(set(bib_keys) - set(cited)) if manuscript_present else [],
+    "uncited_bibliography_keys": sorted(set(article_keys) - set(cited)) if manuscript_present else [],
     "duplicate_bibliography_keys": duplicates(bib_keys),
     "json_records": len(json_rows),
     "csv_records": len(csv_rows),
