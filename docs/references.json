@@ -213,7 +213,7 @@
     "verification_source": "https://github.com/sphinx-doc/sphinx/issues/7282",
     "verification_level": "official documentation or versioned upstream source inspected",
     "manuscript_role": "Supports the format, integration, baseline configuration or source provenance described in the manuscript",
-    "checked_on": "2026-09-30"
+    "checked_on": "2026-10-16"
   },
   {
     "key": "sphinxfix",
