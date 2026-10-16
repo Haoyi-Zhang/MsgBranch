@@ -116,7 +116,7 @@ MsgBranch checks technical compatibility and documented fallback obligations. It
 - `results/` contains raw runs, summaries, ablations, timing records, statistical receipts, and the independent result audit.
 - `evidence/range-qualification/` records current functional control and ablation results separately from the frozen studies. The detailed project record is lossless gzip JSON. Its runtime receipt identifies the active decimal-conversion limit; the paper generator reads these functional records without replacing study timings. Primitive conversion regressions preserve their argument ranges until witness qualification, so failing `str`, `int`, or `float` coercion is not justified by its nominal result type.
 - `data/holdout/PROTOCOL.json` records source identities and the retained external-regression scope.
-- `docs/references.csv` and `docs/references.json` are the bibliographic ledger used by the paper. The 69 sources include papers, standards, documentation, code and repair records; access levels and manuscript roles are recorded per source. `python scripts/reference_audit.py` checks the BibTeX, citation, JSON and CSV keys, duplicate identifiers and canonical URLs.
+- `docs/references.csv` and `docs/references.json` are the bibliographic ledger used by the paper. The 72 sources include papers, standards, documentation, code and repair records; access levels and manuscript roles are recorded per source. `python scripts/reference_audit.py` checks the BibTeX, citation, JSON and CSV keys, duplicate identifiers and canonical URLs.
 
 ## Materials
 
