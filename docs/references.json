@@ -206,7 +206,7 @@
   {
     "key": "sphinxissue",
     "title": "Strings should be in plural forms, but are not treated as such",
-    "authors": "{Sphinx issue tracker}",
+    "authors": "{rffontenelle}",
     "year": "2020",
     "doi": "",
     "canonical_url": "https://github.com/sphinx-doc/sphinx/issues/7282",
@@ -826,5 +826,41 @@
     "verification_level": "immutable upstream source, Estonian catalog entries, repository metadata, and GPL notice inspected; adapted boundary executed only after analyzer freeze",
     "manuscript_role": "Post-freeze independent-project holdout for deferred percent-format supplier qualification",
     "checked_on": "2026-10-08"
+  },
+  {
+    "key": "pythonformatdata",
+    "title": "Data Model: object.__format__",
+    "authors": "{Python Software Foundation}",
+    "year": "",
+    "doi": "",
+    "canonical_url": "https://docs.python.org/3.13/reference/datamodel.html#object.__format__",
+    "verification_source": "https://docs.python.org/3.13/reference/datamodel.html#object.__format__",
+    "verification_level": "official Python 3.13 documentation; relevant object.__format__ paragraph inspected",
+    "manuscript_role": "Nonempty format specifications for object.__format__ raise TypeError; supports the None formatting qualification",
+    "checked_on": "2026-10-16"
+  },
+  {
+    "key": "pythonfloat",
+    "title": "Built-in Functions: float",
+    "authors": "{Python Software Foundation}",
+    "year": "",
+    "doi": "",
+    "canonical_url": "https://docs.python.org/3.13/library/functions.html#float",
+    "verification_source": "https://docs.python.org/3.13/library/functions.html#float",
+    "verification_level": "official Python 3.13 documentation; float conversion range paragraph inspected",
+    "manuscript_role": "Integer-to-float conversion outside the float range raises OverflowError; supports range qualification",
+    "checked_on": "2026-10-16"
+  },
+  {
+    "key": "pythonintlimits",
+    "title": "Integer String Conversion Length Limitation",
+    "authors": "{Python Software Foundation}",
+    "year": "",
+    "doi": "",
+    "canonical_url": "https://docs.python.org/3.13/library/stdtypes.html#integer-string-conversion-length-limitation",
+    "verification_source": "https://docs.python.org/3.13/library/stdtypes.html#integer-string-conversion-length-limitation",
+    "verification_level": "official Python 3.13 documentation; affected APIs and configurable digit limit inspected",
+    "manuscript_role": "Decimal int/string conversions depend on the active digit limit; supports treating unqualified magnitude as unknown",
+    "checked_on": "2026-10-16"
   }
 ]

@@ -4,6 +4,11 @@ MsgBranch qualifies localized-message failures at the boundary between catalog e
 
 ## Reproduce
 
+The workflow schematic is a direct Matplotlib vector with embedded fonts.
+Install `pip install -e '.[figures]'` for regeneration and run
+`python plots/draw_workflow.py --output-dir ../paper/figures`.
+The full bundle's `paper/build.py` regenerates this figure before compilation.
+
 The reported measurements use Windows 11 on an Intel Core i7-12700KF, CPython 3.12.14, Babel 2.18.0, attrs 26.1.0, pytz 2026.2, Jinja2 3.1.6, and pytest 9.0.2. Python 3.12 and 3.13 are supported. Differential tests cover the version-sensitive gettext plural-expression helper.
 
 ```sh
