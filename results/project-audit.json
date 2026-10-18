@@ -32,7 +32,7 @@
         "data\\controls\\arabic-six-form\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -53,7 +53,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -113,7 +113,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -785,7 +785,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-six-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -1336,7 +1336,7 @@
         "data\\controls\\arabic-zero-key\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -1357,7 +1357,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -1417,7 +1417,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\messages.po",
           "babel_checks": [
             {
               "message": "('%(n)d item', '%(n)d items')",
@@ -2099,7 +2099,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\arabic-zero-key\\messages.po",
           "babel_checks": [
             {
               "message": "('%(n)d item', '%(n)d items')",
@@ -2653,7 +2653,7 @@
         "data\\controls\\brace-missing\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -2674,7 +2674,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -2727,7 +2727,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -2873,7 +2873,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-missing\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -2961,7 +2961,7 @@
         "data\\controls\\brace-reorder\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -2982,7 +2982,7 @@
         "type_unknown_witnesses": 1
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -3035,7 +3035,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -3200,7 +3200,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\brace-reorder\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -3288,7 +3288,7 @@
         "data\\controls\\branch-specific-args\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -3309,7 +3309,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -3362,7 +3362,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -3578,7 +3578,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\branch-specific-args\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -3723,7 +3723,7 @@
         "data\\controls\\compiler-empty-plural\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -3744,7 +3744,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -3804,7 +3804,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4056,7 +4056,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\compiler-empty-plural\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4251,7 +4251,7 @@
         "data\\controls\\context-plural\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -4272,7 +4272,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -4332,7 +4332,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4580,7 +4580,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-plural\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4771,7 +4771,7 @@
         "data\\controls\\context-singular\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -4792,7 +4792,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -4845,7 +4845,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -4952,7 +4952,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\context-singular\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -5027,7 +5027,7 @@
         "data\\controls\\dynamic-key\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-key\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-key\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -5048,7 +5048,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-key\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-key\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -5159,7 +5159,7 @@
         "data\\controls\\dynamic-supplier\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -5180,7 +5180,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -5233,7 +5233,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -5436,7 +5436,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\dynamic-supplier\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -5589,7 +5589,7 @@
         "data\\controls\\extra-unused-arg\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -5610,7 +5610,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -5675,7 +5675,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -5962,7 +5962,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\extra-unused-arg\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -6177,7 +6177,7 @@
         "data\\controls\\fuzzy-fallback\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -6198,7 +6198,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -6258,7 +6258,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -6510,7 +6510,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\fuzzy-fallback\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -6705,7 +6705,7 @@
         "data\\controls\\intended-fallback\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -6726,7 +6726,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -6786,7 +6786,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7038,7 +7038,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\intended-fallback\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7233,7 +7233,7 @@
         "data\\controls\\japanese-one-form\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -7254,7 +7254,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -7307,7 +7307,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7445,7 +7445,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\japanese-one-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7528,7 +7528,7 @@
         "data\\controls\\missing-always\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -7549,7 +7549,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -7609,7 +7609,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -7877,7 +7877,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-always\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -8074,7 +8074,7 @@
         "data\\controls\\missing-at-100\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -8095,7 +8095,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -8148,7 +8148,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -8482,7 +8482,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\missing-at-100\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -8635,7 +8635,7 @@
         "data\\controls\\nested-brace-format\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -8656,7 +8656,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -8721,7 +8721,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -8891,7 +8891,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\nested-brace-format\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -9003,7 +9003,7 @@
         "data\\controls\\omit-optional-owner\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -9024,7 +9024,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -9077,7 +9077,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -9352,7 +9352,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-optional-owner\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -9505,7 +9505,7 @@
         "data\\controls\\omit-singular-count\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -9526,7 +9526,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -9579,7 +9579,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -9859,7 +9859,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\omit-singular-count\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10017,7 +10017,7 @@
         "data\\controls\\percent-char-int\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -10038,7 +10038,7 @@
         "type_unknown_witnesses": 1
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -10091,7 +10091,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10216,7 +10216,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-int\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10294,7 +10294,7 @@
         "data\\controls\\percent-char-literal\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -10315,7 +10315,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -10370,7 +10370,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10490,7 +10490,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\percent-char-literal\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10572,7 +10572,7 @@
         "data\\controls\\reorder\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -10593,7 +10593,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -10646,7 +10646,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -10931,7 +10931,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\reorder\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -11094,7 +11094,7 @@
         "data\\controls\\russian-three-form\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -11115,7 +11115,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -11175,7 +11175,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -11734,7 +11734,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\russian-three-form\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -12220,7 +12220,7 @@
         "data\\controls\\translation-new-key\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -12241,7 +12241,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -12301,7 +12301,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\messages.po",
           "babel_checks": [
             {
               "message": "('%(n)d item', '%(n)d items')",
@@ -12563,7 +12563,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\translation-new-key\\messages.po",
           "babel_checks": [
             {
               "message": "('%(n)d item', '%(n)d items')",
@@ -12761,7 +12761,7 @@
         "data\\controls\\type-at-100\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -12782,7 +12782,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -12835,7 +12835,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13194,7 +13194,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\type-at-100\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13347,7 +13347,7 @@
         "data\\controls\\wrong-dialect\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\call.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -13368,7 +13368,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\call.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\call.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -13421,7 +13421,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13666,7 +13666,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\controls\\wrong-dialect\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -13821,7 +13821,7 @@
         "data\\upstream\\sphinx\\ja.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\before.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\before.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 5,
@@ -13842,7 +13842,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\before.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\before.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 5,
@@ -13895,7 +13895,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14003,7 +14003,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14169,7 +14169,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14281,7 +14281,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14372,7 +14372,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14521,7 +14521,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14600,7 +14600,7 @@
         "data\\upstream\\sphinx\\ja.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\after.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\after.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 7,
@@ -14621,7 +14621,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\after.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\after.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 7,
@@ -14674,7 +14674,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14782,7 +14782,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -14890,7 +14890,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15001,7 +15001,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15112,7 +15112,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15223,7 +15223,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15334,7 +15334,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15446,7 +15446,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15537,7 +15537,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15628,7 +15628,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15724,7 +15724,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15820,7 +15820,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -15915,7 +15915,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16011,7 +16011,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\sphinx\\ja.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16090,7 +16090,7 @@
         "data\\upstream\\jupyter\\notebook.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\running_server_info.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\running_server_info.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -16111,7 +16111,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\running_server_info.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\running_server_info.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -16164,7 +16164,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\notebook.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\notebook.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16359,7 +16359,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\notebook.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\upstream\\jupyter\\notebook.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16504,7 +16504,7 @@
         "data\\openhangar\\before\\nl.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\project_calls.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\project_calls.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 2,
@@ -16525,7 +16525,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\project_calls.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\project_calls.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 2,
@@ -16585,7 +16585,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -16823,7 +16823,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17065,7 +17065,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17306,7 +17306,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17553,7 +17553,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17752,7 +17752,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -17955,7 +17955,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -18150,7 +18150,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\before\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -18328,7 +18328,7 @@
         "data\\openhangar\\after\\nl.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\project_calls.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\project_calls.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 2,
@@ -18349,7 +18349,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\project_calls.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\project_calls.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 2,
@@ -18409,7 +18409,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -18647,7 +18647,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -18889,7 +18889,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19127,7 +19127,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19371,7 +19371,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19570,7 +19570,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19773,7 +19773,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\fr.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -19972,7 +19972,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\openhangar\\after\\nl.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -20153,7 +20153,7 @@
         "data\\azm-build\\messages.po"
       ],
       "summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\source.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\source.py",
         "analysis_mode": "flow",
         "python_files": 1,
         "calls": 1,
@@ -20174,7 +20174,7 @@
         "type_unknown_witnesses": 0
       },
       "direct_summary": {
-        "source_root": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\source.py",
+        "source_root": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\source.py",
         "analysis_mode": "direct",
         "python_files": 1,
         "calls": 1,
@@ -20227,7 +20227,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
@@ -20334,7 +20334,7 @@
             "count_binding": "domain",
             "count_literal": null
           },
-          "catalog": "D:\\CodexProjects\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\messages.po",
+          "catalog": "<PROJECTS_ROOT>\\wg-check\\substantive-library\\P124\\artifact\\data\\azm-build\\messages.po",
           "babel_checks": [],
           "witnesses": [
             {
