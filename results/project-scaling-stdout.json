@@ -2,64 +2,64 @@
   {
     "shape": "repeated-message",
     "calls": 1,
-    "median_wall_ms": 23.55418,
-    "median_peak_kib": 164.087890625,
+    "median_wall_ms": 31.6566,
+    "median_peak_kib": 229.66015625,
     "runtime_lookup_sets": 1,
     "cache_hits": 0
   },
   {
     "shape": "repeated-message",
     "calls": 25,
-    "median_wall_ms": 544.96856,
-    "median_peak_kib": 513.96875,
+    "median_wall_ms": 673.91,
+    "median_peak_kib": 459.802734375,
     "runtime_lookup_sets": 1,
     "cache_hits": 24
   },
   {
     "shape": "repeated-message",
     "calls": 100,
-    "median_wall_ms": 2154.856478,
-    "median_peak_kib": 1302.2236328125,
+    "median_wall_ms": 2647.9395,
+    "median_peak_kib": 1538.447265625,
     "runtime_lookup_sets": 1,
     "cache_hits": 99
   },
   {
     "shape": "repeated-message",
     "calls": 400,
-    "median_wall_ms": 9060.37732,
-    "median_peak_kib": 5388.3828125,
+    "median_wall_ms": 9878.5558,
+    "median_peak_kib": 5953.435546875,
     "runtime_lookup_sets": 1,
     "cache_hits": 399
   },
   {
     "shape": "unique-message",
     "calls": 1,
-    "median_wall_ms": 24.980365,
-    "median_peak_kib": 124.0791015625,
+    "median_wall_ms": 27.5009,
+    "median_peak_kib": 109.171875,
     "runtime_lookup_sets": 1,
     "cache_hits": 0
   },
   {
     "shape": "unique-message",
     "calls": 25,
-    "median_wall_ms": 547.523112,
-    "median_peak_kib": 2605.3974609375,
+    "median_wall_ms": 670.3344,
+    "median_peak_kib": 2695.78125,
     "runtime_lookup_sets": 25,
     "cache_hits": 0
   },
   {
     "shape": "unique-message",
     "calls": 100,
-    "median_wall_ms": 2231.084653,
-    "median_peak_kib": 10479.087890625,
+    "median_wall_ms": 2626.7742,
+    "median_peak_kib": 11075.33203125,
     "runtime_lookup_sets": 100,
     "cache_hits": 0
   },
   {
     "shape": "unique-message",
     "calls": 400,
-    "median_wall_ms": 9862.438071,
-    "median_peak_kib": 42843.1181640625,
+    "median_wall_ms": 10899.9343,
+    "median_peak_kib": 43080.69140625,
     "runtime_lookup_sets": 400,
     "cache_hits": 0
   }

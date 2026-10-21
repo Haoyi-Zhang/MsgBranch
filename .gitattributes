@@ -1,1 +1,10 @@
 * text=auto eol=lf
+# Preserve exact source and input bytes consumed by the scaling receipt.
+/evidence/project-scaling/** -text
+/results/project-scaling*.json -text
+/src/msgbranch/__init__.py -text
+/src/msgbranch/project.py -text
+/src/msgbranch/runtime.py -text
+/scripts/project_scaling.py -text
+/scripts/_repo_bootstrap.py -text
+/pyproject.toml -text

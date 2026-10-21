@@ -1,0 +1,66 @@
+[
+  {
+    "shape": "repeated-message",
+    "calls": 1,
+    "median_wall_ms": 23.55418,
+    "median_peak_kib": 164.087890625,
+    "runtime_lookup_sets": 1,
+    "cache_hits": 0
+  },
+  {
+    "shape": "repeated-message",
+    "calls": 25,
+    "median_wall_ms": 544.96856,
+    "median_peak_kib": 513.96875,
+    "runtime_lookup_sets": 1,
+    "cache_hits": 24
+  },
+  {
+    "shape": "repeated-message",
+    "calls": 100,
+    "median_wall_ms": 2154.856478,
+    "median_peak_kib": 1302.2236328125,
+    "runtime_lookup_sets": 1,
+    "cache_hits": 99
+  },
+  {
+    "shape": "repeated-message",
+    "calls": 400,
+    "median_wall_ms": 9060.37732,
+    "median_peak_kib": 5388.3828125,
+    "runtime_lookup_sets": 1,
+    "cache_hits": 399
+  },
+  {
+    "shape": "unique-message",
+    "calls": 1,
+    "median_wall_ms": 24.980365,
+    "median_peak_kib": 124.0791015625,
+    "runtime_lookup_sets": 1,
+    "cache_hits": 0
+  },
+  {
+    "shape": "unique-message",
+    "calls": 25,
+    "median_wall_ms": 547.523112,
+    "median_peak_kib": 2605.3974609375,
+    "runtime_lookup_sets": 25,
+    "cache_hits": 0
+  },
+  {
+    "shape": "unique-message",
+    "calls": 100,
+    "median_wall_ms": 2231.084653,
+    "median_peak_kib": 10479.087890625,
+    "runtime_lookup_sets": 100,
+    "cache_hits": 0
+  },
+  {
+    "shape": "unique-message",
+    "calls": 400,
+    "median_wall_ms": 9862.438071,
+    "median_peak_kib": 42843.1181640625,
+    "runtime_lookup_sets": 400,
+    "cache_hits": 0
+  }
+]

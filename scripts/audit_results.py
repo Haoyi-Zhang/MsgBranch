@@ -6,6 +6,8 @@ accounting, not the mathematical correctness of those implementations. A fresh
 """
 from pathlib import Path
 from collections import Counter, defaultdict
+from datetime import datetime, timedelta
+from hashlib import sha256
 import gzip
 import json
 import math
@@ -20,6 +22,83 @@ def load(name):
 def require(condition, message):
     if not condition:
         raise ValueError(message)
+
+def audit_project_scaling(scaling, *, root=ROOT):
+    """Check the current 24-observation receipt without executing a scan or study."""
+    root = Path(root).resolve()
+    require(scaling.get('measurement_record_version') == 2, 'scaling source-bound receipt required')
+    design = scaling['design']
+    require(design['shapes'] == ['repeated-message', 'unique-message'] and
+            design['calls'] == [1, 25, 100, 400] and design['repeats'] == 3 and
+            design['observations'] == 24, 'scaling design must retain all 24 observations')
+    require(scaling['max_count'] == 200, 'scaling count domain')
+    require(0 < scaling['campaign_elapsed_seconds'] <= scaling['budget_seconds'] <= 900,
+            'scaling measurement budget')
+
+    def stamp(value):
+        parsed = datetime.fromisoformat(value)
+        require(parsed.tzinfo is not None and parsed.utcoffset() == timedelta(0), 'scaling UTC required')
+        return parsed
+
+    started, completed = stamp(scaling['started_at_utc']), stamp(scaling['completed_at_utc'])
+    require(started < completed and scaling['run_id'], 'scaling run identity')
+    env = scaling['environment']
+    require(all(env.get(key) for key in ('os', 'cpu_model', 'cpu_source', 'python', 'python_full',
+                                        'python_implementation', 'packages')), 'scaling environment identity')
+    require(env['python'] == scaling['python'] and env['packages']['Babel'] == scaling['babel'],
+            'scaling environment consistency')
+    require(all(scaling['measurement'].get(key) for key in
+                ('wall_time', 'included', 'excluded', 'peak_allocation', 'aggregation')), 'scaling measurement definition')
+
+    def check_identity(identity):
+        path = (root / identity['path']).resolve()
+        require(path.is_relative_to(root) and path.is_file(), 'scaling bound file missing or outside artifact')
+        raw = path.read_bytes()
+        require(len(raw) == identity['bytes'] and sha256(raw).hexdigest() == identity['sha256'],
+                'scaling bound file bytes changed: ' + identity['path'])
+
+    expected_sources = {'src/msgbranch/__init__.py', 'src/msgbranch/project.py', 'src/msgbranch/runtime.py',
+                        'scripts/project_scaling.py', 'scripts/_repo_bootstrap.py', 'pyproject.toml'}
+    require(set(scaling['source_identity']) == expected_sources, 'scaling source coverage')
+    for name, identity in scaling['source_identity'].items():
+        require(identity['path'] == name, 'scaling source identity path')
+        check_identity(identity)
+    expected_grid = [(shape, calls) for shape in design['shapes'] for calls in design['calls']]
+    records = scaling['records']
+    require([(row['shape'], row['calls']) for row in records] == expected_grid, 'scaling grid/order')
+    previous_end = started
+    for record in records:
+        size = record['calls']
+        repeated = record['shape'] == 'repeated-message'
+        lookups, hits = (1, size - 1) if repeated else (size, 0)
+        require(record['repeats'] == len(record['raw']) == 3, 'scaling repeat count')
+        require(set(record['fixture_identity']) == {'source', 'catalog'}, 'scaling fixture coverage')
+        for kind, filename in (('source', 'app.py'), ('catalog', 'messages.po')):
+            identity = record['fixture_identity'][kind]
+            expected = f"evidence/project-scaling/{scaling['run_id']}/inputs/{'repeated' if repeated else 'unique'}/{size}/{filename}"
+            require(identity['path'] == expected, 'scaling fixture identity path')
+            check_identity(identity)
+        for repeat, row in enumerate(record['raw']):
+            require(row['repeat'] == repeat and row['calls'] == row['findings'] == size,
+                    'scaling raw call/repeat accounting')
+            require(row['unique_runtime_lookup_sets'] == lookups and row['runtime_lookup_cache_hits'] == hits,
+                    'scaling raw cache accounting')
+            require(row['errors'] == row['unknown'] == 0 and row['selected_patterns'] == 3 * size,
+                    'scaling raw classification accounting')
+            require(all(math.isfinite(row[key]) and row[key] > 0 for key in ('wall_ms', 'peak_kib')),
+                    'scaling positive finite measurements')
+            begin, end = stamp(row['started_at_utc']), stamp(row['completed_at_utc'])
+            require(previous_end <= begin < end <= completed, 'scaling observation UTC order')
+            previous_end = end
+        require(record['median_wall_ms'] == statistics.median(row['wall_ms'] for row in record['raw']) and
+                record['median_peak_kib'] == statistics.median(row['peak_kib'] for row in record['raw']),
+                'scaling raw/median mismatch')
+        require(record['runtime_lookup_sets'] == lookups and record['cache_hits'] == hits and
+                record['errors'] == record['unknown'] == 0 and record['selected_patterns'] == 3 * size,
+                'scaling summary accounting')
+    return {'status': 'pass', 'observations_recounted': 24, 'groups_recounted': 8,
+            'source_files_bound': len(expected_sources), 'fixture_files_bound': 16,
+            'run_id': scaling['run_id'], 'scope': 'Receipt accounting and current byte identity; no new scans'}
 
 def audit_holdout(holdout):
     """Recount either an archived frozen check or an explicit current regression."""
@@ -235,9 +314,7 @@ def main():
     psum = project['summary']
     project_accounting = audit_project_qualification(project)
     scaling = load('project-scaling.json')
-    scaling_rows = {(row['shape'], row['calls']): row for row in scaling['records']}
-    require(scaling_rows[('repeated-message', 400)]['runtime_lookup_sets'] == 1, 'project cache repeated')
-    require(scaling_rows[('unique-message', 400)]['runtime_lookup_sets'] == 400, 'project cache unique')
+    audit_project_scaling(scaling)
     stats = load('statistical-analysis.json')
     require(stats['validation']['methods']['product']['hits'] == 52, 'validation statistics')
     require(stats['confirmation']['methods']['product']['hits'] == 54, 'confirmation statistics')
@@ -273,4 +350,10 @@ def main():
     print(json.dumps(report, indent=2))
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--project-scaling-only', action='store_true', help='check the scaling receipt only; write no results')
+    if parser.parse_args().project_scaling_only:
+        print(json.dumps(audit_project_scaling(load('project-scaling.json')), indent=2))
+    else:
+        main()

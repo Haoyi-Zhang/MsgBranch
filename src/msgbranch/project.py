@@ -104,6 +104,13 @@ class _ConversionValue:
 
 
 @dataclass(frozen=True)
+class _BinaryValue:
+    operator: type
+    left: Any
+    right: Any
+
+
+@dataclass(frozen=True)
 class _PredicateValue:
     values: tuple[Any, ...]
     operators: tuple[type, ...]
@@ -912,53 +919,14 @@ class _FlowScanner:
             if isinstance(node.op, ast.Mod) and isinstance(left, _MessageValue):
                 self._record(left, "percent", right, node)
                 return _Primitive("str")
-            if isinstance(node.op, ast.Add):
-                if isinstance(left, _Primitive) and isinstance(right, _Primitive):
-                    if left.type_name == right.type_name == "str":
-                        return _Primitive("str")
-                    if left.type_name == right.type_name == "int":
-                        return _Primitive("int")
-                    if left.type_name in {"int", "float", "number"} and right.type_name in {
-                        "int",
-                        "float",
-                        "number",
-                    }:
-                        return _Primitive("number")
-            if isinstance(node.op, ast.Pow):
-                if isinstance(left, _Primitive) and isinstance(right, _Primitive):
-                    if left.type_name == right.type_name == "int":
-                        if right.has_literal and type(right.literal) is int:
-                            if right.literal < 0:
-                                # A negative integer exponent converts the base
-                                # to float and may fail before formatting.
-                                if (not left.has_literal or type(left.literal) is not int
-                                        or right.literal < -4096
-                                        or abs(left.literal).bit_length() > 4096):
-                                    return _Unknown("negative power evaluation is not qualified")
-                                try:
-                                    result = left.literal ** right.literal
-                                except (ZeroDivisionError, OverflowError):
-                                    return _Unknown("negative power evaluation fails")
-                                return _Primitive("finite-float" if math.isfinite(result)
-                                                  else "nonfinite-float", result, True)
-                            # Retain range facts for small literal powers without
-                            # evaluating an unbounded integer expression.
-                            if (left.has_literal and type(left.literal) is int
-                                    and 0 <= right.literal <= 4096
-                                    and abs(left.literal).bit_length() * right.literal <= 4096):
-                                return _Primitive("int", left.literal ** right.literal, True)
-                            return _Primitive("int")
-                return _Primitive("unknown")
-            if isinstance(node.op, (ast.Sub, ast.Mult, ast.FloorDiv, ast.Div)):
-                if isinstance(left, _Primitive) and isinstance(right, _Primitive):
-                    if left.type_name == right.type_name == "int" and not isinstance(node.op, ast.Div):
-                        return _Primitive("int")
-                    if left.type_name in {"int", "float", "number"} and right.type_name in {
-                        "int",
-                        "float",
-                        "number",
-                    }:
-                        return _Primitive("number")
+            if isinstance(node.op, (ast.Add, ast.Sub, ast.Mult, ast.FloorDiv, ast.Div, ast.Pow)):
+                # A result type alone cannot discharge evaluation preconditions
+                # (e.g. n // (n - 100)). Keep operands until count qualification.
+                value = _BinaryValue(type(node.op), left, right)
+                literal = _value_scalar(value, None, None)
+                if literal is not None:
+                    return _Primitive(_primitive_type(ast.Constant(literal)), literal, True)
+                return value
             return _Primitive("unknown")
         if isinstance(node, ast.Call):
             shape = self._shape(node)
@@ -1050,7 +1018,45 @@ def _env_dict(items: tuple[tuple[str, Any], ...]) -> dict[str, Any]:
     return dict(items)
 
 
+def _binary_scalar(kind: type, left: Any, right: Any) -> Any:
+    """Evaluate owned primitive abstractions only, with bounded materialization."""
+    if kind is ast.Add and type(left) is type(right) is str:
+        return left + right if len(left) + len(right) <= 100_000 else None
+    if type(left) not in {int, float, bool} or type(right) not in {int, float, bool}:
+        return None
+    if any(type(v) is int and abs(v).bit_length() > 4096 for v in (left, right)):
+        return None
+    try:
+        if kind is ast.Add:
+            value = left + right
+        elif kind is ast.Sub:
+            value = left - right
+        elif kind is ast.Mult:
+            value = left * right
+        elif kind is ast.FloorDiv:
+            value = left // right
+        elif kind is ast.Div:
+            value = left / right
+        elif kind is ast.Pow:
+            # Keep the existing integer-power admission and evaluation budget.
+            if type(left) is not int or type(right) is not int or abs(right) > 4096:
+                return None
+            if right >= 0 and abs(left).bit_length() * right > 4096:
+                return None
+            value = left ** right
+        else:
+            return None
+    except (TypeError, ValueError, OverflowError, ZeroDivisionError):
+        return None
+    if type(value) is int and abs(value).bit_length() > 4096:
+        return None
+    return value
+
+
 def _value_scalar(value: Any, count_var: str | None, count: int | None) -> Any:
+    if isinstance(value, _BinaryValue):
+        return _binary_scalar(value.operator, _value_scalar(value.left, count_var, count),
+                              _value_scalar(value.right, count_var, count))
     if isinstance(value, _PredicateValue):
         current = _value_scalar(value.values[0], count_var, count)
         if current is None:
@@ -1210,6 +1216,26 @@ def _condition(node: ast.AST, env: Mapping[str, Any], count_var: str | None, cou
 
 
 def _abstract_type(value: Any, count_var: str | None, count: int | None) -> str:
+    if isinstance(value, _BinaryValue):
+        literal = _value_scalar(value, count_var, count)
+        if literal is not None:
+            return _literal_supplier_type(ast.Constant(literal))
+        left = _abstract_type(value.left, count_var, count)
+        right = _abstract_type(value.right, count_var, count)
+        integers = {"int", "bool", "bounded-nonnegative-int", "unicode-codepoint-int",
+                    "finite-float-int", "float-overflow-int", "decimal-overflow-int"}
+        if value.operator is ast.Add and left == right == "str":
+            return "str"
+        if left in integers and right in integers:
+            if value.operator in {ast.Add, ast.Sub, ast.Mult, ast.FloorDiv}:
+                return "int"
+            exponent = _value_scalar(value.right, count_var, count)
+            if value.operator is ast.Pow and type(exponent) is int and exponent >= 0:
+                return "int"
+        floats = {"float", "finite-float", "nonfinite-float"}
+        if value.operator is not ast.Pow and left in floats and right in floats:
+            return "float"
+        return "unknown"
     if isinstance(value, _PredicateValue):
         return "bool" if _value_scalar(value, count_var, count) is not None else "unknown"
     if isinstance(value, _ConversionValue):
@@ -1245,6 +1271,27 @@ def _construction_qualified(value: Any, count_var: str | None, count: int | None
                 and _abstract_type(value, count_var, count) != "unknown")
     if isinstance(value, _PredicateValue):
         return _value_scalar(value, count_var, count) is not None
+    if isinstance(value, _BinaryValue):
+        if not (_construction_qualified(value.left, count_var, count)
+                and _construction_qualified(value.right, count_var, count)):
+            return False
+        if _value_scalar(value, count_var, count) is not None:
+            return True
+        integers = {"int", "bool", "bounded-nonnegative-int", "unicode-codepoint-int",
+                    "finite-float-int", "float-overflow-int", "decimal-overflow-int"}
+        left = _abstract_type(value.left, count_var, count)
+        right = _abstract_type(value.right, count_var, count)
+        if value.operator is ast.Add and left == right == "str":
+            return True
+        if left in integers and right in integers:
+            if value.operator in {ast.Add, ast.Sub, ast.Mult}:
+                return True
+            divisor = _value_scalar(value.right, count_var, count)
+            if value.operator is ast.FloorDiv:
+                return divisor is not None and divisor != 0
+            if value.operator is ast.Pow:
+                return type(divisor) is int and divisor >= 0
+        return False
     if isinstance(value, _SequenceValue):
         return (not value.unknown_items
                 and all(_construction_qualified(item, count_var, count) for item in value.items))
@@ -1252,6 +1299,10 @@ def _construction_qualified(value: Any, count_var: str | None, count: int | None
         return (not value.unknown_keys and
                 all(_construction_qualified(item, count_var, count)
                     for item in value.constructed_values or tuple(item for _, item in value.items)))
+    if isinstance(value, _FormatArgsValue):
+        return (not value.expanded
+                and all(_construction_qualified(item, count_var, count)
+                        for item in (*value.positional, *(item for _, item in value.keywords))))
     if isinstance(value, _ConditionalValue):
         branch = _condition(value.test, _env_dict(value.env), count_var, count)
         alternatives = ((value.when_true,) if branch is True else (value.when_false,)
@@ -1277,7 +1328,7 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
     if isinstance(value, _MappingValue):
         if value.unknown_keys:
             return Supplier("unknown", mode, reason=value.reason or "unknown mapping keys")
-        if not value.all_constructed_items_closed and not _construction_qualified(value, count_var, count):
+        if not _construction_qualified(value, count_var, count):
             return Supplier("unknown", mode, reason="mapping value construction is not qualified")
         names = tuple(sorted({name for name, _ in value.items}))
         types = tuple(sorted((name, _abstract_type(item, count_var, count)) for name, item in value.items))
@@ -1287,11 +1338,15 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
             return Supplier("unknown", mode, reason="percent list supplier is not a positional tuple")
         if value.unknown_items:
             return Supplier("unknown", mode, reason="positional expansion")
+        if not _construction_qualified(value, count_var, count):
+            return Supplier("unknown", mode, reason="positional value construction is not qualified")
         types = tuple(_abstract_type(item, count_var, count) for item in value.items)
         return Supplier("known", mode, positional=len(value.items), positional_types=types)
     if isinstance(value, _FormatArgsValue):
         if value.expanded:
             return Supplier("unknown", mode, reason="format argument expansion")
+        if not _construction_qualified(value, count_var, count):
+            return Supplier("unknown", mode, reason="format argument construction is not qualified")
         names = tuple(sorted({name for name, _ in value.keywords}))
         named_types = tuple(sorted((name, _abstract_type(item, count_var, count)) for name, item in value.keywords))
         positional_types = tuple(_abstract_type(item, count_var, count) for item in value.positional)
@@ -1303,7 +1358,9 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
             named_types=named_types,
             positional_types=positional_types,
         )
-    if isinstance(value, (_Primitive, _ConversionValue, _PredicateValue)):
+    if isinstance(value, (_Primitive, _ConversionValue, _PredicateValue, _BinaryValue)):
+        if not _construction_qualified(value, count_var, count):
+            return Supplier("unknown", mode, reason="supplier value construction is not qualified")
         primitive_type = _abstract_type(value, count_var, count)
         if primitive_type == "unknown":
             return Supplier("unknown", mode, reason="dynamic formatting supplier")
@@ -1761,6 +1818,8 @@ def audit_project(
     if analysis_mode not in {"direct", "flow"}:
         raise ValueError("analysis_mode must be direct or flow")
     source_root = source_root.resolve()
+    if not source_root.is_file() and not source_root.is_dir():
+        raise ValueError(f"source path is not an existing file or directory: {source_root}")
     files = [source_root] if source_root.is_file() else sorted(source_root.rglob("*.py"))
     if len(files) > max_files:
         raise ValueError(f"source file budget exceeded: {len(files)} > {max_files}")

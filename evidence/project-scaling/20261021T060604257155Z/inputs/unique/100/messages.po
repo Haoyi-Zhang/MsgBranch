@@ -1,0 +1,722 @@
+# Polish translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-10-04 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#, python-format
+msgid "%(n)d item 0"
+msgid_plural "%(n)d items 0"
+msgstr[0] "%(n)d rzecz 0"
+msgstr[1] "%(n)d rzeczy 0"
+msgstr[2] "%(n)d rzeczy 0"
+
+#, python-format
+msgid "%(n)d item 1"
+msgid_plural "%(n)d items 1"
+msgstr[0] "%(n)d rzecz 1"
+msgstr[1] "%(n)d rzeczy 1"
+msgstr[2] "%(n)d rzeczy 1"
+
+#, python-format
+msgid "%(n)d item 2"
+msgid_plural "%(n)d items 2"
+msgstr[0] "%(n)d rzecz 2"
+msgstr[1] "%(n)d rzeczy 2"
+msgstr[2] "%(n)d rzeczy 2"
+
+#, python-format
+msgid "%(n)d item 3"
+msgid_plural "%(n)d items 3"
+msgstr[0] "%(n)d rzecz 3"
+msgstr[1] "%(n)d rzeczy 3"
+msgstr[2] "%(n)d rzeczy 3"
+
+#, python-format
+msgid "%(n)d item 4"
+msgid_plural "%(n)d items 4"
+msgstr[0] "%(n)d rzecz 4"
+msgstr[1] "%(n)d rzeczy 4"
+msgstr[2] "%(n)d rzeczy 4"
+
+#, python-format
+msgid "%(n)d item 5"
+msgid_plural "%(n)d items 5"
+msgstr[0] "%(n)d rzecz 5"
+msgstr[1] "%(n)d rzeczy 5"
+msgstr[2] "%(n)d rzeczy 5"
+
+#, python-format
+msgid "%(n)d item 6"
+msgid_plural "%(n)d items 6"
+msgstr[0] "%(n)d rzecz 6"
+msgstr[1] "%(n)d rzeczy 6"
+msgstr[2] "%(n)d rzeczy 6"
+
+#, python-format
+msgid "%(n)d item 7"
+msgid_plural "%(n)d items 7"
+msgstr[0] "%(n)d rzecz 7"
+msgstr[1] "%(n)d rzeczy 7"
+msgstr[2] "%(n)d rzeczy 7"
+
+#, python-format
+msgid "%(n)d item 8"
+msgid_plural "%(n)d items 8"
+msgstr[0] "%(n)d rzecz 8"
+msgstr[1] "%(n)d rzeczy 8"
+msgstr[2] "%(n)d rzeczy 8"
+
+#, python-format
+msgid "%(n)d item 9"
+msgid_plural "%(n)d items 9"
+msgstr[0] "%(n)d rzecz 9"
+msgstr[1] "%(n)d rzeczy 9"
+msgstr[2] "%(n)d rzeczy 9"
+
+#, python-format
+msgid "%(n)d item 10"
+msgid_plural "%(n)d items 10"
+msgstr[0] "%(n)d rzecz 10"
+msgstr[1] "%(n)d rzeczy 10"
+msgstr[2] "%(n)d rzeczy 10"
+
+#, python-format
+msgid "%(n)d item 11"
+msgid_plural "%(n)d items 11"
+msgstr[0] "%(n)d rzecz 11"
+msgstr[1] "%(n)d rzeczy 11"
+msgstr[2] "%(n)d rzeczy 11"
+
+#, python-format
+msgid "%(n)d item 12"
+msgid_plural "%(n)d items 12"
+msgstr[0] "%(n)d rzecz 12"
+msgstr[1] "%(n)d rzeczy 12"
+msgstr[2] "%(n)d rzeczy 12"
+
+#, python-format
+msgid "%(n)d item 13"
+msgid_plural "%(n)d items 13"
+msgstr[0] "%(n)d rzecz 13"
+msgstr[1] "%(n)d rzeczy 13"
+msgstr[2] "%(n)d rzeczy 13"
+
+#, python-format
+msgid "%(n)d item 14"
+msgid_plural "%(n)d items 14"
+msgstr[0] "%(n)d rzecz 14"
+msgstr[1] "%(n)d rzeczy 14"
+msgstr[2] "%(n)d rzeczy 14"
+
+#, python-format
+msgid "%(n)d item 15"
+msgid_plural "%(n)d items 15"
+msgstr[0] "%(n)d rzecz 15"
+msgstr[1] "%(n)d rzeczy 15"
+msgstr[2] "%(n)d rzeczy 15"
+
+#, python-format
+msgid "%(n)d item 16"
+msgid_plural "%(n)d items 16"
+msgstr[0] "%(n)d rzecz 16"
+msgstr[1] "%(n)d rzeczy 16"
+msgstr[2] "%(n)d rzeczy 16"
+
+#, python-format
+msgid "%(n)d item 17"
+msgid_plural "%(n)d items 17"
+msgstr[0] "%(n)d rzecz 17"
+msgstr[1] "%(n)d rzeczy 17"
+msgstr[2] "%(n)d rzeczy 17"
+
+#, python-format
+msgid "%(n)d item 18"
+msgid_plural "%(n)d items 18"
+msgstr[0] "%(n)d rzecz 18"
+msgstr[1] "%(n)d rzeczy 18"
+msgstr[2] "%(n)d rzeczy 18"
+
+#, python-format
+msgid "%(n)d item 19"
+msgid_plural "%(n)d items 19"
+msgstr[0] "%(n)d rzecz 19"
+msgstr[1] "%(n)d rzeczy 19"
+msgstr[2] "%(n)d rzeczy 19"
+
+#, python-format
+msgid "%(n)d item 20"
+msgid_plural "%(n)d items 20"
+msgstr[0] "%(n)d rzecz 20"
+msgstr[1] "%(n)d rzeczy 20"
+msgstr[2] "%(n)d rzeczy 20"
+
+#, python-format
+msgid "%(n)d item 21"
+msgid_plural "%(n)d items 21"
+msgstr[0] "%(n)d rzecz 21"
+msgstr[1] "%(n)d rzeczy 21"
+msgstr[2] "%(n)d rzeczy 21"
+
+#, python-format
+msgid "%(n)d item 22"
+msgid_plural "%(n)d items 22"
+msgstr[0] "%(n)d rzecz 22"
+msgstr[1] "%(n)d rzeczy 22"
+msgstr[2] "%(n)d rzeczy 22"
+
+#, python-format
+msgid "%(n)d item 23"
+msgid_plural "%(n)d items 23"
+msgstr[0] "%(n)d rzecz 23"
+msgstr[1] "%(n)d rzeczy 23"
+msgstr[2] "%(n)d rzeczy 23"
+
+#, python-format
+msgid "%(n)d item 24"
+msgid_plural "%(n)d items 24"
+msgstr[0] "%(n)d rzecz 24"
+msgstr[1] "%(n)d rzeczy 24"
+msgstr[2] "%(n)d rzeczy 24"
+
+#, python-format
+msgid "%(n)d item 25"
+msgid_plural "%(n)d items 25"
+msgstr[0] "%(n)d rzecz 25"
+msgstr[1] "%(n)d rzeczy 25"
+msgstr[2] "%(n)d rzeczy 25"
+
+#, python-format
+msgid "%(n)d item 26"
+msgid_plural "%(n)d items 26"
+msgstr[0] "%(n)d rzecz 26"
+msgstr[1] "%(n)d rzeczy 26"
+msgstr[2] "%(n)d rzeczy 26"
+
+#, python-format
+msgid "%(n)d item 27"
+msgid_plural "%(n)d items 27"
+msgstr[0] "%(n)d rzecz 27"
+msgstr[1] "%(n)d rzeczy 27"
+msgstr[2] "%(n)d rzeczy 27"
+
+#, python-format
+msgid "%(n)d item 28"
+msgid_plural "%(n)d items 28"
+msgstr[0] "%(n)d rzecz 28"
+msgstr[1] "%(n)d rzeczy 28"
+msgstr[2] "%(n)d rzeczy 28"
+
+#, python-format
+msgid "%(n)d item 29"
+msgid_plural "%(n)d items 29"
+msgstr[0] "%(n)d rzecz 29"
+msgstr[1] "%(n)d rzeczy 29"
+msgstr[2] "%(n)d rzeczy 29"
+
+#, python-format
+msgid "%(n)d item 30"
+msgid_plural "%(n)d items 30"
+msgstr[0] "%(n)d rzecz 30"
+msgstr[1] "%(n)d rzeczy 30"
+msgstr[2] "%(n)d rzeczy 30"
+
+#, python-format
+msgid "%(n)d item 31"
+msgid_plural "%(n)d items 31"
+msgstr[0] "%(n)d rzecz 31"
+msgstr[1] "%(n)d rzeczy 31"
+msgstr[2] "%(n)d rzeczy 31"
+
+#, python-format
+msgid "%(n)d item 32"
+msgid_plural "%(n)d items 32"
+msgstr[0] "%(n)d rzecz 32"
+msgstr[1] "%(n)d rzeczy 32"
+msgstr[2] "%(n)d rzeczy 32"
+
+#, python-format
+msgid "%(n)d item 33"
+msgid_plural "%(n)d items 33"
+msgstr[0] "%(n)d rzecz 33"
+msgstr[1] "%(n)d rzeczy 33"
+msgstr[2] "%(n)d rzeczy 33"
+
+#, python-format
+msgid "%(n)d item 34"
+msgid_plural "%(n)d items 34"
+msgstr[0] "%(n)d rzecz 34"
+msgstr[1] "%(n)d rzeczy 34"
+msgstr[2] "%(n)d rzeczy 34"
+
+#, python-format
+msgid "%(n)d item 35"
+msgid_plural "%(n)d items 35"
+msgstr[0] "%(n)d rzecz 35"
+msgstr[1] "%(n)d rzeczy 35"
+msgstr[2] "%(n)d rzeczy 35"
+
+#, python-format
+msgid "%(n)d item 36"
+msgid_plural "%(n)d items 36"
+msgstr[0] "%(n)d rzecz 36"
+msgstr[1] "%(n)d rzeczy 36"
+msgstr[2] "%(n)d rzeczy 36"
+
+#, python-format
+msgid "%(n)d item 37"
+msgid_plural "%(n)d items 37"
+msgstr[0] "%(n)d rzecz 37"
+msgstr[1] "%(n)d rzeczy 37"
+msgstr[2] "%(n)d rzeczy 37"
+
+#, python-format
+msgid "%(n)d item 38"
+msgid_plural "%(n)d items 38"
+msgstr[0] "%(n)d rzecz 38"
+msgstr[1] "%(n)d rzeczy 38"
+msgstr[2] "%(n)d rzeczy 38"
+
+#, python-format
+msgid "%(n)d item 39"
+msgid_plural "%(n)d items 39"
+msgstr[0] "%(n)d rzecz 39"
+msgstr[1] "%(n)d rzeczy 39"
+msgstr[2] "%(n)d rzeczy 39"
+
+#, python-format
+msgid "%(n)d item 40"
+msgid_plural "%(n)d items 40"
+msgstr[0] "%(n)d rzecz 40"
+msgstr[1] "%(n)d rzeczy 40"
+msgstr[2] "%(n)d rzeczy 40"
+
+#, python-format
+msgid "%(n)d item 41"
+msgid_plural "%(n)d items 41"
+msgstr[0] "%(n)d rzecz 41"
+msgstr[1] "%(n)d rzeczy 41"
+msgstr[2] "%(n)d rzeczy 41"
+
+#, python-format
+msgid "%(n)d item 42"
+msgid_plural "%(n)d items 42"
+msgstr[0] "%(n)d rzecz 42"
+msgstr[1] "%(n)d rzeczy 42"
+msgstr[2] "%(n)d rzeczy 42"
+
+#, python-format
+msgid "%(n)d item 43"
+msgid_plural "%(n)d items 43"
+msgstr[0] "%(n)d rzecz 43"
+msgstr[1] "%(n)d rzeczy 43"
+msgstr[2] "%(n)d rzeczy 43"
+
+#, python-format
+msgid "%(n)d item 44"
+msgid_plural "%(n)d items 44"
+msgstr[0] "%(n)d rzecz 44"
+msgstr[1] "%(n)d rzeczy 44"
+msgstr[2] "%(n)d rzeczy 44"
+
+#, python-format
+msgid "%(n)d item 45"
+msgid_plural "%(n)d items 45"
+msgstr[0] "%(n)d rzecz 45"
+msgstr[1] "%(n)d rzeczy 45"
+msgstr[2] "%(n)d rzeczy 45"
+
+#, python-format
+msgid "%(n)d item 46"
+msgid_plural "%(n)d items 46"
+msgstr[0] "%(n)d rzecz 46"
+msgstr[1] "%(n)d rzeczy 46"
+msgstr[2] "%(n)d rzeczy 46"
+
+#, python-format
+msgid "%(n)d item 47"
+msgid_plural "%(n)d items 47"
+msgstr[0] "%(n)d rzecz 47"
+msgstr[1] "%(n)d rzeczy 47"
+msgstr[2] "%(n)d rzeczy 47"
+
+#, python-format
+msgid "%(n)d item 48"
+msgid_plural "%(n)d items 48"
+msgstr[0] "%(n)d rzecz 48"
+msgstr[1] "%(n)d rzeczy 48"
+msgstr[2] "%(n)d rzeczy 48"
+
+#, python-format
+msgid "%(n)d item 49"
+msgid_plural "%(n)d items 49"
+msgstr[0] "%(n)d rzecz 49"
+msgstr[1] "%(n)d rzeczy 49"
+msgstr[2] "%(n)d rzeczy 49"
+
+#, python-format
+msgid "%(n)d item 50"
+msgid_plural "%(n)d items 50"
+msgstr[0] "%(n)d rzecz 50"
+msgstr[1] "%(n)d rzeczy 50"
+msgstr[2] "%(n)d rzeczy 50"
+
+#, python-format
+msgid "%(n)d item 51"
+msgid_plural "%(n)d items 51"
+msgstr[0] "%(n)d rzecz 51"
+msgstr[1] "%(n)d rzeczy 51"
+msgstr[2] "%(n)d rzeczy 51"
+
+#, python-format
+msgid "%(n)d item 52"
+msgid_plural "%(n)d items 52"
+msgstr[0] "%(n)d rzecz 52"
+msgstr[1] "%(n)d rzeczy 52"
+msgstr[2] "%(n)d rzeczy 52"
+
+#, python-format
+msgid "%(n)d item 53"
+msgid_plural "%(n)d items 53"
+msgstr[0] "%(n)d rzecz 53"
+msgstr[1] "%(n)d rzeczy 53"
+msgstr[2] "%(n)d rzeczy 53"
+
+#, python-format
+msgid "%(n)d item 54"
+msgid_plural "%(n)d items 54"
+msgstr[0] "%(n)d rzecz 54"
+msgstr[1] "%(n)d rzeczy 54"
+msgstr[2] "%(n)d rzeczy 54"
+
+#, python-format
+msgid "%(n)d item 55"
+msgid_plural "%(n)d items 55"
+msgstr[0] "%(n)d rzecz 55"
+msgstr[1] "%(n)d rzeczy 55"
+msgstr[2] "%(n)d rzeczy 55"
+
+#, python-format
+msgid "%(n)d item 56"
+msgid_plural "%(n)d items 56"
+msgstr[0] "%(n)d rzecz 56"
+msgstr[1] "%(n)d rzeczy 56"
+msgstr[2] "%(n)d rzeczy 56"
+
+#, python-format
+msgid "%(n)d item 57"
+msgid_plural "%(n)d items 57"
+msgstr[0] "%(n)d rzecz 57"
+msgstr[1] "%(n)d rzeczy 57"
+msgstr[2] "%(n)d rzeczy 57"
+
+#, python-format
+msgid "%(n)d item 58"
+msgid_plural "%(n)d items 58"
+msgstr[0] "%(n)d rzecz 58"
+msgstr[1] "%(n)d rzeczy 58"
+msgstr[2] "%(n)d rzeczy 58"
+
+#, python-format
+msgid "%(n)d item 59"
+msgid_plural "%(n)d items 59"
+msgstr[0] "%(n)d rzecz 59"
+msgstr[1] "%(n)d rzeczy 59"
+msgstr[2] "%(n)d rzeczy 59"
+
+#, python-format
+msgid "%(n)d item 60"
+msgid_plural "%(n)d items 60"
+msgstr[0] "%(n)d rzecz 60"
+msgstr[1] "%(n)d rzeczy 60"
+msgstr[2] "%(n)d rzeczy 60"
+
+#, python-format
+msgid "%(n)d item 61"
+msgid_plural "%(n)d items 61"
+msgstr[0] "%(n)d rzecz 61"
+msgstr[1] "%(n)d rzeczy 61"
+msgstr[2] "%(n)d rzeczy 61"
+
+#, python-format
+msgid "%(n)d item 62"
+msgid_plural "%(n)d items 62"
+msgstr[0] "%(n)d rzecz 62"
+msgstr[1] "%(n)d rzeczy 62"
+msgstr[2] "%(n)d rzeczy 62"
+
+#, python-format
+msgid "%(n)d item 63"
+msgid_plural "%(n)d items 63"
+msgstr[0] "%(n)d rzecz 63"
+msgstr[1] "%(n)d rzeczy 63"
+msgstr[2] "%(n)d rzeczy 63"
+
+#, python-format
+msgid "%(n)d item 64"
+msgid_plural "%(n)d items 64"
+msgstr[0] "%(n)d rzecz 64"
+msgstr[1] "%(n)d rzeczy 64"
+msgstr[2] "%(n)d rzeczy 64"
+
+#, python-format
+msgid "%(n)d item 65"
+msgid_plural "%(n)d items 65"
+msgstr[0] "%(n)d rzecz 65"
+msgstr[1] "%(n)d rzeczy 65"
+msgstr[2] "%(n)d rzeczy 65"
+
+#, python-format
+msgid "%(n)d item 66"
+msgid_plural "%(n)d items 66"
+msgstr[0] "%(n)d rzecz 66"
+msgstr[1] "%(n)d rzeczy 66"
+msgstr[2] "%(n)d rzeczy 66"
+
+#, python-format
+msgid "%(n)d item 67"
+msgid_plural "%(n)d items 67"
+msgstr[0] "%(n)d rzecz 67"
+msgstr[1] "%(n)d rzeczy 67"
+msgstr[2] "%(n)d rzeczy 67"
+
+#, python-format
+msgid "%(n)d item 68"
+msgid_plural "%(n)d items 68"
+msgstr[0] "%(n)d rzecz 68"
+msgstr[1] "%(n)d rzeczy 68"
+msgstr[2] "%(n)d rzeczy 68"
+
+#, python-format
+msgid "%(n)d item 69"
+msgid_plural "%(n)d items 69"
+msgstr[0] "%(n)d rzecz 69"
+msgstr[1] "%(n)d rzeczy 69"
+msgstr[2] "%(n)d rzeczy 69"
+
+#, python-format
+msgid "%(n)d item 70"
+msgid_plural "%(n)d items 70"
+msgstr[0] "%(n)d rzecz 70"
+msgstr[1] "%(n)d rzeczy 70"
+msgstr[2] "%(n)d rzeczy 70"
+
+#, python-format
+msgid "%(n)d item 71"
+msgid_plural "%(n)d items 71"
+msgstr[0] "%(n)d rzecz 71"
+msgstr[1] "%(n)d rzeczy 71"
+msgstr[2] "%(n)d rzeczy 71"
+
+#, python-format
+msgid "%(n)d item 72"
+msgid_plural "%(n)d items 72"
+msgstr[0] "%(n)d rzecz 72"
+msgstr[1] "%(n)d rzeczy 72"
+msgstr[2] "%(n)d rzeczy 72"
+
+#, python-format
+msgid "%(n)d item 73"
+msgid_plural "%(n)d items 73"
+msgstr[0] "%(n)d rzecz 73"
+msgstr[1] "%(n)d rzeczy 73"
+msgstr[2] "%(n)d rzeczy 73"
+
+#, python-format
+msgid "%(n)d item 74"
+msgid_plural "%(n)d items 74"
+msgstr[0] "%(n)d rzecz 74"
+msgstr[1] "%(n)d rzeczy 74"
+msgstr[2] "%(n)d rzeczy 74"
+
+#, python-format
+msgid "%(n)d item 75"
+msgid_plural "%(n)d items 75"
+msgstr[0] "%(n)d rzecz 75"
+msgstr[1] "%(n)d rzeczy 75"
+msgstr[2] "%(n)d rzeczy 75"
+
+#, python-format
+msgid "%(n)d item 76"
+msgid_plural "%(n)d items 76"
+msgstr[0] "%(n)d rzecz 76"
+msgstr[1] "%(n)d rzeczy 76"
+msgstr[2] "%(n)d rzeczy 76"
+
+#, python-format
+msgid "%(n)d item 77"
+msgid_plural "%(n)d items 77"
+msgstr[0] "%(n)d rzecz 77"
+msgstr[1] "%(n)d rzeczy 77"
+msgstr[2] "%(n)d rzeczy 77"
+
+#, python-format
+msgid "%(n)d item 78"
+msgid_plural "%(n)d items 78"
+msgstr[0] "%(n)d rzecz 78"
+msgstr[1] "%(n)d rzeczy 78"
+msgstr[2] "%(n)d rzeczy 78"
+
+#, python-format
+msgid "%(n)d item 79"
+msgid_plural "%(n)d items 79"
+msgstr[0] "%(n)d rzecz 79"
+msgstr[1] "%(n)d rzeczy 79"
+msgstr[2] "%(n)d rzeczy 79"
+
+#, python-format
+msgid "%(n)d item 80"
+msgid_plural "%(n)d items 80"
+msgstr[0] "%(n)d rzecz 80"
+msgstr[1] "%(n)d rzeczy 80"
+msgstr[2] "%(n)d rzeczy 80"
+
+#, python-format
+msgid "%(n)d item 81"
+msgid_plural "%(n)d items 81"
+msgstr[0] "%(n)d rzecz 81"
+msgstr[1] "%(n)d rzeczy 81"
+msgstr[2] "%(n)d rzeczy 81"
+
+#, python-format
+msgid "%(n)d item 82"
+msgid_plural "%(n)d items 82"
+msgstr[0] "%(n)d rzecz 82"
+msgstr[1] "%(n)d rzeczy 82"
+msgstr[2] "%(n)d rzeczy 82"
+
+#, python-format
+msgid "%(n)d item 83"
+msgid_plural "%(n)d items 83"
+msgstr[0] "%(n)d rzecz 83"
+msgstr[1] "%(n)d rzeczy 83"
+msgstr[2] "%(n)d rzeczy 83"
+
+#, python-format
+msgid "%(n)d item 84"
+msgid_plural "%(n)d items 84"
+msgstr[0] "%(n)d rzecz 84"
+msgstr[1] "%(n)d rzeczy 84"
+msgstr[2] "%(n)d rzeczy 84"
+
+#, python-format
+msgid "%(n)d item 85"
+msgid_plural "%(n)d items 85"
+msgstr[0] "%(n)d rzecz 85"
+msgstr[1] "%(n)d rzeczy 85"
+msgstr[2] "%(n)d rzeczy 85"
+
+#, python-format
+msgid "%(n)d item 86"
+msgid_plural "%(n)d items 86"
+msgstr[0] "%(n)d rzecz 86"
+msgstr[1] "%(n)d rzeczy 86"
+msgstr[2] "%(n)d rzeczy 86"
+
+#, python-format
+msgid "%(n)d item 87"
+msgid_plural "%(n)d items 87"
+msgstr[0] "%(n)d rzecz 87"
+msgstr[1] "%(n)d rzeczy 87"
+msgstr[2] "%(n)d rzeczy 87"
+
+#, python-format
+msgid "%(n)d item 88"
+msgid_plural "%(n)d items 88"
+msgstr[0] "%(n)d rzecz 88"
+msgstr[1] "%(n)d rzeczy 88"
+msgstr[2] "%(n)d rzeczy 88"
+
+#, python-format
+msgid "%(n)d item 89"
+msgid_plural "%(n)d items 89"
+msgstr[0] "%(n)d rzecz 89"
+msgstr[1] "%(n)d rzeczy 89"
+msgstr[2] "%(n)d rzeczy 89"
+
+#, python-format
+msgid "%(n)d item 90"
+msgid_plural "%(n)d items 90"
+msgstr[0] "%(n)d rzecz 90"
+msgstr[1] "%(n)d rzeczy 90"
+msgstr[2] "%(n)d rzeczy 90"
+
+#, python-format
+msgid "%(n)d item 91"
+msgid_plural "%(n)d items 91"
+msgstr[0] "%(n)d rzecz 91"
+msgstr[1] "%(n)d rzeczy 91"
+msgstr[2] "%(n)d rzeczy 91"
+
+#, python-format
+msgid "%(n)d item 92"
+msgid_plural "%(n)d items 92"
+msgstr[0] "%(n)d rzecz 92"
+msgstr[1] "%(n)d rzeczy 92"
+msgstr[2] "%(n)d rzeczy 92"
+
+#, python-format
+msgid "%(n)d item 93"
+msgid_plural "%(n)d items 93"
+msgstr[0] "%(n)d rzecz 93"
+msgstr[1] "%(n)d rzeczy 93"
+msgstr[2] "%(n)d rzeczy 93"
+
+#, python-format
+msgid "%(n)d item 94"
+msgid_plural "%(n)d items 94"
+msgstr[0] "%(n)d rzecz 94"
+msgstr[1] "%(n)d rzeczy 94"
+msgstr[2] "%(n)d rzeczy 94"
+
+#, python-format
+msgid "%(n)d item 95"
+msgid_plural "%(n)d items 95"
+msgstr[0] "%(n)d rzecz 95"
+msgstr[1] "%(n)d rzeczy 95"
+msgstr[2] "%(n)d rzeczy 95"
+
+#, python-format
+msgid "%(n)d item 96"
+msgid_plural "%(n)d items 96"
+msgstr[0] "%(n)d rzecz 96"
+msgstr[1] "%(n)d rzeczy 96"
+msgstr[2] "%(n)d rzeczy 96"
+
+#, python-format
+msgid "%(n)d item 97"
+msgid_plural "%(n)d items 97"
+msgstr[0] "%(n)d rzecz 97"
+msgstr[1] "%(n)d rzeczy 97"
+msgstr[2] "%(n)d rzeczy 97"
+
+#, python-format
+msgid "%(n)d item 98"
+msgid_plural "%(n)d items 98"
+msgstr[0] "%(n)d rzecz 98"
+msgstr[1] "%(n)d rzeczy 98"
+msgstr[2] "%(n)d rzeczy 98"
+
+#, python-format
+msgid "%(n)d item 99"
+msgid_plural "%(n)d items 99"
+msgstr[0] "%(n)d rzecz 99"
+msgstr[1] "%(n)d rzeczy 99"
+msgstr[2] "%(n)d rzeczy 99"
+

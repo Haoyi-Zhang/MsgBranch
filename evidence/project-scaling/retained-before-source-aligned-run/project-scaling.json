@@ -1,0 +1,384 @@
+{
+  "python": "3.12.14",
+  "babel": "2.18.0",
+  "max_count": 200,
+  "records": [
+    {
+      "shape": "repeated-message",
+      "calls": 1,
+      "repeats": 3,
+      "median_wall_ms": 24.5862,
+      "median_peak_kib": 225.158203125,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 0,
+      "selected_patterns": 3,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 83.098,
+          "peak_kib": 2632.3681640625,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 24.3587,
+          "peak_kib": 225.158203125,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 24.5862,
+          "peak_kib": 203.751953125,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        }
+      ]
+    },
+    {
+      "shape": "repeated-message",
+      "calls": 25,
+      "repeats": 3,
+      "median_wall_ms": 486.7059,
+      "median_peak_kib": 460.822265625,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 24,
+      "selected_patterns": 75,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 488.3688,
+          "peak_kib": 571.9375,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 24,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 476.6787,
+          "peak_kib": 460.822265625,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 24,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 486.7059,
+          "peak_kib": 459.912109375,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 24,
+          "errors": 0,
+          "unknown": 0
+        }
+      ]
+    },
+    {
+      "shape": "repeated-message",
+      "calls": 100,
+      "repeats": 3,
+      "median_wall_ms": 1945.1814,
+      "median_peak_kib": 1492.9921875,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 99,
+      "selected_patterns": 300,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 1945.1814,
+          "peak_kib": 1492.9921875,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 99,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 1976.3483,
+          "peak_kib": 1482.8798828125,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 99,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 1928.998,
+          "peak_kib": 1813.423828125,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 99,
+          "errors": 0,
+          "unknown": 0
+        }
+      ]
+    },
+    {
+      "shape": "repeated-message",
+      "calls": 400,
+      "repeats": 3,
+      "median_wall_ms": 7821.7291,
+      "median_peak_kib": 5619.2890625,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 399,
+      "selected_patterns": 1200,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 7840.5037,
+          "peak_kib": 5619.2890625,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 399,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 7821.7291,
+          "peak_kib": 5807.4111328125,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 399,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 7752.9211,
+          "peak_kib": 5573.5634765625,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 399,
+          "errors": 0,
+          "unknown": 0
+        }
+      ]
+    },
+    {
+      "shape": "unique-message",
+      "calls": 1,
+      "repeats": 3,
+      "median_wall_ms": 23.9287,
+      "median_peak_kib": 127.927734375,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 0,
+      "selected_patterns": 3,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 23.8949,
+          "peak_kib": 127.9755859375,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 24.5084,
+          "peak_kib": 127.716796875,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 23.9287,
+          "peak_kib": 127.927734375,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        }
+      ]
+    },
+    {
+      "shape": "unique-message",
+      "calls": 25,
+      "repeats": 3,
+      "median_wall_ms": 537.2477,
+      "median_peak_kib": 2673.580078125,
+      "runtime_lookup_sets": 25,
+      "cache_hits": 0,
+      "selected_patterns": 75,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 554.8352,
+          "peak_kib": 3256.107421875,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 25,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 530.4034,
+          "peak_kib": 2673.580078125,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 25,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 537.2477,
+          "peak_kib": 2671.2041015625,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 25,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        }
+      ]
+    },
+    {
+      "shape": "unique-message",
+      "calls": 100,
+      "repeats": 3,
+      "median_wall_ms": 2185.8341,
+      "median_peak_kib": 11191.25390625,
+      "runtime_lookup_sets": 100,
+      "cache_hits": 0,
+      "selected_patterns": 300,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 2185.8341,
+          "peak_kib": 11191.25390625,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 100,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 2219.509,
+          "peak_kib": 10704.08203125,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 100,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 2175.8244,
+          "peak_kib": 11216.361328125,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 100,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        }
+      ]
+    },
+    {
+      "shape": "unique-message",
+      "calls": 400,
+      "repeats": 3,
+      "median_wall_ms": 8799.2516,
+      "median_peak_kib": 43133.1015625,
+      "runtime_lookup_sets": 400,
+      "cache_hits": 0,
+      "selected_patterns": 1200,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 8724.1966,
+          "peak_kib": 43133.1015625,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 400,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 8814.8449,
+          "peak_kib": 43231.291015625,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 400,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        },
+        {
+          "wall_ms": 8799.2516,
+          "peak_kib": 43092.3896484375,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 400,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0
+        }
+      ]
+    }
+  ],
+  "scope": "generated local Python/PO fixtures; includes parsing, Babel MO compilation, AST scan, runtime selection and qualification; wall time is descriptive for this machine only"
+}

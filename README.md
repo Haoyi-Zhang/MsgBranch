@@ -9,7 +9,7 @@ Install `pip install -e '.[figures]'` for regeneration and run
 `python plots/draw_workflow.py --output-dir ../paper/figures`.
 The full bundle's `paper/build.py` regenerates this figure before compilation.
 
-The reported measurements use Windows 11 on an Intel Core i7-12700KF, CPython 3.12.14, Babel 2.18.0, attrs 26.1.0, pytz 2026.2, Jinja2 3.1.6, and pytest 9.0.2. Python 3.12 and 3.13 are supported. Differential tests cover the version-sensitive gettext plural-expression helper.
+The archived generated-study measurements use Windows 11 on an Intel Core i7-12700KF, CPython 3.12.14, Babel 2.18.0, attrs 26.1.0, pytz 2026.2, Jinja2 3.1.6, and pytest 9.0.2. The current project-scan measurements use the same OS, CPU, Python, and Babel versions; their own execution identity is retained below. Python 3.12 and 3.13 are supported. Differential tests cover the version-sensitive gettext plural-expression helper.
 
 ```sh
 python -m venv .venv
@@ -23,6 +23,21 @@ For the seeded studies and timing measurements, run
 `python scripts/reproduce.py --full` instead of the default reproduction command.
 The separate complete generated-input replay is `python scripts/native_replay.py`.
 Run commands from this artifact directory; generated reports go to `results/`.
+
+To reproduce only project-scan scaling, run `python scripts/project_scaling.py`.
+Its fixed design is repeated/unique messages at 1, 25, 100, and 400 calls, with
+three consecutive repetitions and no warm-up (24 observations). The current
+`results/project-scaling.json` records actual UTC, OS/CPU/runtime versions,
+implementation and fixture identities, and all raw times and allocations.
+Wall time surrounds `audit_project`; peak allocation is a fresh tracemalloc
+peak, not RSS. Fixture creation and provenance capture are outside that interval.
+The source-bound run inputs are retained under `evidence/project-scaling/`.
+The `retained-before-source-aligned-run/` subdirectory preserves the two distinct
+older result files without assigning them missing historical run identities.
+`python scripts/audit_results.py --project-scaling-only` checks all 24 observations,
+medians, caches, and current source/fixture bytes without launching scans or
+changing results. The paper table generator uses the same check before emitting
+tables. Scaling observations are separate from the 26 controls and frozen studies.
 
 All retained inputs run locally after dependency installation. No GPU, model API, paid service, credential, production system, or live third-party endpoint is used. The portable driver runs the current pytest suite as a checked stage before any study scripts, then verifies immutable inputs and licenses, executes four historical repair replays, evaluates the project analyzer and its direct-syntax ablation, checks retained two-project regressions, invokes the actual Babel CLI, and audits result accounting. A failed unit stage stops the driver. Native replay is a separate step that additionally executes all 384,384 retained generated inputs and their selected witnesses. Full mode regenerates both seeded studies and the cost measurements after the unit stage. Test counts are reported by pytest; the frozen study records do not establish a pass count for later source revisions.
 
