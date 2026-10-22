@@ -27,6 +27,10 @@ import sys
 from typing import Any, Iterable, Mapping
 
 from .runtime import CatalogRuntime
+from .program import Unsupported
+
+_MAX_SOURCE_BYTES = 1_000_000
+_MAX_AST_NODES = 40_000
 
 _PERCENT = re.compile(
     r"%(?:\(([^)]+)\))?[-+#0 ]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[hlL]?([diouxXeEfFgGcrsa%])"
@@ -388,6 +392,25 @@ def _direct_supplier(call: ast.Call, parents: dict[ast.AST, ast.AST], base_arity
     return Supplier("none", "none")
 
 
+def _analysis_diagnostic(path: str, exc: Exception) -> CallSite:
+    reason = f"analysis: {type(exc).__name__}: {exc}"
+    return CallSite(path, getattr(exc, "lineno", 0) or 0, 0, "", "unknown", None, None,
+                    Supplier("unknown", "none", reason=reason), "unknown", reason)
+
+
+def _preflight(source: str, path: str) -> tuple[ast.Module, list[ast.AST]]:
+    """Admit one parsed tree for both syntax and flow; rejection has no retry."""
+    if len(source.encode("utf-8")) > _MAX_SOURCE_BYTES:
+        raise Unsupported("source exceeds 1 MB budget")
+    tree = ast.parse(source, filename=path)
+    nodes = []
+    for node in ast.walk(tree):
+        if len(nodes) >= _MAX_AST_NODES:
+            raise Unsupported("AST exceeds 40,000-node budget")
+        nodes.append(node)
+    return tree, nodes
+
+
 def scan_source(
     source: str,
     path: str,
@@ -398,55 +421,25 @@ def scan_source(
     contextual_singular_callees: Iterable[str] = ("pgettext",),
     contextual_plural_callees: Iterable[str] = ("npgettext",),
 ) -> list[CallSite]:
-    if len(source.encode("utf-8")) > 1_000_000:
-        return [
-            CallSite(
-                path,
-                0,
-                0,
-                "",
-                "unknown",
-                None,
-                None,
-                Supplier("unknown", "none", reason="file-size budget"),
-                "unknown",
-                "source exceeds 1 MB budget",
-            )
-        ]
     try:
-        tree = ast.parse(source, filename=path)
-    except (SyntaxError, RecursionError) as exc:
-        return [
-            CallSite(
-                path,
-                getattr(exc, "lineno", 0) or 0,
-                0,
-                "",
-                "unknown",
-                None,
-                None,
-                Supplier("unknown", "none", reason="parse failure"),
-                "unknown",
-                f"parse: {exc}",
-            )
-        ]
-    nodes = list(ast.walk(tree))
-    if len(nodes) > 40_000:
-        return [
-            CallSite(
-                path,
-                0,
-                0,
-                "",
-                "unknown",
-                None,
-                None,
-                Supplier("unknown", "none", reason="AST budget"),
-                "unknown",
-                "AST exceeds 40,000-node budget",
-            )
-        ]
-    parents = {child: parent for parent in ast.walk(tree) for child in ast.iter_child_nodes(parent)}
+        _, nodes = _preflight(source, path)
+        return _scan_nodes(
+            nodes, path, singular_callees=singular_callees, plural_callees=plural_callees,
+            overloaded_callees=overloaded_callees,
+            contextual_singular_callees=contextual_singular_callees,
+            contextual_plural_callees=contextual_plural_callees,
+        )
+    except (SyntaxError, Unsupported, RecursionError, MemoryError) as exc:
+        return [_analysis_diagnostic(path, exc)]
+
+
+def _scan_nodes(
+    nodes: list[ast.AST], path: str, *,
+    singular_callees: Iterable[str], plural_callees: Iterable[str],
+    overloaded_callees: Iterable[str], contextual_singular_callees: Iterable[str],
+    contextual_plural_callees: Iterable[str],
+) -> list[CallSite]:
+    parents = {child: parent for parent in nodes for child in ast.iter_child_nodes(parent)}
     singulars = set(singular_callees)
     plurals = set(plural_callees)
     overloaded = set(overloaded_callees)
@@ -783,16 +776,28 @@ class _FlowScanner:
     def _bind(self, target: ast.AST, value: Any, env: dict[str, Any]) -> None:
         if isinstance(target, ast.Name):
             env[target.id] = value
-        elif isinstance(target, (ast.Tuple, ast.List)) and isinstance(value, _SequenceValue):
-            if len(target.elts) == len(value.items):
+        elif isinstance(target, (ast.Tuple, ast.List)):
+            if self._exact_unpack(target, value):
                 for child, item in zip(target.elts, value.items, strict=True):
                     self._bind(child, item, env)
             else:
+                # Unknown RHS, expansion or nested arity mismatch must not
+                # preserve any pre-assignment supplier binding.
                 for child in target.elts:
-                    self._bind(child, _Unknown("unpack arity"), env)
+                    self._bind(child, _Unknown("unresolved unpack assignment"), env)
+        elif isinstance(target, ast.Starred):
+            self._bind(target.value, _Unknown("starred assignment"), env)
         elif isinstance(target, (ast.Subscript, ast.Attribute)):
             self._expr(target, env)
             self._invalidate_container(target, env, "unsupported container assignment")
+
+    def _exact_unpack(self, target: ast.AST, value: Any) -> bool:
+        if isinstance(target, (ast.Tuple, ast.List)):
+            return (isinstance(value, _SequenceValue) and not value.unknown_items
+                    and len(target.elts) == len(value.items)
+                    and all(self._exact_unpack(child, item)
+                            for child, item in zip(target.elts, value.items, strict=True)))
+        return isinstance(target, (ast.Name, ast.Subscript, ast.Attribute))
 
     def _invalidate_container(self, node: ast.AST, env: dict[str, Any], reason: str) -> None:
         while isinstance(node, (ast.Subscript, ast.Attribute)):
@@ -1374,7 +1379,7 @@ def _supplier_from_value(value: Any, mode: str, count_var: str | None, count: in
 
 
 def _recover_flow_models(
-    source: str,
+    tree: ast.Module,
     *,
     singular_callees: Iterable[str],
     plural_callees: Iterable[str],
@@ -1382,10 +1387,8 @@ def _recover_flow_models(
     contextual_singular_callees: Iterable[str],
     contextual_plural_callees: Iterable[str],
 ) -> dict[tuple[int, int], list[_FlowModel]]:
-    try:
-        tree = ast.parse(source)
-    except (SyntaxError, RecursionError):
-        return {}
+    # Only the caller's admitted tree enters recovery. Exceptions propagate to
+    # the per-file diagnostic, never an empty-model/direct-syntax fallback.
     scanner = _FlowScanner(
         singulars=set(singular_callees),
         plurals=set(plural_callees),
@@ -1825,32 +1828,26 @@ def audit_project(
         raise ValueError(f"source file budget exceeded: {len(files)} > {max_files}")
     calls: list[CallSite] = []
     flow_models: dict[tuple[str, int, int], list[_FlowModel]] = {}
+    callees = dict(
+        singular_callees=tuple(singular_callees), plural_callees=tuple(plural_callees),
+        overloaded_callees=tuple(overloaded_callees),
+        contextual_singular_callees=tuple(contextual_singular_callees),
+        contextual_plural_callees=tuple(contextual_plural_callees),
+    )
     for path in files:
+        rel = path.name
         try:
             rel = str(path.resolve().relative_to(source_root)) if source_root.is_dir() else path.name
             source = path.read_text(encoding="utf-8")
-            calls.extend(
-                scan_source(
-                    source,
-                    rel,
-                    singular_callees=singular_callees,
-                    plural_callees=plural_callees,
-                    overloaded_callees=overloaded_callees,
-                    contextual_singular_callees=contextual_singular_callees,
-                    contextual_plural_callees=contextual_plural_callees,
-                )
-            )
+            tree, nodes = _preflight(source, rel)
+            file_calls = _scan_nodes(nodes, rel, **callees)
             if analysis_mode == "flow":
-                recovered = _recover_flow_models(
-                    source,
-                    singular_callees=singular_callees,
-                    plural_callees=plural_callees,
-                    overloaded_callees=overloaded_callees,
-                    contextual_singular_callees=contextual_singular_callees,
-                    contextual_plural_callees=contextual_plural_callees,
-                )
+                recovered = _recover_flow_models(tree, **callees)
                 for (line, column), models in recovered.items():
                     flow_models[(rel, line, column)] = models
+            calls.extend(file_calls)
+        except (SyntaxError, Unsupported, RecursionError, MemoryError) as exc:
+            calls.append(_analysis_diagnostic(rel, exc))
         except (OSError, UnicodeError) as exc:
             calls.append(
                 CallSite(
@@ -1925,7 +1922,13 @@ def audit_project(
                 effective_supplier = call.supplier
                 flow_meta: dict[str, Any] | None = None
                 if models:
-                    resolution = _flow_resolution(models, observation["count"])
+                    try:
+                        resolution = _flow_resolution(models, observation["count"])
+                    except (Unsupported, RecursionError, MemoryError) as exc:
+                        reason = f"flow qualification: {type(exc).__name__}: {exc}"
+                        resolution = _FlowResolution(
+                            Supplier("unknown", "none", reason=reason), (), reason, None,
+                        )
                     if resolution.reachable is False:
                         unreachable_counts.append(observation["count"])
                         continue

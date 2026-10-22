@@ -1,0 +1,10 @@
+{
+  "run_id": "20261021T060604257155Z",
+  "measured_source": "scripts/provenance/project-scaling-source.py",
+  "measured_sha256": "d041dd2ba16c85325ece4f0e5750a4205aee754bedea5a3e5775569f82c189bc",
+  "current_source": "src/msgbranch/project.py",
+  "current_sha256": "c8593b33784cecdad9a97aa84154e30e29ca637bbdd5d8b0ad320ae5f6e5dc6a",
+  "receipt_sha256": "1e437131087c0682966d5758b2e416d0b69fbc685dd426670d6e7ce84a71e2f3",
+  "receipt_content_sha256": "b24422e2d96a4e9ab88d882d76f2cff2baec28b71cbf5f443f19b366d3fd8510",
+  "scope": "Retained measurements of the captured source, not timings of the current unpack/admission repair."
+}

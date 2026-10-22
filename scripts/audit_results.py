@@ -24,7 +24,7 @@ def require(condition, message):
         raise ValueError(message)
 
 def audit_project_scaling(scaling, *, root=ROOT):
-    """Check the current 24-observation receipt without executing a scan or study."""
+    """Check 24 retained observations and their exact measured/current source scope."""
     root = Path(root).resolve()
     require(scaling.get('measurement_record_version') == 2, 'scaling source-bound receipt required')
     design = scaling['design']
@@ -50,10 +50,44 @@ def audit_project_scaling(scaling, *, root=ROOT):
     require(all(scaling['measurement'].get(key) for key in
                 ('wall_time', 'included', 'excluded', 'peak_allocation', 'aggregation')), 'scaling measurement definition')
 
+    captured_source = 'scripts/provenance/project-scaling-source.py'
+    association_path = root / 'scripts/provenance/project-scaling-association.json'
+    old_project = 'd041dd2ba16c85325ece4f0e5750a4205aee754bedea5a3e5775569f82c189bc'
+    reviewed_project = 'c8593b33784cecdad9a97aa84154e30e29ca637bbdd5d8b0ad320ae5f6e5dc6a'
+    retained_receipt = '1e437131087c0682966d5758b2e416d0b69fbc685dd426670d6e7ce84a71e2f3'
+    retained_content = 'b24422e2d96a4e9ab88d882d76f2cff2baec28b71cbf5f443f19b366d3fd8510'
+    historical_source_used = False
     def check_identity(identity):
+        nonlocal historical_source_used
         path = (root / identity['path']).resolve()
         require(path.is_relative_to(root) and path.is_file(), 'scaling bound file missing or outside artifact')
         raw = path.read_bytes()
+        if (identity['path'] == 'src/msgbranch/project.py' and
+                (len(raw) != identity['bytes'] or sha256(raw).hexdigest() != identity['sha256'])):
+            # Only this exact reviewed repair may refer to the exact captured
+            # measured source. No archived source is imported or executed.
+            require(identity['sha256'] == old_project and identity['bytes'] == 98206,
+                    'scaling bound file bytes changed: original project source differs')
+            require(sha256(raw).hexdigest() == reviewed_project,
+                    'scaling bound file bytes changed: unreviewed current project source')
+            require(association_path.is_file(), 'scaling historical association missing')
+            association = json.loads(association_path.read_text(encoding='utf-8'))
+            expected = dict(run_id='20261021T060604257155Z', measured_source=captured_source,
+                measured_sha256=old_project, current_source=identity['path'],
+                current_sha256=reviewed_project, receipt_sha256=retained_receipt,
+                receipt_content_sha256=retained_content,
+                scope='Retained measurements of the captured source, not timings of the current unpack/admission repair.')
+            require(association == expected, 'scaling historical association changed')
+            selected = root / 'results/project-scaling.json'
+            require(sha256(selected.read_bytes()).hexdigest() == retained_receipt,
+                    'scaling retained receipt bytes changed')
+            content = json.dumps(scaling, sort_keys=True, separators=(',', ':'), ensure_ascii=False).encode()
+            require(sha256(content).hexdigest() == retained_content,
+                    'scaling retained receipt content changed')
+            path = (root / captured_source).resolve()
+            require(path.is_relative_to(root) and path.is_file(), 'scaling captured source missing')
+            raw = path.read_bytes()
+            historical_source_used = True
         require(len(raw) == identity['bytes'] and sha256(raw).hexdigest() == identity['sha256'],
                 'scaling bound file bytes changed: ' + identity['path'])
 
@@ -98,7 +132,9 @@ def audit_project_scaling(scaling, *, root=ROOT):
                 'scaling summary accounting')
     return {'status': 'pass', 'observations_recounted': 24, 'groups_recounted': 8,
             'source_files_bound': len(expected_sources), 'fixture_files_bound': 16,
-            'run_id': scaling['run_id'], 'scope': 'Receipt accounting and current byte identity; no new scans'}
+            'run_id': scaling['run_id'], 'captured_measured_source': historical_source_used,
+            'scope': ('Retained receipt and captured measured source; reviewed current repair is associated, not remeasured'
+                      if historical_source_used else 'Receipt accounting and current byte identity; no new scans')}
 
 def audit_holdout(holdout):
     """Recount either an archived frozen check or an explicit current regression."""

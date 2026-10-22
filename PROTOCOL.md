@@ -26,7 +26,7 @@ Before broad evaluation, each admitted repair must expose a local executable bou
 
 Baselines are matched to their supported formats and evidence layers:
 
-- Babel catalog checkers and the actual `pybabel compile --use-fuzzy` command;
+- Babel catalog checkers and `pybabel compile -i INPUT.po -o OUTPUT.mo`;
 - Python `gettext`/`GNUTranslations` native execution;
 - artifact existence plus a known-message runtime smoke lookup;
 - placeholder-set and format-kind checks;
@@ -39,6 +39,8 @@ Baselines are matched to their supported formats and evidence layers:
 - the pinned python-fluent runtime and disclosed observer.
 
 GNU `msgfmt`, a configured full Weblate deployment, the complete LocalHero CLI, and complete upstream application suites are unavailable as complete runs and receive no miss count.
+
+The Babel CLI and in-process writer share a temporary PO input with fixed header dates. Only the catalog-header fuzzy marker is cleared; individual message flags are preserved, and fuzzy messages remain excluded (no `--use-fuzzy`).
 
 Constructed controls cover named reordering, legal branch-specific omission, contexts, one-form and six-form locales, empty/missing translation with explicit fallback policy, nested brace fields, percent characters, wrong keys, wrong types, count-conditioned suppliers, deferred formatting, and dynamic unknowns. Raw outputs retain selected branch, resolution origin, supplier shape, required names/types, exceptions, and covered counts.
 

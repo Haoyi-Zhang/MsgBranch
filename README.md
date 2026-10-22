@@ -35,9 +35,13 @@ The source-bound run inputs are retained under `evidence/project-scaling/`.
 The `retained-before-source-aligned-run/` subdirectory preserves the two distinct
 older result files without assigning them missing historical run identities.
 `python scripts/audit_results.py --project-scaling-only` checks all 24 observations,
-medians, caches, and current source/fixture bytes without launching scans or
-changing results. The paper table generator uses the same check before emitting
-tables. Scaling observations are separate from the 26 controls and frozen studies.
+medians, caches, and source/fixture bindings without launching scans or changing
+results. For this retained run, the exact measured scanner is preserved at
+`scripts/provenance/project-scaling-source.py`; its association record binds
+the current unpack/admission repair separately. These timings describe the
+captured scanner, not a new measurement of that repair. Other measured sources
+and fixtures must still match current bytes. The paper table generator uses the
+same check; scaling remains separate from the 26 controls and frozen studies.
 
 All retained inputs run locally after dependency installation. No GPU, model API, paid service, credential, production system, or live third-party endpoint is used. The portable driver runs the current pytest suite as a checked stage before any study scripts, then verifies immutable inputs and licenses, executes four historical repair replays, evaluates the project analyzer and its direct-syntax ablation, checks retained two-project regressions, invokes the actual Babel CLI, and audits result accounting. A failed unit stage stops the driver. Native replay is a separate step that additionally executes all 384,384 retained generated inputs and their selected witnesses. Full mode regenerates both seeded studies and the cost measurements after the unit stage. Test counts are reported by pytest; the frozen study records do not establish a pass count for later source revisions.
 
