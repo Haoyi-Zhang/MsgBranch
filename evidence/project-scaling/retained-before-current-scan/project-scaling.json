@@ -1,0 +1,631 @@
+{
+  "measurement_record_version": 2,
+  "run_id": "20261021T060604257155Z",
+  "started_at_utc": "2026-10-21T06:06:04.257155+00:00",
+  "completed_at_utc": "2026-10-21T06:07:27.326807+00:00",
+  "campaign_elapsed_seconds": 83.06200000003446,
+  "budget_seconds": 900,
+  "environment": {
+    "os": "Windows-11-10.0.28000-SP0",
+    "system": "Windows",
+    "release": "11",
+    "version": "10.0.28000",
+    "machine": "AMD64",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700KF",
+    "cpu_source": "Windows ProcessorNameString registry value",
+    "python": "3.12.14",
+    "python_full": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "python_implementation": "CPython",
+    "packages": {
+      "Babel": "2.18.0",
+      "attrs": "26.1.0",
+      "pytz": "2026.2",
+      "Jinja2": "3.1.6"
+    }
+  },
+  "source_identity": {
+    "src/msgbranch/__init__.py": {
+      "path": "src/msgbranch/__init__.py",
+      "bytes": 92,
+      "sha256": "48e32a7484433d319c39759157b393bd533a4ce41a2a5b6ec9b41f2adf45c405"
+    },
+    "src/msgbranch/project.py": {
+      "path": "src/msgbranch/project.py",
+      "bytes": 98206,
+      "sha256": "d041dd2ba16c85325ece4f0e5750a4205aee754bedea5a3e5775569f82c189bc"
+    },
+    "src/msgbranch/runtime.py": {
+      "path": "src/msgbranch/runtime.py",
+      "bytes": 5808,
+      "sha256": "5812f19fb95d266ad4a2f86ce9f43bf218c5f72bc7cb51bdbbf9b3faf15c14bd"
+    },
+    "scripts/project_scaling.py": {
+      "path": "scripts/project_scaling.py",
+      "bytes": 10171,
+      "sha256": "6b17e5985163eea780130d33e3f07c459144910ba6146455226565a969b3ce9a"
+    },
+    "scripts/_repo_bootstrap.py": {
+      "path": "scripts/_repo_bootstrap.py",
+      "bytes": 376,
+      "sha256": "20694834ae1ae73b8c393a0752ae365cfeea02b5a095a4d3efa284baca27678d"
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "bytes": 651,
+      "sha256": "e4541698750c39969267387db580f395811f6056b303b4d80487763985d4094a"
+    }
+  },
+  "design": {
+    "shapes": [
+      "repeated-message",
+      "unique-message"
+    ],
+    "calls": [
+      1,
+      25,
+      100,
+      400
+    ],
+    "repeats": 3,
+    "observations": 24,
+    "order": "repeated then unique; ascending calls; three consecutive repeats",
+    "warmup": "none; the first observation is retained"
+  },
+  "measurement": {
+    "wall_time": "perf_counter_ns immediately around audit_project; milliseconds",
+    "included": "source parsing, Babel PO-to-MO compilation, AST scan, runtime selection and qualification",
+    "excluded": "fixture generation, hashing, environment/UTC capture and result serialization",
+    "peak_allocation": "tracemalloc peak over that audit_project call with a fresh trace; KiB=1024 bytes; not process RSS",
+    "aggregation": "median of the three raw wall times and separately median of the three raw peak allocations"
+  },
+  "python": "3.12.14",
+  "babel": "2.18.0",
+  "max_count": 200,
+  "records": [
+    {
+      "shape": "repeated-message",
+      "calls": 1,
+      "repeats": 3,
+      "median_wall_ms": 31.6566,
+      "median_peak_kib": 229.66015625,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 0,
+      "selected_patterns": 3,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 49.7324,
+          "peak_kib": 391.5224609375,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:04.348984+00:00",
+          "completed_at_utc": "2026-10-21T06:06:04.398931+00:00",
+          "repeat": 0
+        },
+        {
+          "wall_ms": 31.6566,
+          "peak_kib": 229.66015625,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:04.398931+00:00",
+          "completed_at_utc": "2026-10-21T06:06:04.430513+00:00",
+          "repeat": 1
+        },
+        {
+          "wall_ms": 31.5897,
+          "peak_kib": 208.3720703125,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:04.430513+00:00",
+          "completed_at_utc": "2026-10-21T06:06:04.462001+00:00",
+          "repeat": 2
+        }
+      ],
+      "fixture_identity": {
+        "source": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/repeated/1/app.py",
+          "bytes": 97,
+          "sha256": "d52ad22572a991379838e6c5d4eec3c5e2e1931c84853ff2f5f7e0451d59ef32"
+        },
+        "catalog": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/repeated/1/messages.po",
+          "bytes": 868,
+          "sha256": "916942aaa23cb267921cc05294ebdf47d73876a542e8754d52729ecc5929ecf7"
+        }
+      }
+    },
+    {
+      "shape": "repeated-message",
+      "calls": 25,
+      "repeats": 3,
+      "median_wall_ms": 673.91,
+      "median_peak_kib": 459.802734375,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 24,
+      "selected_patterns": 75,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 676.4071,
+          "peak_kib": 509.76171875,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 24,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:04.464086+00:00",
+          "completed_at_utc": "2026-10-21T06:06:05.140622+00:00",
+          "repeat": 0
+        },
+        {
+          "wall_ms": 673.91,
+          "peak_kib": 459.802734375,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 24,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:05.140622+00:00",
+          "completed_at_utc": "2026-10-21T06:06:05.815381+00:00",
+          "repeat": 1
+        },
+        {
+          "wall_ms": 657.8582,
+          "peak_kib": 458.9345703125,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 24,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:05.815381+00:00",
+          "completed_at_utc": "2026-10-21T06:06:06.473305+00:00",
+          "repeat": 2
+        }
+      ],
+      "fixture_identity": {
+        "source": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/repeated/25/app.py",
+          "bytes": 1696,
+          "sha256": "3789205afd106f1f78bf8854d2210195c07e7ef38e2a0ed98f6aa02c726db310"
+        },
+        "catalog": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/repeated/25/messages.po",
+          "bytes": 868,
+          "sha256": "916942aaa23cb267921cc05294ebdf47d73876a542e8754d52729ecc5929ecf7"
+        }
+      }
+    },
+    {
+      "shape": "repeated-message",
+      "calls": 100,
+      "repeats": 3,
+      "median_wall_ms": 2647.9395,
+      "median_peak_kib": 1538.447265625,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 99,
+      "selected_patterns": 300,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 2616.3046,
+          "peak_kib": 1538.447265625,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 99,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:06.475466+00:00",
+          "completed_at_utc": "2026-10-21T06:06:09.092781+00:00",
+          "repeat": 0
+        },
+        {
+          "wall_ms": 2668.1085,
+          "peak_kib": 1534.8466796875,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 99,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:09.092781+00:00",
+          "completed_at_utc": "2026-10-21T06:06:11.762185+00:00",
+          "repeat": 1
+        },
+        {
+          "wall_ms": 2647.9395,
+          "peak_kib": 1889.337890625,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 99,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:11.762185+00:00",
+          "completed_at_utc": "2026-10-21T06:06:14.411140+00:00",
+          "repeat": 2
+        }
+      ],
+      "fixture_identity": {
+        "source": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/repeated/100/app.py",
+          "bytes": 6721,
+          "sha256": "95cf7282e5b066c8e0fc3d82d704ecacdb59519b55d5bb0ace8318154519e641"
+        },
+        "catalog": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/repeated/100/messages.po",
+          "bytes": 868,
+          "sha256": "916942aaa23cb267921cc05294ebdf47d73876a542e8754d52729ecc5929ecf7"
+        }
+      }
+    },
+    {
+      "shape": "repeated-message",
+      "calls": 400,
+      "repeats": 3,
+      "median_wall_ms": 9878.5558,
+      "median_peak_kib": 5953.435546875,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 399,
+      "selected_patterns": 1200,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 10589.8482,
+          "peak_kib": 5863.4912109375,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 399,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:14.480227+00:00",
+          "completed_at_utc": "2026-10-21T06:06:25.078764+00:00",
+          "repeat": 0
+        },
+        {
+          "wall_ms": 9878.5558,
+          "peak_kib": 6070.3974609375,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 399,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:25.080890+00:00",
+          "completed_at_utc": "2026-10-21T06:06:34.962957+00:00",
+          "repeat": 1
+        },
+        {
+          "wall_ms": 9711.2465,
+          "peak_kib": 5953.435546875,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 399,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:34.963959+00:00",
+          "completed_at_utc": "2026-10-21T06:06:44.680613+00:00",
+          "repeat": 2
+        }
+      ],
+      "fixture_identity": {
+        "source": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/repeated/400/app.py",
+          "bytes": 27121,
+          "sha256": "33fe3f9f595e64a35c07ba59605160d60867ad0bc4c5e3e919ed4fa478d164e0"
+        },
+        "catalog": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/repeated/400/messages.po",
+          "bytes": 868,
+          "sha256": "916942aaa23cb267921cc05294ebdf47d73876a542e8754d52729ecc5929ecf7"
+        }
+      }
+    },
+    {
+      "shape": "unique-message",
+      "calls": 1,
+      "repeats": 3,
+      "median_wall_ms": 27.5009,
+      "median_peak_kib": 109.171875,
+      "runtime_lookup_sets": 1,
+      "cache_hits": 0,
+      "selected_patterns": 3,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 27.2683,
+          "peak_kib": 109.875,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:44.683327+00:00",
+          "completed_at_utc": "2026-10-21T06:06:44.709847+00:00",
+          "repeat": 0
+        },
+        {
+          "wall_ms": 27.5009,
+          "peak_kib": 109.171875,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:44.709847+00:00",
+          "completed_at_utc": "2026-10-21T06:06:44.737679+00:00",
+          "repeat": 1
+        },
+        {
+          "wall_ms": 27.6183,
+          "peak_kib": 109.15625,
+          "calls": 1,
+          "findings": 1,
+          "selected_patterns": 3,
+          "unique_runtime_lookup_sets": 1,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:44.737679+00:00",
+          "completed_at_utc": "2026-10-21T06:06:44.765770+00:00",
+          "repeat": 2
+        }
+      ],
+      "fixture_identity": {
+        "source": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/unique/1/app.py",
+          "bytes": 97,
+          "sha256": "d52ad22572a991379838e6c5d4eec3c5e2e1931c84853ff2f5f7e0451d59ef32"
+        },
+        "catalog": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/unique/1/messages.po",
+          "bytes": 868,
+          "sha256": "916942aaa23cb267921cc05294ebdf47d73876a542e8754d52729ecc5929ecf7"
+        }
+      }
+    },
+    {
+      "shape": "unique-message",
+      "calls": 25,
+      "repeats": 3,
+      "median_wall_ms": 670.3344,
+      "median_peak_kib": 2695.78125,
+      "runtime_lookup_sets": 25,
+      "cache_hits": 0,
+      "selected_patterns": 75,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 656.6935,
+          "peak_kib": 2695.78125,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 25,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:44.767504+00:00",
+          "completed_at_utc": "2026-10-21T06:06:45.424840+00:00",
+          "repeat": 0
+        },
+        {
+          "wall_ms": 672.3202,
+          "peak_kib": 2696.8876953125,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 25,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:45.424840+00:00",
+          "completed_at_utc": "2026-10-21T06:06:46.097309+00:00",
+          "repeat": 1
+        },
+        {
+          "wall_ms": 670.3344,
+          "peak_kib": 2692.9248046875,
+          "calls": 25,
+          "findings": 25,
+          "selected_patterns": 75,
+          "unique_runtime_lookup_sets": 25,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:46.097309+00:00",
+          "completed_at_utc": "2026-10-21T06:06:46.768808+00:00",
+          "repeat": 2
+        }
+      ],
+      "fixture_identity": {
+        "source": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/unique/25/app.py",
+          "bytes": 1726,
+          "sha256": "e64166b89e6d69e00b21bd51e21c4b3be1cffae43f43b11bce4847c572a1a00a"
+        },
+        "catalog": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/unique/25/messages.po",
+          "bytes": 4495,
+          "sha256": "e785aa547a62151e6ae29ca01440a26dde325e4801968f08d12993cd90767748"
+        }
+      }
+    },
+    {
+      "shape": "unique-message",
+      "calls": 100,
+      "repeats": 3,
+      "median_wall_ms": 2626.7742,
+      "median_peak_kib": 11075.33203125,
+      "runtime_lookup_sets": 100,
+      "cache_hits": 0,
+      "selected_patterns": 300,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 2626.7742,
+          "peak_kib": 11075.33203125,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 100,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:46.770803+00:00",
+          "completed_at_utc": "2026-10-21T06:06:49.400271+00:00",
+          "repeat": 0
+        },
+        {
+          "wall_ms": 2601.4442,
+          "peak_kib": 10758.28125,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 100,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:49.400271+00:00",
+          "completed_at_utc": "2026-10-21T06:06:52.003244+00:00",
+          "repeat": 1
+        },
+        {
+          "wall_ms": 2668.0222,
+          "peak_kib": 11100.978515625,
+          "calls": 100,
+          "findings": 100,
+          "selected_patterns": 300,
+          "unique_runtime_lookup_sets": 100,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:52.004258+00:00",
+          "completed_at_utc": "2026-10-21T06:06:54.673977+00:00",
+          "repeat": 2
+        }
+      ],
+      "fixture_identity": {
+        "source": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/unique/100/app.py",
+          "bytes": 6901,
+          "sha256": "f9394e7318e664786fc099eba36643d68cba9ccdc1c699a06e6dd5eb76aa7cc5"
+        },
+        "catalog": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/unique/100/messages.po",
+          "bytes": 15970,
+          "sha256": "6f0131172cf9f04b48f977f033d9421cfae35614a7762cc933f933d21b680f62"
+        }
+      }
+    },
+    {
+      "shape": "unique-message",
+      "calls": 400,
+      "repeats": 3,
+      "median_wall_ms": 10899.9343,
+      "median_peak_kib": 43080.69140625,
+      "runtime_lookup_sets": 400,
+      "cache_hits": 0,
+      "selected_patterns": 1200,
+      "errors": 0,
+      "unknown": 0,
+      "raw": [
+        {
+          "wall_ms": 10609.8052,
+          "peak_kib": 43071.611328125,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 400,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:06:54.679188+00:00",
+          "completed_at_utc": "2026-10-21T06:07:05.297167+00:00",
+          "repeat": 0
+        },
+        {
+          "wall_ms": 11100.7754,
+          "peak_kib": 43106.7353515625,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 400,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:07:05.298690+00:00",
+          "completed_at_utc": "2026-10-21T06:07:16.410489+00:00",
+          "repeat": 1
+        },
+        {
+          "wall_ms": 10899.9343,
+          "peak_kib": 43080.69140625,
+          "calls": 400,
+          "findings": 400,
+          "selected_patterns": 1200,
+          "unique_runtime_lookup_sets": 400,
+          "runtime_lookup_cache_hits": 0,
+          "errors": 0,
+          "unknown": 0,
+          "started_at_utc": "2026-10-21T06:07:16.412012+00:00",
+          "completed_at_utc": "2026-10-21T06:07:27.322574+00:00",
+          "repeat": 2
+        }
+      ],
+      "fixture_identity": {
+        "source": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/unique/400/app.py",
+          "bytes": 28501,
+          "sha256": "dd248f12c357a82aa08f20b060143063b27ed2652bb789974ce6383cbc69250f"
+        },
+        "catalog": {
+          "path": "evidence/project-scaling/20261021T060604257155Z/inputs/unique/400/messages.po",
+          "bytes": 63370,
+          "sha256": "026a51a9b4af5aaaa964f3b509885913941fffe996c16015bd46fcf919d918bf"
+        }
+      }
+    }
+  ],
+  "scope": "generated local Python/PO fixtures; includes parsing, Babel MO compilation, AST scan, runtime selection and qualification; wall time is descriptive for this machine only"
+}

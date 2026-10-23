@@ -7,7 +7,8 @@ MsgBranch qualifies localized-message failures at the boundary between catalog e
 The workflow schematic is a direct Matplotlib vector with embedded fonts.
 Install `pip install -e '.[figures]'` for regeneration and run
 `python plots/draw_workflow.py --output-dir ../paper/figures`.
-The full bundle's `paper/build.py` regenerates this figure before compilation.
+The full bundle's `paper/build.py` regenerates this figure inside an isolated
+build; renderer or TeX failure leaves the retained figure and PDF untouched.
 
 The archived generated-study measurements use Windows 11 on an Intel Core i7-12700KF, CPython 3.12.14, Babel 2.18.0, attrs 26.1.0, pytz 2026.2, Jinja2 3.1.6, and pytest 9.0.2. The current project-scan measurements use the same OS, CPU, Python, and Babel versions; their own execution identity is retained below. Python 3.12 and 3.13 are supported. Differential tests cover the version-sensitive gettext plural-expression helper.
 
@@ -32,16 +33,21 @@ implementation and fixture identities, and all raw times and allocations.
 Wall time surrounds `audit_project`; peak allocation is a fresh tracemalloc
 peak, not RSS. Fixture creation and provenance capture are outside that interval.
 The source-bound run inputs are retained under `evidence/project-scaling/`.
-The `retained-before-source-aligned-run/` subdirectory preserves the two distinct
-older result files without assigning them missing historical run identities.
+The selected result binds the current unpack/admission implementation directly.
+The `retained-before-current-scan/` subdirectory preserves the previous
+captured-source receipt and console summary; those measurements are not pooled
+with the current run. The `retained-before-source-aligned-run/` subdirectory
+preserves two still earlier result files without assigning them missing
+historical run identities.
 `python scripts/audit_results.py --project-scaling-only` checks all 24 observations,
 medians, caches, and source/fixture bindings without launching scans or changing
-results. For this retained run, the exact measured scanner is preserved at
-`scripts/provenance/project-scaling-source.py`; its association record binds
-the current unpack/admission repair separately. These timings describe the
-captured scanner, not a new measurement of that repair. Other measured sources
-and fixtures must still match current bytes. The paper table generator uses the
-same check; scaling remains separate from the 26 controls and frozen studies.
+results. The selected receipt's measured sources and fixtures must match current
+bytes. For the separate historical receipt, the exact measured scanner remains
+at `scripts/provenance/project-scaling-source.py`; its association record
+identifies the later repair without relabeling old times. The historical-binding
+tests use that frozen receipt in an isolated fixture. The paper table generator
+uses the checked current receipt; scaling remains separate from the 26 controls
+and frozen studies.
 
 All retained inputs run locally after dependency installation. No GPU, model API, paid service, credential, production system, or live third-party endpoint is used. The portable driver runs the current pytest suite as a checked stage before any study scripts, then verifies immutable inputs and licenses, executes four historical repair replays, evaluates the project analyzer and its direct-syntax ablation, checks retained two-project regressions, invokes the actual Babel CLI, and audits result accounting. A failed unit stage stops the driver. Native replay is a separate step that additionally executes all 384,384 retained generated inputs and their selected witnesses. Full mode regenerates both seeded studies and the cost measurements after the unit stage. Test counts are reported by pytest; the frozen study records do not establish a pass count for later source revisions.
 
@@ -101,6 +107,38 @@ The pytest suite checks native formatting, supplier effects, count paths, contex
 2. **Same-finding ablation.** The same 48 call/catalog findings yield direct 8 clean, 8 error, and 32 unknown versus flow 22 clean, 9 error, and 17 unknown. Eighteen unknowns become clean and four become errors; four clean and three error findings become unknown because Sphinx object-state reachability is unresolved. The integer-range uncertainty is not a failure of its bounded native replay.
 3. **External regressions.** A Danish Solaar receiver boundary and an Estonian virt-manager installation-wait boundary contribute two clean call/catalog findings, one unresolved singular-call reachability finding, and ten native executions matching the boundary oracle. These are known regressions, not a blind holdout or whole-project recall measurement. `holdout_evaluate.py --mode frozen-source` separately requires the unchanged historical analyzer identity; the default current-regression mode preserves that identity record without claiming to match it.
 
+## Complete-source static scan
+
+`data/whole-project/solaar-inputs.json` identifies every Python blob (128 files),
+the unchanged Danish catalog and the license in the pinned Solaar source tree.
+Acquire its official archive separately from the URL recorded there, then run:
+
+```sh
+python scripts/whole_project_scan.py --source-archive /path/to/Solaar-source.tar.gz --output results/whole-project-new.json.gz
+python scripts/whole_project_receipt.py
+```
+
+The first command checks the complete selected archive population and every Git
+blob identity before parsing. It never imports or executes upstream modules;
+only MsgBranch and the catalog runtime execute. Each direct/flow subprocess has
+a fixed 180-second limit and counts 0--200, with source fallback permitted.
+Default gettext-family names are configured bindings, not resolved import facts.
+The source archive is an external GPL-licensed input, not relicensed MIT material.
+
+The selected `results/whole-project.json.gz` retains all findings, witnesses,
+assumptions and measured-source bindings. Its companion summary reports the same
+698 call/catalog identities: direct has 654 clean, zero error and 44 unknown;
+flow has 296 clean, zero error and 402 unknown. Unresolved use reachability occurs
+in 379 flow findings and withdraws 358 direct clean classifications. This is a
+complete Python-file scan with one catalog, not full-application execution,
+developer adjudication, defect recall, a blind holdout or industrial adoption.
+The two cold method executions are not a repeated performance comparison.
+
+`whole_project_receipt.py` recounts the selected compressed record and checks its
+source identities and detached summary without new scans. The paper table
+generator uses that checked record. Generated string contents are retained
+unchanged; only known source/catalog path fields use portable path notation.
+
 ## Evidence inventory
 
 | Evidence | Recorded finding | Interpretation |
@@ -113,6 +151,7 @@ The pytest suite checks native formatting, supplier effects, count paths, contex
 | Trusted analyzer controls | 26/26 expected flow classifications; 10/26 direct | 22 statically admitted, 4 unknown; 23 bounded native controls and 4,623 executions |
 | Project ablation | 48 findings: direct 8/8/32 vs flow 22/9/17 clean/error/unknown | 22 direct unknowns resolved; 7 additional reachability unknowns retained |
 | External regressions | 2 projects, 2 clean findings, 1 unknown, 10 matching executions | Known adapted boundaries; no claim of exhaustive project coverage |
+| Complete Solaar Python scan | 128 files, one catalog, 698 identical finding identities | Direct 654/0/44; flow 296/0/402 clean/error/unknown; static configured-binding evidence, not adjudicated defects |
 | Babel CLI | 228/228 MO/runtime outputs match; 226 accepted and 2 diagnosed format errors | Actual `pybabel compile`, plus format and encoding negative controls |
 | Generated validation study | 52/52 active constructed mutations detected by product planning | 192 paired families; sensitivity analysis, not field-defect recall |
 | Generated confirmation study | 54/54 active constructed mutations detected by product planning | Independently seeded paired study; same scope as above |

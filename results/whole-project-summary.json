@@ -1,0 +1,132 @@
+{
+  "inputs_bound": 130,
+  "source_bindings": {
+    "src/msgbranch/__init__.py": "48e32a7484433d319c39759157b393bd533a4ce41a2a5b6ec9b41f2adf45c405",
+    "src/msgbranch/baselines.py": "034080ca798e1c5fd2c1493cae9dcd95e70f4409ccf1ef841bdb4d7af27fedf7",
+    "src/msgbranch/cli.py": "354233efd9145a3493cd200177ca61e4a6796cba770eeb1e7ce628a5c41453fc",
+    "src/msgbranch/fluent_adapter.py": "3feaca7818a8e5164d04ab704528d107b55d08c58d27a6791b0ce9bd9da83678",
+    "src/msgbranch/localhero_core.py": "40452dd015c8a03cacb4b0409ad2606b5b8cf0ebac4c4d2adfeea35940ceb65d",
+    "src/msgbranch/partition.py": "008f3b2d10b39e1862a429c8d50c542471304893a868e911025f85494f09a044",
+    "src/msgbranch/program.py": "7bc7c40b5d8036999a8bc0f1213beec928ef5b101737266754f4482b2710e728",
+    "src/msgbranch/project.py": "c8593b33784cecdad9a97aa84154e30e29ca637bbdd5d8b0ad320ae5f6e5dc6a",
+    "src/msgbranch/runtime.py": "5812f19fb95d266ad4a2f86ce9f43bf218c5f72bc7cb51bdbbf9b3faf15c14bd",
+    "src/msgbranch/weblate_core.py": "a0148a4504b291d2813ff439fc44eaef9483a5b32faf7efeda0b1137f0f0e842",
+    "scripts/whole_project_scan.py": "67cdd9bcda118c39dd4bcc5ef7ac67d47f1e424b336e03f865bf3c49bedf7f47",
+    "scripts/_repo_bootstrap.py": "20694834ae1ae73b8c393a0752ae365cfeea02b5a095a4d3efa284baca27678d",
+    "data/whole-project/solaar-inputs.json": "7cd7b4e8679376e9e181512f0c5cea4a99beb48487e09045109f61062204bcd4"
+  },
+  "configuration": {
+    "modes": [
+      "direct",
+      "flow"
+    ],
+    "count_domain": [
+      0,
+      200
+    ],
+    "require_catalog": false,
+    "source_modules_executed": false,
+    "singular_callees": [
+      "gettext",
+      "_"
+    ],
+    "plural_callees": [
+      "ngettext"
+    ],
+    "contextual_callees": [
+      "pgettext",
+      "npgettext"
+    ]
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "Babel": "2.18.0"
+  },
+  "scope": "Complete pinned repository Python-file scan, one Danish catalog, configured wrappers. Conditional analyzer classifications, not manual defect adjudication, full-application execution, recall, deployment or adoption.",
+  "repository": "https://github.com/pwr-Solaar/Solaar",
+  "commit": "e7304c4c451cc9bb4f206a914844525e67856a28",
+  "same_finding_identities": true,
+  "classification_transitions": {
+    "clean_to_clean": 296,
+    "clean_to_unknown": 358,
+    "unknown_to_unknown": 44
+  },
+  "methods": {
+    "direct": {
+      "summary": {
+        "source_root": "<UPSTREAM_SOURCE>",
+        "analysis_mode": "direct",
+        "python_files": 128,
+        "calls": 698,
+        "literal_calls": 683,
+        "catalogs": 1,
+        "findings": 698,
+        "clean": 654,
+        "errors": 0,
+        "unknown": 44,
+        "selected_patterns": 687,
+        "runtime_observations": 1153,
+        "unique_runtime_lookup_sets": 553,
+        "runtime_lookup_cache_hits": 128,
+        "flow_models": 0,
+        "flow_recovered_calls": 0,
+        "flow_resolved_witnesses": 0,
+        "type_error_witnesses": 0,
+        "type_unknown_witnesses": 13
+      },
+      "execution": {
+        "started_at_utc": "2026-10-23T13:04:16.266500+00:00",
+        "completed_at_utc": "2026-10-23T13:04:16.940074+00:00",
+        "elapsed_seconds": 0.5237187000457197,
+        "wall_budget_seconds": 180,
+        "upstream_modules_imported_or_executed": false
+      },
+      "unknown_reason_counts_nonexclusive": {
+        "dynamic formatting supplier": 15,
+        "dynamic message identifier or context": 15,
+        "plural selector is outside the admitted count binding": 2,
+        "selected pattern type requirement cannot be proved from the local supplier": 11,
+        "unsupported or stray percent directive": 1
+      }
+    },
+    "flow": {
+      "summary": {
+        "source_root": "<UPSTREAM_SOURCE>",
+        "analysis_mode": "flow",
+        "python_files": 128,
+        "calls": 698,
+        "literal_calls": 683,
+        "catalogs": 1,
+        "findings": 698,
+        "clean": 296,
+        "errors": 0,
+        "unknown": 402,
+        "selected_patterns": 687,
+        "runtime_observations": 1153,
+        "unique_runtime_lookup_sets": 553,
+        "runtime_lookup_cache_hits": 128,
+        "flow_models": 726,
+        "flow_recovered_calls": 681,
+        "flow_resolved_witnesses": 687,
+        "type_error_witnesses": 0,
+        "type_unknown_witnesses": 0
+      },
+      "execution": {
+        "started_at_utc": "2026-10-23T13:04:17.089743+00:00",
+        "completed_at_utc": "2026-10-23T13:04:18.109368+00:00",
+        "elapsed_seconds": 0.8703421000391245,
+        "wall_budget_seconds": 180,
+        "upstream_modules_imported_or_executed": false
+      },
+      "unknown_reason_counts_nonexclusive": {
+        "dynamic message identifier or context": 15,
+        "mapping value construction is not qualified": 3,
+        "plural selector is outside the admitted count binding": 2,
+        "supplier value construction is not qualified": 2,
+        "unresolved use reachability": 379,
+        "unsupported or stray percent directive": 1
+      }
+    }
+  }
+}

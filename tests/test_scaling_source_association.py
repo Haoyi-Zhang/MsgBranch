@@ -17,7 +17,8 @@ class RetainedScalingSourceTests(unittest.TestCase):
         self.temp=tempfile.TemporaryDirectory(prefix="retained-scaling-binding-")
         self.addCleanup(self.temp.cleanup)
         self.root=Path(self.temp.name)
-        self.receipt=json.loads((ROOT/"results/project-scaling.json").read_text(encoding="utf-8"))
+        historical=ROOT/"evidence/project-scaling/retained-before-current-scan/project-scaling.json"
+        self.receipt=json.loads(historical.read_text(encoding="utf-8"))
         paths={x["path"] for x in self.receipt["source_identity"].values()}
         for row in self.receipt["records"]:
             paths.update(x["path"] for x in row["fixture_identity"].values())
@@ -28,6 +29,9 @@ class RetainedScalingSourceTests(unittest.TestCase):
             dest=self.root/relative
             dest.parent.mkdir(parents=True,exist_ok=True)
             shutil.copy2(ROOT/relative,dest)
+        # Exercise the real retained receipt in an isolated historical checkout;
+        # the default result now belongs to a separate current-source campaign.
+        shutil.copy2(historical,self.root/"results/project-scaling.json")
     def check(self, receipt=None):
         return audit.audit_project_scaling(self.receipt if receipt is None else receipt,root=self.root)
     def test_valid_retained_source_is_distinct_from_current_measurement(self):
