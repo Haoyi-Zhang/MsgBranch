@@ -52,7 +52,7 @@ The official usage examples and selector/term/error documentation were reviewed.
 
 Executed locally: Babel catalog checkers; the actual Babel 2.18.0 `pybabel compile --use-fuzzy` command; Python `gettext`/`GNUTranslations`; the pinned Fluent parser/runtime; source-preserving application slices; the non-executing project auditor; the Weblate 5.13 Python-format/brace-format components; the LocalHero `af81321a` placeholder component; synthetic reference execution; and the test suite. The Babel CLI run covers all 27 frozen catalogs plus two negative controls and is separately receipted in `results/babel-cli.json`.
 
-Not executed: GNU msgfmt, a configured full Weblate deployment, the complete LocalHero CLI, or complete upstream Sphinx/Jupyter/OpenHangar/xrpldashboard/AZM/Bedrock suites. Unavailable or unexecuted baselines are not assigned a miss count. The GNU command retained for an equivalent future check is `msgfmt --check --check-format -o /dev/null messages.po`, with applicable PO format flags. No AI translation service, quality add-on or external model participates in the measurements.
+Not executed: GNU msgfmt, a configured full Weblate deployment, the complete LocalHero CLI, or complete upstream Sphinx/Jupyter/OpenHangar/xrpldashboard/AZM/Bedrock suites. Unavailable or unexecuted baselines are not assigned a miss count. The GNU command retained for an equivalent future check is `msgfmt --check --check-format -o /dev/null messages.po`, with applicable PO format flags. Measurements cover only the locally executed components listed above.
 
 ## Retained source additions
 
